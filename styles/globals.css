@@ -214,3 +214,116 @@ html {
 [class*='__resizable_'] > div[style*='cursor']:hover {
   background-color: rgba(59, 130, 246, 0.5);
 }
+
+/* React Colorful Custom Styling */
+.color-picker-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.react-colorful {
+  width: 100%;
+  height: 120px;
+}
+
+.react-colorful__saturation {
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 8px;
+}
+
+.react-colorful__hue {
+  height: 10px;
+  border-radius: 6px;
+}
+
+.react-colorful__pointer {
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* RGB Sliders Wrapper */
+.rgb-sliders-wrapper .react-colorful {
+  height: auto;
+}
+
+.rgb-sliders-wrapper .react-colorful__saturation {
+  display: none;
+}
+
+.rgb-sliders-wrapper .react-colorful__hue {
+  height: 40px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.rgb-sliders-wrapper .react-colorful__pointer {
+  width: 24px;
+  height: 24px;
+}
+
+/* Custom Range Sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Chrome, Safari, Edge */
+input[type="range"]::-webkit-slider-track {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  border: 4px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  cursor: grab;
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(0.95);
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  border: 4px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  cursor: grab;
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.1);
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  cursor: grabbing;
+  transform: scale(0.95);
+}

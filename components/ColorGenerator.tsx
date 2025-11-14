@@ -15,8 +15,8 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
     lightnessSteps,
     colorSpace,
     updateCustomColor, 
-    resetPaletteColors, 
-    resetAllPalettes, 
+    resetPaletteColors,
+    unlockPalettes,
     hasImportedProject,
     useBgFromTheme,
     setUseBgFromTheme,
@@ -157,13 +157,13 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
               />
             </label>
             
-            {currentPalette.customColors && Object.keys(currentPalette.customColors).length > 0 && (
+            {hasImportedProject && currentPalette.customColors && Object.keys(currentPalette.customColors).length > 0 && (
               <button
                 onClick={() => resetPaletteColors(currentPalette.key)}
                 className="flex items-center gap-2 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
-                Reset Palette
+                Unlock Palette
               </button>
             )}
           </div>
@@ -253,14 +253,14 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
               {hasImportedProject && (
                 <button
                   onClick={() => {
-                    if (confirm('Sigur vrei să resetezi toate paletele? Toate modificările custom vor fi pierdute.')) {
-                      resetAllPalettes();
+                    if (confirm('Sigur vrei să deblochezi paletele? Vei putea apoi să le modifici.')) {
+                      unlockPalettes();
                     }
                   }}
                   className="flex items-center gap-2 px-3 py-1.5 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
                 >
                   <RotateCcw className="w-4 h-4" />
-                  Reset All Palettes
+                  Unlock Palettes
                 </button>
               )}
               <label className="flex items-center gap-2 cursor-pointer">

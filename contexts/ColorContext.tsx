@@ -35,6 +35,7 @@ interface ColorContextType {
   updateHueShift: (index: number, darkHue: number, lightHue: number) => void;
   resetPaletteColors: (paletteKey: string) => void;
   resetAllPalettes: () => void;
+  unlockPalettes: () => void;
   newProject: () => void;
   getGeneratedColors: (paletteKey: string) => { [key: string]: string };
   getAllGeneratedColors: () => { [key: string]: { [key: string]: string } };
@@ -230,6 +231,21 @@ export function ColorProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  const unlockPalettes = () => {
+    // Remove custom colors from all palettes to unlock them
+    const newPalettes = palettes.map(palette => {
+      const { customColors, ...rest } = palette;
+      return rest;
+    });
+    
+    setPalettes(newPalettes);
+    setHasImportedProject(false);
+    
+    toast.success('Paletele au fost deblocate!', {
+      description: 'Poți acum modifica paletele importate.',
+    });
+  };
+
   const newProject = async () => {
     try {
       // Load template tokens from public/template folder
@@ -277,12 +293,12 @@ export function ColorProvider({ children }: { children: ReactNode }) {
       setImportedTokens(tokens);
       setSemanticTokens(semantic);
       setOriginalSemanticTokens(JSON.parse(JSON.stringify(semantic)));
-      setHasImportedProject(true);
+      setHasImportedProject(false); // New project is NOT an import
       setLightnessCurveType('linear');
 
       // Load palettes from light theme tokens
       if (tokens.light && Object.keys(tokens.light).length > 0) {
-        loadPalettesFromTokens(tokens.light);
+        loadPalettesFromTokens(tokens.light, false); // false = new project, not import
         toast.success('Proiect nou creat!', {
           description: `${Object.keys(tokens.light).length} palete încărcate din template.`,
         });
@@ -458,7 +474,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
       // Load palettes from current theme
       const currentTokens = tokens[theme];
       if (currentTokens) {
-        loadPalettesFromTokens(currentTokens);
+        loadPalettesFromTokens(currentTokens, true); // true = this is an import
         
         // Success message
         const paletteCount = Object.keys(currentTokens).length;
@@ -505,7 +521,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
     return colors;
   };
   
-  const loadPalettesFromTokens = (tokens: { [key: string]: { [step: string]: string } }) => {
+  const loadPalettesFromTokens = (tokens: { [key: string]: { [step: string]: string } }, isImport: boolean = true) => {
     const newPalettes: ColorPalette[] = [];
     const lightnessMap: { [step: string]: number[] } = {};
     
@@ -545,14 +561,14 @@ export function ColorProvider({ children }: { children: ReactNode }) {
       
       const oklch = hexToOKLCH(baseColor);
       
-      // Create palette with custom colors from imported tokens
+      // Create palette - only add customColors if it's a real import (not a new project from template)
       const palette: ColorPalette = {
         name: key.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
         key: key,
         hue: oklch.h,
         chroma: oklch.c,
         baseColor: baseColor,
-        customColors: steps,
+        ...(isImport ? { customColors: steps } : {}),
       };
       
       newPalettes.push(palette);
@@ -758,7 +774,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
           setSemanticTokens(semantic);
           setOriginalSemanticTokens(JSON.parse(JSON.stringify(semantic)));
           setHasImportedProject(true);
-          loadPalettesFromTokens(tokens.light);
+          loadPalettesFromTokens(tokens.light, true); // true = this is an import
           console.log('Template loaded successfully on initial mount');
         }
       } catch (error) {
@@ -871,6 +887,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
         updateHueShift,
         resetPaletteColors,
         resetAllPalettes,
+        unlockPalettes,
         newProject,
         getGeneratedColors,
         getAllGeneratedColors,
