@@ -1,0 +1,93 @@
+{
+  "aux-alert": {
+    "icon": {
+      "size": {
+        "md": {
+          "$type": "sizing",
+          "$value": "{alert.icon.size.base}",
+          "$description": "Alert icon small, use for horizontal layout."
+        },
+        "lg": {
+          "$type": "sizing",
+          "$value": "{alert.icon.size.base} + {size.50}",
+          "$description": "Alert icon small, use for horizontal layout."
+        }
+      }
+    },
+    "space": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{alert.space.base.x}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{alert.space.base.x}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{alert.space.base.x}*1.5"
+        }
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{alert.space.base.y}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{alert.space.base.y}"
+        }
+      }
+    },
+    "gap": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{alert.gap.base.x}*2/3"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{alert.gap.base.x}"
+        }
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{alert.gap.base.y}/4"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{alert.gap.base.y}"
+        }
+      }
+    }
+  },
+  "alert": {
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Alert botder top width."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Alert border radius."
+    },
+    "modal": {
+      "icon": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Alert border radius."
+        },
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.1000}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "timer": {
+    "sm": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.xs}",
+          "$description": "Small Timer icon size."
+        }
+      },
+      "row": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.250}",
+          "$description": "Small timer -> time row min-height."
+        }
+      },
+      "col": {
+        "width": {
+          "$type": "sizing",
+          "$value": "{size.250}",
+          "$description": "Small timer -> time col min-width."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Timer top padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Timer right padding"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Timer bottom padding"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Timer left padding"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Small Timer gap (between label & body)."
+      },
+      "time": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Gap between time values (days, divider, hours, 1st separator, minutes, 2nd separator and seconds)"
+        }
+      },
+      "head": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Label right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label Bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label left padding "
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.xs}"
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.25}",
+          "$description": "Gap between icons and time values"
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Small Timer border radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Small Timer -> top border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Small Timer -> right border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Small Timer -> bottom border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Small Timer -> left border width."
+        }
+      },
+      "x": {
+        "head": {
+          "border": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Small Timer Horizontal -> Label -> right border width."
+          }
+        }
+      },
+      "y": {
+        "head": {
+          "border": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Small Timer Vertical -> Label -> bottom border width."
+          }
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.xs}"
+        }
+      }
+    },
+    "inverted": {
+      "fill": {
+        "$type": "color",
+        "$value": "{inverted.surface.default}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{inverted.surface.default}"
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}"
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.label}"
+          }
+        },
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}"
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.label}"
+          }
+        }
+      },
+      "warning": {
+        "fill": {
+          "$type": "color",
+          "$value": "{warning.fill.default}"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{warning.fill.default}"
+        },
+        "on": {
+          "surface": {
+            "head": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.warning.head}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.warning.body}"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.warning.label}"
+            }
+          },
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{warning.on.fill.default}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{warning.on.fill.default}"
+            },
+            "label": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.6",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{warning.on.fill.default}"
+            }
+          }
+        }
+      },
+      "error": {
+        "fill": {
+          "$type": "color",
+          "$value": "{error.fill.default}"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{error.fill.default}"
+        },
+        "on": {
+          "surface": {
+            "head": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.error.head}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.error.body}"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.error.label}"
+            }
+          },
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{error.on.fill.default}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{error.on.fill.default}"
+            },
+            "label": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": ".6",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{error.on.fill.default}"
+            }
+          }
+        }
+      },
+      "shadow": {
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow for timer inverted type, active status."
+        },
+        "warning": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow for timer inverted type, warning status."
+        },
+        "error": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow for timer inverted type, error status."
+        }
+      }
+    },
+    "md": {
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label Bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label left padding "
+          }
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.25}",
+          "$description": "Gap between icons and time values"
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.xs}"
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Medium Timer -> top border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Medium Timer -> right border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Medium Timer -> bottom border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Medium Timer -> left border width."
+        }
+      },
+      "x": {
+        "head": {
+          "border": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Medium Timer Horizontal -> Label -> right border width."
+          }
+        }
+      },
+      "y": {
+        "head": {
+          "border": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Medium Timer Vertical -> Label -> bottom border width."
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Medium Timer border radius."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Timer top padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Timer right padding"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Timer bottom padding"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Timer left padding"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Medium Timer gap (between label & body)."
+      },
+      "time": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Gap between time values (days, divider, hours, 1st separator, minutes, 2nd separator and seconds)"
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.xs}",
+          "$description": "Medium Timer icon size."
+        }
+      },
+      "row": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.250}",
+          "$description": "Medium timer -> time row min-height."
+        }
+      },
+      "col": {
+        "width": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Medium timer -> time col min-width."
+        }
+      }
+    },
+    "lg": {
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.md}"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label Bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Label left padding "
+          }
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.90}",
+            "fontWeight": "{font-weight.800}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.25}",
+          "$description": "Gap between icons and time values"
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.xs}"
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Large Timer -> top border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Large Timer -> right border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Large Timer -> bottom border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Large Timer -> left border width."
+        }
+      },
+      "x": {
+        "head": {
+          "border": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Large Timer Horizontal -> Label -> right border width."
+          }
+        }
+      },
+      "y": {
+        "head": {
+          "border": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Large Timer Vertical -> Label -> bottom border width."
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Large Timer border radius."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Timer top padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Timer right padding"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Timer bottom padding"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Timer left padding"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Large Timer gap (between label & body)."
+      },
+      "time": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Gap between time values (days, divider, hours, 1st separator, minutes, 2nd separator and seconds)"
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.xs}",
+          "$description": "Large Timer icon size."
+        }
+      },
+      "row": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.250}",
+          "$description": "Large timer -> time row min-height."
+        }
+      },
+      "col": {
+        "width": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Large timer -> time col min-width."
+        }
+      }
+    },
+    "shadow": {
+      "active": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Shadow for timer default type, active status."
+      },
+      "warning": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Shadow for timer default type, warning status."
+      },
+      "error": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Shadow for timer default type, error status."
+      }
+    }
+  },
+  "blur": {
+    "$type": "composition",
+    "$value": {
+      "backgroundBlur": "10"
+    },
+    "$description": "Bachground blur for timer filled timer"
+  }
+}

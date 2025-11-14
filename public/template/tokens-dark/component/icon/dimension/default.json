@@ -1,0 +1,10 @@
+{
+  "icon": {
+    "info": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{icon.size.lg}"
+      }
+    }
+  }
+}

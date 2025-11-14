@@ -1,0 +1,183 @@
+{
+  "providers": {
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Top border width for provider card"
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Right border width for provider card"
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Bottom border width for provider card"
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Left border width for provider card"
+      },
+      "default": {
+        "$type": "color",
+        "$value": "transparent"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "transparent"
+      },
+      "active": {
+        "$type": "color",
+        "$value": "transparent"
+      }
+    },
+    "sm": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Top padding for small provider card."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Right padding for small provider card."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Bottom padding for small provider card."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{size.100}",
+          "$description": "Left padding for small provider card."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Small border radius"
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.sm}"
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Space between Logo and name."
+      },
+      "logo": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.500}",
+          "$description": "Symbol/Logo size for the provider card layout with text"
+        }
+      }
+    },
+    "md": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{size.100}",
+          "$description": "Top padding for medium provider card."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Right padding for medium provider card."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{size.100}",
+          "$description": "Bottom padding for medium provider card."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Left padding for medium provider card."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Medium border radius"
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Space between Logo and name."
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.lg}"
+      },
+      "logo": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.800}",
+          "$description": "Symbol/Logo size for the provider card layout with text"
+        }
+      }
+    },
+    "surface": {
+      "default": {
+        "$type": "color",
+        "$value": "{neutral.surface.weak}"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{neutral.surface.default}"
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{neutral.surface.strong}"
+      }
+    },
+    "on": {
+      "surface": {
+        "$type": "color",
+        "$value": "{on.surface.body}"
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        }
+      },
+      "hover": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        }
+      },
+      "active": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "avatar": {
+    "xs": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "XSmall Avatar size."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "XSmall avatar border radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.sm}",
+          "$description": "XSmall avatar border width."
+        }
+      },
+      "progress": {
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.25}"
+        }
+      }
+    },
+    "sm": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Small Avatar size."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Small avatar border radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.sm}",
+          "$description": "Small avatar border width."
+        }
+      },
+      "progress": {
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.25}"
+        }
+      }
+    },
+    "md": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.500}",
+        "$description": "Medium Avatar size."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Medium avatar border radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.sm}",
+          "$description": "Medium avatar border width."
+        }
+      },
+      "badge": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.150}",
+            "$description": "Avatar badge icon size."
+          }
+        },
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.10}",
+          "$description": "Avatar badge padding."
+        },
+        "wrp": {
+          "space": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Avatar badge position over the avatar image."
+          }
+        }
+      },
+      "progress": {
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        }
+      }
+    },
+    "lg": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.1000}",
+        "$description": "Large Avatar size."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Large avatar border radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.sm}",
+          "$description": "Large avatar border width."
+        }
+      },
+      "badge": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Avatar badge icon size."
+          }
+        },
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Avatar badge padding."
+        },
+        "wrp": {
+          "space": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Avatar badge position over the avatar image."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Avatar badge border radius."
+        }
+      },
+      "progress": {
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.75}"
+        }
+      }
+    },
+    "badge": {
+      "fill": {
+        "active": {
+          "$type": "color",
+          "$value": "{success.border.default}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{neutral.fill.disabled}",
+          "$description": "Avatar badge disabled fill."
+        },
+        "edit": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Avatar badge disabled fill."
+        }
+      },
+      "on": {
+        "fill": {
+          "active": {
+            "$type": "color",
+            "$value": "{success.on.fill.default}",
+            "$description": "Avatar badge on fill default."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{neutral.on.fill.disabled}",
+            "$description": "Avatar badge on fill disabled."
+          },
+          "edit": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Avatar badge on fill disabled."
+          }
+        }
+      }
+    },
+    "progress": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{neutral.30}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{success.border.default}"
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "black",
+        "$description": "Avatar border default color."
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{success.border.default}",
+        "$description": "Avatar border active color."
+      },
+      "disabled": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "black",
+        "$description": "Avatar border disabled color."
+      },
+      "edit": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "black",
+        "$description": "Avatar border disabled color."
+      }
+    },
+    "edit": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Edit icon border width."
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "alert": {
+    "icon": {
+      "size": {
+        "base": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}"
+        }
+      }
+    },
+    "space": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.200}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.200}"
+        }
+      }
+    },
+    "gap": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.200}"
+        }
+      }
+    }
+  }
+}

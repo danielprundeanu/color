@@ -1,0 +1,18 @@
+{
+  "page-title": {
+    "typo": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font-family.200}",
+        "fontSize": "{font-size.300}",
+        "fontWeight": "{font-weight.600}",
+        "lineHeight": "{line-height.sm} * 100%"
+      }
+    },
+    "fill": {
+      "$type": "color",
+      "$value": "{white.100}",
+      "$description": "Page Title color."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "btn": {
+    "space": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inset.md}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.inset.md}"
+        }
+      },
+      "ratio": {
+        "$type": "number",
+        "$value": "1.2"
+      }
+    },
+    "radius": {
+      "base": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}"
+      },
+      "ratio": {
+        "$type": "number",
+        "$value": "1.4"
+      }
+    },
+    "border": {
+      "base": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      }
+    }
+  }
+}

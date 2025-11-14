@@ -1,0 +1,23 @@
+{
+  "page-head": {
+    "item": {
+      "typo": {
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Page Head item default typo."
+        },
+        "active": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.60}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.md} * 100%"
+          },
+          "$description": "Page Head item active typo."
+        }
+      }
+    }
+  }
+}

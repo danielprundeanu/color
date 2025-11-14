@@ -1,0 +1,40 @@
+{
+  "aux-index": {
+    "font-size": {
+      "label": {
+        "$type": "fontSizes",
+        "$value": "{font-size.900}"
+      }
+    },
+    "font-family": {
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "font-weight": {
+      "label": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.700}"
+      }
+    },
+    "line-height": {
+      "label": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      }
+    }
+  },
+  "index": {
+    "typo": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{aux-index.font-family.label}",
+        "fontWeight": "{aux-index.font-weight.label}",
+        "lineHeight": "{aux-index.line-height.label}",
+        "fontSize": "{aux-index.font-size.label}"
+      },
+      "$description": "Index typo."
+    }
+  }
+}

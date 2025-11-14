@@ -1,0 +1,111 @@
+{
+  "card": {
+    "lvl-1": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Card level-1 - border width."
+        },
+        "separator": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Crad lvl-1 border separator width."
+        }
+      },
+      "gap": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.md}",
+          "$description": "Card level - 1 horizontal gap."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level - 1 vertical gap."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Card level-1 - border radius."
+      },
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inset.sm}",
+          "$description": "Card level 1 - horizontal padding."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.inset.sm}",
+          "$description": "Card level 1 - vertical padding."
+        }
+      }
+    },
+    "lvl-2": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Card level-1 - border width."
+        },
+        "separator": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Crad lvl-2 border separator width."
+        }
+      },
+      "gap": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.sm}",
+          "$description": "Card level-1 - horizontal gap."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - vertical gap."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Card level-1 - border radius."
+      },
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inset.sm}",
+          "$description": "Card level 2 - horizontal padding."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.inset.sm}",
+          "$description": "Card level 2 - vertical padding."
+        }
+      }
+    },
+    "title": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Card Title - icon. size."
+        }
+      },
+      "gap": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.xs}",
+          "$description": "Card Title - Horizontal gap."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.stack.sm}",
+          "$description": "Card Title - Vertical gap."
+        }
+      }
+    }
+  }
+}

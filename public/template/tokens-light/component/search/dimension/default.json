@@ -1,0 +1,23 @@
+{
+  "search": {
+    "input": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Search input height size."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Search input border size."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Search input border radius."
+      }
+    }
+  }
+}

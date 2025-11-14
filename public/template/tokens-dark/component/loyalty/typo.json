@@ -1,0 +1,21 @@
+{
+  "loyalty": {
+    "benefit": {
+      "head": {
+        "$type": "typography",
+        "$value": "{typo.display.sm}",
+        "$description": "Head typo for prize (missions card)."
+      },
+      "body": {
+        "$type": "typography",
+        "$value": "{typo.body.md}",
+        "$description": "Body typo for prize (missions card)."
+      },
+      "label": {
+        "$type": "typography",
+        "$value": "{typo.label.sm}",
+        "$description": "Label typo for shop cards."
+      }
+    }
+  }
+}

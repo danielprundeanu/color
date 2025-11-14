@@ -1,0 +1,840 @@
+{
+  "bonus": {
+    "select": {
+      "img": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.800}",
+          "$description": "Bonus selection image height."
+        },
+        "shadow": {
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "innerShadow"
+            }
+          },
+          "selected": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "innerShadow"
+            }
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Bonus selection icon size."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Gap between bonus selection card and warning message"
+      },
+      "card": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Bonus selection gap between photo and body"
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Bonus selection top padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Bonus selection right padding"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Bonus selection bottom padding"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Bonus selection left padding"
+        }
+      },
+      "body": {
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Bonus selection horizontal body gap (between amount, title and description)"
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Bonus selection vertical body gap (between content and edit icon)"
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Bonus selection body top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Bonus selection body right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Bonus selection body bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Bonus selection body left padding"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Bonus selection body radius"
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection body top border width"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection body right border width"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection body bottom border width"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection body left border width"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "transparent"
+          },
+          "selected": {
+            "$type": "color",
+            "$value": "transparent"
+          }
+        },
+        "surface": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{neutral.fill.disabled}"
+          },
+          "selected": {
+            "$type": "color",
+            "$value": "{primary.surface.default}"
+          }
+        },
+        "on": {
+          "surface": {
+            "disabled": {
+              "primary": {
+                "$type": "color",
+                "$value": "{on.surface.primary.disabled}"
+              },
+              "head": {
+                "$type": "color",
+                "$value": "{on.surface.disabled}"
+              },
+              "body": {
+                "$type": "color",
+                "$value": "{on.surface.disabled}"
+              },
+              "label": {
+                "$type": "color",
+                "$value": "{secondary.on.fill.default}"
+              }
+            },
+            "selected": {
+              "primary": {
+                "$type": "color",
+                "$value": "{primary.on.surface.default}"
+              },
+              "head": {
+                "$type": "color",
+                "$value": "{on.surface.primary.active}"
+              },
+              "body": {
+                "$type": "color",
+                "$value": "{on.surface.body}"
+              },
+              "label": {
+                "$type": "color",
+                "$value": "{on.surface.label}"
+              }
+            }
+          }
+        }
+      },
+      "skeleton": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.xs}",
+          "$description": "Body rectangles radius for skeletopn"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Bonus selection card radius"
+      },
+      "photo": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Bonus selection photo radius"
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection photo top border width"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection photo right border width"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection photo bottom border width"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus selection photo left border width"
+          }
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus selection top border width"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus selection right border width"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus selection bottom border width"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus selection left border width"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{neutral.surface.weak}"
+        },
+        "skeleton": {
+          "$type": "color",
+          "$value": "{border.weak}"
+        }
+      },
+      "amount": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.md}",
+          "$description": "Current Amount typo"
+        }
+      },
+      "max": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Max Amount typo"
+        }
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Bonus selection title typo (for inactive and active state)"
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Bonus description typo"
+        }
+      },
+      "shadow": {
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        },
+        "selected": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        }
+      },
+      "surface": {
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        },
+        "selected": {
+          "$type": "color",
+          "$value": "{neutral.surface.weak}"
+        }
+      },
+      "fill": {
+        "skeleton": {
+          "$type": "color",
+          "$value": "{fill.weak}"
+        }
+      }
+    },
+    "card": {
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Body label"
+        }
+      },
+      "img": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.250}*10",
+          "$description": "Image height for default state of the bonus card."
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Image border radius (featured state)"
+        },
+        "shadow": {
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            }
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            }
+          }
+        },
+        "border": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{border.none}",
+            "$description": "Bonus card image border width"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{border.none}",
+            "$description": "Bonus card image border width"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{border.none}",
+            "$description": "Bonus card image border width"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{border.none}",
+            "$description": "Bonus card image border width"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "transparent"
+          }
+        }
+      },
+      "overlay": {
+        "top": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.200}",
+              "$description": "Bonus card featured - overlay top - top padding"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.200}",
+              "$description": "Bonus card featured - overlay top - right padding"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.200}",
+              "$description": "Bonus card featured - overlay top - bottom padding"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.200}",
+              "$description": "Bonus card featured - overlay top - left padding"
+            }
+          }
+        },
+        "bottom": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Bonus card featured - overlay bottom - top padding"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Bonus card featured - overlay bottom - right padding"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Bonus card featured - overlay bottom - bottom padding"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Bonus card featured - overlay bottom - left padding"
+            }
+          }
+        }
+      },
+      "photo": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.800}",
+          "$description": "Photo height for default state of the bonus card."
+        },
+        "shadow": {
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            }
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            }
+          }
+        }
+      },
+      "body": {
+        "photo": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Border radius for image (card default state)"
+          },
+          "border": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Image border width (default state)"
+          }
+        },
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body gap - space between image and details"
+          },
+          "details": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Body - details - vertical space between description & amount"
+            }
+          },
+          "amount": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Space between amount & currency"
+            }
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Body top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Body right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Body bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Body left padding"
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Body - details - horizontal space between label & description"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Body border radius"
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus card body top border witdh"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus card body border witdh"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Bonus card body bottom witdh"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus card body left witdh"
+          }
+        },
+        "shadow": {
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            }
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Bonus card space between footer & body"
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Default Bonus card top padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Default Bonus card right padding"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Default Bonus card bottom padding"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Default Bonus card left padding"
+        }
+      },
+      "footer": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Footer top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Footer right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Footer bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Footer left padding"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Space between warning/error message and bottom section."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus card - footer top border width"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bonus card - footer bottom border width"
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Bonus Card border radius"
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus card top border witdh"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus card right border witdh"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus card right bottom witdh"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bonus card right left witdh"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{border.default}"
+        },
+        "weak": {
+          "$type": "color",
+          "$value": "{border.weak}"
+        }
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.md}",
+          "$description": "Body label"
+        }
+      },
+      "amount": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.200}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.base}"
+          },
+          "$description": "Amount tyoo"
+        }
+      },
+      "currency": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.60}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.base}"
+          },
+          "$description": "Currency tyoo"
+        }
+      },
+      "shadow": {
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        }
+      },
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{surface.strong}"
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "transparent"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "transparent"
+        }
+      },
+      "on": {
+        "gradient": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}"
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          }
+        },
+        "fill": {
+          "default": {
+            "head": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{on.surface.body}"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{on.surface.label}"
+            }
+          },
+          "disabled": {
+            "head": {
+              "$type": "color",
+              "$value": "{on.surface.disabled}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{on.surface.disabled}"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{on.surface.disabled}"
+            }
+          }
+        }
+      },
+      "gradient": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Bonus card image gradient overlay"
+      }
+    }
+  }
+}

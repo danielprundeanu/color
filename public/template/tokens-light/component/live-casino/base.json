@@ -1,0 +1,16 @@
+{
+  "live-casino": {
+    "gap": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Live Casino horizontal gap base."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Live Casino vertical gap base."
+      }
+    }
+  }
+}

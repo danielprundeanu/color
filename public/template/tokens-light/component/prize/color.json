@@ -1,0 +1,82 @@
+{
+  "aux-prize": {
+    "gradient": {
+      "01": {
+        "$type": "color",
+        "$value": "{white.100}"
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{white.10}"
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "3",
+        "blur": "12",
+        "spread": "0",
+        "color": "{prize.shadow.fill}",
+        "type": "dropShadow"
+      }
+    }
+  },
+  "prize": {
+    "fill": {
+      "$type": "color",
+      "$value": "linear-gradient(180deg, {aux-prize.gradient.01} 0%, {aux-prize.gradient.02} 100%)"
+    },
+    "on": {
+      "fill": {
+        "amount": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        },
+        "currency": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        }
+      },
+      "surface": {
+        "amount": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        },
+        "currency": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.3",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{primary.border.strong}"
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}"
+      }
+    }
+  }
+}

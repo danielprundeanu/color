@@ -1,0 +1,47 @@
+{
+  "prize": {
+    "image": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.800}",
+        "$description": "Prize image height & width."
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.inline.md}",
+        "$description": "Prize horizontal padding."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.stack.md}",
+        "$description": "Prize vertical padding."
+      }
+    },
+    "gap": {
+      "sm": {
+        "$type": "spacing",
+        "$value": "{space.stack.xs}",
+        "$description": "Space between amount & currency and also between label and amount & currency."
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "{space.stack.md}",
+        "$description": "Space between image & prize details."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.lg}",
+      "$description": "Prize wrapper radius."
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Prize wrapper border size."
+      }
+    }
+  }
+}

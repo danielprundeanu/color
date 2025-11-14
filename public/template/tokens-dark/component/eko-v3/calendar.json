@@ -1,0 +1,2071 @@
+{
+  "calendar": {
+    "banner": {
+      "wrapper": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top padding for content container"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Right padding for content container"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Bottom padding for content container"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Left padding for content container"
+          }
+        }
+      },
+      "body": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top padding for body placed on top of the banner"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Right padding for body placed on top of the banner"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Bottom padding for body placed on top of the banner"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Left padding for body placed on top of the banner"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Gap between items within body"
+        },
+        "item": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Top padding for banner units"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Right padding for banner units"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Bottom padding for banner units"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Left padding for banner units"
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Vertical gap between Label & count"
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.none}",
+            "$description": "Corner radius applied for banner units"
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top border width for banner units"
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Right border width for banner "
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Right border width for  banner units"
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Right border width for  banner units"
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Shadow to be apllied on banner units"
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{on.surface.head}",
+                "$description": "On surface head (within banner units) - used for counters"
+              },
+              "label": {
+                "$type": "color",
+                "$value": "{on.surface.label}",
+                "$description": "On surface label (within banner units) - text colors used for labels"
+              },
+              "error": {
+                "$type": "color",
+                "$value": "{on.surface.error.label}",
+                "$description": "On surface error (within banner units) - text colors used for missed days"
+              }
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Item fill color (within banner body)"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Corner radius for banner body"
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Top border width for body banner"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Right border width for body banner"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Right border width for body banner"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Right border width for body banner"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{border.weak}",
+            "$description": "Banner body border color"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow to be apllied on banner body"
+        },
+        "surface": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.85",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Banner body surface color"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Banner radius"
+      },
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.200}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Typo used for units (within banner)"
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Typo used for label units (within banner)"
+        }
+      },
+      "divider": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.400}",
+          "$description": "Divider height"
+        },
+        "width": {
+          "$type": "sizing",
+          "$value": "{size.10}",
+          "$description": "Divider width"
+        }
+      }
+    },
+    "message": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Message height"
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Message container left padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Message container right padding"
+        }
+      },
+      "success": {
+        "fill": {
+          "$type": "color",
+          "$value": "{success.surface.default}",
+          "$description": "Surface color for success message"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Border color for success message"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            }
+          ],
+          "$description": "Success message shadow"
+        }
+      },
+      "error": {
+        "fill": {
+          "$type": "color",
+          "$value": "{error.surface.default}",
+          "$description": "Surface color for error message"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Border color for error message"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            }
+          ],
+          "$description": "Error message shadow"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Corner radius applied on message container"
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Message border width"
+        }
+      }
+    },
+    "timeline": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Top padding for timeline carousel"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Right padding for timeline carousel"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Bottom padding for timeline carousel"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Left padding for timeline carousel"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Gap between days"
+      },
+      "item": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top padding for reward item"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Right padding for reward item"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Bottom padding for reward item"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Left padding for reward item"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Verical gap between number and month label (within day)"
+        },
+        "current": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Top padding for day (current)"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Right padding for day (current)"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Bottom padding for day (current)"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Left padding for day (current)"
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Verical gap between number and month label (within current day)"
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Current day shadow"
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{primary.fill.default}",
+            "$description": "Fill color for current item (day) within timeline"
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Border color for item(timeline) - prev & future states"
+            },
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Day top border"
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Day right border width"
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Day bottom border width"
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Day left border width"
+            }
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{primary.on.fill.default}",
+                "$description": "Text color for day"
+              },
+              "label": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.8",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{primary.on.fill.default}",
+                "$description": "Month text color for current item (day)"
+              }
+            }
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Date radius"
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Day top border"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Day right border width"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Day bottom border width"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Day left border width"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Border color for item(timeline) - prev & future states"
+          }
+        },
+        "future": {
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Future Day shadow"
+          }
+        },
+        "past": {
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Past day shadow"
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Fill color for item within timeline"
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{on.surface.body}",
+              "$description": "Text color for day"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{on.surface.body}",
+              "$description": "Month text color"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{on.surface.disabled}",
+              "$description": "Day & month text color for previous days"
+            }
+          }
+        }
+      },
+      "day": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.300}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Typo used for day number (prev & future day)\n"
+        }
+      },
+      "current": {
+        "day": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.300}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.sm} * 100%"
+            },
+            "$description": "Typo used for day number (current day)\n"
+          }
+        },
+        "month": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.sm}",
+            "$description": "Typo used for month name (current day)\n"
+          }
+        }
+      },
+      "month": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Typo used for month name (prev & future day)\n"
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Timeline fill color"
+      }
+    },
+    "rewards": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Top padding for rewards card"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Right padding for rewards card"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Bottom padding for rewards card"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Left padding for rewards card"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Space between title & prize list"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Rewards card fill color"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Rewards card border color"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top border width for rewards card"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Right border width for rewards card"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bottom border width for rewards card"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Left border width for rewards card"
+        }
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Title color"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Rewards card corner radius"
+      },
+      "list": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Rewards list card corner radius"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Top padding for list card"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Right padding for list card"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Bottom padding for list card"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Left padding for list card"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Space between list items"
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Rewards list fill color"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Rewards list card border color"
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Top border width for rewards list card"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Right border width for rewards list card"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bottom border width for rewards list card"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Left border width for rewards list card"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Rewards List shadow"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Rewards Card shadow"
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.90}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Rewards card title typo"
+        }
+      },
+      "item": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top padding for rewards card"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Right padding for rewards card"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Bottom padding for rewards card"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Left padding for rewards card"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Horizontal gap between icon and body item"
+        },
+        "body": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Vertical gap between reward amount and label"
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Reward item fill color"
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{on.surface.head}",
+              "$description": "Reward Amount text color"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{on.surface.label}",
+              "$description": "label text color"
+            }
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Reward item border color"
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Top border width for reward item"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Right border width for reward item"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Bottom border width for reward item"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Left border width for reward item"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Reward item corner radius"
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Reward item shadow"
+        },
+        "head": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.title.sm}",
+            "$description": "Reward Amount typo"
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.md}",
+            "$description": "label typo"
+          }
+        },
+        "icon-wpp": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.round}",
+            "$description": "Reward icon wrapper corner radius"
+          },
+          "border": {
+            "all": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Reward icon wrapper border width"
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Reward icon wrapper shadow"
+          },
+          "1st": {
+            "fill": {
+              "$type": "color",
+              "$value": "{sub-brand-01.90}",
+              "$description": "Icon wrapper fill color"
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{sub-brand-01.40}",
+                "$description": "Icon fill color"
+              }
+            },
+            "border": {
+              "$type": "color",
+              "$value": "{sub-brand-01.70}",
+              "$description": "Icon wrapper border color"
+            }
+          },
+          "2nd": {
+            "fill": {
+              "$type": "color",
+              "$value": "{secondary.90}",
+              "$description": "Icon wrapper fill color"
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{secondary.50}",
+                "$description": "Icon fill color"
+              }
+            },
+            "border": {
+              "$type": "color",
+              "$value": "{secondary.70}",
+              "$description": "Icon wrapper border color"
+            }
+          },
+          "3rd": {
+            "fill": {
+              "$type": "color",
+              "$value": "{negative.110}",
+              "$description": "Icon wrapper fill color"
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{negative.40}",
+                "$description": "Icon fill color"
+              }
+            },
+            "border": {
+              "$type": "color",
+              "$value": "{negative.80}",
+              "$description": "Icon wrapper border color"
+            }
+          },
+          "4th": {
+            "fill": {
+              "$type": "color",
+              "$value": "{informative.90}",
+              "$description": "Icon wrapper fill color"
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{informative.40}",
+                "$description": "Icon fill color"
+              }
+            },
+            "border": {
+              "$type": "color",
+              "$value": "{informative.60}",
+              "$description": "Icon wrapper border color"
+            }
+          }
+        }
+      },
+      "icon-wpp": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.300}",
+            "$description": "Icon size"
+          }
+        },
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.500}",
+          "$description": "Icon wrapper size"
+        }
+      }
+    },
+    "prize": {
+      "image": {
+        "sm": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.500}",
+            "$description": "Image & icon size used for horizontal prize"
+          }
+        },
+        "md": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.1000}",
+            "$description": "Image size used for vertical prize"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Prize image corner radius"
+        }
+      },
+      "y": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Top padding for vertical prize card"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Right padding for vertical prize card"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Bottom padding for vertical prize card"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Left padding for vertical prize card"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Gap between image & content"
+        },
+        "content": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Gap between reward amount & label description"
+          }
+        }
+      },
+      "x": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top padding for horizontal prize card"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Right padding for horizontal prize card"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Bottom padding for horizontal prize card"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Left padding for horizontal prize card"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Gap between image & content"
+        },
+        "content": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Gap between reward amount & label description"
+          }
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strong}",
+        "$description": "Vertical prize fill color"
+      },
+      "border": {
+        "active": {
+          "$type": "color",
+          "$value": "{secondary.border.default}",
+          "$description": "Vertical prize car -  border color for selected state"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Vertical prize car -  border color for default state"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Prize card (vertical & horizontal) top border width"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Prize card (vertical & horizontal) right border width"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Prize card (vertical & horizontal) bottom border width"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Prize card (vertical & horizontal) left border width"
+        }
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Text color for title (reward)"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Label (reward description) color"
+          }
+        }
+      },
+      "second": {
+        "fill": {
+          "$type": "color",
+          "$value": "{surface.strong}",
+          "$description": "Vertical prize fill color"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Vertical prize car -  border color for default state"
+          }
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{on.surface.head}",
+              "$description": "Text color for title (reward)"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{on.surface.label}",
+              "$description": "Label (label) color"
+            },
+            "icon": {
+              "$type": "color",
+              "$value": "{secondary.fill.default}",
+              "$description": "Icon fill color used within raffle tickets (second prize)"
+            }
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Second prize (raffle tickets) shadow"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Prize card corner radius for both vertical & horizontal"
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Prize card vertical & horizontal shadow"
+      },
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Prize title typo"
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.md}",
+          "$description": "Label typo"
+        }
+      }
+    },
+    "card": {
+      "height": {
+        "$type": "sizing",
+        "$value": "412px",
+        "$description": "Calendar Card height"
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "300px",
+        "$description": "Calendar card width"
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Calendar card corner radius"
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Calendar card border width"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Calendar card shadow"
+      },
+      "front": {
+        "header": {
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Calendar card (front side) body header shadow"
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Top padding for header (front side of the calendar card"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Right padding for header (front side of the calendar card"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Bottom padding for header (front side of the calendar card"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Left padding for header (front side of the calendar card"
+            }
+          },
+          "body": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Verical gap between title & subtitle"
+            },
+            "space": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{space.150}",
+                "$description": "Top padding for header (front side of the calendar card"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{space.150}",
+                "$description": "Right padding for header (front side of the calendar card"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{space.150}",
+                "$description": "Bottom padding for header (front side of the calendar card"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{space.150}",
+                "$description": "Left padding for header (front side of the calendar card"
+              }
+            },
+            "fill": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Calendar card front side - header body fill"
+            },
+            "on": {
+              "fill": {
+                "head": {
+                  "$type": "color",
+                  "$value": "{on.surface.head}",
+                  "$description": "Title color (header - front side)"
+                },
+                "body": {
+                  "$type": "color",
+                  "$value": "{on.surface.body}",
+                  "$description": "Subititle color (header - front side)"
+                }
+              }
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Corner Radius for body header (front side) "
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top border width for header body(front side of the calendar card)"
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Right border width for header body(front side of the calendar card)"
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Bottom border width for header body(front side of the calendar card)"
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "left border width for header body(front side of the calendar card)"
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Front card - header wraper fill"
+          }
+        },
+        "footer": {
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Calendar card (front side) footer fill color"
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{on.surface.label}",
+              "$description": "Footer message text color"
+            }
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Card front side - border color."
+          }
+        }
+      },
+      "back": {
+        "header": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Top padding for header (front side of the calendar card"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Right padding for header (front side of the calendar card"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Bottom padding for header (front side of the calendar card"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Left padding for header (front side of the calendar card"
+            }
+          },
+          "body": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Verical gap between title & subtitle"
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Gap between date and title & subtitle"
+          },
+          "border": {
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.xs}",
+              "$description": "Bottom border width for header body(front side of the calendar card)"
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{border.weak}",
+              "$description": "Header border color"
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Calendar card (back side) header shadow"
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Back card - header fill"
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{on.surface.primary.head}",
+                "$description": "Title color (header - back side)"
+              },
+              "body": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.6",
+                      "space": "lch"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{on.surface.label}",
+                "$description": "Subititle color (header - back side)"
+              },
+              "label": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.7",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{on.surface.primary.label}",
+                "$description": "Date text color (header - back side)"
+              }
+            }
+          }
+        },
+        "body": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Top padding for body (back side of the calendar card)"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Right padding for body (back side of the calendar card)"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Bottom padding for body (back side of the calendar card)"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Left padding for body (back side of the calendar card)"
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body gap"
+          },
+          "prizes": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Space between the first 2 prizes and divider"
+            },
+            "space": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{space.0}",
+                "$description": "Top padding for prizes container withind body (back side of the calendar card)."
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{space.0}",
+                "$description": "Right padding for prizes container withind body (back side of the calendar card)."
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{space.0}",
+                "$description": "Bottom padding for prizes container withind body (back side of the calendar card)."
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{space.0}",
+                "$description": "Left padding for prizes container withind body (back side of the calendar card)."
+              }
+            },
+            "fill": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Prizes container within body (back card) fill color.\n"
+            },
+            "border": {
+              "default": {
+                "$type": "color",
+                "$value": "{transparent}",
+                "$description": "Prizes container within body (back card) border color."
+              }
+            }
+          },
+          "title": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Calendar card - body title gap (space between gift icon & card title)"
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Calendar card (back side) fill color"
+          },
+          "on": {
+            "fill": {
+              "body": {
+                "$type": "color",
+                "$value": "{on.surface.label}",
+                "$description": "Body text color"
+              },
+              "icon": {
+                "$type": "color",
+                "$value": "{primary.fill.default}",
+                "$description": "Body Icon fill"
+              }
+            }
+          },
+          "divider": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Gap between lines & icon/text"
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{border.default}",
+              "$description": "Divider color used for lines & text (or & +)"
+            }
+          }
+        },
+        "footer": {
+          "fill": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Calendar card (front side) footer fill color"
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top border width forfooter (back side of the calendar card)"
+            }
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Card back side - border color."
+          },
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Border size for back card."
+          }
+        },
+        "prizes": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.none}",
+            "$description": "Prizes container within body (back card) corner radius."
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Prizes container within body (back card) top border width."
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Prizes container within body (back card) right border width."
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Prizes container within body (back card) bottom border width."
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Prizes container within body (back card) left border width."
+            }
+          }
+        }
+      },
+      "footer": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Top padding for footer (both sides of the calendar card)"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Right padding for footer (both sides of the calendar card)"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Bottom padding for footer (both sides of the calendar card)"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Left padding for footer (both sides of the calendar card)"
+          }
+        },
+        "body": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.body.md}"
+          }
+        }
+      },
+      "body": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Gift icon size"
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.sm}",
+          "$description": "Typo for body title"
+        },
+        "divider": {
+          "width": {
+            "$type": "sizing",
+            "$value": "209px",
+            "$description": "Dividers width"
+          },
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Divider height applied only for arrows divider\n"
+          }
+        },
+        "footer": {
+          "message": {
+            "height": {
+              "$type": "sizing",
+              "$value": "{size.500}",
+              "$description": "Message height (used when button is not active)"
+            }
+          }
+        }
+      },
+      "header": {
+        "title": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontSize": "{font-size.200}",
+              "fontWeight": "{font-weight.700}",
+              "lineHeight": "{line-height.sm} * 100%"
+            },
+            "$description": "Title typo used for both sides of the calendar card"
+          }
+        },
+        "subtitle": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.60}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.sm} * 100%"
+            },
+            "$description": "Subtitle typo used for both sides of the calendar card"
+          }
+        },
+        "date": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.xs}",
+            "$description": "Date typo used only on the back side of the card"
+          }
+        }
+      },
+      "divider": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Prizes divider width"
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.xs}",
+          "$description": "Typo applied for prizes divider"
+        }
+      }
+    },
+    "det-card": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Top padding for list card"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Right padding for list card"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Bottom padding for list card"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Left padding for list card"
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Details card fill (rules)"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Details card border color"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Details card (rules) top border width"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Details card (rules)  right border width"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Details card (rules)  bottom border width"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Details card (rules)  left border width"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Details card (rules) corner radius"
+      },
+      "on": {
+        "fill": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Rules body text color"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Details card (rules) shadow"
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.md}",
+          "$description": "Rules body type"
+        }
+      }
+    },
+    "hero": {
+      "md": {
+        "min-height": {
+          "$type": "sizing",
+          "$value": "115px",
+          "$description": "Hero card - image min-height for mobile"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Hero banner - content top space for mobile."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Hero banner - content right space for mobile."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Hero banner - content bottom space for mobile."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Hero banner - content left space for mobile."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Hero banner - content gap between body & button (mobile)."
+        },
+        "body": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Hero banner - body gap between title & descrition (mobile)."
+          },
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.body.sm}",
+            "$description": "Hero banner - body typo for mobile"
+          }
+        },
+        "title": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontSize": "{font-size.100}",
+              "fontWeight": "{font-weight.700}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": "Hero banner - title typo for mobile"
+          }
+        }
+      },
+      "lg": {
+        "height": {
+          "$type": "sizing",
+          "$value": "240px",
+          "$description": "Hero card container height for desktop"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Hero banner - content top space for dekstop."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Hero banner - content right space for dekstop."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Hero banner - content bottom space for dekstop."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Hero banner - content left space for dekstop."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Hero banner - content gap between body & button (desktop)."
+        },
+        "body": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Hero banner - body gap between title & descrition (desktop)."
+          },
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.body.lg}",
+            "$description": "Hero banner - body typo for desktop."
+          }
+        },
+        "title": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.heading.lg}",
+            "$description": "Hero banner - title typo for desktop."
+          }
+        }
+      },
+      "content": {
+        "surface": {
+          "$type": "color",
+          "$value": "linear-gradient(90deg, #000000 0%, rgba(103, 103, 103, 0) 100%)",
+          "$description": "Hero banner - content surface."
+        },
+        "on": {
+          "surface": {
+            "head": {
+              "$type": "color",
+              "$value": "{on.surface.head}",
+              "$description": "Hero banner - Title color"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{on.surface.body}",
+              "$description": "Hero banner - body color (used for description)."
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Hero banner - corner radius"
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero banner - top border width"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero banner - right border width"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero banner - bottom border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero banner - left border width."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Hero banner - border color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Hero banner - shadow color."
+      }
+    }
+  }
+}

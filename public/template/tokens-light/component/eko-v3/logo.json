@@ -1,0 +1,9 @@
+{
+  "logo": {
+    "height": {
+      "$type": "sizing",
+      "$value": "32px",
+      "$description": "Brand logo height."
+    }
+  }
+}

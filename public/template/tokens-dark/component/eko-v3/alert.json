@@ -1,0 +1,159 @@
+{
+  "alert": {
+    "sm": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Alert icon small, use for horizontal layout."
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "md": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Alert icon small, use for horizontal layout."
+        }
+      }
+    },
+    "x": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Horizontal Alert padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Horizontal Alert padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Horizontal Alert padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Horizontal Alert padding left."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Horizontal Alert gap (between icon and content)."
+      },
+      "content": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Horizontal Alert content gap (between body & footer)."
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Horizontal Alert body gap (between title & label)."
+        }
+      }
+    },
+    "y": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Vertical Alert padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Vertical Alert padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Vertical Alert padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Vertical Alert padding left."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Vertical Alert gap (between icon and content)."
+      },
+      "content": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Vertical Alert content gap (between body & footer)."
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Vertical Alert body gap (between title & label)."
+        }
+      },
+      "footer": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Vertical Alert footer gap (between buttons)."
+        }
+      }
+    },
+    "close": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Alert icon small, use for horizontal layout."
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{neutral.fill.default}"
+      }
+    },
+    "border": {
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Alert botder right width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Alert border bottom width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Alert border left width."
+      }
+    },
+    "msg": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.sm}",
+          "$description": "Alert message icon size."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Alert Message Gap (betwee icon & message)."
+      }
+    }
+  }
+}

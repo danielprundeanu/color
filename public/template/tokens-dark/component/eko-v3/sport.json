@@ -1,0 +1,1704 @@
+{
+  "sport": {
+    "card": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.default}"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{secondary.border.default}"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        }
+      },
+      "odd": {
+        "chip": {
+          "height": {
+            "$type": "sizing",
+            "$value": "34px",
+            "$description": "Odd Chip height."
+          },
+          "width": {
+            "$type": "sizing",
+            "$value": "{size.600}",
+            "$description": "Odd Chip width."
+          },
+          "icon": {
+            "size": {
+              "$type": "sizing",
+              "$value": "{size.250}",
+              "$description": "Odd Chip icon size."
+            }
+          },
+          "arrow": {
+            "size": {
+              "$type": "sizing",
+              "$value": "{size.150}",
+              "$description": "Odd Chip arrow size."
+            }
+          },
+          "odd-value": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Odd Chip space between arrow and value."
+            },
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.90}",
+                "fontWeight": "{font-weight.600}",
+                "lineHeight": "{line-height.md} * 100%"
+              }
+            }
+          },
+          "space": {
+            "left": {
+              "$type": "spacing",
+              "$value": "10px",
+              "$description": "Odd Chip padding left."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "10px",
+              "$description": "Odd Chip padding right."
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{size.75}",
+            "$description": "Odd chip border radius."
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{size.10}",
+              "$description": "Odd Chip border top width."
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{size.10}",
+              "$description": "Odd Chip border right width."
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{size.10}",
+              "$description": "Odd Chip border bottom width."
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{size.10}",
+              "$description": "Odd Chip border left width."
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{grey.20}",
+              "$description": "Odd chip default border color."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{primary.fill.default}",
+              "$description": "Odd chip selected border color."
+            },
+            "special": {
+              "$type": "color",
+              "$value": "{sub-brand-02.130}",
+              "$description": "Odd chip special border color."
+            },
+            "read": {
+              "$type": "color",
+              "$value": "{fill.weak}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{grey.fill.disabled}",
+              "$description": "Odd chip locked / disabled state border."
+            }
+          },
+          "market": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.80}",
+                "fontWeight": "{font-weight.500}",
+                "lineHeight": "{line-height.md} * 100%"
+              }
+            }
+          },
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{grey.20}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{primary.fill.default}",
+              "$description": "Odd chip selected color."
+            },
+            "special": {
+              "$type": "color",
+              "$value": "{sub-brand-02.130}",
+              "$description": "Odd chip special color."
+            },
+            "read": {
+              "$type": "color",
+              "$value": "{fill.weak}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{grey.fill.disabled}",
+              "$description": "Odd chip locked / disabled state fill."
+            }
+          },
+          "on": {
+            "fill": {
+              "default": {
+                "$type": "color",
+                "$value": "{on.surface.head}",
+                "$description": "Odd chip strong default on fill."
+              },
+              "default-weak": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": ".4",
+                      "space": "hsl"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{on.surface.head}",
+                "$description": "Odd chip weak default on fill."
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{primary.on.fill.default}",
+                "$description": "Odd chip strong on fill on selected state."
+              },
+              "active-weak": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": ".5",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{primary.on.fill.default}",
+                "$description": "Odd chip weak on fill on selected state."
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{grey.on.fill.disabled}",
+                "$description": "Odd chip locked / disabled on fill."
+              },
+              "success": {
+                "$type": "color",
+                "$value": "{success.fill.default}",
+                "$description": "Odd chip success on fill."
+              },
+              "error": {
+                "$type": "color",
+                "$value": "{error.fill.default}",
+                "$description": "Odd chip error on fill."
+              }
+            },
+            "active-fill": {
+              "success": {
+                "$type": "color",
+                "$value": "{positive.50}",
+                "$description": "Odd chip success on fill."
+              },
+              "error": {
+                "$type": "color",
+                "$value": "{negative.50}",
+                "$description": "Odd chip error on fill."
+              }
+            },
+            "special-fill": {
+              "active": {
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "On chip strong on special-fill color."
+              },
+              "weak": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": ".5",
+                      "space": "hsl"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "On chip weak on special-fill color."
+              }
+            }
+          }
+        },
+        "row": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Odds Row gap."
+          }
+        }
+      },
+      "header": {
+        "height": {
+          "$type": "sizing",
+          "$value": "28px",
+          "$description": "SportBook Card Header height."
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.300}",
+            "$description": "SportBook Card Header icon size."
+          },
+          "favorite": {
+            "fill": {
+              "active": {
+                "$type": "color",
+                "$value": "{notice.50}",
+                "$description": "SportBook Header icon favorite active color."
+              }
+            }
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "SportBook Card Header gap."
+        },
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}"
+          }
+        },
+        "title": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "10px",
+            "$description": "SportBook Card Header title gap."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{border.separator}"
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}"
+          }
+        },
+        "on": {
+          "surface": {
+            "primary": {
+              "$type": "color",
+              "$value": "{on.surface.sbrand-01.body}",
+              "$description": "Sportbook primary color on card surface. (for round and minutes)"
+            },
+            "head": {
+              "$type": "color",
+              "$value": "{on.surface.head}",
+              "$description": "Sportbook strong color on card surface."
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{on.surface.label}",
+              "$description": "SportBook Header icon default color."
+            },
+            "read": {
+              "$type": "color",
+              "$value": "{neutral.on.surface.weak}",
+              "$description": "SportBook Header icon read only color."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{primary.fill.active}",
+              "$description": "SportBook Header icon hover color."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{primary.fill.active}",
+              "$description": "SportBook Header icon active color."
+            }
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}"
+      },
+      "player": {
+        "marker": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.round}",
+            "$description": "Sportbook score marker border radius."
+          },
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.75}",
+            "$description": "Sportbook player score marker size."
+          }
+        },
+        "badge": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Sportbook player row badge size."
+          }
+        },
+        "score": {
+          "width": {
+            "$type": "sizing",
+            "$value": "16px",
+            "$description": "Sportbook player score width."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Sportbook player row gap."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.lg} * 100%"
+          }
+        },
+        "win": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.lg} * 100%"
+            }
+          }
+        }
+      },
+      "time-wrp": {
+        "time": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "SportBook Card Header gap between round & time."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "SportBook Card Header gap between round & time."
+        },
+        "width": {
+          "$type": "sizing",
+          "$value": "{size.500}"
+        }
+      },
+      "match": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "SportBook Card Match gap."
+        }
+      },
+      "footer": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "SportBook Card footer top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "SportBook Card footer right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "SportBook Card body bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "SportBook Card footer left padding."
+          }
+        }
+      },
+      "heading": {
+        "lg": {
+          "default": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontSize": "{font-size.200}",
+              "fontWeight": "{font-weight.800}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          }
+        },
+        "md": {
+          "default": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.90}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          },
+          "strong": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.90}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          }
+        },
+        "sm": {
+          "default": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          },
+          "strong": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          }
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "SportBook Card body gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "SportBook Card body top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "SportBook Card body right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "SportBook Card body bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "SportBook Card body left padding."
+          }
+        },
+        "lg": {
+          "default": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.80}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          },
+          "strong": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.80}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          }
+        },
+        "md": {
+          "default": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          },
+          "strong": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          }
+        },
+        "sm": {
+          "default": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.60}",
+              "fontWeight": "{font-weight.400}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          },
+          "strong": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.60}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.md} * 100%"
+            }
+          }
+        }
+      },
+      "label": {
+        "default": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.50}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.md} * 100%"
+          }
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.50}",
+            "fontWeight": "{font-weight.600-italic}",
+            "lineHeight": "{line-height.md} * 100%"
+          }
+        }
+      },
+      "info": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.40}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "italic"
+        }
+      },
+      "on": {
+        "surface": {
+          "primary": {
+            "$type": "color",
+            "$value": "{on.surface.secondary.head}"
+          },
+          "success": {
+            "$type": "color",
+            "$value": "{success.fill.default}",
+            "$description": "Sportbook success color on card surface."
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Sportbook error color on card surface."
+          },
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Sportbook strong color on card surface."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Sportbook body color on card surface."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Sportbook label color on card surface."
+          },
+          "marker": {
+            "$type": "color",
+            "$value": "{on.surface.sbrand-01.body}",
+            "$description": "Sportbook score marker color."
+          },
+          "player": {
+            "$type": "color",
+            "$value": "{on.surface.head}"
+          },
+          "score": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.sbrand-01.body}"
+            }
+          },
+          "win": {
+            "player": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            },
+            "score": {
+              "default": {
+                "$type": "color",
+                "$value": "{on.surface.head}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{on.surface.primary.head}"
+              }
+            }
+          }
+        }
+      },
+      "live-tag": {
+        "primary": {
+          "fill": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{secondary.fill.default}",
+            "$description": "Live Tag primary style fill."
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Live Tag primary style border color."
+            }
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{on.surface.secondary.head}",
+              "$description": "Live Tag primary style on fill color."
+            }
+          }
+        },
+        "secondary": {
+          "fill": {
+            "$type": "color",
+            "$value": "{primary.70}",
+            "$description": "Live Tag secondary style fill."
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.70}",
+              "$description": "Live Tag secondary style border color."
+            }
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Live Tag secondary style on fill color."
+            }
+          }
+        }
+      },
+      "progress": {
+        "fill": {
+          "$type": "color",
+          "$value": "{success.fill.default}"
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{grey.fill.default}"
+        }
+      },
+      "score": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.lg} * 100%"
+          }
+        },
+        "win": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.lg} * 100%"
+            }
+          }
+        }
+      },
+      "breadc": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        }
+      }
+    },
+    "event": {
+      "head": {
+        "surface": {
+          "default": {
+            "$type": "color",
+            "$value": "{secondary.60}",
+            "$description": "Event Details surface color."
+          }
+        },
+        "on": {
+          "surface": {
+            "head": {
+              "$type": "color",
+              "$value": "{primary.fill.default}",
+              "$description": "Event header match time on surface color."
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{secondary.on.fill.default}",
+              "$description": "Event header match time on surface color."
+            },
+            "label": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.7",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{secondary.on.fill.default}",
+              "$description": "Event header match time on surface color."
+            }
+          }
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{secondary.50}",
+          "$description": "Event Header separator color."
+        }
+      },
+      "surface": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.35",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{bg.default}"
+      }
+    },
+    "menu": {
+      "item": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{grey.10}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{secondary.fill.default}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{secondary.surface.default}"
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{grey.10}"
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{secondary.fill.default}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{secondary.surface.default}"
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{secondary.on.surface.default}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{secondary.on.surface.default}"
+            }
+          }
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Sport Menu item border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Sport Menu item border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Sport Menu item border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Sport Menu item border left width."
+        }
+      },
+      "list": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Competition Filter list radius."
+        }
+      }
+    },
+    "bslip": {
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "{bg.default}",
+          "$description": "Betslip Max background color."
+        }
+      },
+      "head": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip body top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip body right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip body bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip body left padding."
+          }
+        }
+      },
+      "body": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Betslip body top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip body right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Betslip body bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip body left padding."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Betslip body gap between cards."
+        }
+      },
+      "min": {
+        "body": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Betslip Min body top padding."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Betslip Min body right padding."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.300}",
+              "$description": "Betslip Min body bottom padding."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Betslip Min body left padding."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Betslip Min gap."
+          }
+        },
+        "surface": {
+          "default": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Betslip Quickbet surface color."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{secondary.70}",
+            "$description": "Betslip Min >2 surface color."
+          }
+        },
+        "on": {
+          "surface": {
+            "head": {
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Betslip Min >2 on surface color."
+            },
+            "label": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.7",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Betslip Min >2 on surface color."
+            },
+            "primary": {
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Betslip Min >2 on surface color."
+            }
+          }
+        },
+        "arrow": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{secondary.fill.active}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{secondary.fill.active}"
+            }
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{secondary.fill.active}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{secondary.fill.active}"
+            }
+          },
+          "on": {
+            "fill": {
+              "default": {
+                "$type": "color",
+                "$value": "{secondary.on.fill.default}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{secondary.on.fill.default}"
+              }
+            }
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{secondary.border.default}",
+            "$description": "Betslip Quickbet border color."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{secondary.fill.active}",
+            "$description": "Betslip Min >2 border color."
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}"
+          }
+        }
+      },
+      "banner": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip banner top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Betslip banner right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Betslip banner bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Betslip banner left padding."
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}"
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}"
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{on.surface.secondary.head}",
+            "$description": "Betslip banner - highlight on.surface inside summary."
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{secondary.surface.default}",
+          "$description": "Betslip banner - highlight fill inside summary."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Betslip Radius top-right & top-left."
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "-6",
+            "blur": "18.7",
+            "spread": "0",
+            "color": "rgba(255,255,255,.1)",
+            "type": "innerShadow"
+          },
+          "$description": "Betslip Min dropshadow."
+        }
+      },
+      "arrow": {
+        "size": {
+          "$type": "sizing",
+          "$value": "28px",
+          "$description": "Betslip arrow size."
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Betslip arrow icon size."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}"
+        },
+        "fill": {
+          "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.6",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{neutral.40}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.05",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{neutral.40}"
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}"
+          },
+          "active": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "darken",
+                  "value": "0.05",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{neutral.30}"
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{grey.fill.default}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{grey.fill.default}"
+            }
+          }
+        }
+      },
+      "card": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.sm}",
+          "$description": "Betslip inner card border radius."
+        }
+      },
+      "bet": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Bet card (Betslip, my tickets) padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Bet card (Betslip, my tickets) padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Bet card (Betslip, my tickets) padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Bet card (Betslip, my tickets) padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Bet card (Betslip, my tickets horizontal gap."
+        },
+        "body": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Bet card (Betslip, my tickets body gap."
+          }
+        },
+        "head": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Bet card (Betslip, my tickets header gap."
+          }
+        }
+      }
+    },
+    "ticket": {
+      "head": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Ticket header padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Ticket header padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Ticket header padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Ticket header padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        }
+      },
+      "footer": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Ticket footer padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Ticket footer padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Ticket footer padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Ticket footer padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.sm}"
+      }
+    },
+    "group": {
+      "head": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Sport Group header padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Sport Group header padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Sport Group header padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Sport Group header padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        },
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{secondary.60}"
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{secondary.on.fill.default}"
+            }
+          }
+        }
+      },
+      "body": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Sport Group header padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Sport Group header padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Sport Group header padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Sport Group header padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.0}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Sport Group border radius."
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.75}",
+        "$description": "Space between sport groups."
+      }
+    },
+    "search": {
+      "height": {
+        "default": {
+          "$type": "sizing",
+          "$value": "{size.500}",
+          "$description": "Event details search -> height."
+        },
+        "active": {
+          "$type": "sizing",
+          "$value": "{size.600}",
+          "$description": "Event details search active -> height."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Event details search -> gap."
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Event details search -> padding left."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Event details search -> padding right."
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Event details search -> icon size."
+        }
+      },
+      "input": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}"
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.md}"
+        }
+      },
+      "wrp": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Event details search -> wrapper gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.250}",
+            "$description": "Event details search -> padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Event details search -> padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.250}",
+            "$description": "Event details search -> padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Event details search -> padding left."
+          }
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.xxl}",
+          "$description": "Event details search -> wrapper border radius."
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{on.surface.head}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.head}"
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Event details search -> border radius."
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          }
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          }
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "9",
+            "blur": "22",
+            "spread": "0",
+            "color": "rgba(255,255,255,0.12)",
+            "type": "dropShadow"
+          }
+        }
+      },
+      "close": {
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.25",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{grey.surface.default}"
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          }
+        }
+      }
+    }
+  }
+}

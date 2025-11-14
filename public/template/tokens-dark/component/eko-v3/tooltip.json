@@ -1,0 +1,70 @@
+{
+  "tooltip": {
+    "border": {
+      "$type": "color",
+      "$value": "{transparent}",
+      "$description": "Border used for tooltip"
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{size.100}",
+        "$description": "Padding top for tooltip component."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{size.100}",
+        "$description": "Padding right for tooltip component."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{size.100}",
+        "$description": "Bottom padding for tooltip component."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{size.100}",
+        "$description": "Left padding for tooltip component."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Border radius for tooltip component."
+    },
+    "typo": {
+      "$type": "typography",
+      "$value": "{typo.body.md}",
+      "$description": "Typography for tooltip component."
+    },
+    "width": {
+      "$type": "sizing",
+      "$value": "200px",
+      "$description": "Max-width used for tooltip; Text wraps when reaching 200px.\n"
+    },
+    "fill": {
+      "$type": "color",
+      "$value": "{black.100}",
+      "$description": "Tooltip fill colour."
+    },
+    "on": {
+      "fill": {
+        "$type": "color",
+        "$value": "{inverted.on.surface.body}",
+        "$description": "On fill text colour."
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "transparent",
+        "type": "dropShadow"
+      },
+      "$description": "Shadow used for tooltip"
+    }
+  }
+}

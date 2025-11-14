@@ -1,8 +1,7 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { toast } from 'sonner';
-import { generatePalette, defaultLightnessSteps, hexToOKLCH, oklchToHex, LightnessCurveType, getLightnessSteps, ColorSpace } from '../utils/colorUtils';
+import { generatePalette, defaultLightnessSteps, hexToOKLCH, LightnessCurveType, getLightnessSteps, ColorSpace } from '../utils/colorUtils';
 import { semanticColors } from '../semanticColors';
-import { defaultProject } from '../data/defaultProject';
 
 export interface ColorPalette {
   name: string;
@@ -231,20 +230,91 @@ export function ColorProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const newProject = () => {
-    setPalettes(initialPalettes);
-    setLightnessSteps(defaultLightnessSteps);
-    setLightnessCurveType('linear');
-    setTheme('light');
-    setHasImportedProject(false);
-    setImportedLightnessSteps(null);
-    setImportedTokens({});
-    setSemanticTokens({});
-    setOriginalSemanticTokens({});
-    
-    toast.success('Proiect nou creat!', {
-      description: 'Toate paletele și lightness steps sunt setați la valorile inițiale.',
-    });
+  const newProject = async () => {
+    try {
+      // Load template tokens from public/template folder
+      const loadTemplateTokens = async () => {
+        const tokens: {
+          light?: { [key: string]: { [step: string]: string } };
+          dark?: { [key: string]: { [step: string]: string } };
+        } = {};
+        
+        const semantic: {
+          light?: any;
+          dark?: any;
+        } = {};
+
+        // Load primitive tokens for both themes
+        for (const theme of ['light', 'dark']) {
+          try {
+            const response = await fetch(`/template/tokens-${theme}/primitives/color.json`);
+            if (response.ok) {
+              const data = await response.json();
+              tokens[theme as 'light' | 'dark'] = parseColorTokens(data);
+            }
+          } catch (error) {
+            console.warn(`Could not load ${theme} primitive tokens from template:`, error);
+          }
+
+          // Load semantic tokens
+          try {
+            const response = await fetch(`/template/tokens-${theme}/semantic/color.json`);
+            if (response.ok) {
+              const data = await response.json();
+              semantic[theme as 'light' | 'dark'] = data;
+            }
+          } catch (error) {
+            console.warn(`Could not load ${theme} semantic tokens from template:`, error);
+          }
+        }
+
+        return { tokens, semantic };
+      };
+
+      const { tokens, semantic } = await loadTemplateTokens();
+
+      // Set the imported tokens
+      setImportedTokens(tokens);
+      setSemanticTokens(semantic);
+      setOriginalSemanticTokens(JSON.parse(JSON.stringify(semantic)));
+      setHasImportedProject(true);
+      setLightnessCurveType('linear');
+
+      // Load palettes from light theme tokens
+      if (tokens.light && Object.keys(tokens.light).length > 0) {
+        loadPalettesFromTokens(tokens.light);
+        toast.success('Proiect nou creat!', {
+          description: `${Object.keys(tokens.light).length} palete încărcate din template.`,
+        });
+      } else {
+        // Fallback to initial palettes if no template found
+        setPalettes(initialPalettes);
+        setLightnessSteps(defaultLightnessSteps);
+        setHasImportedProject(false);
+        setImportedLightnessSteps(null);
+        toast.success('Proiect nou creat!', {
+          description: 'Folosesc paletele implicite (template-ul nu a fost găsit).',
+        });
+      }
+      
+      setTheme('light');
+    } catch (error) {
+      console.error('Error creating new project:', error);
+      // Fallback to default behavior
+      setPalettes(initialPalettes);
+      setLightnessSteps(defaultLightnessSteps);
+      setLightnessCurveType('linear');
+      setTheme('light');
+      setHasImportedProject(false);
+      setImportedLightnessSteps(null);
+      setImportedTokens({});
+      setSemanticTokens({});
+      setOriginalSemanticTokens({});
+      
+      toast.error('Eroare la crearea proiectului', {
+        description: 'Folosesc paletele implicite.',
+      });
+    }
   };
 
   const getGeneratedColors = (paletteKey: string): { [key: string]: string } => {
@@ -644,6 +714,62 @@ export function ColorProvider({ children }: { children: ReactNode }) {
     }
   }, [theme]);
 
+  // Effect to load template on initial mount
+  useEffect(() => {
+    const loadInitialTemplate = async () => {
+      try {
+        const tokens: {
+          light?: { [key: string]: { [step: string]: string } };
+          dark?: { [key: string]: { [step: string]: string } };
+        } = {};
+        
+        const semantic: {
+          light?: any;
+          dark?: any;
+        } = {};
+
+        // Load primitive tokens for both themes
+        for (const themeName of ['light', 'dark']) {
+          try {
+            const response = await fetch(`/template/tokens-${themeName}/primitives/color.json`);
+            if (response.ok) {
+              const data = await response.json();
+              tokens[themeName as 'light' | 'dark'] = parseColorTokens(data);
+            }
+          } catch (error) {
+            console.warn(`Could not load ${themeName} primitive tokens from template:`, error);
+          }
+
+          // Load semantic tokens
+          try {
+            const response = await fetch(`/template/tokens-${themeName}/semantic/color.json`);
+            if (response.ok) {
+              const data = await response.json();
+              semantic[themeName as 'light' | 'dark'] = data;
+            }
+          } catch (error) {
+            console.warn(`Could not load ${themeName} semantic tokens from template:`, error);
+          }
+        }
+
+        // Only set if we successfully loaded tokens
+        if (tokens.light && Object.keys(tokens.light).length > 0) {
+          setImportedTokens(tokens);
+          setSemanticTokens(semantic);
+          setOriginalSemanticTokens(JSON.parse(JSON.stringify(semantic)));
+          setHasImportedProject(true);
+          loadPalettesFromTokens(tokens.light);
+          console.log('Template loaded successfully on initial mount');
+        }
+      } catch (error) {
+        console.warn('Could not load template on initial mount:', error);
+        // Keep default palettes if template loading fails
+      }
+    };
+
+    loadInitialTemplate();
+  }, []); // Empty dependency array - run only once on mount
+
   const updateSemanticToken = (tokenPath: string, newValue: string) => {
     const [themeName, ...path] = tokenPath.split('.');
     let currentTokens = semanticTokens[themeName as 'light' | 'dark'];
@@ -719,6 +845,13 @@ export function ColorProvider({ children }: { children: ReactNode }) {
     return hasCustomColors || hasModifiedLightnessSteps || hasModifiedSemanticTokens;
   };
 
+  const updateCardUsedTokens = (cardKey: string, tokens: Array<{ name: string; path: string }>) => {
+    setCardUsedTokens(prev => ({
+      ...prev,
+      [cardKey]: tokens
+    }));
+  };
+
   return (
     <ColorContext.Provider
       value={{
@@ -756,7 +889,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
         setSelectedSemanticCard,
         updateSemanticToken,
         cardUsedTokens,
-        setCardUsedTokens,
+        setCardUsedTokens: updateCardUsedTokens,
       }}
     >
       {children}

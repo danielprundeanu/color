@@ -1,0 +1,28 @@
+{
+  "modal": {
+    "space": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        }
+      }
+    },
+    "gap": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        }
+      }
+    }
+  }
+}

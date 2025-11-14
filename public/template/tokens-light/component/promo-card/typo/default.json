@@ -1,0 +1,116 @@
+{
+  "aux-promo-card": {
+    "font-size": {
+      "head": {
+        "$type": "fontSizes",
+        "$value": "{font-size.400}"
+      },
+      "body": {
+        "$type": "fontSizes",
+        "$value": "{font-size.100}"
+      },
+      "label": {
+        "$type": "fontSizes",
+        "$value": "{font-size.80}"
+      },
+      "tc": {
+        "$type": "fontSizes",
+        "$value": "{font-size.80}"
+      }
+    },
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.100}"
+      },
+      "body": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "tc": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "font-weight": {
+      "head": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.600}"
+      },
+      "body": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      },
+      "label": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.600}"
+      },
+      "tc": {
+        "$type": "fontWeights",
+        "$value": "{font-family.200}"
+      }
+    },
+    "line-height": {
+      "head": {
+        "$type": "lineHeights",
+        "$value": "{line-height.md}"
+      },
+      "body": {
+        "$type": "lineHeights",
+        "$value": "{line-height.lg}"
+      },
+      "label": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      },
+      "tc": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      }
+    }
+  },
+  "promo-card": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-promo-card.font-family.head}",
+          "fontSize": "{aux-promo-card.font-size.head}",
+          "fontWeight": "{aux-promo-card.font-weight.head}",
+          "lineHeight": "{aux-promo-card.line-height.head} * 100%"
+        }
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-promo-card.font-family.body}",
+          "fontSize": "{aux-promo-card.font-size.body}",
+          "fontWeight": "{aux-promo-card.font-weight.body}",
+          "lineHeight": "{aux-promo-card.line-height.body} * 100%"
+        }
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-promo-card.font-family.label}",
+          "fontSize": "{aux-promo-card.font-size.label}",
+          "fontWeight": "{aux-promo-card.font-weight.label}",
+          "lineHeight": "{aux-promo-card.line-height.label} * 100%"
+        }
+      },
+      "tc": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-promo-card.font-family.tc}",
+          "fontSize": "{aux-promo-card.font-size.tc}",
+          "fontWeight": "{aux-promo-card.font-weight.tc}",
+          "lineHeight": "{aux-promo-card.line-height.tc} * 100%"
+        }
+      }
+    }
+  }
+}

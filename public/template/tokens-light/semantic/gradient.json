@@ -1,0 +1,8 @@
+{
+  "gradient": {
+    "fill": {
+      "$type": "color",
+      "$value": "linear-gradient(270deg, {gradient.lvl-01.start} 0%, {gradient.lvl-01.end} 100%)"
+    }
+  }
+}

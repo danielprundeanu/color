@@ -1,0 +1,63 @@
+{
+  "timer": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.150}",
+        "$description": "Timer icon size."
+      }
+    },
+    "column": {
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Item width size."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Timer border radius."
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Timer border size."
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.inline.md}",
+        "$description": "Timer horizontal padding."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.stack.md}",
+        "$description": "Timer vertical padding."
+      }
+    }
+  },
+  "aux-timer": {
+    "gap": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{timer.gap.base.x}/2",
+          "$description": "Small horizontal gap between units."
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{timer.gap.base.x}",
+          "$description": "Medium horizontal gap between title and body timer."
+        }
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{timer.gap.base.y}",
+        "$description": "Vertical gap (between title and body timer)."
+      }
+    }
+  }
+}

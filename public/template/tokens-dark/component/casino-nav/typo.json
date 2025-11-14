@@ -1,0 +1,15 @@
+{
+  "casino-nav": {
+    "typo": {
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "500",
+          "fontSize": "{font-size.60}",
+          "lineHeight": "{line-height.sm} * 100%"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "aux-promo-card": {
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{black.20}"
+      }
+    },
+    "content": {
+      "shadow": {
+        "fill": {
+          "$type": "color",
+          "$value": "{black.20}"
+        }
+      }
+    },
+    "gradient": {
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(0deg, {promo-card.gradient.start} 0%, {promo-card.gradient.end} 100%)"
+      }
+    }
+  },
+  "promo-card": {
+    "surface": {
+      "$type": "color",
+      "$value": "{black.100}"
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}"
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{white.90}"
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{white.70}"
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{white.50}"
+        }
+      }
+    },
+    "content": {
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "{shadow.base.md.x}",
+            "y": "{shadow.base.md.y}",
+            "blur": "{shadow.base.md.blur}",
+            "spread": "{shadow.base.md.spread}",
+            "color": "{aux-promo-card.content.shadow.fill}",
+            "type": "dropShadow"
+          }
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.lg.x}",
+          "y": "{shadow.base.lg.y}",
+          "blur": "{shadow.base.lg.blur}",
+          "spread": "{shadow.base.lg.spread}",
+          "color": "{aux-promo-card.shadow.fill}",
+          "type": "dropShadow"
+        }
+      }
+    },
+    "tc": {
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}"
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{white.50}"
+        }
+      }
+    },
+    "gradient": {
+      "start": {
+        "$type": "color",
+        "$value": "{black.100}"
+      },
+      "end": {
+        "$type": "color",
+        "$value": "{transparent}"
+      }
+    }
+  }
+}

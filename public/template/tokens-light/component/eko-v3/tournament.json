@@ -1,0 +1,1970 @@
+{
+  "tournament": {
+    "header": {
+      "md": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Icon size within header for mobile version & carousel card"
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - mobile) top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - mobile) right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - mobile) bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - mobile) left padding"
+          }
+        },
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.label.md}",
+          "$description": "Typo for table header (mobile version)"
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Tournament card title - mobile version"
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Header (tournament card - mobile version) horizontal gap"
+        }
+      },
+      "lg": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.400}",
+            "$description": "Icon size within header for desktop version "
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - desktop) top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - desktop) right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - desktop) bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Header (tournament card - desktop) left padding"
+          }
+        },
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Typo for table header (desktop version)"
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": "{typo.title.md}",
+          "$description": "Tournament card title - desktop version"
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Header (tournament card - desktop version) horizontal gap"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Header (tournament card) radius"
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Header (tournament card) top border width"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Header (tournament card) right border width"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Header (tournament card) bottom border width"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Header (tournament card) left border width"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Header (tournament card) border"
+        }
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}",
+          "$description": "Card title color"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Tournament card header shadow"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Tournament card header surface color"
+      },
+      "icon": {
+        "$type": "color",
+        "$value": "#FFC134",
+        "$description": "Tournament card icon fill"
+      },
+      "date": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Date top padding (calendar card)"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Date right padding (calendar card)"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Date bottom padding (calendar card)"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Date left padding (calendar card)"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Date radius (calendar card)"
+        },
+        "active": {
+          "fill": {
+            "$type": "color",
+            "$value": "{warning.fill.default}",
+            "$description": "Date active state fill color"
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{warning.on.fill.default}",
+              "$description": "On fill color - date active state"
+            }
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Date active state border color"
+            }
+          }
+        },
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Date border width (calendar card)"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Date shadow - within tournament header"
+        },
+        "disabled": {
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{grey.on.fill.disabled}",
+              "$description": "On fill color - date disabled state"
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{grey.fill.disabled}",
+            "$description": "Date disabled state fill color"
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Date border color - disabled state"
+            }
+          }
+        }
+      }
+    },
+    "md": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Top padding for tournament card mobile version"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Right padding for tournament card mobile version"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Bottom padding for tournament card mobile version"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Left padding for tournament card mobile version"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Card gap for mobile version"
+      }
+    },
+    "lg": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Top padding for tournament card desktop version"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Right padding for tournament card desktop version"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.400}",
+          "$description": "Bottom padding for tournament card desktop version"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Left padding for tournament card desktop version"
+        }
+      },
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.800}",
+          "$description": "Gap between title and body for desktop version"
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Horizontal gap for desktop version"
+        }
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.xl}",
+      "$description": "Tournament card radius"
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "linear-gradient(200deg, #193463 26%, #161C26 130%)",
+      "$description": "Tournament card surface"
+    },
+    "mini": {
+      "surface": {
+        "$type": "color",
+        "$value": "linear-gradient(200deg, #193463 26%, #161C26 130%)",
+        "$description": "Tournament mini banner surface (displayed in rewards hub)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Tournament mini banner border color (displayed in rewards hub)"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Tournament card border color"
+      }
+    },
+    "borders": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Tournament border width"
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "{transparent}",
+        "type": "dropShadow"
+      },
+      "$description": "Tournament card shadow"
+    },
+    "body": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Body top padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Body right padding"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Body bottom padding"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Body left padding"
+        }
+      },
+      "x": {
+        "sm": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Small horizontal gap used within body for all the components( tournament card, reward carousel card & calendar card) "
+          }
+        },
+        "md": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Medium horizontal gap used within body for all the components( tournament card, reward carousel card & calendar card) "
+          }
+        },
+        "lg": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.400}",
+            "$description": "Large horizontal gap used within body for all the components( tournament card, reward carousel card & calendar card) "
+          }
+        }
+      },
+      "icon": {
+        "md": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.300}",
+            "$description": "Size icon used in tornament card (mobile & desktop)"
+          }
+        },
+        "sm": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Size icon used in prize - Reward Carousel Card "
+          }
+        }
+      },
+      "y": {
+        "sm": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Small vertical gap used within body for all the components( tournament card, reward carousel card & calendar card) "
+          }
+        },
+        "md": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Medium vertical gap used within body for all the components( tournament card, reward carousel card & calendar card) "
+          }
+        },
+        "lg": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Large vertical gap used within body for all the components( tournament card, reward carousel card & calendar card) "
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Body radius"
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Body top border width"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Body top border width"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Body bottom border width"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Body left border width"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "#",
+          "$description": "Body border color"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Body shadow"
+      },
+      "prize": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Prize top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Prize right op padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Prize bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Prize left padding"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Prize corner radius"
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prize top border width"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prize right border width"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prize bottom border width"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prize left  border width"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "#",
+            "$description": "Prize border color"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Prize shadow within body"
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Prize fill color"
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.head}",
+              "$description": "Prize on fill color - head"
+            },
+            "label": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.label}",
+              "$description": "Prize on fill color - label"
+            },
+            "icon": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.label}",
+              "$description": "Prize Icon fill "
+            }
+          }
+        },
+        "min-width": {
+          "$type": "sizing",
+          "$value": "220px"
+        },
+        "max-width": {
+          "$type": "sizing",
+          "$value": "240px"
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Prize suface color"
+      },
+      "image": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.800}",
+          "$description": "Game image size (in calendar component)"
+        }
+      },
+      "calendar-prz": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Prizes top padding in calendar component"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Prizes right padding in calendar component"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Prizes bottom padding in calendar component"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Prizes left padding in calendar component"
+          }
+        },
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.06",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Prizes fill in calendar component"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Prizes border color in calendar component"
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prizes top padding in calendar component"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prizes right padding in calendar component"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prizes bottom padding in calendar component"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Prizes left padding in calendar component"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Prizes corner radius in calendar component"
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Calendar prizez shadow"
+        },
+        "photo": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Photo corner radius in calendar component"
+          }
+        }
+      },
+      "rank": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Rank ap (between top, place & label) for all resolutions"
+        },
+        "image": {
+          "height": {
+            "sm": {
+              "$type": "sizing",
+              "$value": "120px",
+              "$description": "Rank image size for calendar component"
+            },
+            "md": {
+              "$type": "sizing",
+              "$value": "180px",
+              "$description": "Rank image size for mobile resolution"
+            },
+            "lg": {
+              "$type": "sizing",
+              "$value": "300px",
+              "$description": "Rank image size for desktop resolution"
+            }
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Rank top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.700}",
+            "$description": "Rank right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Rank bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.700}",
+            "$description": "Rank left padding"
+          }
+        },
+        "sm": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Tournaments Rank Small -> top padding"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Tournaments Rank Small -> right padding"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Tournaments Rank Small -> bottom padding"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Tournaments Rank Small -> left padding"
+            }
+          },
+          "offset": {
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Tournaments Rank Small -> text offset left."
+            }
+          }
+        },
+        "md": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Tournaments Rank Medium -> gap between top, place & label"
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Tournaments Rank Medium -> top padding"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.600}",
+              "$description": "Tournaments Rank Medium -> right padding"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Tournaments Rank Medium -> bottom padding"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.600}",
+              "$description": "Tournaments Rank Medium -> left padding"
+            }
+          }
+        },
+        "lg": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Tournaments Rank Large -> gap between top, place & label"
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Tournaments Rank Large -> top padding"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.700}",
+              "$description": "Tournaments Rank Large -> right padding"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Tournaments Rank Large -> bottom padding"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.700}",
+              "$description": "Tournaments Rank Large -> left padding"
+            }
+          }
+        }
+      },
+      "max-width": {
+        "$type": "sizing",
+        "$value": "600px",
+        "$description": "Max width applied for body in page details, desktop version"
+      }
+    },
+    "prize": {
+      "label": {
+        "light": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Typo used within Calendar Card for label (mobile & desktop)"
+        },
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.label.md}",
+          "$description": "Typo used within Tournament Card for label (mobile & desktop)"
+        }
+      },
+      "title": {
+        "light": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Typo used within Calendar Card for prizes/title (mobile & desktop)"
+        },
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.title.md}",
+          "$description": "Typo used within Tournament Card for prizes/title (mobile & desktop)"
+        }
+      }
+    },
+    "rank": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": [
+          {
+            "x": "0",
+            "y": "10",
+            "blur": "30",
+            "spread": "0",
+            "color": "rgba(255,255,255,0.4)",
+            "type": "dropShadow"
+          }
+        ],
+        "$description": "Rank shadow"
+      },
+      "sm": {
+        "place": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontSize": "{font-size.200}",
+              "fontWeight": "{font-weight.700}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": "Place typo - small size (calendar card)"
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.xs}",
+            "$description": "Label typo - small size (calendar card)"
+          }
+        },
+        "top": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.40}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.lg} * 100%"
+            },
+            "$description": "Top typo - small size (calendar card)"
+          }
+        }
+      },
+      "md": {
+        "place": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontSize": "{font-size.500}",
+              "fontWeight": "{font-weight.700}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": " Place typo - medium size (tournament card mobile version & reward carousel card)"
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.60}",
+              "fontWeight": "{font-weight.400}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": " Label typo - medium size (tournament card mobile version & reward carousel card)"
+          }
+        },
+        "top": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.60}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.lg} * 100%"
+            },
+            "$description": " Top typo - medium size (tournament card mobile version & reward carousel card)"
+          }
+        }
+      },
+      "place": {
+        "number": {
+          "$type": "color",
+          "$value": "#FFC134",
+          "$description": " Place color - within rank for all components"
+        },
+        "label": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.7",
+                "space": "srgb",
+                "description": " label color - within rank for all components"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{inverted.on.surface.label}"
+        },
+        "top": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}",
+          "$description": " Top color - within rank for all components"
+        }
+      },
+      "lg": {
+        "place": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontSize": "{font-size.800}",
+              "fontWeight": "{font-weight.700}",
+              "lineHeight": "{line-height.sm} * 100%"
+            },
+            "$description": " Place typo - large size (tournament card desktop version)"
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.80}",
+              "fontWeight": "{font-weight.400}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": " Label typo - large size (tournament card desktop version)"
+          }
+        },
+        "top": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.lg} * 100%"
+            },
+            "$description": " Top typo - large size (tournament card desktop version)"
+          }
+        }
+      }
+    },
+    "table": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Leaderboard Table Top padding "
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Leaderboard Table right padding "
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Leaderboard Table bottom padding "
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Leaderboard Table left padding "
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Leaderbord gap - space between rows"
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Leaderboard table radius"
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Leaderboard Table top border width"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Leaderboard Table right border width"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Leaderboard Table bottom border width"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Leaderboard Table left border width"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "table border color"
+        },
+        "divider": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Table divider (between top & other players)\n"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Leaderboard Table shadow"
+      },
+      "row": {
+        "md": {
+          "place": {
+            "width": {
+              "$type": "sizing",
+              "$value": "{size.350}",
+              "$description": "Place wrapper width (mobile)"
+            }
+          },
+          "points": {
+            "width": {
+              "$type": "sizing",
+              "$value": "{size.700}",
+              "$description": "Points wrapper width (mobile)"
+            }
+          },
+          "prize": {
+            "width": {
+              "$type": "sizing",
+              "$value": "90px",
+              "$description": "Prize wrapper width(mobile)"
+            }
+          }
+        },
+        "lg": {
+          "place": {
+            "width": {
+              "$type": "sizing",
+              "$value": "{size.400}",
+              "$description": "Place wrapper width (desktop)"
+            }
+          },
+          "points": {
+            "width": {
+              "$type": "sizing",
+              "$value": "100px",
+              "$description": "Points wrapper width (desktop)"
+            }
+          },
+          "prize": {
+            "width": {
+              "$type": "sizing",
+              "$value": "140px",
+              "$description": "Prize wrapper width (desktop)"
+            }
+          }
+        },
+        "space": {
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Right padding used for rows"
+          },
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Top padding used for rows"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Bottom padding used for rows"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Left padding used for rows"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Horizontal row gap (space between place, name, points & prize)"
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Table row radius"
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Leaderboard Table top border width"
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Leaderboard Table right border width"
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Leaderboard Table bottom border width"
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Leaderboard Table left border width"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Default row border color"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Default row shadow"
+        },
+        "current": {
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Current place row shadow"
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Current place row fill"
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{inverted.on.surface.warning.body}",
+                "$description": "Current place rows text color (used for place, player name & prize)"
+              },
+              "body": {
+                "$type": "color",
+                "$value": "{inverted.on.surface.warning.body}",
+                "$description": "Current rows text color (used for points)"
+              }
+            }
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{warning.border.default}",
+              "$description": "Current pplace row border color"
+            },
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Current player row top border "
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Current player row right border "
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Current player row bottom border "
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Current player row left border "
+            }
+          }
+        },
+        "top": {
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Top player row shadow"
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Default row fill"
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{inverted.on.surface.head}",
+                "$description": "Top place rows text color ( player name & prize)"
+              },
+              "body": {
+                "$type": "color",
+                "$value": "{inverted.on.surface.head}",
+                "$description": "Top place rows text color (used for points)"
+              },
+              "number": {
+                "1st": {
+                  "$type": "color",
+                  "$value": "{inverted.on.surface.body}",
+                  "$description": "1st Place number color"
+                },
+                "2nd": {
+                  "$type": "color",
+                  "$value": "{inverted.on.surface.body}",
+                  "$description": "2nd Place number color"
+                },
+                "3rd": {
+                  "$type": "color",
+                  "$value": "{inverted.on.surface.body}",
+                  "$description": "3rd Place number color"
+                }
+              }
+            }
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Top place row border color"
+            },
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top player row top border "
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top player row right border "
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top player row bottom border "
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top player row left border "
+            }
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Default row fill"
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.head}",
+              "$description": "Default rows text color (used for place, player name & prize)"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.head}",
+              "$description": "Default rows text color (used for points)"
+            }
+          }
+        }
+      },
+      "fill": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.1",
+              "space": "lch"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Table fill - lobby component"
+      },
+      "header": {
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Header top border "
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Header right border "
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Header bottom border "
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Header left border "
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Table header border"
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Table header shadow"
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Table header fill"
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.label}",
+            "$description": "Text color in table header"
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Top padding used for rows"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Table Header right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Bottom padding used for rows"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Table Header left padding"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Header gap"
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Table header radius"
+        }
+      },
+      "wpp": {
+        "top": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Top padding for top 3 players wrapper"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Right padding for top 3 players wrapper"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Bottom padding for top 3 players wrapper"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Left padding for top 3 players wrapper"
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.none}",
+            "$description": "Corner radius for top 3 players wrapper"
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top Players wrapper - top border width"
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top Players wrapper - right border width"
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top Players wrapper - bottom border width"
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top Players wrapper - left border width"
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Border color for top players wrapper"
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 100%);",
+            "$description": "Fill color for top players wrapper"
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "#000000",
+              "type": "dropShadow"
+            },
+            "$description": "Top players shadow wrapper"
+          }
+        },
+        "players": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Top padding for top 3 players wrapper"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Right padding for top 3 players wrapper"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Bottom padding for top 3 players wrapper"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Left padding for top 3 players wrapper"
+            }
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Top border width for top 3 players wrapper"
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Right border width for top 3 players wrapper"
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Bottom border width for top 3 players wrapper"
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Left border width for top 3 players wrapper"
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Border color for top players wrapper"
+            }
+          }
+        }
+      },
+      "max-width": {
+        "$type": "sizing",
+        "$value": "420px",
+        "$description": "Max width for table, desktop version (lobby)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "linear-gradient(200deg, #193463 26%, #161C26 130%)",
+        "$description": "Tournament table surface - details page/ranking"
+      },
+      "divider": {
+        "$type": "color",
+        "$value": "linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 48.96%, rgba(255, 255, 255, 0) 100%)",
+        "$description": "Table divider color (between top and other players)"
+      },
+      "footer": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Table - empty space footer top padding"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Table - empty space footer right padding"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Table - empty space footer bottom padding"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Table - empty space footer left padding"
+          }
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.900}",
+          "$description": "Table (empty state - no layers or tournament closed) body gap"
+        },
+        "content": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.600}",
+            "$description": "Table (empty state - no layers or tournament closed) body content gap"
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.md}",
+          "$description": "Table (empty state - no layers or tournament closed) body typo"
+        }
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.md}",
+          "$description": "Table (empty state - no layers or tournament closed) Title"
+        }
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Table (empty state - no layers or tournament closed) title color"
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Table (empty state - no layers or tournament closed) body text color"
+          }
+        }
+      }
+    },
+    "row": {
+      "md": {
+        "light": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Place typo - mobile version"
+        },
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.body.sm}",
+          "$description": "Player & Points typo - mobile version"
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Prize typo - mobile version"
+        }
+      },
+      "lg": {
+        "light": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Place typo - desktop version"
+        },
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.body.md}",
+          "$description": "Player & Points typo - desktop version"
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": "{typo.title.md}",
+          "$description": "Prize typo - desktop version"
+        }
+      }
+    },
+    "bottom": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Top padding for Bottom sticky (mobile) & info card (desktop)"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Right padding for Bottom sticky (mobile) & info card (desktop)"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Bottom padding for Bottom sticky (mobile) & info card (desktop)"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Left padding for Bottom sticky (mobile) & info card (desktop)"
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(200deg, #193463 26%, #161C26 130%)",
+        "$description": "Fill for Bottom sticky (mobile) & info card (desktop)"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Border color for Bottom sticky (mobile) & info card (desktop)"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top border width for Bottom sticky (mobile) & info card (desktop)"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Right border width for Bottom sticky (mobile) & info card (desktop)"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bottom paddinborder width for Bottom sticky (mobile) & info card (desktop)"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Left border width for Bottom sticky (mobile) & info card (desktop)"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "-4",
+          "blur": "15",
+          "spread": "0",
+          "color": "rgba(0,0,0,0.25)",
+          "type": "dropShadow"
+        },
+        "$description": "Shadow for Bottom sticky (mobile) & info card (desktop)"
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "320px",
+        "$description": "Page details -> Ranking -> rank componenta width"
+      }
+    },
+    "gui": {
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(65.37% 88.61% at 50.19% 11.39%, #193463 0%, #161C26 100%)",
+        "$description": "Tournament GUI -> Surface color."
+      },
+      "on": {
+        "surface": {
+          "primary": {
+            "$type": "color",
+            "$value": "#FFDE72",
+            "$description": "Tournament GUI -> primary text color."
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Tournament GUI -> error text color."
+          },
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Tournament GUI -> Head text color."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.9",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Tournament GUI -> Body text color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.5",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Tournament GUI -> Label text color."
+          },
+          "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Tournament GUI -> Disabled text color."
+          }
+        }
+      },
+      "arrow": {
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.1",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "Tournament GUI -> Arrow color."
+        }
+      },
+      "badge": {
+        "fill": {
+          "$type": "color",
+          "$value": "#000",
+          "$description": "Tournament GUI -> Arrow color."
+        },
+        "on": {
+          "fill": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.85",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Tournament GUI -> Arrow color."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.600}",
+            "fontSize": "{font-size.40}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Turbo Modal -> badge typography."
+        }
+      },
+      "avatar": {
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "#172742",
+            "$description": "Tournament GUI -> avatar border color."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Tournament GUI -> gap between avatar and amount."
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "1",
+            "color": "#FFDE72",
+            "type": "innerShadow"
+          },
+          "$description": "Tournament GUI -> Box shadow."
+        }
+      },
+      "under": {
+        "fill": {
+          "$type": "color",
+          "$value": "#161F2E",
+          "$description": "Tournament GUI -> underlayer fill."
+        },
+        "right": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, #161F2D 0%, rgba(22, 31, 45, 0) 100%)",
+            "$description": "Tournament GUI -> underlayer right fill."
+          }
+        },
+        "left": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(90deg, #161F2D 0%, rgba(22, 31, 45, 0) 100%)",
+            "$description": "Tournament GUI -> underlayer left fill."
+          }
+        }
+      },
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.600}",
+            "fontSize": "{font-size.70}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Turbo Modal -> heading typography."
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.500}",
+            "fontSize": "{font-size.40}",
+            "lineHeight": "{line-height.md} * 100%"
+          },
+          "$description": "Turbo Modal -> body typography."
+        }
+      }
+    }
+  }
+}

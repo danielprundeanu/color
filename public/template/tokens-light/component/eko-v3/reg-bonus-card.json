@@ -1,0 +1,160 @@
+{
+  "reg-bns-card": {
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Registration Bonus Card padding top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Registration Bonus Card padding right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Registration Bonus Card padding bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Registration Bonus Card padding left."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.100}",
+      "$description": "Registration Bonus card gap."
+    },
+    "content": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Content padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Content padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Content padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Content padding left."
+        },
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Space between amount and currency"
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Space between label and bonus"
+          }
+        }
+      }
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "120px",
+      "$description": "Registration bonus card height"
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.lg}"
+    },
+    "photo": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}"
+      },
+      "border": {
+        "$type": "borderWidth",
+        "$value": "{border.none}"
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        }
+      }
+    },
+    "border": {
+      "$type": "borderWidth",
+      "$value": "{border.none}"
+    },
+    "fill": {
+      "$type": "color",
+      "$value": "{transparent}"
+    },
+    "on": {
+      "fill": {
+        "head": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}"
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.body}"
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.label}"
+        }
+      }
+    },
+    "title": {
+      "amount": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.heading.sm}"
+        }
+      },
+      "currency": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.heading.sm}"
+        }
+      }
+    },
+    "description": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.lg}"
+      }
+    },
+    "label": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.md}"
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "{transparent}",
+        "type": "dropShadow"
+      }
+    }
+  }
+}

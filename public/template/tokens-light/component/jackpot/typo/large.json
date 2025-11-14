@@ -1,0 +1,170 @@
+{
+  "aux-jackpot": {
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.100}"
+      },
+      "body": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "major": {
+      "font-weight": {
+        "head": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.600}"
+        },
+        "body": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.500}"
+        },
+        "label": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.500}"
+        }
+      },
+      "line-height": {
+        "head": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        },
+        "body": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        },
+        "label": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        }
+      },
+      "font-size": {
+        "head": {
+          "$type": "fontSizes",
+          "$value": "{font-size.500}"
+        },
+        "body": {
+          "$type": "fontSizes",
+          "$value": "{font-size.60}"
+        },
+        "label": {
+          "$type": "fontSizes",
+          "$value": "{font-size.40}"
+        }
+      }
+    },
+    "minor": {
+      "font-size": {
+        "head": {
+          "$type": "fontSizes",
+          "$value": "{font-size.300}"
+        },
+        "body": {
+          "$type": "fontSizes",
+          "$value": "{font-size.60}"
+        },
+        "label": {
+          "$type": "fontSizes",
+          "$value": "{font-size.40}"
+        }
+      },
+      "line-height": {
+        "head": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        },
+        "body": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        },
+        "label": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        }
+      },
+      "font-weight": {
+        "head": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.600}"
+        },
+        "body": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.500}"
+        },
+        "label": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.500}"
+        }
+      }
+    }
+  },
+  "jackpot": {
+    "major": {
+      "typo": {
+        "head": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-jackpot.font-family.head}",
+            "fontSize": "{aux-jackpot.major.font-size.head}",
+            "fontWeight": "{aux-jackpot.major.font-weight.head}",
+            "lineHeight": "{aux-jackpot.major.line-height.head} * 100%"
+          }
+        },
+        "body": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-jackpot.font-family.body}",
+            "fontSize": "{aux-jackpot.major.font-size.body}",
+            "fontWeight": "{aux-jackpot.major.font-weight.body}",
+            "lineHeight": "{aux-jackpot.major.line-height.body} * 100%"
+          }
+        },
+        "label": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-jackpot.font-family.label}",
+            "fontSize": "{aux-jackpot.major.font-size.label}",
+            "fontWeight": "{aux-jackpot.major.font-weight.label}",
+            "lineHeight": "{aux-jackpot.major.line-height.label} * 100%"
+          }
+        }
+      }
+    },
+    "minor": {
+      "typo": {
+        "head": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-jackpot.font-family.head}",
+            "fontSize": "{aux-jackpot.minor.font-size.head}",
+            "fontWeight": "{aux-jackpot.minor.font-weight.head}",
+            "lineHeight": "{aux-jackpot.minor.line-height.head} * 100%"
+          }
+        },
+        "body": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-jackpot.font-family.body}",
+            "fontSize": "{aux-jackpot.minor.font-size.body}",
+            "fontWeight": "{aux-jackpot.minor.font-weight.body}",
+            "lineHeight": "{aux-jackpot.minor.line-height.body} * 100%"
+          }
+        },
+        "label": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-jackpot.font-family.label}",
+            "fontSize": "{aux-jackpot.minor.font-size.label}",
+            "fontWeight": "{aux-jackpot.minor.font-weight.label}",
+            "lineHeight": "{aux-jackpot.minor.line-height.label} * 100%"
+          }
+        }
+      }
+    }
+  }
+}

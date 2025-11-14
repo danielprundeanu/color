@@ -1,0 +1,253 @@
+{
+  "top-nav": {
+    "border": {
+      "lg": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        }
+      },
+      "md": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Top Navigation / Header border width."
+        }
+      }
+    },
+    "title": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.100}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.sm} * 100%"
+        },
+        "$description": "Top nav -> title typography."
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Top Navigation / Header icon size."
+      }
+    },
+    "md": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.600}",
+        "$description": "Top Navigation / Header height on mobile resoution."
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Top Navigation / Header padding right on mobile resolution."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Top Navigation / Header padding left on mobile resolution."
+        }
+      },
+      "item": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top Navigation / Header inner item padding left on mobile resolution."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top Navigation / Header inner item padding right on mobile resolution."
+          }
+        }
+      },
+      "logo": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Logo wrapper top padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Logo wrapper bottom padding."
+          }
+        }
+      }
+    },
+    "lg": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.900}",
+        "$description": "Top Navigation / Header height on desktop resoution."
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Top Navigation / Header padding right on mobile resolution."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Top Navigation / Header padding left on mobile resolution."
+        }
+      },
+      "item": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Top Navigation / Header inner item padding left on desktop resolution."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Top Navigation / Header inner item padding right on desktop resolution."
+          }
+        }
+      },
+      "logo": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Desktop top nav -> Logo wrapper top padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Desktop top nav -> Logo wrapper bottom padding."
+          }
+        }
+      }
+    },
+    "ext": {
+      "size": {
+        "$type": "sizing",
+        "$value": "36px",
+        "$description": "Top Navigation extension height on mobile resoution."
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Top Navigation Extension padding right. [mobile component]"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Top Navigation Extension padding left. [mobile component]"
+        }
+      },
+      "item": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top Navigation Extension inner item padding top. [mobile component]"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top Navigation Extension innter item padding right. [mobile component]"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top Navigation Extension innter item padding bottom. [mobile component]"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top Navigation Extension innter item padding left. [mobile component]"
+          }
+        }
+      }
+    },
+    "extension": {
+      "top": {
+        "fill": {
+          "$type": "color",
+          "$value": "{grey.100}",
+          "$description": "Top nav extension top fill color."
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Top Extension - on fill default color."
+            }
+          }
+        }
+      },
+      "bottom": {
+        "fill": {
+          "$type": "color",
+          "$value": "{grey.80}",
+          "$description": "Top nav - bottom extension fill color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Bottom Extension - on fill default color."
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.3",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{white.100}"
+        }
+      }
+    }
+  }
+}

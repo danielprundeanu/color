@@ -1,0 +1,16 @@
+{
+  "index": {
+    "fill": {
+      "$type": "color",
+      "$value": "{primary.fill.default}0D",
+      "$description": "Index fill color."
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{secondary.fill.default}",
+        "$description": "Index shadow color for border."
+      }
+    }
+  }
+}

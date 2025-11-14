@@ -1,0 +1,182 @@
+{
+  "loyalty": {
+    "prize": {
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Prize (missions Card) head color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Prize (missions Card) body color."
+          },
+          "label": {
+            "1st": {
+              "$type": "color",
+              "$value": "#99979B",
+              "$description": "Shop prize common label color."
+            },
+            "2nd": {
+              "$type": "color",
+              "$value": "#3DFF4B",
+              "$description": "Shop prize uncommon label color."
+            },
+            "3rd": {
+              "$type": "color",
+              "$value": "#2D6AEA",
+              "$description": "Shop prize rare label color."
+            },
+            "4th": {
+              "$type": "color",
+              "$value": "#FE3FAC",
+              "$description": "Shop prize epic label color."
+            },
+            "5th": {
+              "$type": "color",
+              "$value": "#FE8B01",
+              "$description": "Shop prize legendary label color."
+            }
+          }
+        }
+      }
+    },
+    "header": {
+      "missions": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(90deg, {aux-loyalty.header.missions.gradient.01} 0%, {aux-loyalty.header.missions.gradient.02} 100%)",
+          "$description": "Missions Card header fill color."
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{white.100}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{white.70}"
+            }
+          }
+        }
+      },
+      "rank": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(90deg, {aux-loyalty.header.rank.gradient.01} 0%, {aux-loyalty.header.rank.gradient.02} 100%)"
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{primary.on.surface.default}"
+            },
+            "body": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.6",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{primary.on.surface.default}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "aux-loyalty": {
+    "header": {
+      "missions": {
+        "gradient": {
+          "01": {
+            "$type": "color",
+            "$value": "{primary.80}"
+          },
+          "02": {
+            "$type": "color",
+            "$value": "{primary.70}"
+          }
+        }
+      },
+      "rank": {
+        "gradient": {
+          "01": {
+            "$type": "color",
+            "$value": "{primary.50}"
+          },
+          "02": {
+            "$type": "color",
+            "$value": "{primary.20}"
+          }
+        }
+      }
+    },
+    "label": {
+      "shadow": {
+        "1st": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "5",
+            "spread": "0",
+            "color": "{loyalty.prize.on.fill.label.1st}",
+            "type": "dropShadow"
+          }
+        },
+        "2nd": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "5",
+            "spread": "0",
+            "color": "{loyalty.prize.on.fill.label.2nd}",
+            "type": "dropShadow"
+          }
+        },
+        "3rd": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "5",
+            "spread": "0",
+            "color": "{loyalty.prize.on.fill.label.3rd}",
+            "type": "dropShadow"
+          }
+        },
+        "4th": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "5",
+            "spread": "0",
+            "color": "{loyalty.prize.on.fill.label.4th}",
+            "type": "dropShadow"
+          }
+        },
+        "5th": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "5",
+            "spread": "0",
+            "color": "{loyalty.prize.on.fill.label.5th}",
+            "type": "dropShadow"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "dropdown": {
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Dropdown menu -> border color."
+      },
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Dropdown menu -> border top width."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Dropdown menu -> border right width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Dropdown menu -> border bottom width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Dropdown menu -> border left width."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{size.100}"
+    },
+    "body": {
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.100}"
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.0}"
+        }
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{size.300}"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{size.300}"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{size.300}"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{size.300}"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}"
+    },
+    "label": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.sm}"
+      }
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "{size.100}"
+    },
+    "width": {
+      "$type": "sizing",
+      "$value": "{size.100}"
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}"
+    },
+    "on": {
+      "surface": {
+        "$type": "color",
+        "$value": "{primary.on.fill.default}"
+      }
+    },
+    "item": {
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> border on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> border active state."
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> / Submenu fill color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> fill on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> fill active state."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Dropdown menu item -> default color."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Dropdown menu item -> on hover color."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Dropdown menu item -> active color."
+          }
+        }
+      }
+    },
+    "inner": {
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> active state."
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> fill default."
+        },
+        "hover": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.2",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "Dropdown menu item -> fill on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Dropdown menu item -> fill active state."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Dropdown menu item -> label default color."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.fill.active}",
+            "$description": "Dropdown menu item -> label on hover color."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Dropdown menu item -> label active color."
+          }
+        }
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "2",
+        "blur": "15",
+        "spread": "2",
+        "color": "rgba(0,0,0,.15)",
+        "type": "dropShadow"
+      }
+    }
+  }
+}

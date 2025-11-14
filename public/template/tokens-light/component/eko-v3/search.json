@@ -1,0 +1,469 @@
+{
+  "primary-search": {
+    "max-width": {
+      "$type": "sizing",
+      "$value": "600px"
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "{size.500}",
+      "$description": "Top Navigation / Header search height."
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Primary Search icon size."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.100}",
+      "$description": "Top Navigation / Header search gap."
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Top Navigation / Header Search input top padding."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Top Navigation / Header Search input right padding."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Top Navigation / Header Search input bottom padding."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Top Navigation / Header Search input left padding."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Top Navigation / Header search input border radius."
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Top Navigation / Header search input border width."
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Primary Search default border."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.border.default}",
+        "$description": "Primary Search hover border."
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{primary.fill.default}",
+        "$description": "Primary Search focus border."
+      }
+    },
+    "typo": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font-family.200}",
+        "fontSize": "{font-size.90}",
+        "fontWeight": "{font-weight.600}",
+        "lineHeight": "{line-height.md} * 100%"
+      },
+      "$description": "Primary search input label typo."
+    },
+    "fill": {
+      "default": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.1",
+              "space": "srgb",
+              "color": "{neutral.40} "
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "Primary Search default fill."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Primary Search hover fill."
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Primary Search focus fill."
+      }
+    },
+    "on": {
+      "fill": {
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.6",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "Primary Search default on.fill."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Primary Search hover on.fill."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Primary Search focus on.fill."
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Primary Search default shadow."
+      },
+      "hover": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Primary Search hover shadow."
+      },
+      "focus": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Primary Search focus shadow."
+      }
+    }
+  },
+  "secondary-search": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Secondary Search icon size."
+      }
+    },
+    "md": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Secondary search input gap for medium size/mobile resolution ."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Secondary search input top padding for medium size/mobile resolution ."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Secondary search input right padding for medium size/mobile resolution ."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Secondary search input bottom padding for medium size/mobile resolution ."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Secondary search wrapper left padding for medium size/mobile resolution ."
+        }
+      },
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Secondary search wrapper top padding for medium size/mobile resolution ."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Secondary search wrapper right padding for medium size/mobile resolution ."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Secondary search wrapper bottom padding for medium size/mobile resolution ."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Top Navigation / Header Search input left padding."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Secondary search wrapper border radius for medium size/mobile resolution."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Secondary search input border radius for medium size/mobile resolution."
+      }
+    },
+    "lg": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Secondary search input gap for large size/desktop resolution ."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Secondary search wrapper top padding for large size/desktop resolution ."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Secondary search wrapper right padding for large size/desktop resolution ."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Secondary search wrapper bottom padding for large size/desktop resolution ."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Secondary search wrapper left padding for large size/desktop resolution ."
+        }
+      },
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Secondary search wrapper top padding for large size/desktop resolution ."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Secondary search wrapper right padding for large size/desktop resolution ."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Secondary search wrapper bottom padding for large size/desktop resolution ."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Secondary search wrapper left padding for large size/desktop resolution ."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Secondary search wrapper border radius for large size/desktop resolution."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Secondary search input border radius for large size/desktop resolution."
+      }
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Secondary search input top border width."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Secondary search input right border width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Secondary search input bottom border width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Secondary search input left border width."
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{grey.30}",
+        "$description": "Secondary Search default border."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.border.default}",
+        "$description": "Secondary Search hover border."
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{primary.fill.default}",
+        "$description": "Secondary Search focus border."
+      }
+    },
+    "wrp": {
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Secondary Search Wrapper default border."
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{fill.weak}",
+        "$description": "Secondary Search wrapper default surface."
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "rgba(0,0,0,0.1)",
+          "type": "dropShadow"
+        },
+        "$description": "Secondary Search wrapper default shadow."
+      }
+    },
+    "typo": {
+      "$type": "typography",
+      "$value": "{typo.body.md}",
+      "$description": "Secondary search input label typo."
+    },
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Secondary Search default fill."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Secondary Search hover fill."
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Secondary Search focus fill."
+      }
+    },
+    "on": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Secondary Search default on.fill."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Secondary Search hover on.fill."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Secondary Search focus on.fill."
+        },
+        "icon": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Secondary Search default on.fill.\n\n"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Secondary Search hover on.fill.\n\n"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Secondary Search focus on.fill.\n"
+          }
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Secondary Search default shadow for input wrapper."
+      },
+      "hover": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Secondary Search hover shadow for input wrapper."
+      },
+      "focus": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Secondary Search focus shadow for input wrapper."
+      }
+    }
+  }
+}

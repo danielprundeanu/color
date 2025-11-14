@@ -1,0 +1,1024 @@
+{
+  "jackpot": {
+    "card": {
+      "md": {
+        "logo": {
+          "wrp": {
+            "height": {
+              "$type": "sizing",
+              "$value": "{size.100}*11",
+              "$description": "Jackpot Card - Height for image wrapper."
+            }
+          },
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.600}",
+            "$description": "Jackpot Card - Height for jackpot logo."
+          }
+        },
+        "total": {
+          "height": {
+            "$type": "sizing",
+            "$value": "88px",
+            "$description": "Height applied on tier used within jackpot card (mobile & desktop) and header (desktop version)."
+          }
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Jackpot header - icon size within tier."
+          }
+        }
+      },
+      "sm": {
+        "total": {
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.800}",
+            "$description": "Height for tier used in jackpot header (mobile version)."
+          }
+        },
+        "logo": {
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.400}",
+            "$description": "Height applied on logo used within Jackpots Total card."
+          }
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.150}",
+            "$description": "Jackpot card & header - icon size (used withinn label \"Pays before\")."
+          }
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Jackpot card top padding (applied on body)."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Jackpot card right padding (applied on body)."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Jackpot card bottom padding (applied on body)."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Jackpot card left padding (applied on body)."
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Jackpot Card - gap applied on body (between tier, logos/games & bottom) and also for desktop version (horizontally gap)."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.md}",
+          "$description": "Typo for bottom text."
+        }
+      },
+      "total": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Jackpot card - vertical gap applied on tier's body."
+        },
+        "amount": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Jackpot Card - horizontal gap between amount and currency within total component."
+          },
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.heading.md}",
+            "$description": "Total amount typo."
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "#23324B",
+          "$description": "Jackpot amount fill color."
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "#FFDE72",
+              "$description": "Jackpot amount text color."
+            },
+            "body": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.8",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Label color."
+            }
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Jackpot card amount radius."
+        },
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Jackpot card - amount border width."
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Jackpot card - border color for amount total."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Jackpot card - amount shadow."
+        },
+        "currency": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Total component - currency typo."
+          }
+        },
+        "label": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Total amount label typo."
+        }
+      },
+      "bottom": {
+        "space": {
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Jackpot Card & Header - bottom right padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Jackpot Card & Header - bottom left padding."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Jackpot Card & Header - bottom gap."
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "36px",
+          "$description": "jackpot Card & Header - bottom height."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Jackpot Card - Bottom text color."
+          }
+        },
+        "icon": {
+          "fill": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Jackpot Card - icon fill (within bottom)."
+          },
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Bottom icon size."
+          }
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(122deg, #182843 13%, #041229 73%)",
+        "$description": "Jackpot card fill color."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Jackpot card top border width. (din deprecated)"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Jackpot card right border width. (din deprecated)"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Jackpot card bottom border width. (din deprecated)"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Jackpot card left border width. (din deprecated)"
+        },
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Jackpot cards border width."
+        }
+      },
+      "head": {
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Jackpot card - head fill color (under the jackpot logo)."
+        }
+      },
+      "total-jk": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(180deg, #0032F7 0%, #182843 63%, #041229 100%)",
+          "$description": "Jackpots Total Card fill color."
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "transaprent",
+            "$description": "Jackpots Total Card - border color."
+          },
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Jackpots total card border width."
+          }
+        },
+        "total": {
+          "fill": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.3",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{black.100}",
+            "$description": "Jackpots Total Card - amount fill color."
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Jackpots Total Card - amount text color."
+              },
+              "body": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.7",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Jackpots Total Card - Label color."
+              }
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "#000000",
+              "type": "dropShadow"
+            },
+            "$description": "Jackpots total card - amount shadow."
+          },
+          "border": {
+            "all": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Jackpots total card - amount border width."
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Jackport total card - amount border color."
+            }
+          }
+        },
+        "head": {
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Jackpot card - head fill color (under the jackpot logo)."
+          }
+        },
+        "amount": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.heading.md}",
+            "$description": "Total amount typo for total jackpot card."
+          }
+        },
+        "currency": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Total component within Jackpots total card - currency typo."
+          }
+        },
+        "label": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Jackpots Total card - Total amount label typo."
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Jackpots total shadow."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.xl}",
+        "$description": "Jackpot card radius for all components instances."
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Jackpot card - shadow."
+      },
+      "tier": {
+        "icon": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Tier icon - top padding."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Tier icon - right padding."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Tier icon - bottom padding."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Tier icon - left padding."
+            }
+          },
+          "sm": {
+            "space": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{space.25}",
+                "$description": "Tier icon small - top padding."
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{space.25}",
+                "$description": "Tier icon small - right padding."
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{space.25}",
+                "$description": "Tier icon small - bottom padding."
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{space.25}",
+                "$description": "Tier icon small - left padding."
+              }
+            }
+          },
+          "1st": {
+            "fill": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.6",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Jackpot header - tier/ icon wrapper fill."
+            },
+            "border": {
+              "default": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.6",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Jackpot header - tier/icon wrapper border."
+              }
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{black.100}",
+                "$description": "Jackpot Header - tier/ icon fill color."
+              }
+            }
+          },
+          "2nd": {
+            "fill": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.6",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Jackpot header - tier/ icon wrapper fill."
+            },
+            "border": {
+              "default": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.6",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Jackpot header - tier/icon wrapper border."
+              }
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{error.fill.active}",
+                "$description": "Jackpot Header - tier/ icon fill color."
+              }
+            }
+          },
+          "3rd": {
+            "fill": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.6",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Jackpot header - tier/ icon wrapper fill."
+            },
+            "border": {
+              "default": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.6",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Jackpot header - tier/icon wrapper border."
+              }
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{error.fill.active}",
+                "$description": "Jackpot Header - tier/ icon fill color."
+              }
+            }
+          },
+          "4th": {
+            "fill": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.6",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Jackpot header - tier/ icon wrapper fill."
+            },
+            "border": {
+              "default": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.6",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Jackpot header - tier/icon wrapper border."
+              }
+            },
+            "on": {
+              "fill": {
+                "$type": "color",
+                "$value": "{black.100}",
+                "$description": "Jackpot Header - tier/ icon fill color."
+              }
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.round}",
+            "$description": "Jackpot header - tier / icon wrapper radius."
+          },
+          "border": {
+            "all": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Jackpot header - tier/  icon wrapper border width"
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "#000000",
+              "type": "dropShadow"
+            },
+            "$description": "Jackpot header - tier/icon wrapper shadow."
+          }
+        },
+        "header": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Mobile jackpot header - tier/header top padding."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Mobile jackpot header - tier right padding."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Mobile jackpot header - tier bottom padding."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Mobile jackpot header - tier/header left padding."
+            }
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Mobile jackpot header - tier top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Desktop jackpot header - tier right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Desktop jackpot header - tier bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Desktop jackpot header - tier left padding."
+          }
+        },
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Jackpot Header - horizontal gap."
+          },
+          "amount": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Jackpot header - tier/amount gap (between amount and currency)"
+            }
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Jackpot Header - vertical gap."
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.sm}",
+            "$description": "Jackpot header - tier label."
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Gap applied for label \"Pays Before\"."
+          }
+        },
+        "amount": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.90}",
+              "fontWeight": "{font-weight.700}",
+              "lineHeight": "{line-height.sm} * 100%"
+            },
+            "$description": "Jackpot Header - tier amount."
+          }
+        },
+        "currency": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.xs}",
+            "$description": "Jackpot Header - currency."
+          }
+        },
+        "body": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Jackpot header - tier body top pagging (when the tier is expanded)"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Jackpot header - tier body right pagging (when the tier is expanded)."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Jackpot header - tier body bottom pagging (when the tier is expanded)"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Jackpot header - tier body left pagging (when the tier is expanded)"
+            }
+          },
+          "row": {
+            "space": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{space.150}",
+                "$description": "Jackpot header card - body row top spacing (applied only for second row)."
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{space.150}",
+                "$description": "Jackpot header card - body row bottom spacing (applied only for the first row)."
+              }
+            },
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Jackpot header card - body/row - vertical & horizontal gap (applied between Label & amount; amount and currency; date & player name)."
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Jackpot header - tier body radius."
+          },
+          "border": {
+            "all": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Jackpot card - tier body border width."
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Jackpot header - tier body corder color."
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "#000000",
+              "type": "dropShadow"
+            },
+            "$description": "Jakcpot header - tier body shadow."
+          },
+          "amount": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.sm}",
+              "$description": "Jackpot header - tier body - amount typo."
+            }
+          },
+          "currency": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.xs}",
+              "$description": "Jackpot Header - currency."
+            }
+          },
+          "label": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.xs}",
+              "$description": "Jackpot header - tier body - typo for label & date.\n"
+            }
+          },
+          "fill": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.08",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Jackpot header - tier body fill color."
+          }
+        },
+        "caption": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.xs}",
+            "$description": "Jackpot card & header - text used for label \"Pays before\"."
+          }
+        },
+        "on": {
+          "fill": {
+            "head": {
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Jackpot card header - tier amount text color."
+            },
+            "body": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.8",
+                    "space": "lch"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}"
+            },
+            "label": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.7",
+                    "space": "lch"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}"
+            },
+            "accent": {
+              "$type": "color",
+              "$value": "#FFDE72",
+              "$description": "jackpot header - tier body amount color."
+            }
+          }
+        },
+        "border": {
+          "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.1",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Jackpot header - tier right border color (separator for tiers)."
+          },
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Jackpot header - tier right & bottom border width."
+          }
+        },
+        "2nd": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Jackpot secondary tier -> gap (between tag and amount)"
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Jackpot secondary tier - top padding."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Jackpot secondary tier - right padding."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Jackpot secondary tier - bottom padding."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Jackpot secondary tier - left padding."
+            }
+          }
+        }
+      },
+      "logo": {
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.2",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "#4D67FF",
+          "$description": "Jackpot Card - small logo fill."
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "jackpot card - small logo radius."
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Jackpot card - small logos gap."
+        }
+      },
+      "compact": {
+        "on": {
+          "surface": {
+            "head": {
+              "$type": "color",
+              "$value": "#FFDE72",
+              "$description": "Jackpot card compact (Eagle layout) - amount color text."
+            }
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(180deg, rgba(255, 255, 255, 0) 6%, rgba(0, 0, 0, 0.3) 53%, #000000 100%)",
+          "$description": "Jackpot card compact (Eagle layout) - content fill color."
+        },
+        "amount": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.200}",
+              "fontWeight": "{font-weight.700}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": "Jackpot Card compact - amount typo."
+          }
+        }
+      },
+      "grid": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Jackpot Card v2 -> grod gap (between 1st tier and secondary ones, and the gap between secondary ones)."
+        }
+      },
+      "odo": {
+        "lg": {
+          "height": {
+            "$type": "sizing",
+            "$value": "34px",
+            "$description": "Jackpot card large odometer -> height."
+          },
+          "width": {
+            "$type": "sizing",
+            "$value": "18px",
+            "$description": "Jackpot card large odometer -> width."
+          }
+        },
+        "sm": {
+          "height": {
+            "$type": "sizing",
+            "$value": "14px",
+            "$description": "Jackpot card small odometer -> height."
+          },
+          "width": {
+            "$type": "sizing",
+            "$value": "7px",
+            "$description": "Jackpot card small odometer -> width."
+          }
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Jackpot Card -> gap."
+      }
+    }
+  }
+}

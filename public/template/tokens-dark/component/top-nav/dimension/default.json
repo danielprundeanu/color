@@ -1,0 +1,66 @@
+{
+  "top-nav": {
+    "wrp": {
+      "space": {
+        "$type": "spacing",
+        "$value": "{space.inset.xxs}",
+        "$description": "Padding applied on top nav wrapper(mobile)."
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.inset.sm}",
+        "$description": "Left & right top nav padding (mobile)."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.inset.xxs}",
+        "$description": "Top & Bottom top nav padding (mobile)."
+      }
+    },
+    "max-width": {
+      "$type": "sizing",
+      "$value": "1200px",
+      "$description": "Top Nav -> max width."
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "{size.900}",
+      "$description": "Top nav height (mobile)."
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Top Nav radius."
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Top Nav border width."
+      }
+    },
+    "logo": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.500}",
+        "$description": "Logo Height for Medium size."
+      }
+    }
+  },
+  "aux-top-nav": {
+    "gap": {
+      "sm": {
+        "$type": "spacing",
+        "$value": "{top-nav.gap.base}/2",
+        "$description": "Used as horizontal padding for left, center, right inner containers."
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "{top-nav.gap.base}",
+        "$description": "Vertical gap between elements (applied on slot component)."
+      }
+    }
+  }
+}

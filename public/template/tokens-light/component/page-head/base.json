@@ -1,0 +1,27 @@
+{
+  "page-head": {
+    "item": {
+      "space": {
+        "base": {
+          "x": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Page head item horizontal base space."
+          },
+          "y": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Page head item vertical base space."
+          }
+        }
+      },
+      "gap": {
+        "base": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Page head item base gap."
+        }
+      }
+    }
+  }
+}

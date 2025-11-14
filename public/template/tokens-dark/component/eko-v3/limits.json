@@ -1,0 +1,240 @@
+{
+  "limits": {
+    "border": {
+      "$type": "color",
+      "$value": "{border.weak}"
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Top padding for deposit limits card."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Right padding for deposit limits card."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Bottom padding for deposit limits card."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Left padding for deposit limits card."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.150}",
+      "$description": "Space between header, body and footer"
+    },
+    "header": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Space between icon, title and amount"
+      },
+      "border": {
+        "bottom": {
+          "value": "{border.none}",
+          "type": "borderWidth",
+          "description": "Bottom border width for header."
+        },
+        "$type": "color",
+        "$value": "{border.weak}"
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Top padding for header deposit limits card."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Right padding for header deposit limits card."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Bottom padding for header deposit limits card."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Left padding for header deposit limits card."
+        }
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Border radius for deposit limits card"
+    },
+    "title": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.title.md}"
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.200}",
+        "$description": "Icon size in header\n"
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}"
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}"
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{on.surface.warning.head}"
+        }
+      }
+    },
+    "body": {
+      "border": {
+        "top": {
+          "value": "{border.none}",
+          "type": "borderWidth",
+          "description": "Top border width for deposit limits cards."
+        },
+        "right": {
+          "value": "{border.none}",
+          "type": "borderWidth",
+          "description": "Right border width for deposit limits cards."
+        },
+        "bottom": {
+          "value": "{border.none}",
+          "type": "borderWidth",
+          "description": "Bottom border width for deposit limits cards."
+        },
+        "left": {
+          "value": "{border.none}",
+          "type": "borderWidth",
+          "description": "Left border width for deposit limits cards."
+        },
+        "$type": "color",
+        "$value": "{border.weak}"
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.md}"
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Top padding for body deposit limits card."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Right padding for body deposit limits card."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Bottom padding for body deposit limits card."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Left padding for body deposit limits card."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Space between progress bar, details and warning message\n"
+      },
+      "warning": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Space between icon and warning message\n"
+        }
+      }
+    },
+    "footer": {
+      "border": {
+        "top": {
+          "value": "{border.xs}",
+          "type": "borderWidth",
+          "description": "Top border width for footer."
+        },
+        "$type": "color",
+        "$value": "{border.weak}"
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Space between the buttons in the footer\n"
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Top padding for footer deposit limits card."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Right padding for footer deposit limits card."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Bottom padding for footer deposit limits card."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Left padding for footer deposit limits card."
+        }
+      }
+    },
+    "amount": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.md}"
+      }
+    },
+    "warning": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.sm}"
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "#000000",
+        "type": "dropShadow"
+      }
+    }
+  }
+}

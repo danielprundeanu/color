@@ -1,0 +1,266 @@
+{
+  "top-nav": {
+    "balance": {
+      "fill": {
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.1",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.130}",
+          "$description": "Balance default fill."
+        }
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Balance border width."
+        },
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.1",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.110}",
+          "$description": "Balance default border."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Balance default on fill color."
+          },
+          "weak": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": ".57",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Balance decimals on fill color."
+          }
+        }
+      },
+      "md": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.300}",
+            "$description": "Medium Balance icon size."
+          }
+        },
+        "currency": {
+          "icon": {
+            "size": {
+              "$type": "sizing",
+              "$value": "{size.200}",
+              "$description": "Medium Balance Currency icon size."
+            }
+          }
+        },
+        "separator": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Medium Separator height size."
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Medium Top Nav Balance padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Medium Top Nav Balance padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Medium Top Nav Balance padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Medium Top Nav Balance padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.75}",
+          "$description": "Medium Top Nav Balance gap."
+        },
+        "btn": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{size.75}",
+            "$description": "Medium Top Nav Balance Button gap."
+          }
+        },
+        "amount": {
+          "currency": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Medium Balance - gap between amount and currency."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{size.50}",
+            "$description": "Medium Balance - gap between amount wrapper and Icon."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}",
+          "$description": "Medium Top Navigation Balance border radius."
+        },
+        "typo": {
+          "amount": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.sm}"
+            },
+            "$description": "Balance value typography."
+          },
+          "label": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.50}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.sm}"
+            },
+            "$description": "Balance Button label typography."
+          }
+        }
+      },
+      "sm": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.250}",
+            "$description": "Small Balance icon size."
+          }
+        },
+        "currency": {
+          "icon": {
+            "size": {
+              "$type": "sizing",
+              "$value": "{size.200}",
+              "$description": "Small Balance Currency icon size."
+            }
+          }
+        },
+        "separator": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Small Separator height size."
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Small Top Nav Balance padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Small Top Nav Balance padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Small Top Nav Balance padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Small Top Nav Balance padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.75}",
+          "$description": "Small Top Nav Balance gap."
+        },
+        "btn": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{size.75}",
+            "$description": "Small Top Nav Balance Button gap."
+          }
+        },
+        "amount": {
+          "currency": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Medium Balance - gap between amount and currency."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{size.50}",
+            "$description": "Medium Balance - gap between amount wrapper and Icon."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.sm}",
+          "$description": "Small Top Navigation Balance border radius."
+        },
+        "typo": {
+          "amount": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.sm}"
+            },
+            "$description": "Balance value typography."
+          },
+          "label": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.70}",
+              "fontWeight": "{font-weight.400}",
+              "lineHeight": "{line-height.sm}"
+            },
+            "$description": "Balance Button label typography."
+          }
+        }
+      }
+    }
+  }
+}

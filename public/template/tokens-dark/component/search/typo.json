@@ -1,0 +1,10 @@
+{
+  "search": {
+    "input": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.md}"
+      }
+    }
+  }
+}

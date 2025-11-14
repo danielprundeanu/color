@@ -1,0 +1,74 @@
+{
+  "aux-tag": {
+    "gradient": {
+      "start": {
+        "$type": "color",
+        "$value": "{secondary.fill.default}",
+        "$description": "Tag gradient start color."
+      },
+      "end": {
+        "$type": "color",
+        "$value": "{secondary.fill.default}",
+        "$description": "Tag gradient end color."
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.xs.x}",
+        "y": "{shadow.base.xs.y}",
+        "blur": "{shadow.base.xs.blur}",
+        "spread": "{shadow.base.xs.spread}",
+        "color": "{tag.shadow.fill.default}",
+        "type": "innerShadow"
+      },
+      "$description": "Tag shadow."
+    }
+  },
+  "tag": {
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "linear-gradient(90deg, {aux-tag.gradient.start} 0%, {aux-tag.gradient.end} 100%)",
+        "$description": "Tag fill default."
+      },
+      "strong": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "darken",
+              "value": "0.5",
+              "space": "lch"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{secondary.fill.default}",
+        "$description": "Tag fill default."
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{secondary.border.default}00",
+        "$description": "Tag border default."
+      }
+    },
+    "on": {
+      "fill": {
+        "$type": "color",
+        "$value": "{secondary.on.fill.default}",
+        "$description": "Tag on fill color."
+      }
+    },
+    "shadow": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{black.20}00",
+          "$description": "Tag shadow color."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "section-title": {
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Top Padding for section-title."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Right Padding for section-title."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Bottom Padding for section-title."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Right Padding for section-title."
+      }
+    },
+    "on": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "On fill - default color"
+        },
+        "primary": {
+          "$type": "color",
+          "$value": "{on.surface.primary.head}",
+          "$description": "On fill - primary color"
+        },
+        "sbrand-01": {
+          "$type": "color",
+          "$value": "{sub-brand-01.60}",
+          "$description": "On fill - sbrand-02 color"
+        },
+        "sbrand-02": {
+          "$type": "color",
+          "$value": "{sub-brand-02.80}",
+          "$description": "On fill - sbrand-02 color"
+        },
+        "sbrand-03": {
+          "$type": "color",
+          "$value": "{sub-brand-01.120}",
+          "$description": "On fill - sbrand-03 color"
+        }
+      }
+    },
+    "border": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primary.border.strong}",
+        "$description": "Border - primary color"
+      },
+      "sbrand-01": {
+        "$type": "color",
+        "$value": "{sub-brand-01.60}",
+        "$description": "Border - sbrand-01 color"
+      },
+      "sbrand-02": {
+        "$type": "color",
+        "$value": "{sub-brand-02.80}",
+        "$description": "Border - sbrand-02 color"
+      },
+      "sbrand-03": {
+        "$type": "color",
+        "$value": "{sub-brand-01.120}",
+        "$description": "Border - sbrand-03 color"
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{size.0}",
+        "$description": "Right border width"
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{size.0}",
+        "$description": "Bottom border width"
+      },
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{size.0}",
+        "$description": "Top border width"
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Left border width"
+      }
+    }
+  }
+}

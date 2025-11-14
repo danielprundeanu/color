@@ -1,0 +1,111 @@
+{
+  "bottom-nav": {
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.inline.lg}"
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.stack.md}"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}"
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "72px",
+      "$description": "Bottom nav height."
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      }
+    },
+    "item": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}"
+      },
+      "special": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}"
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "40px",
+            "$description": "Special Item icon size."
+          }
+        }
+      },
+      "image": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.sm}"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.stack.sm}"
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Used for underline option."
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.lg}"
+        }
+      }
+    }
+  },
+  "aux-bottom-nav": {
+    "gap": {
+      "sm": {
+        "$type": "spacing",
+        "$value": "{bottom-nav.list.gap.base}/2"
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "{bottom-nav.list.gap.base}"
+      }
+    },
+    "item": {
+      "space": {
+        "x": {
+          "sm": {
+            "$type": "spacing",
+            "$value": "{bottom-nav.item.space.base.x} /4"
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{bottom-nav.item.space.base.x} /3"
+          }
+        },
+        "y": {
+          "sm": {
+            "$type": "spacing",
+            "$value": "{bottom-nav.item.space.base.y}/4"
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{bottom-nav.item.space.base.y}/3"
+          }
+        }
+      }
+    }
+  }
+}

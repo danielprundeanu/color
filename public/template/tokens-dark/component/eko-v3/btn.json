@@ -1,0 +1,2094 @@
+{
+  "btn": {
+    "xs": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.350}",
+        "$description": "XSmall Button height."
+      },
+      "min-width": {
+        "$type": "sizing",
+        "$value": "80px",
+        "$description": "XSmall Button min-width."
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.xs}",
+          "$description": "Xsmall Button icon size."
+        },
+        "min-width": {
+          "$type": "sizing",
+          "$value": "80px",
+          "$description": "XSmall Button with icon -> min-width."
+        }
+      },
+      "label": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "XSmall Button label padding left. (to mentain a good distance when we have only one icon)"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "XSmall Button label padding right. (to mentain a good distance when we have only one icon)"
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.80}",
+            "fontWeight": "{font-weight.700}",
+            "lineHeight": "{line-height.sm}"
+          },
+          "$description": "Xsmall Button label typography."
+        }
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Xsmall Button padding left."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Xsmall Button padding right."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Xsmall Button gap between icons and label."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Xsmall Button border radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Xsmall Button border width top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Xsmall Button border width right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Xsmall Button border width bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Xsmall Button border width left."
+        }
+      }
+    },
+    "sm": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Small Button height."
+      },
+      "min-width": {
+        "$type": "sizing",
+        "$value": "80px",
+        "$description": "Small Button min-width."
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.sm}",
+          "$description": "Small Button icon size."
+        },
+        "min-width": {
+          "$type": "sizing",
+          "$value": "{size.500}",
+          "$description": "Small Button with icon -> min-width."
+        }
+      },
+      "label": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Small Button label padding left. (to mentain a good distance when we have only one icon)"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Small Button label padding right. (to mentain a good distance when we have only one icon)"
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.80}",
+            "fontWeight": "{font-weight.800}",
+            "lineHeight": "{line-height.sm}"
+          },
+          "$description": "Small Button label typography."
+        }
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{radius.md}",
+          "$description": "Small Button padding left."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{radius.md}",
+          "$description": "Small Button padding right."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Small Button gap between icons and label."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Small Button border radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Small border width top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Small border width right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Small border width bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Small border width left."
+        }
+      }
+    },
+    "md": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.500}",
+        "$description": "Medium Button height."
+      },
+      "min-width": {
+        "$type": "sizing",
+        "$value": "80px",
+        "$description": "Medium Button min-width."
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Button Default icon size."
+        },
+        "min-width": {
+          "$type": "sizing",
+          "$value": "{size.700}",
+          "$description": "Medium Button with icon -> min-width."
+        }
+      },
+      "label": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Medium Button label padding left. (to mentain a good distance when we have only one icon)"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Medium Button label padding right. (to mentain a good distance when we have only one icon)"
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.80}",
+            "fontWeight": "{font-weight.900}",
+            "lineHeight": "{line-height.sm}"
+          },
+          "$description": "Medium Button text label typography."
+        }
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{radius.md}",
+          "$description": "Medium Button padding left."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{radius.md}",
+          "$description": "Medium Button padding right."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Medium Button gap between icons and label."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.xl}",
+        "$description": "Medium Button border radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Medium Button border width top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Medium Button border width right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Medium Button border width bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Medium Button border width left."
+        }
+      }
+    },
+    "lg": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.600}",
+        "$description": "Large Button height."
+      },
+      "min-width": {
+        "$type": "sizing",
+        "$value": "80px",
+        "$description": "Large Button min-width."
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Large Button icon size."
+        },
+        "min-width": {
+          "$type": "sizing",
+          "$value": "100px",
+          "$description": "Large Button with icon -> min-width."
+        }
+      },
+      "label": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Button label padding left. (to mentain a good distance when we have only one icon)"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Button label padding right. (to mentain a good distance when we have only one icon)"
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.900}",
+            "lineHeight": "{line-height.sm}"
+          },
+          "$description": "Large Button label typography."
+        }
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Large Button padding left."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Large Button padding left."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Large Button gap between icons and label."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.xxl}",
+        "$description": "Large Button border radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Large border width top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Large border width right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Large border width bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Button Large border width left."
+        }
+      }
+    },
+    "primary": {
+      "fill": {
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.fill.active}",
+          "$description": "Primary button fill hover."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primary.fill.active}",
+          "$description": "Primary button fill focus."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.fill.disabled}",
+          "$description": "Primary button fill disabled."
+        }
+      },
+      "border": {
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.fill.active}",
+          "$description": "Primary button border hover."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Primary button border focus."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.fill.disabled}",
+          "$description": "Primary button border disabled."
+        }
+      },
+      "on": {
+        "fill": {
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Primary button label on hover state."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Primary button label on focus states."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{grey.on.fill.disabled}",
+            "$description": "Primary button label on disabled state."
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Primary button shadow on default state."
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Primary button shadow on hover state."
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Primary button shadow on active state."
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Primary button shadow on disabled state."
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "2",
+            "color": "{primary.fill.active}",
+            "type": "dropShadow"
+          },
+          "$description": "Primary button shadow on focus state."
+        }
+      },
+      "highlight": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.default}",
+            "$description": "Primary highlight button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.active}",
+            "$description": "Primary highlight button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.active}",
+            "$description": "Primary highlight button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.active}",
+            "$description": "Primary highlight button fill focus."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.default}",
+            "$description": "Primary highlight button border."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.active}",
+            "$description": "Primary highlight button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.active}",
+            "$description": "Primary highlight button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{sbrand-01.fill.active}",
+            "$description": "Primary highlight button border focus."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary highlight button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary highlight button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary highlight button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary highlight button label on focus state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary spacial button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary spacial button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary spacial button shadow on active state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{sub-brand-01.70}",
+              "type": "dropShadow"
+            },
+            "$description": "Primary special button shadow on focus state."
+          }
+        }
+      },
+      "special": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.default}",
+            "$description": "Primary special button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.active}",
+            "$description": "Primary special button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.active}",
+            "$description": "Primary special button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.active}",
+            "$description": "Primary special button fill focus."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.default}",
+            "$description": "Primary special button border."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.active}",
+            "$description": "Primary special button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.active}",
+            "$description": "Primary special button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{sbrand-02.fill.active}",
+            "$description": "Primary special button border focus."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary special button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary special button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary special button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{sbrand-01.on.fill.default}",
+              "$description": "Primary special button label on focus state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary spacial button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary spacial button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary spacial button shadow on active state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{sub-brand-02.70}",
+              "type": "dropShadow"
+            },
+            "$description": "Primary special button shadow on focus state."
+          }
+        }
+      },
+      "success": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{success.fill.default}",
+            "$description": "Primary success button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{success.fill.active}",
+            "$description": "Primary success button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{success.fill.active}",
+            "$description": "Primary success button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{success.fill.active}",
+            "$description": "Primary success button fill focus."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{success.fill.default}",
+            "$description": "Primary success button border."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{success.fill.active}",
+            "$description": "Primary success button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{success.fill.active}",
+            "$description": "Primary success button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary success button border focus."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{success.on.fill.default}",
+              "$description": "Primary success button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{success.on.fill.default}",
+              "$description": "Primary success button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{success.on.fill.default}",
+              "$description": "Primary success button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{success.on.fill.default}",
+              "$description": "Primary success button label on focus state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary success button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary success button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary success button shadow on active state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{success.fill.default}",
+              "type": "dropShadow"
+            },
+            "$description": "Primary success button shadow on focus state."
+          }
+        }
+      },
+      "info": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{info.fill.default}",
+            "$description": "Primary info button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{info.fill.active}",
+            "$description": "Primary info button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{info.fill.active}",
+            "$description": "Primary info button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{info.fill.active}",
+            "$description": "Primary info button fill focus."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{info.fill.default}",
+            "$description": "Primary info button border."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{info.fill.active}",
+            "$description": "Primary info button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{info.fill.active}",
+            "$description": "Primary info button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary info button border focus."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{info.on.fill.default}",
+              "$description": "Primary info button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{info.on.fill.default}",
+              "$description": "Primary info button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{info.on.fill.default}",
+              "$description": "Primary info button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{info.on.fill.default}",
+              "$description": "Primary info button label on focus state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary info button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary info button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary info button shadow on active state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{info.fill.default}",
+              "type": "dropShadow"
+            },
+            "$description": "Primary info button shadow on focus state."
+          }
+        }
+      },
+      "warning": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{warning.fill.default}",
+            "$description": "Primary warning button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{warning.fill.active}",
+            "$description": "Primary warning button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{warning.fill.active}",
+            "$description": "Primary warning button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{warning.fill.active}",
+            "$description": "Primary warning button fill focus."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{warning.fill.default}",
+            "$description": "Primary warning button border."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{warning.fill.active}",
+            "$description": "Primary warning button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{warning.fill.active}",
+            "$description": "Primary warning button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary warning button border focus."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{warning.on.fill.default}",
+              "$description": "Primary warning button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{warning.on.fill.default}",
+              "$description": "Primary warning button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{warning.on.fill.default}",
+              "$description": "Primary warning button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{warning.on.fill.default}",
+              "$description": "Primary warning button label on focus state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary warning button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary warning button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary warning button shadow on active state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{warning.fill.default}",
+              "type": "dropShadow"
+            },
+            "$description": "Primary warning button shadow on focus state."
+          }
+        }
+      },
+      "error": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Primary error button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{error.fill.active}",
+            "$description": "Primary error button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{error.fill.active}",
+            "$description": "Primary error button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{error.fill.active}",
+            "$description": "Primary error button fill focus."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Primary error button border."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{error.fill.active}",
+            "$description": "Primary error button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{error.fill.active}",
+            "$description": "Primary error button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary error button border focus."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{error.on.fill.default}",
+              "$description": "Primary error button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{error.on.fill.default}",
+              "$description": "Primary error button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{error.on.fill.default}",
+              "$description": "Primary error button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{error.on.fill.default}",
+              "$description": "Primary error button label on focus state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary error button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary error button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary error button shadow on active state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{error.fill.default}",
+              "type": "dropShadow"
+            },
+            "$description": "Primary error button shadow on focus state."
+          }
+        }
+      },
+      "inverted": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary inverted button fill on surface.inverted."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{neutral.fill.weak}",
+            "$description": "Primary inverted button hover fill on surface.inverted."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary inverted button active fill on surface.inverted."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary inverted button focus fill on surface.inverted."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{grey.fill.disabled}",
+            "$description": "Primary inverted button disabled fill on surface.inverted."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary inverted button border default."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{neutral.fill.weak}",
+            "$description": "Primary inverted button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Primary inverted button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{primary.fill.default}",
+            "$description": "Primary inverted button border focus."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{grey.fill.disabled}",
+            "$description": "Primary button border disabled."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.body}",
+              "$description": "Primary button label inverted on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{on.surface.body}",
+              "$description": "Primary button label inverted on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.head}",
+              "$description": "Primary button label inverted on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{on.surface.head}",
+              "$description": "Primary button label inverted on focus state."
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{grey.on.fill.disabled}",
+              "$description": "Primary button label inverted on disabled state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary inverted button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary inverted button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary inverted button shadow on active state."
+          },
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Primary inverted button shadow on disabled state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{surface.default}",
+              "type": "dropShadow"
+            },
+            "$description": "Primary inverted button border on focus state."
+          }
+        }
+      }
+    },
+    "secondary": {
+      "fill": {
+        "hover": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.2",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{secondary.surface.default}",
+          "$description": "Secondary button fill hover."
+        },
+        "focus": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.2",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{secondary.surface.default}",
+          "$description": "Secondary button fill focus."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.fill.disabled}",
+          "$description": "Secondary button fill disabled."
+        }
+      },
+      "border": {
+        "hover": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Secondary button border hover."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Secondary button border focus."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.border.default}",
+          "$description": "Secondary button border disabled."
+        }
+      },
+      "on": {
+        "fill": {
+          "hover": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "Primary secondary button label on hover state."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "Primary secondary button label on focus state."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{grey.on.fill.disabled}",
+            "$description": "Primary secondary button label on disabled state."
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Secondary button shadow on default state."
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Secondary button shadow on hover state."
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Secondary button shadow on active state."
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Secondary button shadow on disabled state."
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "2",
+            "color": "{secondary.fill.active}",
+            "type": "dropShadow"
+          },
+          "$description": "Secondary button shadow on focus state."
+        }
+      },
+      "inverted": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Secondary inverted button button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.fill.active}",
+            "$description": "Secondary inverted button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.fill.active}",
+            "$description": "Secondary inverted button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{primary.surface.strong}",
+            "$description": "Secondary inverted button fill focus."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Secondary inverted button fill disabled."
+          }
+        },
+        "border": {
+          "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Secondary inverted button border."
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Secondary inverted button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Secondary inverted button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{primary.fill.default}",
+            "$description": "Secondary inverted button border focus."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{primary.50}",
+            "$description": "Secondary inverted button border disabled."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Primary secondary inverted button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Primary secondary inverted button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{primary.110}",
+              "$description": "Primary secondary inverted button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Primary secondary inverted button label on focus state."
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{primary.50}",
+              "$description": "Primary secondary inverted button label on disabled state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary inverted button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary inverted button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary inverted button shadow on active state."
+          },
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary inverted button shadow on disabled state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{surface.default}",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary inverted button border on focus state."
+          }
+        }
+      },
+      "error": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Secondary error button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{fill.weak}",
+            "$description": "Secondary error button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{fill.weak}",
+            "$description": "Secondary error button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{neutral.130}",
+            "$description": "Secondary error button fill focus."
+          }
+        },
+        "border": {
+          "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.5",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Secondary error button border."
+          },
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.5",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Secondary error button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{error.border.default}",
+            "$description": "Secondary error button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{surface.default}",
+            "$description": "Secondary error button border focus."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.error.head}",
+              "$description": "Secondary error button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{on.surface.error.head}",
+              "$description": "Secondary error button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.error.body}",
+              "$description": "Secondary error button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{on.surface.error.head}",
+              "$description": "Secondary error button label on focus state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary button shadow on active state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{negative.50}",
+              "type": "dropShadow"
+            },
+            "$description": "Secondary button border on focus state."
+          }
+        }
+      }
+    },
+    "tertiary": {
+      "fill": {
+        "hover": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.5",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{fill.weak}",
+          "$description": "Tertiary button fill hover."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{neutral.130}",
+          "$description": "Tertiary button fill focus."
+        },
+        "disabled": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.02",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Tertiary button fill disabled."
+        }
+      },
+      "border": {
+        "hover": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.5",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{fill.weak}",
+          "$description": "Tertiary button border hover."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Tertiary button border focus."
+        },
+        "disabled": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.02",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Tertiary button border disabled."
+        }
+      },
+      "on": {
+        "fill": {
+          "hover": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Primary tertiary button label on hover state."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Primary tertiary button label on focus state."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{grey.on.fill.disabled}",
+            "$description": "Primary tertiary button label on disabled state."
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Tertiary button shadow on default state."
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Tertiary button shadow on hover state."
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Tertiary button shadow on active state."
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Tertiary button shadow on disabled state."
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "2",
+            "color": "{grey.100}",
+            "type": "dropShadow"
+          },
+          "$description": "Tertiary button shadow on focus state."
+        }
+      },
+      "inverted": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{inverted.surface.default}",
+            "$description": "Tertiary inverted button fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{grey.100}",
+            "$description": "Tertiary inverted button fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.130}",
+            "$description": "Tertiary inverted button fill active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{inverted.surface.default}",
+            "$description": "Tertiary inverted button fill focus."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{inverted.surface.default}",
+            "$description": "Tertiary inverted button fill disabled."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{inverted.surface.default}",
+            "$description": "Tertiary inverted button border."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{grey.100}",
+            "$description": "Tertiary inverted button border hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.130}",
+            "$description": "Tertiary inverted button border active."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{inverted.surface.default}",
+            "$description": "Tertiary inverted button border focus."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{inverted.surface.default}",
+            "$description": "Tertiary inverted button border disabled."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{secondary.60}",
+              "$description": "Primary tertiary button label on default state."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{secondary.60}",
+              "$description": "Primary tertiary button label on hover state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{secondary.60}",
+              "$description": "Primary tertiary button label on active state."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{secondary.60}",
+              "$description": "Primary tertiary button label on focus state."
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{inverted.on.fill.neutral.disabled}",
+              "$description": "Primary tertiary button label on disabled state."
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Tertiary inverted button shadow on default state."
+          },
+          "hover": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Tertiary inverted button shadow on hover state."
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Tertiary inverted button shadow on active state."
+          },
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "dropShadow"
+            },
+            "$description": "Tertiary inverted button shadow on disabled state."
+          },
+          "focus": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "2",
+              "color": "{primary.130}",
+              "type": "dropShadow"
+            },
+            "$description": "Tertiary inverted button shadow on focus state."
+          }
+        }
+      }
+    }
+  }
+}

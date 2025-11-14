@@ -1,0 +1,52 @@
+{
+  "aux-top-nav": {
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.xs.x}",
+        "y": "{shadow.base.xs.y}",
+        "blur": "{shadow.base.xs.blur}",
+        "spread": "{shadow.base.xs.spread}",
+        "color": "{top-nav.shadow.fill}",
+        "type": "dropShadow"
+      }
+    },
+    "gradient": {
+      "01": {
+        "$type": "color",
+        "$value": "{primary.surface.strong}"
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{primary.surface.strong}"
+      }
+    }
+  },
+  "top-nav": {
+    "surface": {
+      "$type": "color",
+      "$value": "linear-gradient(180deg, {aux-top-nav.gradient.01} 0%, {aux-top-nav.gradient.02} 100%)",
+      "$description": "Top nav surface color."
+    },
+    "on": {
+      "surface": {
+        "$type": "color",
+        "$value": "{primary.on.fill.default}",
+        "$description": "On top nav surface color."
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{primary.border.default}",
+        "$description": "Top nav border color."
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{primary.surface.strong}2D"
+      }
+    }
+  }
+}

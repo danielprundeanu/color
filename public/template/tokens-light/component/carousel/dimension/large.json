@@ -1,0 +1,86 @@
+{
+  "carousel": {
+    "slide": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Carousel Medium slide padding right."
+      }
+    },
+    "offset": {
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Carousel Medium left offset."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.700}",
+        "$description": "Carousel Medium right offset."
+      }
+    },
+    "space": {
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Carousel Medium top padding."
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.none}"
+      }
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "400px"
+    },
+    "bullet": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.200}"
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}"
+      },
+      "wrp": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}"
+        },
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}"
+          }
+        }
+      }
+    },
+    "bullets": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.inline.md}"
+      },
+      "space": {
+        "$type": "spacing",
+        "$value": "{space.stack.md}"
+      },
+      "offset": {
+        "$type": "spacing",
+        "$value": "{space.stack.md}"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.none}"
+    },
+    "arrow": {
+      "offset": {
+        "$type": "spacing",
+        "$value": "{space.100}"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "top-nav": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": "{typo.title.md}",
+        "$description": "Top Navigation tile."
+      }
+    }
+  }
+}

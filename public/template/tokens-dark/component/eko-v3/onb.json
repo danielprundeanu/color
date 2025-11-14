@@ -1,0 +1,582 @@
+{
+  "onb": {
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Onboarding widget top space."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Onboarding widget right space."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Onboarding widget bottom space."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Onboarding widget left space."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.lg}",
+      "$description": "Onboarding widget corner radius."
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Onboarding widget surface color."
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Onboarding widget top border width."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Onboarding widget right border width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Onboarding widget bottom border width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Onboarding widget left border width."
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Onboarding widget border color."
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "{transparent}",
+        "type": "dropShadow"
+      },
+      "$description": "Onboarding widget shadow."
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "On surface head color (used for title above the inputs)."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "On surface body color (used for body text within label & link component)."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "On surface label color (used for body text within divider component)."
+        }
+      }
+    },
+    "reg-bns-crd": {
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Registration bonus card wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Registration bonus card wrapper bottom space."
+          }
+        }
+      }
+    },
+    "heading": {
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Onboarding widget - heading fill color."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Onboarding widget - heading top space."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Onboarding widget  - heading right space."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Onboarding widget  - heading  bottom space."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Onboarding widget - heading left space."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Onboarding widget - heading gap (space between icon & title and description)."
+      },
+      "title": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Onboarding widget - title gap (space between icon and title)."
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Size for icon used in heading."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Onboarding widget - heading corner radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading top border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading right border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading bottom border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading left border width."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Onboarding widget - heading border color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Onboarding widget - heading shadow."
+      },
+      "on": {
+        "fill": {
+          "primary": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Onboarding widget - head title accent/primary color used for h1."
+          },
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Onboarding widget - head title default color used for h2 & h3."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Onboarding widget - head description text color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Onboarding widget - head icon color."
+          }
+        }
+      },
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Heading wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Heading wrapper bottom space."
+          }
+        }
+      },
+      "h1": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.heading.lg}",
+          "$description": "Used for heading on the first step."
+        }
+      },
+      "h2": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.heading.sm}",
+          "$description": "Used for heading on the second step."
+        }
+      },
+      "h3": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Used for title above the inputs."
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.lg}"
+        }
+      }
+    },
+    "divider": {
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}",
+          "$description": "Border color used for separator within divider component."
+        },
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Divider border width."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Divider gap (between label and lines)."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Divider stroke wrapper top space."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Divider stroke wrapper bottom space."
+        }
+      },
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Divider wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Divider wrapper bottom space."
+          }
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.md}"
+      }
+    },
+    "choice-btn": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.400}",
+          "$description": "Choice button - icon size."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Onboarding widget - choice btn card top space."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Onboarding widget  - choice btn card right space."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Onboarding widget  - choice btn card  bottom space."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Onboarding widget - choice btn card left space."
+        }
+      },
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Onboarding widget - horizontal gap for choice button card."
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Choice button vertical gap within the card (space between title & description)."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Choice button card corner radius."
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strong}",
+        "$description": "Choice button fill color."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading top border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading right border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading bottom border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Onboarding widget - heading left border width."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Choice button border color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Onboarding widget - heading shadow."
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Choice button on fill head color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Choice button on fill body color."
+          },
+          "icon-lead": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Choice button - leading icon fill color."
+          },
+          "icon-trail": {
+            "$type": "color",
+            "$value": "{on.surface.primary.body}",
+            "$description": "Choice button - trailing icon fill color."
+          }
+        }
+      },
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Choice button wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Choice button wrapper bottom space."
+          }
+        }
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}"
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.sm}"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Onboarding widget - vertical gap (between choice-button card and alert message)."
+      }
+    },
+    "btns": {
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.800}",
+            "$description": "Buttons wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Buttons wrapper bottom space."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Buttons wrapper gap."
+        }
+      }
+    },
+    "label-link": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Label & Link gap."
+      },
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "label & link wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "label & link wrapper bottom space."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Buttons wrapper gap."
+        }
+      }
+    },
+    "title": {
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Title wrapper top space (title above inputs)."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Title wrapper bottom space (title above inputs)."
+          }
+        }
+      }
+    },
+    "input": {
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Input wrapper top space (title above inputs)."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Input wrapper bottom space."
+          }
+        }
+      }
+    },
+    "checkbox": {
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Checkbox wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Checkbox wrapper bottom space."
+          }
+        }
+      }
+    },
+    "label": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.md}"
+      }
+    },
+    "steps": {
+      "wrp": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Steps wrapper top space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Steps wrapper bottom space."
+          }
+        }
+      }
+    }
+  }
+}

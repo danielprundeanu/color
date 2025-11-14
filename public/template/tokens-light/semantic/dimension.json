@@ -1,0 +1,204 @@
+{
+  "icon": {
+    "size": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{icon.size.base} * 0.875"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "{icon.size.base} * 1"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{icon.size.base} * 1.25"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{icon.size.base} * 1.5"
+      }
+    }
+  },
+  "border": {
+    "none": {
+      "$type": "borderWidth",
+      "$value": "{border.base} * 0"
+    },
+    "xs": {
+      "$type": "borderWidth",
+      "$value": "{border.base}"
+    },
+    "sm": {
+      "$type": "borderWidth",
+      "$value": "{border.base} * 2"
+    },
+    "md": {
+      "$type": "borderWidth",
+      "$value": "{border.base} * 3"
+    },
+    "lg": {
+      "$type": "borderWidth",
+      "$value": "{border.base} * 4"
+    }
+  },
+  "space": {
+    "stack": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Vertical Gap - Extra small space between elements"
+      },
+      "sm": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Vertical Gap - Small space between elements"
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Vertical Gap - Medium space between elements"
+      },
+      "lg": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Vertical Gap - Large space between elements"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{space.250}",
+        "$description": "Vertical Gap - Extra large space between elements"
+      }
+    },
+    "inline": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Horizontal Gap - Extra small space between elements"
+      },
+      "sm": {
+        "$type": "spacing",
+        "$value": "{space.75}",
+        "$description": "Horizontal Gap - Small space between elements"
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Horizontal Gap - Medium space between elements"
+      },
+      "lg": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Horizontal Gap - Large space between elements"
+      }
+    },
+    "inset": {
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Padding - Extra small space inside an element"
+      },
+      "xs": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Padding - Extra small space inside an element"
+      },
+      "sm": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Padding - Small space inside an element"
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Padding - Medium space inside an element"
+      },
+      "lg": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Padding - Large space inside an element"
+      }
+    }
+  },
+  "radius": {
+    "none": {
+      "$type": "borderRadius",
+      "$value": "0px"
+    },
+    "round": {
+      "$type": "borderRadius",
+      "$value": "10em"
+    },
+    "xs": {
+      "$type": "borderRadius",
+      "$value": "{radius.base}/4"
+    },
+    "sm": {
+      "$type": "borderRadius",
+      "$value": "{radius.base}/2"
+    },
+    "md": {
+      "$type": "borderRadius",
+      "$value": "{radius.base}"
+    },
+    "lg": {
+      "$type": "borderRadius",
+      "$value": "{radius.base} * 1.5"
+    },
+    "xl": {
+      "$type": "borderRadius",
+      "$value": "{radius.base} * 2"
+    },
+    "xxl": {
+      "$type": "borderRadius",
+      "$value": "{radius.base} * 3"
+    }
+  },
+  "layout": {
+    "site-wrp": {
+      "$type": "sizing",
+      "$value": "1920px",
+      "$description": "Site wrapper - the biggest container which wrap the site (max-width)."
+    },
+    "content-wrp": {
+      "$type": "sizing",
+      "$value": "1200px",
+      "$description": "Content wrapper max width."
+    },
+    "content-tiny-wrp": {
+      "$type": "sizing",
+      "$value": "800px",
+      "$description": "Content wrapper tomy max width (onboarding layout)"
+    },
+    "side": {
+      "left": {
+        "$type": "sizing",
+        "$value": "300px",
+        "$description": "Sidebar left width."
+      },
+      "right": {
+        "$type": "sizing",
+        "$value": "340px",
+        "$description": "Sidebar right width."
+      }
+    },
+    "pannel": {
+      "large": {
+        "$type": "sizing",
+        "$value": "640px",
+        "$description": "Side pannel width - from onboarding layout (on desktop resolution)"
+      },
+      "medium": {
+        "$type": "sizing",
+        "$value": "30%",
+        "$description": "Side pannel width - from onboarding layout (on tablet resolution)"
+      }
+    },
+    "atf": {
+      "height": {
+        "$type": "sizing",
+        "$value": "350px",
+        "$description": "Above the fold overlay height."
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "side": {
+    "space": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.lg}",
+          "$description": "Side Panel horizontal padding base."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.stack.md}",
+          "$description": "Side Panel vertical padding base."
+        }
+      }
+    },
+    "gap": {
+      "base": {
+        "$type": "spacing",
+        "$value": "{space.inset.xs}",
+        "$description": "Side Panel gap base."
+      }
+    }
+  }
+}

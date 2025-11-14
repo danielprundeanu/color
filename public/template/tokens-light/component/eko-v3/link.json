@@ -1,0 +1,124 @@
+{
+  "link": {
+    "sm": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{size.100}"
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}"
+        }
+      },
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.100}"
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.100}"
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.150}",
+          "$description": "Link Small icon size."
+        }
+      }
+    },
+    "md": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{size.100}"
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.md}"
+        }
+      },
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.100}"
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.100}"
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.200}",
+          "$description": "Link Medium icon size."
+        }
+      }
+    },
+    "lg": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{size.100}"
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.lg}"
+        }
+      },
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.100}"
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.100}"
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.250}",
+          "$description": "Link Large icon size."
+        }
+      }
+    },
+    "text-dec": {
+      "$type": "textDecoration",
+      "$value": "underline",
+      "$description": "Link underline."
+    },
+    "default": {
+      "$type": "color",
+      "$value": "{on.surface.primary.head}",
+      "$description": "Link default color."
+    },
+    "hover": {
+      "$type": "color",
+      "$value": "{on.surface.primary.body}",
+      "$description": "Link hover color."
+    },
+    "active": {
+      "$type": "color",
+      "$value": "{on.surface.primary.label}",
+      "$description": "Link active color."
+    },
+    "disabled": {
+      "$extensions": {
+        "studio.tokens": {
+          "modify": {
+            "type": "lighten",
+            "value": "0.5",
+            "space": "lch"
+          }
+        }
+      },
+      "$type": "color",
+      "$value": "{on.surface.primary.head}",
+      "$description": "Link active color."
+    },
+    "visited": {
+      "$type": "color",
+      "$value": "{primary.50}",
+      "$description": "Link visited color."
+    }
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "tabs": {
+    "item": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.500}",
+        "$description": "Tabs item height."
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Tabs item space bewteen icon and typo."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Tabs item space on top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Tabs item space on right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Tabs item space on bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Tabs item space on left."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Tabs item radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Tabs item border on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Tabs item border on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.sm}",
+          "$description": "Tabs item border on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Tabs item border on left."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.title.sm}",
+        "$description": "Tabs item typo."
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.200}",
+        "$description": "Tabs icon size."
+      }
+    },
+    "md": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Tabs medium gap between items - mobile."
+      }
+    },
+    "lg": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Tabs large gap between items - desktop"
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Tabs space on top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.75}",
+        "$description": "Tabs space on right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Tabs space on bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.75}",
+        "$description": "Tabs space on left."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.none}",
+      "$description": "Tabs radius."
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Tabs border on top."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Tabs border on right."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Tabs border on bottom."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Tabs border on left."
+      }
+    },
+    "primary": {
+      "surface": {
+        "$type": "color",
+        "$value": "{primary.90}",
+        "$description": "Tabs primary surface color."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Tabs primary border color."
+        }
+      },
+      "item": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill default."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill active."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill default."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.fill.default}",
+            "$description": "Tabs primary item fill active."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.8",
+                    "space": "lch"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Tabs primary item on fill default."
+            },
+            "hover": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.9",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Tabs primary item on fill hover."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Tabs primary item on fill active."
+            }
+          }
+        },
+        "icon": {
+          "on": {
+            "fill": {
+              "default": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.7",
+                      "space": "lch"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{primary.on.fill.default}",
+                "$description": "Tabs primary item on fill default."
+              },
+              "hover": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "alpha",
+                      "value": "0.9",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{primary.on.fill.default}",
+                "$description": "Tabs primary item on fill hover."
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{primary.on.fill.default}",
+                "$description": "Tabs primary item on fill active."
+              }
+            }
+          }
+        }
+      }
+    },
+    "secondary": {
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Tabs primary surface color."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Tabs primary border color."
+        }
+      },
+      "item": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill default."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill active."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill default."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Tabs primary item fill hover."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Tabs primary item fill active."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.body}",
+              "$description": "Tabs primary item on fill default."
+            },
+            "hover": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.1",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{on.surface.primary.head}",
+              "$description": "Tabs primary item on fill hover."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.primary.head}",
+              "$description": "Tabs primary item on fill active."
+            }
+          }
+        },
+        "icon": {
+          "on": {
+            "fill": {
+              "default": {
+                "$type": "color",
+                "$value": "{on.surface.body}",
+                "$description": "Tabs primary item on fill default."
+              },
+              "hover": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "lighten",
+                      "value": "0.1",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{on.surface.primary.head}",
+                "$description": "Tabs primary item on fill hover."
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{on.surface.primary.head}",
+                "$description": "Tabs primary item on fill active."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

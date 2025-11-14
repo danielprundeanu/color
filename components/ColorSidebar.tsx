@@ -211,45 +211,42 @@ export function ColorSidebar({
           </div>
 
           {/* Color Space Selection */}
-          <div className="bg-gray-800 rounded-lg p-4">
-            <h2 className="text-base mb-3">Color Space</h2>
-            <div className="flex gap-2">
+          <div className="bg-gray-800 rounded-lg p-3">
+            <h2 className="text-sm font-medium mb-2">Color Space</h2>
+            <div className="flex gap-1.5">
               <button
                 onClick={() => setColorSpace('oklch')}
-                className={`flex-1 px-3 py-2 rounded-lg transition-colors text-sm ${
+                className={`flex-1 px-2 py-1.5 rounded-md transition-colors text-xs ${
                   colorSpace === 'oklch'
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                 }`}
               >
-                <div className="font-medium">OKLCH</div>
-                <div className="text-[10px] opacity-70 mt-0.5">Varies chroma</div>
+                <div className="font-semibold">OKLCH</div>
+                <div className="text-[9px] opacity-60 mt-0.5">Varies chroma</div>
               </button>
               <button
                 onClick={() => setColorSpace('lch')}
-                className={`flex-1 px-3 py-2 rounded-lg transition-colors text-sm ${
+                className={`flex-1 px-2 py-1.5 rounded-md transition-colors text-xs ${
                   colorSpace === 'lch'
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                 }`}
               >
-                <div className="font-medium">LCH</div>
-                <div className="text-[10px] opacity-70 mt-0.5">Constant C & H</div>
+                <div className="font-semibold">LCH</div>
+                <div className="text-[9px] opacity-60 mt-0.5">Constant C & H</div>
               </button>
             </div>
             
             {/* Info text based on selected color space */}
-            <div className="mt-3 p-2 bg-gray-900/50 rounded text-[10px] text-gray-400">
+            <div className="mt-2 p-1.5 bg-gray-900/50 rounded text-[9px] text-gray-400 leading-tight">
               {colorSpace === 'oklch' ? (
                 <>
-                  <strong className="text-gray-300">OKLCH Mode:</strong> Lightness (L) follows the curve.
-                  Chroma (C) varies automatically for better extremes (lighter/darker shades have reduced chroma).
-                  Hue (H) remains constant.
+                  <strong className="text-gray-300">OKLCH:</strong> L follows curve. C varies for extremes. H constant.
                 </>
               ) : (
                 <>
-                  <strong className="text-gray-300">LCH Mode:</strong> Lightness (L) follows the curve.
-                  Chroma (C) and Hue (H) remain constant across all shades.
+                  <strong className="text-gray-300">LCH:</strong> L follows curve. C & H constant.
                 </>
               )}
             </div>

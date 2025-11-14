@@ -1,0 +1,130 @@
+{
+  "card": {
+    "lvl-1": {
+      "surface": {
+        "$type": "color",
+        "$value": "{inverted.surface.default}",
+        "$description": "Card level 1 - background color."
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Card level 1 - heading color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}",
+            "$description": "Card level 1 - body color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.label}",
+            "$description": "Card level 1 - icon color."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.label}"
+          },
+          "separator": {
+            "$type": "color",
+            "$value": "{inverted.border.separator}"
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{inverted.border.default}",
+          "$description": "Card level 1 - border color."
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Card level 1 - shadow color."
+        }
+      }
+    },
+    "lvl-2": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.strong}",
+        "$description": "Card level 1 - background color."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.strong}",
+          "$description": "Card level 1 - border color."
+        }
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Card level 1 - heading color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Card level 1 - body color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Card level 1 - icon color."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          },
+          "separator": {
+            "$type": "color",
+            "$value": "{border.separator}"
+          }
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Card level 2 - shadow color."
+        }
+      }
+    }
+  },
+  "aux-card": {
+    "lvl-1": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{card.lvl-1.shadow.fill}",
+          "type": "dropShadow"
+        },
+        "$description": "Card level 1 - shadow."
+      }
+    },
+    "lvl-2": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{card.lvl-2.shadow.fill}",
+          "type": "dropShadow"
+        },
+        "$description": "Card level 2 - shadow."
+      }
+    }
+  }
+}

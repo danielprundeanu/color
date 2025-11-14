@@ -1,0 +1,127 @@
+{
+  "aux-hero-card": {
+    "content": {
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "{shadow.base.md.x}",
+            "y": "{shadow.base.md.y}",
+            "blur": "{shadow.base.md.blur}",
+            "spread": "{shadow.base.md.spread}",
+            "color": "{hero-card.content.shadow.fill}",
+            "type": "dropShadow"
+          }
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.lg.x}",
+          "y": "{shadow.base.lg.y}",
+          "blur": "{shadow.base.lg.blur}",
+          "spread": "{shadow.base.lg.spread}",
+          "color": "{hero-card.shadow.fill}",
+          "type": "dropShadow"
+        }
+      }
+    },
+    "gradient": {
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(270deg, {hero-card.gradient.start} 0%, {hero-card.gradient.end} 100%)"
+      }
+    }
+  },
+  "hero-card": {
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}"
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{border.default}"
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}"
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        }
+      }
+    },
+    "footer": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.default}"
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.default}",
+          "$description": "Border top for footer."
+        }
+      }
+    },
+    "tc": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.strong}"
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        }
+      }
+    },
+    "content": {
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.default}"
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$type": "color",
+          "$value": "{black.20}"
+        }
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{black.20}"
+      }
+    },
+    "gradient": {
+      "start": {
+        "$type": "color",
+        "$value": "{transparent}"
+      },
+      "end": {
+        "$type": "color",
+        "$value": "{black.100}"
+      }
+    }
+  }
+}

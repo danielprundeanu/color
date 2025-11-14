@@ -1,0 +1,85 @@
+{
+  "aux-side": {
+    "header": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{side.space.base.x}/2",
+          "$description": "Side Panel header horizontal space."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{side.space.base.y}",
+          "$description": "Side Panel header vertical space."
+        }
+      }
+    },
+    "body": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{side.space.base.x}/2",
+          "$description": "Side Panel body horizontal space."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{side.space.base.y}",
+          "$description": "Side Panel body vertical space."
+        }
+      },
+      "gap": {
+        "y": {
+          "$type": "spacing",
+          "$value": "{side.gap.base}",
+          "$description": "Side Panel body gap."
+        }
+      }
+    },
+    "footer": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{side.space.base.x}/2",
+          "$description": "Side Panel footer horizontal space."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{side.space.base.y}",
+          "$description": "Side Panel footer vertical space."
+        }
+      }
+    }
+  },
+  "side": {
+    "gap": {
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Side Panel vertical gap."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.none}",
+      "$description": "Side Panel radius."
+    },
+    "header": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Side Panel Header border bottom."
+        }
+      }
+    },
+    "footer": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Side Panel footer border top."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "hero-card": {
+    "gap": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        }
+      }
+    }
+  }
+}

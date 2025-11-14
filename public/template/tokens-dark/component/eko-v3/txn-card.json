@@ -1,0 +1,344 @@
+{
+  "txn-card": {
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Transaction Card top padding"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Transaction Card right padding"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Transaction Card bottom padding."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Transaction Card top padding"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.xl}",
+      "$description": "Ttransaction Card - border radius"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Transaction Card border color."
+    },
+    "xs": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.40}",
+          "fontWeight": "{font-weight.400-italic}",
+          "lineHeight": "{line-height.sm} * 100%"
+        }
+      }
+    },
+    "sm": {
+      "default": {
+        "$type": "typography",
+        "$value": "{typo.label.sm}"
+      },
+      "strong": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.60}",
+          "fontWeight": "{font-weight.600}",
+          "lineHeight": "{line-height.md} * 100%"
+        }
+      }
+    },
+    "md": {
+      "default": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.100}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.lg} * 100%"
+        }
+      },
+      "strong": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.100}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.lg} * 100%"
+        }
+      }
+    },
+    "lg": {
+      "default": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.100}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.sm} * 100%"
+        }
+      },
+      "strong": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.100}",
+          "fontWeight": "{font-weight.600}",
+          "lineHeight": "{line-height.sm} * 100%"
+        }
+      }
+    },
+    "header": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Transaction Card top padding for header"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Transaction Card right padding for header."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Transaction Card bottom padding for header"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Transaction Card left padding for header."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{border.weak}",
+        "$description": "Header bottom border"
+      }
+    },
+    "body": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Transaction Card top padding for body"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Transaction Card right padding for body."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Transaction Card - body bottom padding\n"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Transaction Card left padding for body."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Transaction Card gap for body"
+      }
+    },
+    "txn": {
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Horizontal Gap - between rows ( title/amount and status/ID)"
+        }
+      },
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Vertical Gap between title/amount and status/id/bet."
+        }
+      }
+    },
+    "details": {
+      "border": {
+        "$type": "color",
+        "$value": "{surface.strong}",
+        "$description": "Border used for extra-details components such as: Verification code and Partial deposit"
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Transaction inner border radius\n"
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Transaction card/Details - partial deposit comp - top padding\n"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.250}",
+          "$description": "Transaction card/Details - partial deposit comp - right padding"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Transaction card/Details - partial deposit comp - bottom padding"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.250}",
+          "$description": "Transaction card/Details - partial deposit comp - left padding"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Details gap - space between the partial deposits rows; details and code for \"code\" component\n"
+      },
+      "row": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Partial deposit rows gap (between title and partial deposit amount; first row and date\n"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        }
+      }
+    },
+    "footer": {
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}",
+          "$description": "Footer top border"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Footer top border width"
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Transaction Card top padding for footer\n\n\n"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Transaction Card right padding for footer\n\n\n"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Transaction Card right padding for footer\n\n\n"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Transaction Card bottom padding for footer\n"
+        }
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Transaction card on surface head color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Transaction card on surface body color."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Transaction card on surface label color."
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Transaction card on surface success color."
+        },
+        "fail": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Transaction card on surface fail color."
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Transaction card on surface warning color."
+        }
+      },
+      "fill": {
+        "head": {
+          "$type": "color",
+          "$value": "{neutral.on.surface.strong}",
+          "$description": "Transaction card on fill head color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Transaction card on fill body color."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Transaction card on fill label color."
+        },
+        "primary": {
+          "$type": "color",
+          "$value": "{grey.on.fill.default}",
+          "$description": "Transaction card on fill primary color."
+        }
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Transaction card surface color."
+    },
+    "fill": {
+      "$type": "color",
+      "$value": "{surface.strong}",
+      "$description": "Transaction details fill color"
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "#000000",
+        "type": "dropShadow"
+      }
+    }
+  }
+}

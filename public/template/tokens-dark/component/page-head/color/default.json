@@ -1,0 +1,115 @@
+{
+  "page-head": {
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Page Head component surface color."
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{border.default}00",
+        "$description": "Page Head component border."
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Page Head title & icon color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Page Head paragraph color.."
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Page Head back navigation icon for both heading and breadcrumbs."
+        },
+        "separator": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Page Head on surface Title separator."
+        }
+      }
+    },
+    "breadcrumb": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.strong}",
+        "$description": "Page Head breadcrumb surface color."
+      },
+      "on": {
+        "surface": {
+          "div": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Page Head divider icon color on breadcrumbs."
+          }
+        }
+      }
+    },
+    "item": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Page Head item default fill color."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.strongest}",
+          "$description": "Page Head item active fill color."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.default}00",
+          "$description": "Page Header item default border color."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.border.strong}00",
+          "$description": "Page Header item default border color."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Page Head item on fill default color."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.primary.body}",
+            "$description": "Page Head item on fill active color."
+          }
+        }
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{black.20}",
+        "$description": "Page Head shadow fill."
+      },
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.sm.x}",
+          "y": "{shadow.base.sm.y}",
+          "blur": "{shadow.base.sm.blur}",
+          "spread": "{shadow.base.sm.spread}",
+          "color": "{page-head.shadow.fill}",
+          "type": "dropShadow"
+        },
+        "$description": "Page Head component shadow."
+      }
+    }
+  }
+}

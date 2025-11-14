@@ -1,0 +1,432 @@
+{
+  "prog": {
+    "sm": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.25}",
+        "$description": "Progress bar small height."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar small size space on top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar small size space on right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar small size space on bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar small size space on left."
+        }
+      },
+      "surface": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Progress bar surface radius for small height."
+        }
+      },
+      "fill": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Progress bar fill radius for small height."
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar small border on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar small border on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar small border on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar small border on left."
+        }
+      },
+      "shadow": {
+        "surface": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Progress bar small shadow surface."
+        },
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Progress bar small default fill."
+        },
+        "error": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Progress bar small default error."
+        }
+      }
+    },
+    "md": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.50}",
+        "$description": "Progress bad medium height."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar medium size space on top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar medium size space on right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar medium size space on bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Progress bar medium size space on left."
+        }
+      },
+      "surface": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Progress bar surface radius for small height."
+        }
+      },
+      "fill": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Progress bar fill radius for small height."
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar medium border on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar medium border on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar medium border on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Progress bar medium border on left."
+        }
+      },
+      "shadow": {
+        "surface": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Progress bar medium shadow surface."
+        },
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Progress bar medium shadow default."
+        },
+        "error": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Progress bar medium shadow error."
+        }
+      }
+    },
+    "surface": {
+      "$extensions": {
+        "studio.tokens": {
+          "modify": {
+            "type": "alpha",
+            "value": "0.2",
+            "space": "srgb"
+          }
+        }
+      },
+      "$type": "color",
+      "$value": "{black.100}",
+      "$description": "Progress bar surface color."
+    },
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{success.fill.default}",
+        "$description": "Progress bar fill default color."
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{error.fill.default}",
+        "$description": "Progress bar fill error color."
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{success.fill.default}",
+        "$description": "Progress bar fill success color."
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Progress bar border default color."
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Progress bar border error color."
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Progress bar border success color."
+      }
+    },
+    "special": {
+      "surface": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.2",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{black.100}",
+        "$description": "Progress bar surface color."
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{success.fill.default}",
+          "$description": "Progress bar fill default color."
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{error.fill.default}",
+          "$description": "Progress bar fill error color."
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{success.fill.default}",
+          "$description": "Progress bar fill success color."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Progress bar border default color."
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Progress bar border error color."
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Progress bar border success color."
+        }
+      },
+      "sm": {
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar small border on top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar small border on right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar small border on bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar small border on left."
+          }
+        },
+        "shadow": {
+          "surface": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "innerShadow"
+            },
+            "$description": "Progress bar small shadow surface."
+          },
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "innerShadow"
+            },
+            "$description": "Progress bar small default fill."
+          },
+          "error": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "innerShadow"
+            },
+            "$description": "Progress bar small default error."
+          }
+        }
+      },
+      "md": {
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar medium border on top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar medium border on right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar medium border on bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Progress bar medium border on left."
+          }
+        },
+        "shadow": {
+          "surface": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "innerShadow"
+            },
+            "$description": "Progress bar medium shadow surface."
+          },
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "innerShadow"
+            },
+            "$description": "Progress bar medium shadow default."
+          },
+          "error": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "innerShadow"
+            },
+            "$description": "Progress bar medium shadow error."
+          }
+        }
+      }
+    }
+  }
+}

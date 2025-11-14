@@ -1,0 +1,25 @@
+{
+  "jackpot": {
+    "gap": {
+      "base": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Vertical gap base."
+      }
+    },
+    "space": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Horizontal padding base."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Vertical padding base."
+        }
+      }
+    }
+  }
+}

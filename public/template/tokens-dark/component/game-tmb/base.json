@@ -1,0 +1,16 @@
+{
+  "game-tmb": {
+    "gap": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{size.25}",
+        "$description": "Game thumbnail horizontal base gap."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{size.100}",
+        "$description": "Game thumbnail vertical base gap."
+      }
+    }
+  }
+}

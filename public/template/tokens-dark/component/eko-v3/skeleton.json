@@ -1,0 +1,12 @@
+{
+  "skeleton": {
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.strongest}"
+    },
+    "fill": {
+      "$type": "color",
+      "$value": "linear-gradient(294.03deg, rgba(255, 255, 255, 0.47) 2.77%, rgba(255, 255, 255, 0.14) 36.77%, #FFFFFF 47.4%, rgba(255, 255, 255, 0.13917) 59.17%, rgba(255, 255, 255, 0) 87.91%)"
+    }
+  }
+}

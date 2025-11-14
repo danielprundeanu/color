@@ -1,0 +1,46 @@
+{
+  "bottom-nav": {
+    "item": {
+      "space": {
+        "base": {
+          "x": {
+            "$type": "spacing",
+            "$value": "{space.inset.lg}"
+          },
+          "y": {
+            "$type": "spacing",
+            "$value": "{space.inset.lg}"
+          }
+        }
+      },
+      "special": {
+        "space": {
+          "base": {
+            "x": {
+              "$type": "spacing",
+              "$value": "{space.inset.lg}"
+            },
+            "y": {
+              "$type": "spacing",
+              "$value": "{space.inset.lg}"
+            }
+          }
+        },
+        "gap": {
+          "base": {
+            "$type": "spacing",
+            "$value": "4px"
+          }
+        }
+      }
+    },
+    "list": {
+      "gap": {
+        "base": {
+          "$type": "spacing",
+          "$value": "{space.stack.md}"
+        }
+      }
+    }
+  }
+}

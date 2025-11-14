@@ -1,0 +1,60 @@
+{
+  "modal": {
+    "typo": {
+      "display": {
+        "$type": "typography",
+        "$value": "{typo.title.lg}",
+        "$description": "Modal title typography."
+      },
+      "head": {
+        "$type": "typography",
+        "$value": "{typo.title.md}",
+        "$description": "Modal header title typography."
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.100}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.md} * 100%"
+        },
+        "$description": "Modal body typography."
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.80}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.sm} * 100%"
+        },
+        "$description": "Modal label typography."
+      }
+    },
+    "box": {
+      "typo": {
+        "head": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.base}"
+          },
+          "$description": "Checkbox head typography."
+        },
+        "label": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.80}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.base}"
+          },
+          "$description": "Checkbox head typography."
+        }
+      }
+    }
+  }
+}

@@ -101,7 +101,7 @@ function AppContent() {
 
   return (
     <div className="min-h-screen flex" style={{ backgroundColor: bgColor }}>
-      <Toaster />
+      <Toaster position="bottom-right" />
       
       {/* Left Sidebar */}
       <ColorSidebar 

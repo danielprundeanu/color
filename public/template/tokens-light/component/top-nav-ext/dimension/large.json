@@ -1,0 +1,58 @@
+{
+  "top-nav-ext": {
+    "wrp": {
+      "space": {
+        "$type": "spacing",
+        "$value": "{space.inset.xs}",
+        "$description": "Padding applied on top nav extension wrapper (desktop)."
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.inset.lg}",
+        "$description": "Left & right top nav extension padding (desktop)."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.inset.xs}",
+        "$description": "Top Nav Extension - Top & Bottom padding (desktop)."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Top Nav extension radius (desktop)."
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Top Nav extension border width (desktop)."
+      }
+    },
+    "max-width": {
+      "$type": "sizing",
+      "$value": "1200px",
+      "$description": "Top Nav Extension -> max width."
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "40px"
+    }
+  },
+  "aux-top-nav-ext": {
+    "gap": {
+      "sm": {
+        "$type": "spacing",
+        "$value": "{top-nav-ext.gap.base} / 2",
+        "$description": "Used as horizontal padding for left, center, right inner containers."
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "{top-nav-ext.gap.base}",
+        "$description": "Vertical gap between elements (applied on slot component)."
+      }
+    }
+  }
+}

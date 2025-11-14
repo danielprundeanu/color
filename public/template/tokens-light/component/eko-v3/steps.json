@@ -1,0 +1,326 @@
+{
+  "steps": {
+    "item": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}"
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Steps item & item type width."
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Steps item gap between box and helper text."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Item radius on box."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Item border top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Item border right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Item border bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Item border left."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{neutral.fill.weak}",
+          "$description": "Steps item border default."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "Steps item border active."
+        },
+        "done": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.2",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.fill.disabled}",
+          "$description": "Steps item border done."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.md}",
+        "$description": "Steps item number typo."
+      },
+      "helper": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.sm}",
+          "$description": "Steps item helper text typo."
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{neutral.on.fill.disabled}",
+              "$description": "Steps item helper on fill default."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Steps item helper on fill active."
+            },
+            "done": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}",
+              "$description": "Steps item helper on fill done."
+            }
+          }
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{neutral.fill.weak}",
+          "$description": "Steps item fill default."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "Steps item fill active."
+        },
+        "done": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.2",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.fill.disabled}",
+          "$description": "Steps item fill done."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Steps item on fill default."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Steps item on fill active."
+          },
+          "done": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Steps item on fill done."
+          }
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Steps item icon size."
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Comp space top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Comp space right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Comp space bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Comp space left."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.0}",
+      "$description": "Comp space item & progress."
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.none}",
+      "$description": "Radius on component."
+    },
+    "progress": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Steps progress border all."
+        },
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.2",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{neutral.fill.weak}",
+          "$description": "Steps progress bar border default."
+        },
+        "active": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.2",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.fill.disabled}",
+          "$description": "Steps progress bar border active."
+        }
+      }
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Steps component border top."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Steps component border right."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Steps component border bottom."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Steps component border left."
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Steps component border."
+      }
+    },
+    "fill": {
+      "$type": "color",
+      "$value": "{transparent}",
+      "$description": "Steps component fill."
+    },
+    "stem": {
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.500}",
+        "$description": "Dashed stem width."
+      }
+    }
+  },
+  "steps-bar": {
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Space-bar top padding."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Space-bar right padding."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "space.50",
+        "$description": "Space-bar bottom padding."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Space-bar left padding."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.100}",
+      "$description": "Gap between title & progress bars."
+    },
+    "title": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Gap between title & steps."
+      }
+    },
+    "progress": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Space between progress bars."
+      }
+    },
+    "on": {
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "On surface default step color."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{on.surface.primary.active}",
+          "$description": "On surface active step color."
+        }
+      }
+    },
+    "body": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.lg}",
+        "$description": "Steps typo."
+      }
+    }
+  }
+}

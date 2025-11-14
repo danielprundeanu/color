@@ -1,0 +1,43 @@
+{
+  "footer": {
+    "logo": {
+      "size": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.500}",
+          "$description": "Footer logo size."
+        }
+      }
+    },
+    "slot": {
+      "size": {
+        "height": {
+          "sm": {
+            "$type": "sizing",
+            "$value": "{size.300}",
+            "$description": "Footer slot size small."
+          },
+          "md": {
+            "$type": "sizing",
+            "$value": "{size.400}",
+            "$description": "Footer slot size medium."
+          }
+        }
+      }
+    },
+    "icon": {
+      "space": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Footer icon space horizontal & vertical."
+      }
+    },
+    "icons": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Footer icon wrapper radius."
+      }
+    }
+  }
+}

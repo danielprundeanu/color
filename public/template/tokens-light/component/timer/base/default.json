@@ -1,0 +1,21 @@
+{
+  "timer": {
+    "gap": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.xs}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.inline.xs}"
+        }
+      }
+    },
+    "line-height": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Line height applied to keep the timer’s separator centered."
+    }
+  }
+}

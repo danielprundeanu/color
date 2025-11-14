@@ -1,0 +1,541 @@
+{
+  "form": {
+    "lg": {
+      "input": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.700}",
+          "$description": "Large Text Field height."
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{icon.size.md}",
+            "$description": "Text Field icon size."
+          }
+        }
+      }
+    },
+    "box": {
+      "size": {
+        "$type": "sizing",
+        "$value": "18px",
+        "$description": "Checkbox and Radiobox size."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Checkbox / Radiobox border width."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.80}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.base}"
+          },
+          "$description": "Checkbox / Radiobox label typography."
+        }
+      },
+      "line-height": {
+        "$type": "dimension",
+        "$value": "{line-height.base}"
+      },
+      "false": {
+        "fill": {
+          "hover": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": ".1",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{primary.fill.default}",
+            "$description": "Checkbox/radiobox fill and dropshadow on hover."
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{border.strong}",
+            "$description": "Border for unchecked checkbox / radiobox."
+          }
+        }
+      },
+      "true": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.fill.default}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{error.fill.default}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.fill.active}"
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.fill.default}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.fill.active}"
+          }
+        }
+      },
+      "shadow": {
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "3",
+            "color": "{form.box.false.fill.hover}",
+            "type": "dropShadow"
+          }
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "1",
+              "color": "{surface.default}",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "3",
+              "color": "{primary.border.default}",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "pressed": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "3",
+            "color": "{form.border.pressed}",
+            "type": "dropShadow"
+          }
+        }
+      }
+    },
+    "input": {
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Text Field padding left."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Text Field padding right."
+        }
+      },
+      "helper": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Helper Text padding left."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Text Field helper typography."
+        }
+      },
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Text Field horizontal gap."
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Text Field vertical gap."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Text Field border radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Text Filed border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Text Filed border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Text Filed border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Text Filed border left width."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Text Field value typography."
+        }
+      },
+      "amount": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.md} * 100%"
+          },
+          "$description": "Text Field value typography."
+        }
+      },
+      "shadow": {
+        "focus": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "1",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        }
+      }
+    },
+    "check": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Gap between Checkbox and his label."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.sm}",
+        "$description": "Checkbox border radius."
+      }
+    },
+    "radio": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Radiobox border radius."
+      }
+    },
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}"
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{surface.default}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{surface.default}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{grey.fill.disabled}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{error.surface.default}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{success.surface.default}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{border.weak}",
+        "$description": "Border for enableed state input."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.30}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{primary.50}"
+      },
+      "pressed": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": ".4",
+              "space": "lch"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{primary.60}",
+        "$description": "Checkbox/radiobox dropshadow pressed."
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{grey.fill.disabled}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{error.border.default}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{success.border.default}"
+      }
+    },
+    "on": {
+      "fill": {
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{on.surface.primary.head}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{error.on.surface.default}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{success.on.surface.default}"
+        },
+        "amount": {
+          "$type": "color",
+          "$value": "{on.surface.body}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.on.fill.disabled}"
+        },
+        "checked": {
+          "$type": "color",
+          "$value": "{primary.on.fill.default}"
+        }
+      },
+      "surface": {
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{neutral.on.fill.disabled}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{on.surface.error.head}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{on.surface.success.head}"
+        }
+      }
+    },
+    "prefix": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.200}"
+        }
+      },
+      "flag": {
+        "size": {
+          "x": {
+            "$type": "sizing",
+            "$value": "{size.300}"
+          },
+          "y": {
+            "$type": "sizing",
+            "$value": "18px"
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.sm}"
+        }
+      },
+      "body": {
+        "details": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}"
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        },
+        "space": {
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}"
+          }
+        }
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        }
+      },
+      "radius": {
+        "right": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}"
+        },
+        "left": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}"
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}",
+          "$description": "Border for enableed state input."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.30}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primary.50}"
+        },
+        "pressed": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": ".4",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.60}",
+          "$description": "Checkbox/radiobox dropshadow pressed."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.fill.disabled}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{error.border.default}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{success.border.default}"
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.sm}"
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{grey.10}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{grey.10}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{grey.10}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.40}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{negative.20}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{positive.20}"
+        }
+      }
+    }
+  }
+}

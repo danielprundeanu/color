@@ -1,0 +1,378 @@
+{
+  "tag": {
+    "category": {
+      "md": {
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Top Border width for category tag Medium."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Right Border width for category tag Medium."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Bottom Border width for category tag Medium."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Left Border width for category tag Medium."
+          }
+        },
+        "space": {
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Right padding for category tag Medium."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Left padding for category tag Medium."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.10}",
+          "$description": "Gap between icons and label."
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Border radius for category tag Medium."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.40}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "90%"
+          },
+          "$description": "Label typography for category tag Medium."
+        },
+        "upper-typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.40}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.sm} * 100%",
+            "textCase": "{typo.case.uppercase}"
+          },
+          "$description": "Label typography for category tag Medium."
+        },
+        "label": {
+          "space": {
+            "right": {
+              "$type": "spacing",
+              "$value": "{size.10}",
+              "$description": "Tag category label padding right. (to mentain a good distance when we have only one icon)"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{size.10}",
+              "$description": "Tag category label padding left. (to mentain a good distance when we have only one icon)"
+            }
+          }
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.150}",
+            "$description": "Icon size for md tag category"
+          }
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.250}",
+          "$description": "Height for category tag Medium."
+        }
+      },
+      "lg": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Icon size for lg tag category"
+          }
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Top Border width for category tag Large."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Right Border width for category tag Large."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Bottom Border width for category tag Large."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Left Border width for category tag Large."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Border radius for category tag Large."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Label typography for category tag Large."
+        },
+        "upper-typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.sm} * 100%",
+            "textCase": "{typo.case.uppercase}"
+          },
+          "$description": "Label uppercase typography for category tag Large."
+        },
+        "space": {
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.150}",
+            "$description": "Right padding for category tag Large."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.150}",
+            "$description": "Left padding for category tag Large."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.75}",
+          "$description": "Gap between icons and label for category tag Large."
+        },
+        "label": {
+          "space": {
+            "right": {
+              "$type": "spacing",
+              "$value": "{size.25}",
+              "$description": "Tag category label padding right. (to mentain a good distance when we have only one icon)"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{size.25}",
+              "$description": "Tag category label padding left. (to mentain a good distance when we have only one icon)"
+            }
+          }
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.350}",
+          "$description": "Height for category tag Large."
+        }
+      },
+      "lvl-01": {
+        "fill": {
+          "$type": "color",
+          "$value": "{sbrand-01.fill.active}",
+          "$description": "Color fill for category tag"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{sbrand-01.fill.active}",
+          "$description": "Border Color for category tag."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{sbrand-01.on.fill.default}",
+            "$description": "On fill color (text & icon) for category tag."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow applied to category tag."
+        }
+      },
+      "lvl-02": {
+        "fill": {
+          "$type": "color",
+          "$value": "#821B8B",
+          "$description": "Color fill for category tag"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "#821B8B",
+          "$description": "Border Color for category tag."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "On fill color (text & icon) for category tag."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow applied to category tag."
+        }
+      },
+      "lvl-03": {
+        "fill": {
+          "$type": "color",
+          "$value": "#FFD000",
+          "$description": "Color fill for category tag"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "#FFD000",
+          "$description": "Border Color for category tag."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "#3c3305",
+            "$description": "On fill color (text & icon) for category tag."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow applied to category tag."
+        }
+      },
+      "lvl-04": {
+        "fill": {
+          "$type": "color",
+          "$value": "#008069",
+          "$description": "Color fill for category tag"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "#008069",
+          "$description": "Border Color for category tag."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "On fill color (text & icon) for category tag."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow applied to category tag."
+        }
+      },
+      "lvl-05": {
+        "fill": {
+          "$type": "color",
+          "$value": "#EA4245",
+          "$description": "Color fill for category tag"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "#EA4245",
+          "$description": "Border Color for category tag."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "On fill color (text & icon) for category tag."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow applied to category tag."
+        }
+      },
+      "lvl-06": {
+        "fill": {
+          "$type": "color",
+          "$value": "#1494BE",
+          "$description": "Color fill for category tag"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "#1494BE",
+          "$description": "Border Color for category tag."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "#092C37",
+            "$description": "On fill color (text & icon) for category tag."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Shadow applied to category tag."
+        }
+      }
+    }
+  }
+}

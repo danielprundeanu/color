@@ -1,0 +1,8 @@
+{
+  "link": {
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.50}"
+    }
+  }
+}

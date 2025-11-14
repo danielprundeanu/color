@@ -1,0 +1,148 @@
+{
+  "alert": {
+    "info": {
+      "surface": {
+        "$type": "color",
+        "$value": "{info.surface.default}",
+        "$description": "Info Alert surface color."
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{info.fill.default}",
+        "$description": "Info Alert fill color. (used for feedback icon)."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{info.border.default}",
+        "$description": "Info Alert border color."
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{info.on.surface.default}",
+          "$description": "Info Alert on surface color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Info Alert shadow."
+      }
+    },
+    "success": {
+      "surface": {
+        "$type": "color",
+        "$value": "{success.surface.default}",
+        "$description": "success Alert surface color."
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{success.fill.default}",
+        "$description": "success Alert fill color. (used for feedback icon)."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{success.border.default}",
+        "$description": "success Alert border color."
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{success.on.surface.default}",
+          "$description": "success Alert on surface color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "success Alert shadow."
+      }
+    },
+    "warning": {
+      "surface": {
+        "$type": "color",
+        "$value": "{warning.surface.default}",
+        "$description": "warning Alert surface color."
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{warning.fill.default}",
+        "$description": "warning Alert fill color. (used for feedback icon)."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{warning.border.default}",
+        "$description": "warning Alert border color."
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{warning.on.surface.default}",
+          "$description": "warning Alert on surface color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "warning Alert shadow."
+      }
+    },
+    "error": {
+      "surface": {
+        "$type": "color",
+        "$value": "{error.surface.default}",
+        "$description": "error Alert surface color."
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{error.fill.default}",
+        "$description": "error Alert fill color. (used for feedback icon)."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{error.border.default}",
+        "$description": "error Alert border color."
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{error.on.surface.default}",
+          "$description": "error Alert on surface color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "error Alert shadow."
+      }
+    }
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "mini-card": {
+    "x": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.1000}",
+        "$description": "Horizontal mini-card height."
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "100%",
+        "$description": "Horizontal mini-card max-width."
+      },
+      "img": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.1000}",
+          "$description": "Horizontal mini-card image artbundle size."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Horizontal mini-card space top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Horizontal mini-card space right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Horizontal mini-card space bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Horizontal mini-card space left."
+        }
+      },
+      "content": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Horizontal mini-card content wrapper space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Horizontal mini-card content wrapper space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Horizontal mini-card content wrapper space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Horizontal mini-card content wrapper space on left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Horizontal mini-card content wrapper gap."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Horizontal mini-card radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Horizontal mini-card border width on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Horizontal mini-card border width on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Horizontal mini-card border width on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Horizontal mini-card border width on left."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.80}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Horizontal mini-card typo."
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "innerShadow"
+        },
+        "$description": "Horizontal mini-card shadow."
+      }
+    },
+    "y": {
+      "height": {
+        "$type": "sizing",
+        "$value": "220px",
+        "$description": "Vertical mini-card height."
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "144px",
+        "$description": "Vertical mini-card width."
+      },
+      "img": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.1000}",
+          "$description": "Vertical mini-card image artbundle size."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Vertical mini-card space top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Vertical mini-card space right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Vertical mini-card space bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Vertical mini-card space left."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Vertical mini-card gap."
+      },
+      "content": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Vertical mini-card content wrapper space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Vertical mini-card content wrapper space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Vertical mini-card content wrapper space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Vertical mini-card content wrapper space on left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Vertical mini-card content wrapper gap."
+        }
+      },
+      "timer": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Vertical mini-banner timer space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Vertical mini-banner timer space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Vertical mini-banner timer space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Vertical mini-banner timer space on left."
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Vertical mini-card radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Vertical mini-card border width on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Vertical mini-card border width on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Vertical mini-card border width on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Vertical mini-card border width on left."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.70}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Vertical mini-card typo."
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "innerShadow"
+        },
+        "$description": "Vertical mini-card shadow."
+      }
+    }
+  }
+}

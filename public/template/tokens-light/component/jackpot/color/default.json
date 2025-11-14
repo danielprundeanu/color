@@ -1,0 +1,178 @@
+{
+  "jackpot": {
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Jackpot card inner surface color."
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Jackpot inner border color."
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Jackpot on surface head color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Jackpot on surface body color."
+        }
+      }
+    },
+    "tier": {
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(180deg, {aux-jackpot.tier.gradient.start} 0%, {aux-jackpot.tier.gradient.end} 100%)",
+        "$description": "Tier fill color."
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Jackpot tier on fill head color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Jackpot tier on fill body color."
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}",
+          "$description": "Jackpot tier border color."
+        }
+      },
+      "label": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(180deg, {aux-jackpot.tier.label.gradient.start} 34.77%, {aux-jackpot.tier.label.gradient.end}  81.25%)",
+          "$description": "Jakckpot tier label fill color."
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{border.weak}",
+            "$description": "Label border color."
+          }
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "10",
+              "spread": "0",
+              "color": "{aux-jackpot.tier.label.shadow.fill}",
+              "type": "dropShadow"
+            },
+            "$description": "Jackpot tier label shadow."
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "10",
+            "spread": "0",
+            "color": "{aux-jackpot.tier.shadow.fill}",
+            "type": "dropShadow"
+          },
+          "$description": "Jackpot tier shadow."
+        }
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}"
+      }
+    },
+    "card": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Card surface."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Jackpot card border color."
+        }
+      }
+    }
+  },
+  "aux-jackpot": {
+    "tier": {
+      "label": {
+        "shadow": {
+          "fill": {
+            "$type": "color",
+            "$value": "{primary.fill.default}"
+          }
+        },
+        "gradient": {
+          "start": {
+            "$type": "color",
+            "$value": "{primary.100}E6"
+          },
+          "end": {
+            "$type": "color",
+            "$value": "{primary.90}00"
+          }
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$type": "color",
+          "$value": "{primary.fill.default}"
+        }
+      },
+      "gradient": {
+        "start": {
+          "$type": "color",
+          "$value": "{primary.100}E6"
+        },
+        "end": {
+          "$type": "color",
+          "$value": "{primary.90}00"
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.md.x}",
+          "y": "{shadow.base.md.y}",
+          "blur": "{shadow.base.md.blur}",
+          "spread": "{shadow.base.md.spread}",
+          "color": "{jackpot.shadow.fill}",
+          "type": "dropShadow"
+        },
+        "$description": "Jackpot card shadow."
+      }
+    }
+  }
+}

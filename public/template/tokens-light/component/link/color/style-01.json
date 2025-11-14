@@ -1,0 +1,36 @@
+{
+  "link": {
+    "on": {
+      "surface": {
+        "on": {
+          "surface": {
+            "default": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.body}",
+              "$description": "Link default color."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{on.surface.primary.body}",
+              "$description": "Link hover color."
+            },
+            "disabled": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.5",
+                    "space": "lch"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{on.surface.primary.head}",
+              "$description": "Link active color."
+            }
+          }
+        }
+      }
+    }
+  }
+}

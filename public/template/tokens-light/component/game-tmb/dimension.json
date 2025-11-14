@@ -1,0 +1,147 @@
+{
+  "game-tmb": {
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Game thumbnail radius."
+    },
+    "img": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Game thumbnail image radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Game thumbnail image border."
+        }
+      }
+    },
+    "jackpot": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Game thumnail jackpot radius."
+      },
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Game thumbnail jackpot horizontal space."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Game thumbnail jackpot vertical space."
+        }
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Game thumbnail jackpot border."
+        }
+      }
+    },
+    "body": {
+      "outside": {
+        "space": {
+          "x": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Game thumbnail body horizontal space."
+          },
+          "y": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Game thumbnail body vertical space."
+          }
+        }
+      },
+      "inner": {
+        "space": {
+          "x": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Game thumbnail body horizontal space."
+          },
+          "y": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Game thumbnail body vertical space."
+          }
+        },
+        "gap": {
+          "x": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Game thumbnail inner body gap horizontal."
+          }
+        }
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Game thumbnail card border."
+      }
+    },
+    "stats": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Game thumbnail stats icon size."
+        }
+      },
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Game thumbnail stats horizontal space."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Game thumbnail stats vertical space."
+        }
+      }
+    },
+    "overlay": {
+      "space": {
+        "x": {
+          "sm": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Game Thumbnail overlay horizontal space small."
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Game Thumbnail overlay horizontal space small."
+          }
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Game Thumbnail overlay vertical space."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Game thumbnail overlay gap."
+      }
+    },
+    "space": {
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Game thumbnail vertical space use for overflow tag."
+      }
+    }
+  }
+}

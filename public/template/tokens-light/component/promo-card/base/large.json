@@ -1,0 +1,16 @@
+{
+  "promo-card": {
+    "gap": {
+      "base": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.200}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.200}"
+        }
+      }
+    }
+  }
+}

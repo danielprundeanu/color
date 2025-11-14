@@ -1,0 +1,200 @@
+{
+  "aux-btn": {
+    "fbk": {
+      "shadow": {
+        "xs": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.xs.x}",
+                "y": "{shadow.base.xs.y}",
+                "blur": "{shadow.base.xs.blur}",
+                "spread": "{shadow.base.xs.spread}",
+                "color": "{btn.fbk.shadow.fill.default}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.xs.x}",
+                "y": "{shadow.base.xs.y}",
+                "blur": "{shadow.base.xs.blur}",
+                "spread": "{shadow.base.xs.spread}",
+                "color": "{btn.fbk.shadow.fill.active}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          }
+        },
+        "sm": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.sm.x}",
+                "y": "{shadow.base.sm.y}",
+                "blur": "{shadow.base.sm.blur}",
+                "spread": "{shadow.base.sm.spread}",
+                "color": "{btn.fbk.shadow.fill.default}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.sm.x}",
+                "y": "{shadow.base.sm.y}",
+                "blur": "{shadow.base.sm.blur}",
+                "spread": "{shadow.base.sm.spread}",
+                "color": "{btn.fbk.shadow.fill.active}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          }
+        },
+        "md": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.md.x}",
+                "y": "{shadow.base.md.y}",
+                "blur": "{shadow.base.md.blur}",
+                "spread": "{shadow.base.md.spread}",
+                "color": "{btn.fbk.shadow.fill.default}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.md.x}",
+                "y": "{shadow.base.md.y}",
+                "blur": "{shadow.base.md.blur}",
+                "spread": "{shadow.base.md.spread}",
+                "color": "{btn.fbk.shadow.fill.active}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          }
+        },
+        "lg": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.lg.x}",
+                "y": "{shadow.base.lg.y}",
+                "blur": "{shadow.base.lg.blur}",
+                "spread": "{shadow.base.lg.spread}",
+                "color": "{btn.fbk.shadow.fill.default}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          },
+          "active": {
+            "$type": "boxShadow",
+            "$value": [
+              {
+                "x": "{shadow.base.lg.x}",
+                "y": "{shadow.base.lg.y}",
+                "blur": "{shadow.base.lg.blur}",
+                "spread": "{shadow.base.lg.spread}",
+                "color": "{btn.fbk.shadow.fill.active}",
+                "type": "dropShadow"
+              }
+            ],
+            "$description": "Adding transparency for the hex value as you can see here: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4"
+          }
+        }
+      },
+      "gradient": {
+        "default": {
+          "start": {
+            "$type": "color",
+            "$value": "{warning.fill.default}"
+          },
+          "end": {
+            "$type": "color",
+            "$value": "{warning.fill.active}"
+          }
+        },
+        "active": {
+          "start": {
+            "$type": "color",
+            "$value": "{warning.fill.active}"
+          },
+          "end": {
+            "$type": "color",
+            "$value": "{notice.100}"
+          }
+        }
+      }
+    }
+  },
+  "btn": {
+    "fbk": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "linear-gradient(224deg, {aux-btn.fbk.gradient.default.start} 0%, {aux-btn.fbk.gradient.default.end} 80%)"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "linear-gradient(224deg, {aux-btn.fbk.gradient.active.start} 0%, {aux-btn.fbk.gradient.active.end} 80%)"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{warning.fill.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{warning.fill.active}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{warning.on.fill.default}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{warning.on.fill.default}"
+          }
+        }
+      },
+      "shadow": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{notice.130}4D",
+            "$description": "Token creat pentru a putea face swap intre 2 teme și pentru a schimba referința de culoare a style-ului de shadow din Figma."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{notice.130}4D",
+            "$description": "Token creat pentru a putea face swap intre 2 teme și pentru a schimba referința de culoare a style-ului de shadow din Figma."
+          }
+        }
+      }
+    }
+  }
+}
