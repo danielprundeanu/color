@@ -1,4 +1,6 @@
-// OKLCH to RGB conversion utilities
+// Color conversion utilities using culori library
+// @ts-ignore - culori doesn't have TypeScript definitions
+import { formatHex, converter } from 'culori';
 
 export interface OKLCHColor {
   l: number; // Lightness: 0-1
@@ -20,48 +22,21 @@ export interface RGBColor {
 
 export type ColorSpace = 'oklch' | 'lch';
 
-// Convert OKLCH to linear RGB
-function oklchToLinearRGB(oklch: OKLCHColor): RGBColor {
-  const { l, c, h } = oklch;
-  
-  // Convert to OKLab
-  const a = c * Math.cos((h * Math.PI) / 180);
-  const b = c * Math.sin((h * Math.PI) / 180);
-  
-  // OKLab to linear RGB conversion matrix
-  const l_ = l + 0.3963377774 * a + 0.2158037573 * b;
-  const m_ = l - 0.1055613458 * a - 0.0638541728 * b;
-  const s_ = l - 0.0894841775 * a - 1.2914855480 * b;
-  
-  const l3 = l_ * l_ * l_;
-  const m3 = m_ * m_ * m_;
-  const s3 = s_ * s_ * s_;
-  
-  return {
-    r: +4.0767416621 * l3 - 3.3077115913 * m3 + 0.2309699292 * s3,
-    g: -1.2684380046 * l3 + 2.6097574011 * m3 - 0.3413193965 * s3,
-    b: -0.0041960863 * l3 - 0.7034186147 * m3 + 1.7076147010 * s3,
-  };
-}
-
-// Convert linear RGB to sRGB
-function linearToSRGB(linear: number): number {
-  const abs = Math.abs(linear);
-  if (abs <= 0.0031308) {
-    return linear * 12.92;
-  }
-  return (Math.sign(linear) || 1) * (1.055 * Math.pow(abs, 1 / 2.4) - 0.055);
-}
+// Converters using culori
+const toOklch = converter('oklch');
+const toLch = converter('lch');
 
 // Convert OKLCH to hex color
 export function oklchToHex(oklch: OKLCHColor): string {
-  const linear = oklchToLinearRGB(oklch);
-  
-  const r = Math.max(0, Math.min(255, Math.round(linearToSRGB(linear.r) * 255)));
-  const g = Math.max(0, Math.min(255, Math.round(linearToSRGB(linear.g) * 255)));
-  const b = Math.max(0, Math.min(255, Math.round(linearToSRGB(linear.b) * 255)));
-  
-  return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+  try {
+    // Create oklch color object for culori
+    const color = { mode: 'oklch', l: oklch.l, c: oklch.c, h: oklch.h || 0 };
+    // Convert to hex using culori
+    return formatHex(color) || '#000000';
+  } catch (error) {
+    console.error('Error converting OKLCH to hex:', error);
+    return '#000000';
+  }
 }
 
 // Convert hex to OKLCH
@@ -71,43 +46,23 @@ export function hexToOKLCH(hex: string): OKLCHColor {
     return { l: 0.5, c: 0, h: 0 };
   }
   
-  // Remove # if present
-  hex = hex.replace('#', '');
-  
-  // Parse RGB values
-  const r = parseInt(hex.substring(0, 2), 16) / 255;
-  const g = parseInt(hex.substring(2, 4), 16) / 255;
-  const b = parseInt(hex.substring(4, 6), 16) / 255;
-  
-  // Convert sRGB to linear RGB
-  const rLinear = r <= 0.04045 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4);
-  const gLinear = g <= 0.04045 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4);
-  const bLinear = b <= 0.04045 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4);
-  
-  // Linear RGB to LMS
-  const l = 0.4122214708 * rLinear + 0.5363325363 * gLinear + 0.0514459929 * bLinear;
-  const m = 0.2119034982 * rLinear + 0.6806995451 * gLinear + 0.1073969566 * bLinear;
-  const s = 0.0883024619 * rLinear + 0.2817188376 * gLinear + 0.6299787005 * bLinear;
-  
-  // LMS to OKLab
-  const l_ = Math.cbrt(l);
-  const m_ = Math.cbrt(m);
-  const s_ = Math.cbrt(s);
-  
-  const L = 0.2104542553 * l_ + 0.7936177850 * m_ - 0.0040720468 * s_;
-  const a = 1.9779984951 * l_ - 2.4285922050 * m_ + 0.4505937099 * s_;
-  const bVal = 0.0259040371 * l_ + 0.7827717662 * m_ - 0.8086757660 * s_;
-  
-  // OKLab to OKLCH
-  const C = Math.sqrt(a * a + bVal * bVal);
-  let H = Math.atan2(bVal, a) * (180 / Math.PI);
-  if (H < 0) H += 360;
-  
-  return {
-    l: L,
-    c: C,
-    h: H,
-  };
+  try {
+    // Convert hex to oklch using culori
+    const color = toOklch(hex);
+    
+    if (!color) {
+      return { l: 0.5, c: 0, h: 0 };
+    }
+    
+    return {
+      l: color.l ?? 0.5,
+      c: color.c ?? 0,
+      h: color.h ?? 0,
+    };
+  } catch (error) {
+    console.error('Error converting hex to OKLCH:', error);
+    return { l: 0.5, c: 0, h: 0 };
+  }
 }
 
 // Generate color palette with 13 shades
@@ -364,106 +319,40 @@ export function rgbaToHex(rgba: { r: number; g: number; b: number; a: number }):
 // LCH uses D50 white point and Lab color space
 
 // Convert hex to LCH
+// Convert hex to LCH using culori
 export function hexToLCH(hex: string): LCHColor {
   if (!hex || typeof hex !== 'string') {
     return { l: 50, c: 0, h: 0 };
   }
 
-  hex = hex.replace('#', '');
-  
-  // Parse RGB
-  let r = parseInt(hex.substring(0, 2), 16) / 255;
-  let g = parseInt(hex.substring(2, 4), 16) / 255;
-  let b = parseInt(hex.substring(4, 6), 16) / 255;
+  try {
+    // Convert hex to lch using culori
+    const color = toLch(hex);
+    
+    if (!color) {
+      return { l: 50, c: 0, h: 0 };
+    }
 
-  // sRGB to linear RGB
-  r = r <= 0.04045 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4);
-  g = g <= 0.04045 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4);
-  b = b <= 0.04045 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4);
-
-  // Linear RGB to XYZ (D65 to D50 adaptation)
-  let x = r * 0.4124564 + g * 0.3575761 + b * 0.1804375;
-  let y = r * 0.2126729 + g * 0.7151522 + b * 0.0721750;
-  let z = r * 0.0193339 + g * 0.1191920 + b * 0.9503041;
-
-  // D65 to D50 adaptation
-  x = x * 0.9555766 + y * -0.0230393 + z * 0.0631636;
-  y = x * -0.0282895 + y * 1.0099416 + z * 0.0210077;
-  z = x * 0.0122982 + y * -0.0204830 + z * 1.3299098;
-
-  // XYZ to Lab (D50)
-  const xn = 0.96422; // D50 white point
-  const yn = 1.00000;
-  const zn = 0.82521;
-
-  x = x / xn;
-  y = y / yn;
-  z = z / zn;
-
-  const fx = x > 0.008856 ? Math.pow(x, 1/3) : (7.787 * x + 16/116);
-  const fy = y > 0.008856 ? Math.pow(y, 1/3) : (7.787 * y + 16/116);
-  const fz = z > 0.008856 ? Math.pow(z, 1/3) : (7.787 * z + 16/116);
-
-  const L = 116 * fy - 16;
-  const a = 500 * (fx - fy);
-  const bVal = 200 * (fy - fz);
-
-  // Lab to LCH
-  const C = Math.sqrt(a * a + bVal * bVal);
-  let H = Math.atan2(bVal, a) * (180 / Math.PI);
-  if (H < 0) H += 360;
-
-  return {
-    l: Math.max(0, Math.min(100, L)),
-    c: Math.max(0, C),
-    h: H
-  };
+    return {
+      l: color.l ?? 50,
+      c: color.c ?? 0,
+      h: color.h ?? 0,
+    };
+  } catch (error) {
+    console.error('Error converting hex to LCH:', error);
+    return { l: 50, c: 0, h: 0 };
+  }
 }
 
-// Convert LCH to hex
+// Convert LCH to hex using culori
 export function lchToHex(lch: LCHColor): string {
-  const { l: L, c: C, h: H } = lch;
-
-  // LCH to Lab
-  const a = C * Math.cos((H * Math.PI) / 180);
-  const bVal = C * Math.sin((H * Math.PI) / 180);
-
-  // Lab to XYZ (D50)
-  const fy = (L + 16) / 116;
-  const fx = a / 500 + fy;
-  const fz = fy - bVal / 200;
-
-  const xn = 0.96422; // D50 white point
-  const yn = 1.00000;
-  const zn = 0.82521;
-
-  let x = fx * fx * fx > 0.008856 ? fx * fx * fx : (fx - 16/116) / 7.787;
-  let y = fy * fy * fy > 0.008856 ? fy * fy * fy : (fy - 16/116) / 7.787;
-  let z = fz * fz * fz > 0.008856 ? fz * fz * fz : (fz - 16/116) / 7.787;
-
-  x = x * xn;
-  y = y * yn;
-  z = z * zn;
-
-  // D50 to D65 adaptation
-  const xD65 = x * 1.0478112 + y * 0.0228866 + z * -0.0501270;
-  const yD65 = x * 0.0295424 + y * 0.9904844 + z * -0.0170491;
-  const zD65 = x * -0.0092345 + y * 0.0150436 + z * 0.7521316;
-
-  // XYZ to linear RGB
-  let r = xD65 * 3.2404542 + yD65 * -1.5371385 + zD65 * -0.4985314;
-  let g = xD65 * -0.9692660 + yD65 * 1.8760108 + zD65 * 0.0415560;
-  let b = xD65 * 0.0556434 + yD65 * -0.2040259 + zD65 * 1.0572252;
-
-  // Linear RGB to sRGB
-  r = r <= 0.0031308 ? r * 12.92 : 1.055 * Math.pow(r, 1/2.4) - 0.055;
-  g = g <= 0.0031308 ? g * 12.92 : 1.055 * Math.pow(g, 1/2.4) - 0.055;
-  b = b <= 0.0031308 ? b * 12.92 : 1.055 * Math.pow(b, 1/2.4) - 0.055;
-
-  // Clamp and convert to hex
-  const rByte = Math.max(0, Math.min(255, Math.round(r * 255)));
-  const gByte = Math.max(0, Math.min(255, Math.round(g * 255)));
-  const bByte = Math.max(0, Math.min(255, Math.round(b * 255)));
-
-  return `#${rByte.toString(16).padStart(2, '0')}${gByte.toString(16).padStart(2, '0')}${bByte.toString(16).padStart(2, '0')}`;
+  try {
+    // Create lch color object for culori
+    const color = { mode: 'lch', l: lch.l, c: lch.c, h: lch.h || 0 };
+    // Convert to hex using culori
+    return formatHex(color) || '#000000';
+  } catch (error) {
+    console.error('Error converting LCH to hex:', error);
+    return '#000000';
+  }
 }

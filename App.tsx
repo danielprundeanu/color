@@ -48,6 +48,38 @@ function AppContent() {
     ? resolveSemanticToken(semanticTokens[theme].bg.default.$value)
     : '#000000';
 
+  // Generate CSS variables for semantic tokens
+  const generateSemanticCSSVars = () => {
+    const cssVars: { [key: string]: string } = {};
+    
+    const processTokens = (obj: any, prefix: string = '') => {
+      if (!obj) return;
+      
+      Object.entries(obj).forEach(([key, value]: [string, any]) => {
+        const varName = prefix ? `${prefix}-${key}` : key;
+        
+        if (value && typeof value === 'object') {
+          if ('$value' in value) {
+            // This is a token with a value
+            // Only process if $value is a string (token path or color)
+            if (typeof value.$value === 'string') {
+              const resolvedValue = resolveSemanticToken(value.$value);
+              cssVars[`--${varName}`] = resolvedValue;
+            }
+          } else {
+            // This is a nested object, recurse
+            processTokens(value, varName);
+          }
+        }
+      });
+    };
+    
+    processTokens(semanticTokens[theme]);
+    return cssVars;
+  };
+
+  const semanticCSSVars = generateSemanticCSSVars();
+
   const handleImport = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
       await importProject(e.target.files);
@@ -100,15 +132,19 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen flex" style={{ backgroundColor: bgColor }}>
+    <div 
+      className="min-h-screen flex" 
+      style={{ 
+        backgroundColor: bgColor,
+        ...semanticCSSVars
+      } as React.CSSProperties}
+    >
       <Toaster position="bottom-right" />
       
       {/* Left Sidebar */}
       <ColorSidebar 
         selectedPalette={selectedPalette}
         setSelectedPalette={setSelectedPalette}
-        onExportJSON={exportAsJSON}
-        onExportCSS={exportAsCSS}
       />
 
       {/* Main Content */}

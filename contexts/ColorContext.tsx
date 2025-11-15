@@ -70,7 +70,6 @@ const ColorContext = createContext<ColorContextType | undefined>(undefined);
 
 const initialPalettes: ColorPalette[] = [
   { name: 'Primary', key: 'primary', hue: 355, chroma: 0.22, baseColor: '#FC002E', includeBaseInPalette: true },
-  { name: 'Primary Inverted', key: 'primary-inverted', hue: 45, chroma: 0.18, baseColor: '#f9d001', includeBaseInPalette: true },
   { name: 'Secondary', key: 'secondary', hue: 35, chroma: 0.15, baseColor: '#DEA64E', includeBaseInPalette: true },
   { name: 'Sub Brand 01', key: 'sub-brand-01', hue: 210, chroma: 0.12, baseColor: '#4288C8', includeBaseInPalette: true },
   { name: 'Sub Brand 02', key: 'sub-brand-02', hue: 180, chroma: 0.14, baseColor: '#00979D', includeBaseInPalette: true },
@@ -568,6 +567,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
         hue: oklch.h,
         chroma: oklch.c,
         baseColor: baseColor,
+        includeBaseInPalette: true, // Always include base in palette by default
         ...(isImport ? { customColors: steps } : {}),
       };
       
@@ -773,8 +773,8 @@ export function ColorProvider({ children }: { children: ReactNode }) {
           setImportedTokens(tokens);
           setSemanticTokens(semantic);
           setOriginalSemanticTokens(JSON.parse(JSON.stringify(semantic)));
-          setHasImportedProject(true);
-          loadPalettesFromTokens(tokens.light, true); // true = this is an import
+          setHasImportedProject(false); // false = treat initial load like new project (unlocked)
+          loadPalettesFromTokens(tokens.light, false); // false = new project, not import (unlocked)
           console.log('Template loaded successfully on initial mount');
         }
       } catch (error) {

@@ -131,6 +131,17 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Text selection styling */
+  ::selection {
+    background-color: var(--primary);
+    color: var(--on-surface-head, #ffffff);
+  }
+
+  ::-moz-selection {
+    background-color: var(--primary);
+    color: var(--on-surface-head, #ffffff);
+  }
 }
 
 /**
@@ -326,4 +337,8 @@ input[type="range"]::-moz-range-thumb:hover {
 input[type="range"]::-moz-range-thumb:active {
   cursor: grabbing;
   transform: scale(0.95);
+}
+
+.typo-h2 { 
+  color: var(--on-surface-head);
 }

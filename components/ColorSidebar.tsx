@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Download, Check, Lock, Unlock, Shuffle, Plus, Minus } from 'lucide-react';
+import { Check, Lock, Unlock, Shuffle, Plus, Minus } from 'lucide-react';
 import { hexToOKLCH, oklchToHex, getLightnessSteps, hexToLCH, lchToHex } from '../utils/colorUtils';
 import { hexToHSL, hslToHex } from '../utils/colorConversions';
 import { HslColorPicker, HslColor, RgbColorPicker, RgbColor } from 'react-colorful';
@@ -14,15 +14,11 @@ import { Resizable } from 're-resizable';
 interface ColorSidebarProps {
   selectedPalette: number;
   setSelectedPalette: (index: number) => void;
-  onExportJSON?: () => void;
-  onExportCSS?: () => void;
 }
 
 export function ColorSidebar({ 
   selectedPalette, 
-  setSelectedPalette,
-  onExportJSON,
-  onExportCSS 
+  setSelectedPalette
 }: ColorSidebarProps) {
   const { 
     palettes, 
@@ -616,15 +612,28 @@ export function ColorSidebar({
                   <div className="space-y-4">
                     {/* Lightness Slider */}
                     <div>
-                      <label className="text-white/70 text-xs font-medium mb-2 block">Lightness</label>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-white/70 text-xs font-medium">Lightness</label>
+                        <input
+                          type="text"
+                          value={(getCurrentColor().l * 100).toFixed(2)}
+                          onChange={(e) => {
+                            const val = parseFloat(e.target.value);
+                            if (!isNaN(val) && val >= 0 && val <= 100) {
+                              handlePickerChange(val / 100, getCurrentColor().c, getCurrentColor().h);
+                            }
+                          }}
+                          className="w-20 px-2 py-1 bg-gray-700/80 text-white text-sm text-right rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
+                        />
+                      </div>
                       <input
                         type="range"
                         min="0"
                         max="100"
-                        step="1"
-                        value={Math.round(getCurrentColor().l * 100)}
+                        step="0.01"
+                        value={getCurrentColor().l * 100}
                         onChange={(e) => {
-                          const l = parseInt(e.target.value) / 100;
+                          const l = parseFloat(e.target.value) / 100;
                           handlePickerChange(l, getCurrentColor().c, getCurrentColor().h);
                         }}
                         className="w-full h-10 rounded-lg appearance-none cursor-pointer"
@@ -640,12 +649,25 @@ export function ColorSidebar({
 
                     {/* Chroma Slider */}
                     <div>
-                      <label className="text-white/70 text-xs font-medium mb-2 block">Chroma</label>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-white/70 text-xs font-medium">Chroma</label>
+                        <input
+                          type="text"
+                          value={getCurrentColor().c.toFixed(4)}
+                          onChange={(e) => {
+                            const val = parseFloat(e.target.value);
+                            if (!isNaN(val) && val >= 0 && val <= 0.4) {
+                              handlePickerChange(getCurrentColor().l, val, getCurrentColor().h);
+                            }
+                          }}
+                          className="w-20 px-2 py-1 bg-gray-700/80 text-white text-sm text-right rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
+                        />
+                      </div>
                       <input
                         type="range"
                         min="0"
                         max="0.4"
-                        step="0.01"
+                        step="0.0001"
                         value={getCurrentColor().c}
                         onChange={(e) => {
                           const c = parseFloat(e.target.value);
@@ -663,14 +685,28 @@ export function ColorSidebar({
 
                     {/* Hue Slider */}
                     <div>
-                      <label className="text-white/70 text-xs font-medium mb-2 block">Hue</label>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-white/70 text-xs font-medium">Hue</label>
+                        <input
+                          type="text"
+                          value={getCurrentColor().h.toFixed(2)}
+                          onChange={(e) => {
+                            const val = parseFloat(e.target.value);
+                            if (!isNaN(val) && val >= 0 && val <= 360) {
+                              handlePickerChange(getCurrentColor().l, getCurrentColor().c, val);
+                            }
+                          }}
+                          className="w-20 px-2 py-1 bg-gray-700/80 text-white text-sm text-right rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
+                        />
+                      </div>
                       <input
                         type="range"
                         min="0"
                         max="360"
+                        step="0.01"
                         value={getCurrentColor().h}
                         onChange={(e) => {
-                          const h = parseInt(e.target.value);
+                          const h = parseFloat(e.target.value);
                           handlePickerChange(getCurrentColor().l, getCurrentColor().c, h);
                         }}
                         className="w-full h-10 rounded-lg appearance-none cursor-pointer"
@@ -686,6 +722,17 @@ export function ColorSidebar({
                           )`
                         }}
                       />
+                    </div>
+
+                    {/* Color preview string */}
+                    <div className="mt-4 p-3 bg-gray-900/50 rounded-lg border border-gray-700/50 flex items-center gap-3">
+                      <div 
+                        className="w-12 h-12 rounded-lg border-2 border-white/20 flex-shrink-0"
+                        style={{ backgroundColor: getCurrentColor().hex }}
+                      />
+                      <code className="text-white/90 text-sm font-mono">
+                        oklch({(getCurrentColor().l * 100).toFixed(2)}% {getCurrentColor().c.toFixed(4)} {getCurrentColor().h.toFixed(2)})
+                      </code>
                     </div>
                   </div>
                 )}
@@ -1079,30 +1126,6 @@ export function ColorSidebar({
               </Tabs>
             </div>
           </div>
-
-          {/* Export Buttons */}
-          {(onExportJSON || onExportCSS) && (
-            <div className="space-y-2">
-              {onExportJSON && (
-                <button
-                  onClick={onExportJSON}
-                  className="w-full px-3 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors flex items-center justify-center gap-2 text-sm"
-                >
-                  <Download className="w-4 h-4" />
-                  Export JSON
-                </button>
-              )}
-              {onExportCSS && (
-                <button
-                  onClick={onExportCSS}
-                  className="w-full px-3 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors flex items-center justify-center gap-2 text-sm"
-                >
-                  <Download className="w-4 h-4" />
-                  Export CSS
-                </button>
-              )}
-            </div>
-          )}
         </div>
       </Resizable>
 

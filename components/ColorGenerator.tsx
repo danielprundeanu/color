@@ -146,7 +146,7 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
       {/* Palette Output */}
       <div>
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl text-[rgb(255,255,255)]">Palette - {currentPalette.name}</h2>
+          <h2 className="text-xl" style={{ color: 'var(--on-surface-head)' }}>Palette - {currentPalette.name}</h2>
           <div className="flex items-center gap-3">
             {/* BG from theme switch */}
             <label className="flex items-center gap-2 cursor-pointer">
