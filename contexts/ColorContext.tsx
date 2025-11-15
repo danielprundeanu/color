@@ -103,7 +103,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
   }>({});
   const [selectedSemanticCard, setSelectedSemanticCard] = useState<string | null>(null);
   const [cardUsedTokens, setCardUsedTokens] = useState<{ [cardKey: string]: Array<{ name: string; path: string }> }>({});
-  const [useBgFromTheme, setUseBgFromTheme] = useState(true);
+  const [useBgFromTheme, setUseBgFromTheme] = useState(false);
 
   const updatePalette = (index: number, palette: ColorPalette) => {
     const newPalettes = [...palettes];

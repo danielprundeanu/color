@@ -95,26 +95,55 @@ export function generatePalette(
   };
   
   if (colorSpace === 'lch') {
-    // LCH mode: L is 0-100, C and H remain constant or shift
-    // Convert OKLCH chroma (0-0.4) to LCH chroma (0-150) approximately
-    const lchChroma = baseChroma * 150;
+    // LCH mode: Convert base OKLCH color to LCH to get proper chroma and hue
+    // First create a reference color in OKLCH, then convert to LCH
+    const referenceOklch = { l: 0.5, c: baseChroma, h: baseHue };
+    const referenceHex = oklchToHex(referenceOklch);
+    const referenceLch = hexToLCH(referenceHex);
+    
+    // Use the converted LCH chroma and hue as base values
+    const lchBaseChroma = referenceLch.c;
+    const lchBaseHue = referenceLch.h;
     
     steps.forEach((step, index) => {
-      const lightness = lightnessSteps[index]; // Use lightness directly (0-100)
+      const lightness = lightnessSteps[index]; // 0-100 range for LCH
+      
+      // Vary chroma based on lightness to achieve better extremes
+      let chromaMultiplier = 1.0;
+      
+      if (lightness > 85) {
+        // Very light colors: dramatically reduce chroma to approach white
+        chromaMultiplier = Math.max(0.1, (100 - lightness) / 15); // 0.1 to 1.0
+      } else if (lightness < 20) {
+        // Very dark colors: dramatically reduce chroma to approach black
+        chromaMultiplier = Math.max(0.1, lightness / 20); // 0.1 to 1.0
+      } else if (lightness > 70) {
+        // Light colors: reduce chroma moderately
+        chromaMultiplier = 1.0 - ((lightness - 70) / 15) * 0.5; // 0.5 to 1.0
+      } else if (lightness < 30) {
+        // Dark colors: reduce chroma moderately
+        chromaMultiplier = 0.5 + (lightness / 30) * 0.5; // 0.5 to 1.0
+      }
+      
+      const adjustedChroma = lchBaseChroma * chromaMultiplier;
       
       // Calculate hue with optional shifting
-      let hue = baseHue;
+      let hue = lchBaseHue;
       if (hueShift && hueShift.enabled) {
-        // t goes from 0 (darkest) to 1 (lightest)
-        // Find which shade index corresponds to the base color (usually middle)
+        // Convert hueShift values from OKLCH to LCH
+        const darkRefHex = oklchToHex({ l: 0.3, c: baseChroma, h: hueShift.darkHue });
+        const lightRefHex = oklchToHex({ l: 0.7, c: baseChroma, h: hueShift.lightHue });
+        const darkLch = hexToLCH(darkRefHex);
+        const lightLch = hexToLCH(lightRefHex);
+        
         const totalSteps = steps.length;
         const t = index / (totalSteps - 1);
-        hue = interpolateHue(t, hueShift.darkHue, baseHue, hueShift.lightHue);
+        hue = interpolateHue(t, darkLch.h, lchBaseHue, lightLch.h);
       }
       
       const color = lchToHex({
         l: lightness,
-        c: lchChroma,
+        c: adjustedChroma,
         h: hue,
       });
       palette[step.toString()] = color;
@@ -355,4 +384,65 @@ export function lchToHex(lch: LCHColor): string {
     console.error('Error converting LCH to hex:', error);
     return '#000000';
   }
+}
+
+// Check if an OKLCH color is in RGB gamut
+export function isInGamut(oklch: OKLCHColor): boolean {
+  try {
+    const color = { mode: 'oklch', l: oklch.l, c: oklch.c, h: oklch.h || 0 };
+    const rgb = converter('rgb')(color);
+    
+    if (!rgb) return false;
+    
+    // Check if RGB values are within valid range [0, 1]
+    return rgb.r >= 0 && rgb.r <= 1 && 
+           rgb.g >= 0 && rgb.g <= 1 && 
+           rgb.b >= 0 && rgb.b <= 1;
+  } catch {
+    return false;
+  }
+}
+
+// Find maximum chroma for given lightness and hue
+export function findMaxChroma(l: number, h: number, maxC: number = 0.4): number {
+  let low = 0;
+  let high = maxC;
+  let result = 0;
+  
+  // Binary search for maximum valid chroma (fewer iterations for performance)
+  for (let i = 0; i < 15; i++) {
+    const mid = (low + high) / 2;
+    if (isInGamut({ l, c: mid, h })) {
+      result = mid;
+      low = mid;
+    } else {
+      high = mid;
+    }
+  }
+  
+  return result;
+}
+
+// Find lightness range for given chroma and hue
+export function findLightnessRange(c: number, h: number): { min: number; max: number } {
+  let min = 0;
+  let max = 1;
+  
+  // Find minimum lightness (coarser step for performance)
+  for (let l = 0; l <= 1; l += 0.02) {
+    if (isInGamut({ l, c, h })) {
+      min = Math.max(0, l - 0.02);
+      break;
+    }
+  }
+  
+  // Find maximum lightness (coarser step for performance)
+  for (let l = 1; l >= 0; l -= 0.02) {
+    if (isInGamut({ l, c, h })) {
+      max = Math.min(1, l + 0.02);
+      break;
+    }
+  }
+  
+  return { min, max };
 }

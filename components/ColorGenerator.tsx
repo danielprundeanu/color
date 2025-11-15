@@ -38,18 +38,13 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
     currentPalette.hueShift
   );
 
-  // Override with custom colors
-  const displayColors = currentPalette.customColors 
-    ? { ...generatedColors, ...currentPalette.customColors }
-    : generatedColors;
-
-  // Find the base color step (closest to the base color)
+  // Find the base color step (closest to the base color by lightness)
   const findBaseColorStep = (): string => {
     const baseOklch = hexToOKLCH(currentPalette.baseColor);
     let closestStep = '60';
     let minDistance = Infinity;
 
-    Object.entries(displayColors).forEach(([step, color]) => {
+    Object.entries(generatedColors).forEach(([step, color]) => {
       const colorOklch = hexToOKLCH(color);
       const distance = Math.abs(colorOklch.l - baseOklch.l);
       
@@ -63,6 +58,19 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
   };
 
   const baseColorStep = findBaseColorStep();
+
+  // Override with custom colors, and include base color if needed
+  let displayColors = currentPalette.customColors 
+    ? { ...generatedColors, ...currentPalette.customColors }
+    : generatedColors;
+
+  // If includeBaseInPalette is true, replace the closest step with exact base color
+  if (currentPalette.includeBaseInPalette) {
+    displayColors = {
+      ...displayColors,
+      [baseColorStep]: currentPalette.baseColor
+    };
+  }
 
   const copyToClipboard = (color: string, name: string) => {
     const textarea = document.createElement('textarea');
@@ -157,20 +165,23 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
               />
             </label>
             
-            {hasImportedProject && currentPalette.customColors && Object.keys(currentPalette.customColors).length > 0 && (
+            {currentPalette.customColors && Object.keys(currentPalette.customColors).length > 0 && (
               <button
                 onClick={() => resetPaletteColors(currentPalette.key)}
                 className="flex items-center gap-2 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
-                Unlock Palette
+                Reset Palette
               </button>
             )}
           </div>
         </div>
         <div 
-          className="rounded-lg p-6" 
-          style={{ backgroundColor: cardBackgroundColor }}
+          className="rounded-lg p-6 border-2" 
+          style={{ 
+            backgroundColor: cardBackgroundColor,
+            borderColor: 'var(--border-weak)'
+          }}
         >
           <div className="flex gap-1">
             {Object.entries(displayColors).map(([step, color]) => {
@@ -273,20 +284,20 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
             </div>
           </div>
           <div 
-            className="border border-gray-200/10 rounded-lg overflow-hidden" 
-            style={{ backgroundColor: cardBackgroundColor }}
+            className="border-2 rounded-lg overflow-hidden" 
+            style={{ 
+              backgroundColor: cardBackgroundColor,
+              borderColor: 'var(--border-weak)'
+            }}
           >
             {palettes.map((palette) => {
               const colors = generatePalette(palette.hue, palette.chroma, lightnessSteps, colorSpace, palette.hueShift);
-              const displayColors = palette.customColors 
-                ? { ...colors, ...palette.customColors }
-                : colors;
               
-              // Find base color for this palette
+              // Find base color step for this palette
               const baseOklch = hexToOKLCH(palette.baseColor);
               let baseStep = '60';
               let minDistance = Infinity;
-              Object.entries(displayColors).forEach(([step, color]) => {
+              Object.entries(colors).forEach(([step, color]) => {
                 const colorOklch = hexToOKLCH(color);
                 const distance = Math.abs(colorOklch.l - baseOklch.l);
                 if (distance < minDistance) {
@@ -294,6 +305,19 @@ export function ColorGenerator({ selectedPalette }: ColorGeneratorProps) {
                   baseStep = step;
                 }
               });
+
+              // Apply custom colors and include base color if needed
+              let displayColors = palette.customColors 
+                ? { ...colors, ...palette.customColors }
+                : colors;
+
+              // If includeBaseInPalette is true, replace the closest step with exact base color
+              if (palette.includeBaseInPalette) {
+                displayColors = {
+                  ...displayColors,
+                  [baseStep]: palette.baseColor
+                };
+              }
 
               return (
                 <div 

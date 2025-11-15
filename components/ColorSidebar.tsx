@@ -1,13 +1,11 @@
-import { useState, useRef, useEffect } from 'react';
-import { Check, Lock, Unlock, Shuffle, Plus, Minus } from 'lucide-react';
-import { hexToOKLCH, oklchToHex, getLightnessSteps, hexToLCH, lchToHex } from '../utils/colorUtils';
+import { useState, useRef, useEffect, useMemo } from 'react';
+import { Check, Lock, Unlock, Shuffle, Plus, Minus, X } from 'lucide-react';
+import { hexToOKLCH, oklchToHex, getLightnessSteps, hexToLCH, lchToHex, findMaxChroma, findLightnessRange } from '../utils/colorUtils';
 import { hexToHSL, hslToHex } from '../utils/colorConversions';
-import { HslColorPicker, HslColor, RgbColorPicker, RgbColor } from 'react-colorful';
+import { HslColorPicker } from 'react-colorful';
 import { useColors } from '../contexts/ColorContext';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from './ui/tabs';
 import { BezierCurveEditor } from './BezierCurveEditor';
-import { AdvancedColorPicker } from './AdvancedColorPicker';
-import { ColorPickerPopover } from './ColorPickerPopover';
 import { BaseColorPickerPopover } from './BaseColorPickerPopover';
 import { Resizable } from 're-resizable';
 
@@ -25,21 +23,13 @@ export function ColorSidebar({
     lightnessSteps, 
     lightnessCurveType, 
     colorSpace,
-    updatePalette, 
     updateLightnessSteps, 
     setLightnessCurveType, 
     setColorSpace,
     updateBaseColor, 
     toggleIncludeBaseInPalette,
     toggleHueShift,
-    updateHueShift,
-    resetAllPalettes,
-    unlockPalettes,
-    getGeneratedColors,
-    semanticTokens,
-    theme,
-    getAllGeneratedColors,
-    hasImportedProject
+    updateHueShift
   } = useColors();
   const currentPalette = palettes[selectedPalette];
   const [editingPalette] = useState<number | null>(null);
@@ -50,12 +40,13 @@ export function ColorSidebar({
   const [hoveredSwatch, setHoveredSwatch] = useState<number | null>(null);
   const [colorInputFormat, setColorInputFormat] = useState<'hex' | 'hsl' | 'rgb' | 'lch' | 'oklch'>('hex');
   const [previewColor, setPreviewColor] = useState<{ hex: string; l: number; c: number; h: number } | null>(null);
+  const [isColorPickerVisible, setIsColorPickerVisible] = useState(true);
   const pendingUpdateRef = useRef<{ l: number; c: number; h: number } | null>(null);
   const rafIdRef = useRef<number | null>(null);
   const editButtonRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // Sidebar uses a fixed neutral background color (theme-agnostic)
-  const sidebarBgColor = '#1f2937'; // gray-800
+  const sidebarBgColor = '#28292B'; // gray-800
 
   const handleLightnessChange = (index: number, value: number) => {
     const newSteps = [...lightnessSteps];
@@ -142,6 +133,29 @@ export function ColorSidebar({
     return { hex: palette.baseColor, l: oklch.l, c: oklch.c, h: oklch.h };
   };
 
+  // Compute gamut limits for current color (OKLCH mode)
+  const currentColor = getCurrentColor();
+  const maxChroma = useMemo(() => {
+    if (colorInputFormat !== 'oklch') return 0.4;
+    return findMaxChroma(currentColor.l, currentColor.h);
+  }, [currentColor.l, currentColor.h, colorInputFormat]);
+
+  const lightnessRange = useMemo(() => {
+    if (colorInputFormat !== 'oklch') return { min: 0, max: 1 };
+    return findLightnessRange(currentColor.c, currentColor.h);
+  }, [currentColor.c, currentColor.h, colorInputFormat]);
+
+  // Handlers with clamping for OKLCH
+  const handleOKLCHLightnessChange = (value: number) => {
+    const clampedValue = Math.max(lightnessRange.min, Math.min(lightnessRange.max, value));
+    handlePickerChange(clampedValue, currentColor.c, currentColor.h);
+  };
+
+  const handleOKLCHChromaChange = (value: number) => {
+    const clampedValue = Math.min(maxChroma, value);
+    handlePickerChange(currentColor.l, clampedValue, currentColor.h);
+  };
+
   // Clear preview when swatch changes
   useEffect(() => {
     setPreviewColor(null);
@@ -182,7 +196,7 @@ export function ColorSidebar({
               <button
                 onClick={() => {
                   // Generate random colors for unlocked palettes
-                  palettes.forEach((palette, index) => {
+                  palettes.forEach((_, index) => {
                     if (!lockedPalettes.has(index)) {
                       const randomHue = Math.floor(Math.random() * 360);
                       const randomChroma = 0.1 + Math.random() * 0.15; // 0.1 to 0.25
@@ -293,30 +307,70 @@ export function ColorSidebar({
               })}
             </div>
 
-            {/* Color Picker - appears when swatch is selected */}
-            {selectedSwatch !== null && (
+            {/* Color Picker - Always visible with close button */}
+            {isColorPickerVisible && (
               <div className="mt-4 p-4 bg-gray-800/50 rounded-xl border border-gray-700/50 space-y-3">
-                {/* Format Selector and Color Input */}
-                <div className="flex items-stretch gap-2">
-                  <select
-                    value={colorInputFormat}
-                    onChange={(e) => setColorInputFormat(e.target.value as 'hex' | 'hsl' | 'rgb' | 'lch' | 'oklch')}
-                    className="px-3 py-2 bg-gray-700/80 text-white text-xs font-medium rounded-lg border border-gray-600/50 focus:outline-none focus:ring-2 focus:ring-blue-500/50 cursor-pointer transition-all hover:bg-gray-700"
-                    style={{ minWidth: '80px' }}
+                {/* Header with close button */}
+                <div className="flex items-center justify-between -mt-1 -mx-1 mb-2">
+                  <h3 className="text-sm font-semibold text-white">
+                    {selectedSwatch !== null ? palettes[selectedSwatch].name : 'Color Picker'}
+                  </h3>
+                  <button
+                    onClick={() => setIsColorPickerVisible(false)}
+                    className="p-1 hover:bg-gray-700/50 rounded transition-colors"
+                    title="Close color picker"
                   >
-                    <option value="hex">HEX</option>
-                    <option value="hsl">HSL</option>
-                    <option value="rgb">RGB</option>
-                    <option value="lch">LCH</option>
-                    <option value="oklch">OKLCH</option>
-                  </select>
-                  
-                  <div className="flex-1 flex items-center gap-3 px-4 py-2 bg-gray-700/80 rounded-lg border border-gray-600/50 transition-all hover:border-gray-500/50">
-                    <div
-                      className="w-7 h-7 rounded-lg border-2 border-white/30 flex-shrink-0 shadow-sm transition-colors"
-                      style={{ backgroundColor: getCurrentColor().hex }}
-                    />
-                    {colorInputFormat === 'hex' && (
+                    <X className="w-4 h-4 text-gray-400" />
+                  </button>
+                </div>
+
+                {selectedSwatch === null && (
+                  <p className="text-xs text-gray-400 text-center py-6">
+                    Select a swatch to edit its color
+                  </p>
+                )}
+
+                {selectedSwatch !== null && (
+                  <>
+                    {/* Format Selector with Preview for OKLCH */}
+                    <div className="flex items-stretch gap-2">
+                      <select
+                        value={colorInputFormat}
+                        onChange={(e) => setColorInputFormat(e.target.value as 'hex' | 'hsl' | 'rgb' | 'lch' | 'oklch')}
+                        className="px-3 py-2 bg-gray-700/80 text-white text-xs font-medium rounded-lg border border-gray-600/50 focus:outline-none focus:ring-2 focus:ring-blue-500/50 cursor-pointer transition-all hover:bg-gray-700"
+                        style={{ minWidth: '80px' }}
+                      >
+                        <option value="hex">HEX</option>
+                        <option value="hsl">HSL</option>
+                        <option value="rgb">RGB</option>
+                        <option value="lch">LCH</option>
+                        <option value="oklch">OKLCH</option>
+                      </select>
+                      
+                      {/* Preview box for OKLCH */}
+                      {colorInputFormat === 'oklch' && (
+                        <div className="flex items-center gap-2 px-3 py-2 bg-gray-900/50 rounded-lg border border-gray-700/50">
+                          <div 
+                            className="w-8 h-8 rounded-md border-2 border-white/20 flex-shrink-0"
+                            style={{ backgroundColor: getCurrentColor().hex }}
+                          />
+                          <code className="text-white/90 text-[10px] font-mono leading-tight">
+                            oklch(<br/>
+                            {(getCurrentColor().l * 100).toFixed(1)}%<br/>
+                            {getCurrentColor().c.toFixed(3)}<br/>
+                            {getCurrentColor().h.toFixed(0)}°)
+                          </code>
+                        </div>
+                      )}
+
+                      {/* Original input for non-OKLCH formats */}
+                      {colorInputFormat !== 'oklch' && (
+                        <div className="flex-1 flex items-center gap-3 px-4 py-2 bg-gray-700/80 rounded-lg border border-gray-600/50 transition-all hover:border-gray-500/50">
+                          <div
+                            className="w-7 h-7 rounded-lg border-2 border-white/30 flex-shrink-0 shadow-sm transition-colors"
+                            style={{ backgroundColor: getCurrentColor().hex }}
+                          />
+                          {colorInputFormat === 'hex' && (
                       <input
                         type="text"
                         value={getCurrentColor().hex.toUpperCase()}
@@ -438,57 +492,14 @@ export function ColorSidebar({
                         />
                       </div>
                     )}
-                    {colorInputFormat === 'oklch' && (
-                      <div className="flex-1 flex items-center gap-2">
-                        <input
-                          type="number"
-                          min="0"
-                          max="100"
-                          step="1"
-                          value={Math.round(getCurrentColor().l * 100)}
-                          onChange={(e) => {
-                            const l = (parseInt(e.target.value) || 0) / 100;
-                            handlePickerChange(l, getCurrentColor().c, getCurrentColor().h);
-                          }}
-                          className="w-14 bg-transparent text-white text-xs text-center focus:outline-none"
-                          placeholder="L"
-                        />
-                        <span className="text-white/50 text-xs">%</span>
-                        <input
-                          type="number"
-                          min="0"
-                          max="0.4"
-                          step="0.01"
-                          value={getCurrentColor().c.toFixed(2)}
-                          onChange={(e) => {
-                            const c = parseFloat(e.target.value) || 0;
-                            handlePickerChange(getCurrentColor().l, c, getCurrentColor().h);
-                          }}
-                          className="w-14 bg-transparent text-white text-xs text-center focus:outline-none"
-                          placeholder="C"
-                        />
-                        <input
-                          type="number"
-                          min="0"
-                          max="360"
-                          value={Math.round(getCurrentColor().h)}
-                          onChange={(e) => {
-                            const h = parseInt(e.target.value) || 0;
-                            handlePickerChange(getCurrentColor().l, getCurrentColor().c, h);
-                          }}
-                          className="w-14 bg-transparent text-white text-xs text-center focus:outline-none"
-                          placeholder="H"
-                        />
-                        <span className="text-white/50 text-xs">°</span>
-                      </div>
-                    )}
                     {colorInputFormat === 'lch' && (
                       <div className="flex-1 text-white/50 text-xs text-center">
                         LCH input coming soon
                       </div>
                     )}
-                  </div>
-                </div>
+                        </div>
+                      )}
+                    </div>
 
                 {/* Color Sliders based on format */}
                 {colorInputFormat === 'hex' && (
@@ -591,148 +602,276 @@ export function ColorSidebar({
 
                 {colorInputFormat === 'rgb' && (
                   <div className="space-y-3">
-                    <div className="rgb-sliders-wrapper">
-                      <RgbColorPicker
-                        color={{
-                          r: parseInt(getCurrentColor().hex.slice(1, 3), 16),
-                          g: parseInt(getCurrentColor().hex.slice(3, 5), 16),
-                          b: parseInt(getCurrentColor().hex.slice(5, 7), 16)
-                        }}
-                        onChange={(rgb) => {
-                          const newHex = '#' + [rgb.r, rgb.g, rgb.b].map(v => Math.round(v).toString(16).padStart(2, '0')).join('');
-                          const oklch = hexToOKLCH(newHex);
-                          handlePickerChange(oklch.l, oklch.c, oklch.h);
-                        }}
-                      />
+                    {/* Red Slider */}
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-white/70 text-xs font-medium">Red</label>
+                        <span className="text-xs text-gray-300">{parseInt(getCurrentColor().hex.slice(1, 3), 16)}</span>
+                      </div>
+                      <div className="relative h-8 bg-gray-700 rounded-lg overflow-hidden">
+                        <div 
+                          className="absolute top-0 left-0 w-full h-8"
+                          style={{
+                            background: `linear-gradient(to right, 
+                              ${Array.from({ length: 11 }, (_, i) => {
+                                const r = Math.round((255 * i) / 10);
+                                const g = parseInt(getCurrentColor().hex.slice(3, 5), 16);
+                                const b = parseInt(getCurrentColor().hex.slice(5, 7), 16);
+                                return `rgb(${r}, ${g}, ${b}) ${(i / 10) * 100}%`;
+                              }).join(', ')}
+                            )`,
+                          }}
+                        />
+                        <input
+                          type="range"
+                          min="0"
+                          max="255"
+                          step="1"
+                          value={parseInt(getCurrentColor().hex.slice(1, 3), 16)}
+                          onChange={(e) => {
+                            const hex = getCurrentColor().hex;
+                            const r = parseInt(e.target.value);
+                            const g = parseInt(hex.slice(3, 5), 16);
+                            const b = parseInt(hex.slice(5, 7), 16);
+                            const newHex = '#' + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
+                            const oklch = hexToOKLCH(newHex);
+                            handlePickerChange(oklch.l, oklch.c, oklch.h);
+                          }}
+                          className="absolute top-0 left-0 w-full h-8 appearance-none cursor-pointer bg-transparent z-10"
+                          style={{ WebkitAppearance: 'none' }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Green Slider */}
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-white/70 text-xs font-medium">Green</label>
+                        <span className="text-xs text-gray-300">{parseInt(getCurrentColor().hex.slice(3, 5), 16)}</span>
+                      </div>
+                      <div className="relative h-8 bg-gray-700 rounded-lg overflow-hidden">
+                        <div 
+                          className="absolute top-0 left-0 w-full h-8"
+                          style={{
+                            background: `linear-gradient(to right, 
+                              ${Array.from({ length: 11 }, (_, i) => {
+                                const r = parseInt(getCurrentColor().hex.slice(1, 3), 16);
+                                const g = Math.round((255 * i) / 10);
+                                const b = parseInt(getCurrentColor().hex.slice(5, 7), 16);
+                                return `rgb(${r}, ${g}, ${b}) ${(i / 10) * 100}%`;
+                              }).join(', ')}
+                            )`,
+                          }}
+                        />
+                        <input
+                          type="range"
+                          min="0"
+                          max="255"
+                          step="1"
+                          value={parseInt(getCurrentColor().hex.slice(3, 5), 16)}
+                          onChange={(e) => {
+                            const hex = getCurrentColor().hex;
+                            const r = parseInt(hex.slice(1, 3), 16);
+                            const g = parseInt(e.target.value);
+                            const b = parseInt(hex.slice(5, 7), 16);
+                            const newHex = '#' + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
+                            const oklch = hexToOKLCH(newHex);
+                            handlePickerChange(oklch.l, oklch.c, oklch.h);
+                          }}
+                          className="absolute top-0 left-0 w-full h-8 appearance-none cursor-pointer bg-transparent z-10"
+                          style={{ WebkitAppearance: 'none' }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Blue Slider */}
+                    <div>
+                      <div className="flex items-center justify-between mb-2">
+                        <label className="text-white/70 text-xs font-medium">Blue</label>
+                        <span className="text-xs text-gray-300">{parseInt(getCurrentColor().hex.slice(5, 7), 16)}</span>
+                      </div>
+                      <div className="relative h-8 bg-gray-700 rounded-lg overflow-hidden">
+                        <div 
+                          className="absolute top-0 left-0 w-full h-8"
+                          style={{
+                            background: `linear-gradient(to right, 
+                              ${Array.from({ length: 11 }, (_, i) => {
+                                const r = parseInt(getCurrentColor().hex.slice(1, 3), 16);
+                                const g = parseInt(getCurrentColor().hex.slice(3, 5), 16);
+                                const b = Math.round((255 * i) / 10);
+                                return `rgb(${r}, ${g}, ${b}) ${(i / 10) * 100}%`;
+                              }).join(', ')}
+                            )`,
+                          }}
+                        />
+                        <input
+                          type="range"
+                          min="0"
+                          max="255"
+                          step="1"
+                          value={parseInt(getCurrentColor().hex.slice(5, 7), 16)}
+                          onChange={(e) => {
+                            const hex = getCurrentColor().hex;
+                            const r = parseInt(hex.slice(1, 3), 16);
+                            const g = parseInt(hex.slice(3, 5), 16);
+                            const b = parseInt(e.target.value);
+                            const newHex = '#' + [r, g, b].map(v => v.toString(16).padStart(2, '0')).join('');
+                            const oklch = hexToOKLCH(newHex);
+                            handlePickerChange(oklch.l, oklch.c, oklch.h);
+                          }}
+                          className="absolute top-0 left-0 w-full h-8 appearance-none cursor-pointer bg-transparent z-10"
+                          style={{ WebkitAppearance: 'none' }}
+                        />
+                      </div>
                     </div>
                   </div>
                 )}
 
                 {colorInputFormat === 'oklch' && (
-                  <div className="space-y-4">
+                  <div className="space-y-2.5">
                     {/* Lightness Slider */}
                     <div>
-                      <div className="flex items-center justify-between mb-2">
-                        <label className="text-white/70 text-xs font-medium">Lightness</label>
+                      <div className="flex items-center justify-between mb-1">
+                        <label className="text-white/70 text-[11px] font-medium">Lightness</label>
                         <input
-                          type="text"
-                          value={(getCurrentColor().l * 100).toFixed(2)}
+                          type="number"
+                          min="0"
+                          max="100"
+                          step="1"
+                          value={Math.round(getCurrentColor().l * 100)}
                           onChange={(e) => {
-                            const val = parseFloat(e.target.value);
+                            const val = parseInt(e.target.value);
                             if (!isNaN(val) && val >= 0 && val <= 100) {
-                              handlePickerChange(val / 100, getCurrentColor().c, getCurrentColor().h);
+                              handleOKLCHLightnessChange(val / 100);
                             }
                           }}
-                          className="w-20 px-2 py-1 bg-gray-700/80 text-white text-sm text-right rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
+                          className="w-12 px-1 py-0.5 bg-gray-700/80 text-white text-[11px] text-center rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
                         />
                       </div>
-                      <input
-                        type="range"
-                        min="0"
-                        max="100"
-                        step="0.01"
-                        value={getCurrentColor().l * 100}
-                        onChange={(e) => {
-                          const l = parseFloat(e.target.value) / 100;
-                          handlePickerChange(l, getCurrentColor().c, getCurrentColor().h);
-                        }}
-                        className="w-full h-10 rounded-lg appearance-none cursor-pointer"
-                        style={{
-                          background: `linear-gradient(to right, 
-                            oklch(0% ${getCurrentColor().c} ${getCurrentColor().h}),
-                            oklch(50% ${getCurrentColor().c} ${getCurrentColor().h}),
-                            oklch(100% ${getCurrentColor().c} ${getCurrentColor().h})
-                          )`
-                        }}
-                      />
+                      <div className="relative h-[10px] bg-gray-700 rounded-lg overflow-visible">
+                        {/* Generate gradient with steps for in-gamut range */}
+                        <div 
+                          className="absolute top-0 left-0 w-full h-full rounded-lg"
+                          style={{
+                            background: `linear-gradient(to right, 
+                              ${Array.from({ length: 21 }, (_, i) => {
+                                const l = lightnessRange.min + (lightnessRange.max - lightnessRange.min) * (i / 20);
+                                return `${oklchToHex({ l, c: currentColor.c, h: currentColor.h })} ${(l / 1) * 100}%`;
+                              }).join(', ')}, 
+                              transparent ${lightnessRange.max * 100}%
+                            )`,
+                          }}
+                        />
+                        <input
+                          type="range"
+                          min="0"
+                          max="1"
+                          step="0.01"
+                          value={getCurrentColor().l}
+                          onChange={(e) => {
+                            handleOKLCHLightnessChange(parseFloat(e.target.value));
+                          }}
+                          className="absolute top-0 left-0 w-full h-full appearance-none cursor-pointer bg-transparent z-10 slider-oklch"
+                          style={{ WebkitAppearance: 'none' }}
+                        />
+                      </div>
                     </div>
 
                     {/* Chroma Slider */}
                     <div>
-                      <div className="flex items-center justify-between mb-2">
-                        <label className="text-white/70 text-xs font-medium">Chroma</label>
+                      <div className="flex items-center justify-between mb-1">
+                        <label className="text-white/70 text-[11px] font-medium">Chroma</label>
                         <input
-                          type="text"
-                          value={getCurrentColor().c.toFixed(4)}
+                          type="number"
+                          min="0"
+                          max="0.4"
+                          step="0.001"
+                          value={getCurrentColor().c.toFixed(3)}
                           onChange={(e) => {
                             const val = parseFloat(e.target.value);
                             if (!isNaN(val) && val >= 0 && val <= 0.4) {
-                              handlePickerChange(getCurrentColor().l, val, getCurrentColor().h);
+                              handleOKLCHChromaChange(val);
                             }
                           }}
-                          className="w-20 px-2 py-1 bg-gray-700/80 text-white text-sm text-right rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
+                          className="w-12 px-1 py-0.5 bg-gray-700/80 text-white text-[11px] text-center rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
                         />
                       </div>
-                      <input
-                        type="range"
-                        min="0"
-                        max="0.4"
-                        step="0.0001"
-                        value={getCurrentColor().c}
-                        onChange={(e) => {
-                          const c = parseFloat(e.target.value);
-                          handlePickerChange(getCurrentColor().l, c, getCurrentColor().h);
-                        }}
-                        className="w-full h-10 rounded-lg appearance-none cursor-pointer"
-                        style={{
-                          background: `linear-gradient(to right, 
-                            oklch(${getCurrentColor().l * 100}% 0 ${getCurrentColor().h}),
-                            oklch(${getCurrentColor().l * 100}% 0.4 ${getCurrentColor().h})
-                          )`
-                        }}
-                      />
+                      <div className="relative h-[10px] bg-gray-700 rounded-lg overflow-visible">
+                        {/* Generate gradient with steps for in-gamut range */}
+                        <div 
+                          className="absolute top-0 left-0 w-full h-full rounded-lg"
+                          style={{
+                            background: `linear-gradient(to right, 
+                              ${Array.from({ length: 21 }, (_, i) => {
+                                const c = (maxChroma * i) / 20;
+                                return `${oklchToHex({ l: currentColor.l, c, h: currentColor.h })} ${(c / 0.4) * 100}%`;
+                              }).join(', ')}, 
+                              transparent ${(maxChroma / 0.4) * 100}%
+                            )`,
+                          }}
+                        />
+                        <input
+                          type="range"
+                          min="0"
+                          max="0.4"
+                          step="0.001"
+                          value={getCurrentColor().c}
+                          onChange={(e) => {
+                            handleOKLCHChromaChange(parseFloat(e.target.value));
+                          }}
+                          className="absolute top-0 left-0 w-full h-full appearance-none cursor-pointer bg-transparent z-10 slider-oklch"
+                          style={{ WebkitAppearance: 'none' }}
+                        />
+                      </div>
                     </div>
 
                     {/* Hue Slider */}
                     <div>
-                      <div className="flex items-center justify-between mb-2">
-                        <label className="text-white/70 text-xs font-medium">Hue</label>
+                      <div className="flex items-center justify-between mb-1">
+                        <label className="text-white/70 text-[11px] font-medium">Hue</label>
                         <input
-                          type="text"
-                          value={getCurrentColor().h.toFixed(2)}
+                          type="number"
+                          min="0"
+                          max="360"
+                          step="1"
+                          value={Math.round(getCurrentColor().h)}
                           onChange={(e) => {
-                            const val = parseFloat(e.target.value);
+                            const val = parseInt(e.target.value);
                             if (!isNaN(val) && val >= 0 && val <= 360) {
                               handlePickerChange(getCurrentColor().l, getCurrentColor().c, val);
                             }
                           }}
-                          className="w-20 px-2 py-1 bg-gray-700/80 text-white text-sm text-right rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
+                          className="w-12 px-1 py-0.5 bg-gray-700/80 text-white text-[11px] text-center rounded border border-gray-600/50 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
                         />
                       </div>
-                      <input
-                        type="range"
-                        min="0"
-                        max="360"
-                        step="0.01"
-                        value={getCurrentColor().h}
-                        onChange={(e) => {
-                          const h = parseFloat(e.target.value);
-                          handlePickerChange(getCurrentColor().l, getCurrentColor().c, h);
-                        }}
-                        className="w-full h-10 rounded-lg appearance-none cursor-pointer"
-                        style={{
-                          background: `linear-gradient(to right, 
-                            oklch(${getCurrentColor().l * 100}% ${getCurrentColor().c} 0),
-                            oklch(${getCurrentColor().l * 100}% ${getCurrentColor().c} 60),
-                            oklch(${getCurrentColor().l * 100}% ${getCurrentColor().c} 120),
-                            oklch(${getCurrentColor().l * 100}% ${getCurrentColor().c} 180),
-                            oklch(${getCurrentColor().l * 100}% ${getCurrentColor().c} 240),
-                            oklch(${getCurrentColor().l * 100}% ${getCurrentColor().c} 300),
-                            oklch(${getCurrentColor().l * 100}% ${getCurrentColor().c} 360)
-                          )`
-                        }}
-                      />
-                    </div>
-
-                    {/* Color preview string */}
-                    <div className="mt-4 p-3 bg-gray-900/50 rounded-lg border border-gray-700/50 flex items-center gap-3">
-                      <div 
-                        className="w-12 h-12 rounded-lg border-2 border-white/20 flex-shrink-0"
-                        style={{ backgroundColor: getCurrentColor().hex }}
-                      />
-                      <code className="text-white/90 text-sm font-mono">
-                        oklch({(getCurrentColor().l * 100).toFixed(2)}% {getCurrentColor().c.toFixed(4)} {getCurrentColor().h.toFixed(2)})
-                      </code>
+                      <div className="relative h-[10px] bg-gray-700 rounded-lg overflow-visible">
+                        <div 
+                          className="absolute top-0 left-0 w-full h-full rounded-lg"
+                          style={{
+                            background: `linear-gradient(to right,
+                              ${oklchToHex({ l: currentColor.l, c: currentColor.c, h: 0 })} 0%,
+                              ${oklchToHex({ l: currentColor.l, c: currentColor.c, h: 60 })} 16.67%,
+                              ${oklchToHex({ l: currentColor.l, c: currentColor.c, h: 120 })} 33.33%,
+                              ${oklchToHex({ l: currentColor.l, c: currentColor.c, h: 180 })} 50%,
+                              ${oklchToHex({ l: currentColor.l, c: currentColor.c, h: 240 })} 66.67%,
+                              ${oklchToHex({ l: currentColor.l, c: currentColor.c, h: 300 })} 83.33%,
+                              ${oklchToHex({ l: currentColor.l, c: currentColor.c, h: 360 })} 100%
+                            )`,
+                          }}
+                        />
+                        <input
+                          type="range"
+                          min="0"
+                          max="360"
+                          step="1"
+                          value={getCurrentColor().h}
+                          onChange={(e) => {
+                            handlePickerChange(getCurrentColor().l, getCurrentColor().c, parseFloat(e.target.value));
+                          }}
+                          className="absolute top-0 left-0 w-full h-full appearance-none cursor-pointer bg-transparent z-10 slider-oklch"
+                          style={{ WebkitAppearance: 'none' }}
+                        />
+                      </div>
                     </div>
                   </div>
                 )}
@@ -823,7 +962,19 @@ export function ColorSidebar({
                     </div>
                   </div>
                 )}
+                  </>
+                )}
               </div>
+            )}
+
+            {/* Show color picker button when hidden */}
+            {!isColorPickerVisible && (
+              <button
+                onClick={() => setIsColorPickerVisible(true)}
+                className="mt-4 w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors"
+              >
+                Show Color Picker
+              </button>
             )}
           </div>
 

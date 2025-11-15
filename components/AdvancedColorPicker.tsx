@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import { X } from 'lucide-react';
-import { hexToOKLCH, oklchToHex, hexToHSL, hslToHex, hexToRGBA, rgbaToHex } from '../utils/colorUtils';
+import { hexToOKLCH, oklchToHex, hexToHSL, hslToHex, hexToRGBA, rgbaToHex, findMaxChroma, findLightnessRange } from '../utils/colorUtils';
 
 interface AdvancedColorPickerProps {
   isOpen: boolean;
@@ -85,12 +85,25 @@ export function AdvancedColorPicker({
     onColorChange(newColor, h, c);
   };
 
+  // Calculate gamut limits with memoization for performance
+  const maxChroma = useMemo(() => {
+    return findMaxChroma(lightness, hue);
+  }, [lightness, hue]);
+  
+  const lightnessRange = useMemo(() => {
+    return findLightnessRange(chroma, hue);
+  }, [chroma, hue]);
+
   const handleLightnessChange = (value: number) => {
-    updateColor(value, chroma, hue);
+    // Clamp to valid range
+    const clampedValue = Math.max(lightnessRange.min, Math.min(lightnessRange.max, value));
+    updateColor(clampedValue, chroma, hue);
   };
 
   const handleChromaChange = (value: number) => {
-    updateColor(lightness, value, hue);
+    // Clamp to valid range
+    const clampedValue = Math.min(maxChroma, value);
+    updateColor(lightness, clampedValue, hue);
   };
 
   const handleHueChange = (value: number) => {
@@ -120,7 +133,7 @@ export function AdvancedColorPicker({
     const newHsl = { ...hslInput, [field]: value };
     setHslInput(newHsl);
     
-    const hexColor = hslToHex(newHsl.h, newHsl.s, newHsl.l);
+    const hexColor = hslToHex(newHsl);
     const oklch = hexToOKLCH(hexColor);
     updateColor(oklch.l, oklch.c, oklch.h);
   };
@@ -129,7 +142,7 @@ export function AdvancedColorPicker({
     const newRgba = { ...rgbaInput, [field]: value };
     setRgbaInput(newRgba);
     
-    const hexColor = rgbaToHex(newRgba.r, newRgba.g, newRgba.b);
+    const hexColor = rgbaToHex(newRgba);
     const oklch = hexToOKLCH(hexColor);
     updateColor(oklch.l, oklch.c, oklch.h);
   };
@@ -190,22 +203,31 @@ export function AdvancedColorPicker({
                 <label className="text-xs text-gray-400">Lightness</label>
                 <span className="text-xs text-gray-300">{Math.round(lightness * 100)}</span>
               </div>
-              <input
-                type="range"
-                min="0"
-                max="1"
-                step="0.01"
-                value={lightness}
-                onChange={(e) => handleLightnessChange(parseFloat(e.target.value))}
-                className="w-full h-2 rounded-lg appearance-none cursor-pointer"
-                style={{
-                  background: `linear-gradient(to right, 
-                    ${oklchToHex({ l: 0, c: chroma, h: hue })}, 
-                    ${oklchToHex({ l: 0.5, c: chroma, h: hue })}, 
-                    ${oklchToHex({ l: 1, c: chroma, h: hue })}
-                  )`,
-                }}
-              />
+              <div className="relative h-8 bg-gray-700 rounded-lg overflow-hidden">
+                {/* Generate gradient with steps for in-gamut range */}
+                <div 
+                  className="absolute top-0 left-0 w-full h-8"
+                  style={{
+                    background: `linear-gradient(to right, 
+                      ${Array.from({ length: 21 }, (_, i) => {
+                        const l = lightnessRange.min + (lightnessRange.max - lightnessRange.min) * (i / 20);
+                        return `${oklchToHex({ l, c: chroma, h: hue })} ${(l / 1) * 100}%`;
+                      }).join(', ')}, 
+                      transparent ${lightnessRange.max * 100}%
+                    )`,
+                  }}
+                />
+                <input
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  value={lightness}
+                  onChange={(e) => handleLightnessChange(parseFloat(e.target.value))}
+                  className="absolute top-0 left-0 w-full h-8 appearance-none cursor-pointer bg-transparent z-10"
+                  style={{ WebkitAppearance: 'none' }}
+                />
+              </div>
             </div>
 
             {/* Chroma */}
@@ -214,22 +236,31 @@ export function AdvancedColorPicker({
                 <label className="text-xs text-gray-400">Chroma</label>
                 <span className="text-xs text-gray-300">{chroma.toFixed(3)}</span>
               </div>
-              <input
-                type="range"
-                min="0"
-                max="0.4"
-                step="0.001"
-                value={chroma}
-                onChange={(e) => handleChromaChange(parseFloat(e.target.value))}
-                className="w-full h-2 rounded-lg appearance-none cursor-pointer"
-                style={{
-                  background: `linear-gradient(to right, 
-                    ${oklchToHex({ l: lightness, c: 0, h: hue })}, 
-                    ${oklchToHex({ l: lightness, c: 0.2, h: hue })}, 
-                    ${oklchToHex({ l: lightness, c: 0.4, h: hue })}
-                  )`,
-                }}
-              />
+              <div className="relative h-8 bg-gray-700 rounded-lg overflow-hidden">
+                {/* Generate gradient with steps for in-gamut range */}
+                <div 
+                  className="absolute top-0 left-0 w-full h-8"
+                  style={{
+                    background: `linear-gradient(to right, 
+                      ${Array.from({ length: 21 }, (_, i) => {
+                        const c = (maxChroma * i) / 20;
+                        return `${oklchToHex({ l: lightness, c, h: hue })} ${(c / 0.4) * 100}%`;
+                      }).join(', ')}, 
+                      transparent ${(maxChroma / 0.4) * 100}%
+                    )`,
+                  }}
+                />
+                <input
+                  type="range"
+                  min="0"
+                  max="0.4"
+                  step="0.001"
+                  value={chroma}
+                  onChange={(e) => handleChromaChange(parseFloat(e.target.value))}
+                  className="absolute top-0 left-0 w-full h-8 appearance-none cursor-pointer bg-transparent z-10"
+                  style={{ WebkitAppearance: 'none' }}
+                />
+              </div>
             </div>
 
             {/* Hue */}
@@ -238,26 +269,32 @@ export function AdvancedColorPicker({
                 <label className="text-xs text-gray-400">Hue</label>
                 <span className="text-xs text-gray-300">{Math.round(hue)}°</span>
               </div>
-              <input
-                type="range"
-                min="0"
-                max="360"
-                step="1"
-                value={hue}
-                onChange={(e) => handleHueChange(parseFloat(e.target.value))}
-                className="w-full h-2 rounded-lg appearance-none cursor-pointer"
-                style={{
-                  background: `linear-gradient(to right,
-                    ${oklchToHex({ l: lightness, c: chroma, h: 0 })},
-                    ${oklchToHex({ l: lightness, c: chroma, h: 60 })},
-                    ${oklchToHex({ l: lightness, c: chroma, h: 120 })},
-                    ${oklchToHex({ l: lightness, c: chroma, h: 180 })},
-                    ${oklchToHex({ l: lightness, c: chroma, h: 240 })},
-                    ${oklchToHex({ l: lightness, c: chroma, h: 300 })},
-                    ${oklchToHex({ l: lightness, c: chroma, h: 360 })}
-                  )`,
-                }}
-              />
+              <div className="relative h-8 bg-gray-700 rounded-lg overflow-hidden">
+                <div 
+                  className="absolute top-0 left-0 w-full h-8"
+                  style={{
+                    background: `linear-gradient(to right,
+                      ${oklchToHex({ l: lightness, c: chroma, h: 0 })} 0%,
+                      ${oklchToHex({ l: lightness, c: chroma, h: 60 })} 16.67%,
+                      ${oklchToHex({ l: lightness, c: chroma, h: 120 })} 33.33%,
+                      ${oklchToHex({ l: lightness, c: chroma, h: 180 })} 50%,
+                      ${oklchToHex({ l: lightness, c: chroma, h: 240 })} 66.67%,
+                      ${oklchToHex({ l: lightness, c: chroma, h: 300 })} 83.33%,
+                      ${oklchToHex({ l: lightness, c: chroma, h: 360 })} 100%
+                    )`,
+                  }}
+                />
+                <input
+                  type="range"
+                  min="0"
+                  max="360"
+                  step="1"
+                  value={hue}
+                  onChange={(e) => handleHueChange(parseFloat(e.target.value))}
+                  className="absolute top-0 left-0 w-full h-8 appearance-none cursor-pointer bg-transparent z-10"
+                  style={{ WebkitAppearance: 'none' }}
+                />
+              </div>
             </div>
           </div>
 

@@ -131,17 +131,6 @@
   body {
     @apply bg-background text-foreground;
   }
-
-  /* Text selection styling */
-  ::selection {
-    background-color: var(--primary);
-    color: var(--on-surface-head, #ffffff);
-  }
-
-  ::-moz-selection {
-    background-color: var(--primary);
-    color: var(--on-surface-head, #ffffff);
-  }
 }
 
 /**
@@ -339,6 +328,47 @@ input[type="range"]::-moz-range-thumb:active {
   transform: scale(0.95);
 }
 
-.typo-h2 { 
-  color: var(--on-surface-head);
+/* Thin sliders for OKLCH/RGB color pickers */
+input[type="range"].slider-thin::-webkit-slider-track {
+  height: 10px;
+}
+
+input[type="range"].slider-thin::-webkit-slider-thumb {
+  width: 16px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+input[type="range"].slider-thin::-moz-range-track {
+  height: 10px;
+}
+
+input[type="range"].slider-thin::-moz-range-thumb {
+  width: 16px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+/* OKLCH sliders with round pointer */
+input[type="range"].slider-oklch::-webkit-slider-track {
+  height: 10px;
+}
+
+input[type="range"].slider-oklch::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  margin-top: -5px; /* Center vertically: (20px - 10px) / 2 */
+}
+
+input[type="range"].slider-oklch::-moz-range-track {
+  height: 10px;
+}
+
+input[type="range"].slider-oklch::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
 }
