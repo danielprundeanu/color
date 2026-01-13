@@ -1,0 +1,68 @@
+{
+  "card": {
+    "lvl-1": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding left."
+        }
+      }
+    },
+    "lvl-2": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Card level-1 - padding left."
+        }
+      }
+    },
+    "title": {
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Card Title - Horizontal gap."
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Card Title - Vertical gap."
+        }
+      }
+    }
+  }
+}

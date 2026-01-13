@@ -1,0 +1,138 @@
+{
+  "radius": {
+    "base": {
+      "$type": "borderRadius",
+      "$value": "8px"
+    }
+  },
+  "space": {
+    "base": {
+      "$type": "dimension",
+      "$value": "8px"
+    }
+  },
+  "size": {
+    "base": {
+      "$type": "dimension",
+      "$value": "8px"
+    }
+  },
+  "icon": {
+    "size": {
+      "base": {
+        "$type": "dimension",
+        "$value": "16px"
+      }
+    }
+  },
+  "border": {
+    "base": {
+      "$type": "borderWidth",
+      "$value": "1px"
+    }
+  },
+  "shadow": {
+    "base": {
+      "xs": {
+        "x": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
+        "y": {
+          "$type": "dimension",
+          "$value": "1px"
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "3px"
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "1px"
+        }
+      },
+      "sm": {
+        "x": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
+        "y": {
+          "$type": "dimension",
+          "$value": "2px"
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "6px"
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "2px"
+        }
+      },
+      "md": {
+        "x": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
+        "y": {
+          "$type": "dimension",
+          "$value": "4px"
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "8px"
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "3px"
+        }
+      },
+      "lg": {
+        "x": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
+        "y": {
+          "$type": "dimension",
+          "$value": "6px"
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "10px"
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "4px"
+        }
+      },
+      "xl": {
+        "x": {
+          "$type": "dimension",
+          "$value": "0px"
+        },
+        "y": {
+          "$type": "dimension",
+          "$value": "8px"
+        },
+        "blur": {
+          "$type": "dimension",
+          "$value": "12px"
+        },
+        "spread": {
+          "$type": "dimension",
+          "$value": "6px"
+        }
+      }
+    }
+  },
+  "brk-point": {
+    "tablet": {
+      "$type": "dimension",
+      "$value": "900px"
+    },
+    "desktop": {
+      "$type": "dimension",
+      "$value": "1400px"
+    }
+  }
+}

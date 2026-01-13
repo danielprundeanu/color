@@ -1,0 +1,480 @@
+{
+  "badge": {
+    "status": {
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Top Border width for category tag Medium."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Right Border width for category tag Medium."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Bottom Border width for category tag Medium."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Left Border width for category tag Medium."
+        }
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{size.75}",
+          "$description": "Status Badge left padding."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{size.75}",
+          "$description": "Status Badge right padding."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Status Badge gap."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Border radius for category tag Medium."
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.80}",
+          "fontWeight": "{font-weight.600}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Status Badge label typography."
+      },
+      "label": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.50}",
+            "$description": "Badge label padding left. (to mentain a good distance when we have only one icon)"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.50}",
+            "$description": "Badge label padding right. (to mentain a good distance when we have only one icon)"
+          }
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.200}",
+          "$description": "Status Badge icon size."
+        }
+      },
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Status Badge height."
+      },
+      "success": {
+        "fill": {
+          "$type": "color",
+          "$value": "{success.surface.default}",
+          "$description": "Success status badge background color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{success.surface.default}",
+          "$description": "Success status badge border color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{success.fill.default}",
+            "$description": "Success status badge on fill color."
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{on.surface.success.body}",
+            "$description": "Naked Success status badge on surface color."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          },
+          "$description": "Success status badge shadow. "
+        }
+      },
+      "info": {
+        "fill": {
+          "$type": "color",
+          "$value": "{info.surface.default}",
+          "$description": "Info status badge background color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{info.surface.default}",
+          "$description": "Info status badge border color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{info.fill.default}",
+            "$description": "Info status badge on fill color."
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{info.fill.default}",
+            "$description": "Naked Info status badge on surface color."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          },
+          "$description": "Info status badge shadow. "
+        }
+      },
+      "error": {
+        "fill": {
+          "$type": "color",
+          "$value": "{error.surface.default}",
+          "$description": "Error status badge background color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{error.surface.default}",
+          "$description": "Error status badge border color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{error.on.surface.default}",
+            "$description": "Error status badge on fill color."
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{on.surface.error.body}",
+            "$description": "Naked Error status badge on surface color."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          },
+          "$description": "Error status badge shadow. "
+        }
+      },
+      "warning": {
+        "fill": {
+          "$type": "color",
+          "$value": "{warning.surface.default}",
+          "$description": "Warning status badge background color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{warning.surface.default}",
+          "$description": "Warning status badge border color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{warning.on.surface.default}",
+            "$description": "Warning status badge on fill color."
+          },
+          "surface": {
+            "$type": "color",
+            "$value": "{on.surface.warning.head}",
+            "$description": "Naked Warning status badge on surface color."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          },
+          "$description": "Warning status badge shadow. "
+        }
+      },
+      "inverted": {
+        "success": {
+          "fill": {
+            "$type": "color",
+            "$value": "{positive.90}",
+            "$description": "Success status badge background color."
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{positive.90}",
+            "$description": "Success status badge border color."
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{positive.30}",
+              "$description": "Success status badge on fill color."
+            },
+            "surface": {
+              "$type": "color",
+              "$value": "{positive.30}",
+              "$description": "Naked Success status badge on surface color."
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "innerShadow"
+            },
+            "$description": "Success inverted status badge shadow. "
+          }
+        },
+        "info": {
+          "fill": {
+            "$type": "color",
+            "$value": "{informative.90}",
+            "$description": "Info status badge background color."
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{informative.90}",
+            "$description": "Info status badge border color."
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{informative.30}",
+              "$description": "Info status badge on fill color."
+            },
+            "surface": {
+              "$type": "color",
+              "$value": "{informative.30}",
+              "$description": "Naked Info status badge on surface color."
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "innerShadow"
+            },
+            "$description": "Info inverted status badge shadow. "
+          }
+        },
+        "error": {
+          "fill": {
+            "$type": "color",
+            "$value": "{negative.90}",
+            "$description": "Error status badge background color."
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{negative.90}",
+            "$description": "Error status badge border color."
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{negative.30}",
+              "$description": "Error status badge on fill color."
+            },
+            "surface": {
+              "$type": "color",
+              "$value": "{negative.30}",
+              "$description": "Naked Error status badge on surface color."
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "innerShadow"
+            },
+            "$description": "Error inverted status badge shadow. "
+          }
+        },
+        "warning": {
+          "fill": {
+            "$type": "color",
+            "$value": "{notice.90}",
+            "$description": "Warning status badge background color."
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{notice.90}",
+            "$description": "Warning status badge border color."
+          },
+          "on": {
+            "fill": {
+              "$type": "color",
+              "$value": "{notice.30}",
+              "$description": "Warning status badge on fill color."
+            },
+            "surface": {
+              "$type": "color",
+              "$value": "{notice.30}",
+              "$description": "Naked Warning status badge on surface color."
+            }
+          },
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "transparent",
+              "type": "innerShadow"
+            },
+            "$description": "Warning inverted status badge shadow. "
+          }
+        }
+      }
+    },
+    "notification": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Notification chip padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Notification chip padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Notification chip padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Notification chip padding left."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Notification chip border radius."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{sub-brand-01.70}",
+          "$description": "Notification chip border color."
+        },
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Notification chip border width."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.50}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.base}",
+          "letterSpacing": "{typo.lspace.sm}"
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{sub-brand-01.70}"
+      },
+      "on": {
+        "fill": {
+          "$type": "color",
+          "$value": "{white.100}"
+        }
+      }
+    },
+    "counter": {
+      "border": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.3",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{white.100}"
+      },
+      "fill": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.15",
+              "space": "lch"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{white.100}"
+      },
+      "on": {
+        "fill": {
+          "$type": "color",
+          "$value": "{white.100}"
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.60}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "16"
+        }
+      }
+    }
+  }
+}

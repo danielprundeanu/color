@@ -1,0 +1,440 @@
+{
+  "modal": {
+    "lg": {
+      "max-height": {
+        "$type": "sizing",
+        "$value": "500px",
+        "$description": "Modal max-height for desktop."
+      },
+      "min-width": {
+        "$type": "sizing",
+        "$value": "340px",
+        "$description": "Modal min-width for desktop."
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Modal padding top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Modal padding right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Modal padding bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Modal padding left."
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Modal Dialog surface color."
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Modal Dialog on surface color for headings."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Modal Dialog on surface color for body."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Modal Dialog on surface color for label."
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{on.surface.success.head}",
+          "$description": "Modal Dialog on surface color success state."
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{on.surface.warning.head}",
+          "$description": "Modal Dialog on surface color warning state."
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{on.surface.error.head}",
+          "$description": "Modal Dialog on surface color error state."
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{on.surface.info.head}",
+          "$description": "Modal Dialog on surface color info state."
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Modal Dialog border color."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Modal border right width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Modal border bottom width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Modal border left width."
+      }
+    },
+    "icon": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal content padding top."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Modal content padding bottom."
+        }
+      },
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.800}",
+        "$description": "Modal icon size."
+      }
+    },
+    "head": {
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Modal Dialog footer surface color."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Modal Dialog footer border color."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Modal footer gap."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Modal footer padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal footer padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Modal footer padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal footer padding left."
+        }
+      }
+    },
+    "title": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Modal title & description gap."
+      }
+    },
+    "body": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Modal body padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal body padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Modal body padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal body padding left."
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Modal Dialog body surface color."
+      }
+    },
+    "footer": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Modal footer gap."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal footer padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal footer padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal footer padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Modal footer padding left."
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Modal Dialog footer surface color."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Modal Dialog footer border color."
+        }
+      }
+    },
+    "close": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Modal close icon size."
+        }
+      },
+      "space": {
+        "all": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Modal Close button padding all."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Modal Close button right position."
+        },
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Modal Close button top position."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Modal close button border radius."
+      },
+      "fill": {
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.3",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Modal Close default fill."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.20}",
+          "$description": "Modal Close hover fill."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primary.30}",
+          "$description": "Modal Close focus fill."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{neutral.on.surface.strong}",
+            "$description": "Modal Close default on fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.fill.default}",
+            "$description": "Modal Close hover on fill."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{primary.100}",
+            "$description": "Modal Close focus on fill."
+          }
+        }
+      },
+      "inverted": {
+        "space": {
+          "all": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Modal Close button padding all."
+          }
+        }
+      }
+    },
+    "inverted": {
+      "close": {
+        "fill": {
+          "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.3",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Modal Close default fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.110}",
+            "$description": "Modal Close hover fill."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{primary.100}",
+            "$description": "Modal Close focus fill."
+          }
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.head}",
+              "$description": "Modal Close default on fill."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.primary}",
+              "$description": "Modal Close hover on fill."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{inverted.on.surface.primary}",
+              "$description": "Modal Close focus on fill."
+            }
+          }
+        }
+      }
+    },
+    "gui": {
+      "head": {
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.600}",
+            "$description": "Modal GUI -> Header icon size."
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Modal GUI -> padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Modal GUI -> padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Modal GUI -> padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Modal GUI -> padding left."
+          }
+        },
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Modal GUI ->  horizontal gap."
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Modal GUI ->  vertical gap."
+          }
+        }
+      },
+      "typo": {
+        "head": {
+          "$type": "typography",
+          "$value": "{typo.heading.sm}"
+        },
+        "body": {
+          "$type": "typography",
+          "$value": "{typo.label.md}",
+          "$description": "Modal GUI -> Subtitle typography."
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Modal GUI ->  body gap."
+        }
+      }
+    }
+  }
+}

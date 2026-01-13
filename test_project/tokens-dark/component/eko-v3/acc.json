@@ -1,0 +1,318 @@
+{
+  "acc": {
+    "md": {
+      "head": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion header top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion header right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Accordion header bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion header left padding."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Accordion header gap."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border top width."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border right width."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border bottom width."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border left width."
+          }
+        }
+      },
+      "body": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body left padding."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Accordion body gap."
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border left width."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Accordion border radius."
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.md}",
+          "$description": "Medium Accordion title typography."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Medium Accordion label typography."
+        }
+      }
+    },
+    "lg": {
+      "head": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion header top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion header right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Accordion header bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion header left padding."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Accordion header gap."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border top width."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border right width."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border bottom width."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Accordion header border left width."
+          }
+        }
+      },
+      "body": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Accordion body left padding."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Accordion body gap."
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Accordion body border left width."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Accordion border radius."
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.md}",
+          "$description": "Large Accordion title typography."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.sm}",
+          "$description": "Large Accordion label typography."
+        }
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "transparent",
+      "$description": "Accordion surface color."
+    },
+    "border": {
+      "$type": "color",
+      "$value": "transparent",
+      "$description": "Accordion border color."
+    },
+    "header": {
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "transparent",
+          "$description": "Accordion header surface color."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "transparent",
+          "$description": "Accordion border default surface color."
+        }
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Accordion on surface color for headings."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{form.on.surface.label}",
+            "$description": "Accordion on surface color for label."
+          }
+        }
+      }
+    },
+    "body": {
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "transparent",
+          "$description": "Accordion header surface color."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "transparent",
+          "$description": "Accordion border default surface color."
+        }
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "#000000",
+        "type": "dropShadow"
+      },
+      "$description": "Accordion drop shadow."
+    }
+  }
+}

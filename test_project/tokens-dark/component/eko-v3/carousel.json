@@ -1,0 +1,217 @@
+{
+  "carousel": {
+    "md": {
+      "slide": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Carousel Medium slide padding left."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Carousel Medium slide padding right."
+          }
+        }
+      },
+      "offset": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Carousel Medium left offset."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.700}",
+          "$description": "Carousel Medium right offset."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Carousel Medium top padding."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Carousel Medium bottom padding."
+        }
+      },
+      "arrow": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Arrows medium size"
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        }
+      }
+    },
+    "lg": {
+      "offset": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Carousel Medium left offset."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.700}",
+          "$description": "Carousel Medium right offset."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Carousel Medium top padding."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Carousel Medium bottom padding."
+        }
+      },
+      "arrow": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.400}",
+          "$description": "Arrows large size"
+        }
+      },
+      "slide": {
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Carousel Medium slide padding left."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Carousel Medium slide padding right."
+          }
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        }
+      }
+    },
+    "arrow": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{neutral.surface.weak}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{neutral.surface.strong}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{border.default}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{border.strong}"
+        },
+        "width": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.head}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{on.surface.head}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{on.surface.head}"
+          }
+        }
+      },
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "-3",
+          "y": "2.25",
+          "blur": "4.88",
+          "spread": "0",
+          "color": "rgba(0,0,0,0.14)",
+          "type": "dropShadow"
+        }
+      },
+      "hover": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "-3",
+          "y": "2.25",
+          "blur": "4.88",
+          "spread": "0",
+          "color": "rgba(0,0,0,0.14)",
+          "type": "dropShadow"
+        }
+      },
+      "focus": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "-3",
+          "y": "2.25",
+          "blur": "4.88",
+          "spread": "0",
+          "color": "rgba(0,0,0,0.14)",
+          "type": "dropShadow"
+        }
+      }
+    }
+  }
+}

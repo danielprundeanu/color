@@ -1,0 +1,406 @@
+{
+  "airt": {
+    "md": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "AirTimer -> gap between elements."
+      },
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.600}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.md} * 100%",
+            "textCase": "{typo.case.uppercase}"
+          },
+          "$description": "Airtimer -> mobile Title typography."
+        }
+      },
+      "body": {
+        "head": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontWeight": "{font-weight.700-italic}",
+              "fontSize": "{font-size.300}",
+              "lineHeight": "{line-height.sm} * 100%"
+            },
+            "$description": "Airtimer body -> mobile Title typography."
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.250}",
+            "$description": "AirTimer body -> mobile padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "AirTimer body -> mobile padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.250}",
+            "$description": "AirTimer body -> mobile padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "AirTimer body -> mobile padding left."
+          }
+        }
+      },
+      "header": {
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "AirTimer -> gap between elements."
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "AirTimer -> gap between elements."
+          }
+        }
+      }
+    },
+    "lg": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.400}",
+        "$description": "AirTimer -> horizontal gap between elements."
+      },
+      "header": {
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "AirTimer -> vertical gap between elements."
+          }
+        }
+      },
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.600}",
+            "fontSize": "{font-size.200}",
+            "lineHeight": "{line-height.md} * 100%",
+            "textCase": "{typo.case.uppercase}"
+          },
+          "$description": "Airtimer -> mobile Title typography."
+        }
+      },
+      "body": {
+        "head": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontWeight": "{font-weight.800-italic}",
+              "fontSize": "{font-size.400}",
+              "lineHeight": "{line-height.sm} * 100%"
+            },
+            "$description": "Airtimer body -> desktop Title typography."
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.400}",
+            "$description": "AirTimer body -> desktop padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "AirTimer body -> desktop padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.400}",
+            "$description": "AirTimer body -> desktop padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "AirTimer body -> desktop padding left."
+          }
+        }
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#171047",
+      "$description": "AirTimer -> padding top."
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "AirTimer -> border color."
+      },
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "AirTimer -> border top width."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "AirTimer -> border right width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "AirTimer -> border bottom width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "AirTimer -> border left width."
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{informative.40}",
+          "$description": "AirTimer -> head text color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "AirTimer -> body text color."
+        },
+        "label": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.8",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "AirTimer -> label text color."
+        }
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "AirTimer -> padding top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "AirTimer -> padding right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "AirTimer -> padding bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "AirTimer -> padding left."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.xl}",
+      "$description": "AirTimer -> border radius."
+    },
+    "header": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "AirTimer header -> padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "AirTimer header -> padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "AirTimer header -> padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "AirTimer header -> padding left."
+        }
+      }
+    },
+    "footer": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "AirTimer footer -> gap between elements."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "AirTimer footer -> padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "AirTimer footer -> padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "AirTimer footer -> padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "AirTimer footer -> padding left."
+        }
+      }
+    },
+    "body": {
+      "surface": {
+        "$type": "color",
+        "$value": "#253771",
+        "$description": "AirTimer body -> surface color."
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "AirTimer body -> head text color."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "#FFDE72",
+            "$description": "AirTimer body -> body text color."
+          }
+        }
+      },
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "AirTimer -> gap between copy and button."
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "AirTimer -> gap between typo."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.xl}",
+        "$description": "AirTimer -> border radius."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "#35558D",
+          "$description": "AirTimer body -> border color."
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "AirTimer -> border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "AirTimer -> border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "AirTimer -> border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "AirTimer -> border left width."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.200}",
+          "lineHeight": "{line-height.sm} * 100%"
+        },
+        "$description": "Airtimer -> Body typography."
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.600-italic}",
+            "fontSize": "{font-size.200}",
+            "lineHeight": "{line-height.md} * 100%"
+          },
+          "$description": "Airtimer -> Label typography."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "innerShadow"
+        },
+        "$description": "Airtimer -> dropshadow."
+      }
+    },
+    "label": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.500}",
+          "fontSize": "{font-size.80}",
+          "lineHeight": "{line-height.md} * 100%"
+        },
+        "$description": "Airtimer -> Label typography."
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "{transparent}",
+        "type": "dropShadow"
+      },
+      "$description": "Airtimer -> dropshadow."
+    }
+  }
+}

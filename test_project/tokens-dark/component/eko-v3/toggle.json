@@ -1,0 +1,593 @@
+{
+  "toggle": {
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      }
+    },
+    "md": {
+      "label": {
+        "outside": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.md}",
+            "$description": "Toggle Medium -> Outside label typography."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Toggle Medium -> Inner label typography."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Toggle Medium -> border radius."
+      },
+      "switch": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Toggle Medium -> Switch border radius."
+        },
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Toggle -> Medium Switch size. (width & height)"
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.250}",
+            "$description": "Toggle -> Medium Switch Icon size (width and height)"
+          }
+        },
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Toggle Medium -> Switch padding left for inner label."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Toggle Medium -> Switch padding right for inner label."
+          }
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Toggle Medium -> Gap inside the toggle body (between switch and label)\n"
+      },
+      "space": {
+        "all": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Toggle Medium -> padding value. (same for all directions)"
+        }
+      }
+    },
+    "sm": {
+      "label": {
+        "outside": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.sm}",
+            "$description": "Toggle Small -> Outside label typography."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Toggle Small -> Inner label typography."
+        }
+      },
+      "switch": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.250}",
+          "$description": "Toggle -> Small Switch size. (width & height)"
+        },
+        "icon": {
+          "size": {
+            "$type": "sizing",
+            "$value": "{size.200}",
+            "$description": "Toggle -> Small Switch Icon size (width and height)"
+          }
+        },
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Toggle Small -> Switch padding left for inner label."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Toggle Small -> Switch padding right for inner label."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Toggle Small -> Switch border radius."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Toggle Small -> Gap inside the toggle body (between switch and label)"
+      },
+      "space": {
+        "all": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Toggle Small -> padding value. (same for all directions)"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Toggle Small -> border radius."
+      }
+    },
+    "pill": {
+      "sm": {
+        "toggle": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Toggle Small -> border radius on pill layout."
+          }
+        },
+        "switch": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.sm}",
+            "$description": "Toggle Small -> Switch border radius on pill layout."
+          },
+          "width": {
+            "$type": "sizing",
+            "$value": "{size.1000}",
+            "$description": "Toggle -> Small Switch width for pill layout."
+          },
+          "space": {
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Toggle Small -> Switch padding left for pill layout."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Toggle Small -> Switch padding right for pill layout."
+            }
+          }
+        }
+      },
+      "md": {
+        "toggle": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Toggle Medium -> border radius on pill layout."
+          }
+        },
+        "switch": {
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Toggle Medium -> Switch border radius on pill layout."
+          },
+          "width": {
+            "$type": "sizing",
+            "$value": "80px",
+            "$description": "Toggle -> Medium Switch width for pill layout."
+          },
+          "space": {
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Toggle Medium -> Switch padding left for pill layout."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Toggle Medium -> Switch padding right for pill layout."
+            }
+          }
+        }
+      }
+    },
+    "false": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{neutral.surface.weak}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{neutral.surface.default}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{neutral.surface.default}",
+          "$description": "Unchecked Toggle Switch on focus state."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{neutral.fill.disabled}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{neutral.surface.default}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{white.100}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{neutral.fill.disabled}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{neutral.on.fill.disabled}"
+          }
+        }
+      },
+      "switch": {
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.label}",
+              "$description": "Toggle -> Switch unchecked on fill default color. (the circle and the active pill)"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{neutral.on.fill.disabled}",
+              "$description": "Toggle -> Switch unchecked on fill disabled color. (the circle and the active pill)"
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "1",
+              "y": "2",
+              "blur": "10",
+              "spread": "1",
+              "color": "rgba(61,75,114,0.15)",
+              "type": "dropShadow"
+            }
+          },
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "rgba(0,0,0,0)",
+              "type": "innerShadow"
+            }
+          }
+        },
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{neutral.on.fill.default}",
+            "$description": "Toggle -> Switch fill color. (the circle and the active pill)"
+          },
+          "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.3",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{grey.surface.default}",
+            "$description": "Toggle -> Switch fill color. (the circle and the active pill)"
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{neutral.on.fill.default}",
+            "$description": "Toggle -> Switch border color. (the circle and the active pill)"
+          },
+          "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.3",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{grey.surface.default}",
+            "$description": "Toggle -> Switch border color. (the circle and the active pill)"
+          }
+        }
+      }
+    },
+    "true": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.fill.default}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{primary.fill.disabled}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.fill.default}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{white.100}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{primary.fill.disabled}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{neutral.on.fill.disabled}"
+          }
+        }
+      },
+      "switch": {
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.on.surface.default}",
+              "$description": "Toggle -> Switch checked on fill default color. (the circle and the active pill)"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{neutral.on.fill.disabled}",
+              "$description": "Toggle -> Switch checked on fill dsiabled color. (the circle and the active pill)"
+            }
+          }
+        },
+        "shadow": {
+          "default": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "-2",
+              "y": "1",
+              "blur": "10",
+              "spread": "0",
+              "color": "rgba(0,0,0,0.25)",
+              "type": "dropShadow"
+            }
+          },
+          "disabled": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "rgba(0,0,0,0)",
+              "type": "dropShadow"
+            }
+          }
+        },
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Toggle -> Switch fill color. (the circle and the active pill)"
+          },
+          "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.1",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{grey.fill.disabled}",
+            "$description": "Toggle -> Switch fill color. (the circle and the active pill)"
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Toggle -> Switch border color. (the circle and the active pill)"
+          },
+          "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "lighten",
+                  "value": "0.1",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{grey.fill.disabled}",
+            "$description": "Toggle -> Switch border color. (the circle and the active pill)"
+          }
+        }
+      }
+    },
+    "on": {
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{on.surface.disabled}"
+        }
+      }
+    },
+    "switch": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "Toggle -> Switch fill color. (the circle and the active pill)"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "Toggle -> Switch border color. (the circle and the active pill)"
+        }
+      }
+    },
+    "shadow": {
+      "false": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "1",
+            "y": "1",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "1",
+            "y": "1",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        },
+        "focused": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "2",
+            "color": "{neutral.surface.default}",
+            "type": "dropShadow"
+          }
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "1",
+            "y": "1",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          }
+        }
+      },
+      "true": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "1",
+            "y": "1",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          }
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "1",
+            "y": "1",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          }
+        },
+        "focused": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "2",
+            "color": "{primary.fill.active}",
+            "type": "dropShadow"
+          }
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "1",
+            "y": "1",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "innerShadow"
+          }
+        }
+      }
+    }
+  }
+}

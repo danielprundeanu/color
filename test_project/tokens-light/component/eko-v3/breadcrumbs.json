@@ -1,0 +1,54 @@
+{
+  "breadcrumbs": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.150}",
+        "$description": "Breadcrumbs Item icon size."
+      }
+    },
+    "item": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Breadcrumbs Item gap."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.25}",
+      "$description": "Breadcrumbs Bar gap."
+    },
+    "typo": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font-family.200}",
+        "fontSize": "{font-size.50}",
+        "fontWeight": "{font-weight.500}",
+        "lineHeight": "{line-height.sm} * 100%"
+      }
+    },
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{secondary.on.fill.default}",
+        "$description": "Breadcrumbs Item default state."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.40}",
+        "$description": "Breadcrumbs Item hover state."
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{primary.on.fill.default}",
+        "$description": "Breadcrumbs Item active state."
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{primary.fill.disabled}",
+        "$description": "Breadcrumbs Item disabled state."
+      }
+    }
+  }
+}

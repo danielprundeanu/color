@@ -1,0 +1,210 @@
+{
+  "side": {
+    "header": {
+      "md": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.700}",
+          "$description": "Sidepannel Header height on mobile."
+        }
+      },
+      "lg": {
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.900}",
+          "$description": "Sidepannel Header height on desktop."
+        },
+        "space": {
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Sidepannel body padding right."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Sidepannel body padding left."
+          },
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Sidepannel - header top padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Sidepannel - header bottom padding."
+          }
+        }
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding right."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding left."
+        },
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Sidepannel - header top padding."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel - header bottom padding."
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{primary.surface.strong}"
+      },
+      "on-surface": {
+        "$type": "color",
+        "$value": "{primary.on.fill.default}"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.surface.strong}",
+          "$description": "Sidepannel header border color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Side - header shadow."
+      }
+    },
+    "space": {
+      "md": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding left."
+        }
+      },
+      "lg": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Sidepannel body padding left."
+        }
+      }
+    },
+    "profile": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Profile Side navigation surface color"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Profile Side navigation border color."
+      }
+    },
+    "bottom": {
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.strongest}"
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{on.surface.body}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}",
+          "$description": "Sidepannel bottom border color."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Sidepannel - bottom shadow."
+      },
+      "item": {
+        "md": {
+          "width": {
+            "$type": "sizing",
+            "$value": "{size.1000}",
+            "$description": "Bottom - item width size for mobile."
+          }
+        },
+        "lg": {
+          "width": {
+            "$type": "sizing",
+            "$value": "{size.1000}",
+            "$description": "Bottom - item width size for desktop.\n"
+          }
+        }
+      }
+    },
+    "y": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Sidepannel vetical gap."
+      }
+    },
+    "x": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Sidepannel horozontal gap."
+      }
+    }
+  }
+}

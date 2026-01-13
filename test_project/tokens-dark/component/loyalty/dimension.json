@@ -1,0 +1,75 @@
+{
+  "loyalty": {
+    "icon": {
+      "size": {
+        "sm": {
+          "$type": "sizing",
+          "$value": "{icon.size.sm}",
+          "$description": "Small icon size used across loyalty components."
+        },
+        "md": {
+          "$type": "sizing",
+          "$value": "{icon.size.lg}",
+          "$description": "Medium icon size used across loyalty components."
+        }
+      }
+    },
+    "rank": {
+      "size": {
+        "xs": {
+          "$type": "sizing",
+          "$value": "{size.300}",
+          "$description": "Rank illustation extra small size (used within progress section)."
+        },
+        "sm": {
+          "$type": "sizing",
+          "$value": "{size.500}",
+          "$description": "Rank illustation small size (used within small rank card)."
+        },
+        "md": {
+          "$type": "sizing",
+          "$value": "{size.700}",
+          "$description": "Rank illustation medium size (used within loyalty rank card)."
+        },
+        "lg": {
+          "$type": "sizing",
+          "$value": "121px",
+          "$description": "Rank illustation large size (used within loyalty missions card)."
+        }
+      }
+    },
+    "header": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.lg}",
+          "$description": "Horizontal padding for all components header."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Vertical padding for all components header."
+        }
+      }
+    },
+    "item": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.md}",
+          "$description": "Shop item horizontal padding."
+        },
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.stack.lg}",
+          "$description": "Shop item top padding."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.stack.md}",
+          "$description": "Shop Item bottom space."
+        }
+      }
+    }
+  }
+}

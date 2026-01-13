@@ -1,0 +1,70 @@
+{
+  "carousel": {
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "transparent",
+        "$description": "Carousel border color."
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "transparent",
+      "$description": "Carousel surface color."
+    },
+    "fade": {
+      "left": {
+        "default": {
+          "$type": "color",
+          "$value": "linear-gradient(270deg, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.98) 100%)",
+          "$description": "Carousel fade left."
+        }
+      },
+      "right": {
+        "default": {
+          "$type": "color",
+          "$value": "linear-gradient(268deg, rgba(237, 237, 237, 0.98) 0%, rgba(237, 237, 237, 0) 100%)",
+          "$description": "Carousel fade right."
+        }
+      }
+    },
+    "bullet": {
+      "wrp": {
+        "surface": {
+          "$type": "color",
+          "$value": "{black.20}"
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{black.40}"
+          }
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{black.40}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.default}"
+        }
+      }
+    }
+  },
+  "aux-carousel": {
+    "fade": {
+      "gradient": {
+        "start": {
+          "$type": "color",
+          "$value": "{white.90}"
+        },
+        "end": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      }
+    }
+  }
+}

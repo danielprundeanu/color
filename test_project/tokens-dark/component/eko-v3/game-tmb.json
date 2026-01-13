@@ -1,0 +1,342 @@
+{
+  "game-tmb": {
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.0}"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.0}"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}"
+      }
+    },
+    "img": {
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        }
+      }
+    },
+    "stats": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Game Thumbnail stats border radius."
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Game Thumbnail -> gap between icon and stats."
+      },
+      "wrp": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Game Thumbnail -> gap between stats and label."
+        }
+      },
+      "on": {
+        "fill": {
+          "primary": {
+            "$type": "color",
+            "$value": "{grey.20}",
+            "$description": "Game thumbnails -> Stats text color."
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{grey.40}",
+            "$description": "Game thumbnails -> Label text color."
+          },
+          "extra": {
+            "$type": "color",
+            "$value": "{notice.50}"
+          }
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.25}"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.75}"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.25}"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.25}"
+        }
+      },
+      "body": {
+        "height": {
+          "$type": "sizing",
+          "$value": "140px",
+          "$description": "Game Thumb/Body height"
+        }
+      }
+    },
+    "body": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.lg}"
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}"
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Hero Card -> body surface color."
+      },
+      "on": {
+        "surface": {
+          "primary": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Game thumbnails -> Stats text color."
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Game thumbnails -> Label text color."
+          },
+          "hot": {
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Game thumbnails -> Hot icon color."
+          },
+          "cold": {
+            "$type": "color",
+            "$value": "{info.fill.default}",
+            "$description": "Game thumbnails -> Cold icon color."
+          },
+          "players": {
+            "$type": "color",
+            "$value": "{success.fill.default}",
+            "$description": "Game thumbnails -> Players icon color."
+          },
+          "extra": {
+            "$type": "color",
+            "$value": "{notice.50}"
+          }
+        }
+      }
+    },
+    "title": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.md}"
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}"
+      }
+    },
+    "label": {
+      "typo": {
+        "default": {
+          "$type": "typography",
+          "$value": "{typo.label.md}"
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        }
+      }
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        }
+      }
+    },
+    "overlay": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        }
+      },
+      "content": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Space between elements in overlay"
+        }
+      }
+    },
+    "extra": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.title.sm}"
+      }
+    }
+  },
+  "index": {
+    "width": {
+      "$type": "sizing",
+      "$value": "{size.300}"
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": [
+        {
+          "x": "3",
+          "y": "3",
+          "blur": "0",
+          "spread": "0",
+          "color": "{secondary.60}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "3",
+          "y": "-3",
+          "blur": "0",
+          "spread": "0",
+          "color": "{secondary.60}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "-3",
+          "y": "3",
+          "blur": "0",
+          "spread": "0",
+          "color": "{secondary.60}",
+          "type": "dropShadow"
+        },
+        {
+          "x": "3",
+          "y": "3",
+          "blur": "0",
+          "spread": "0",
+          "color": "{secondary.60}",
+          "type": "dropShadow"
+        }
+      ]
+    },
+    "md": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.800}",
+          "fontWeight": "{font-weight.800}",
+          "lineHeight": "75%",
+          "letterSpacing": "-10%"
+        }
+      }
+    },
+    "lg": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "100px",
+          "fontWeight": "{font-weight.800}",
+          "lineHeight": "75%",
+          "letterSpacing": "-10%"
+        }
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.0}"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.0}"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}"
+      }
+    }
+  }
+}

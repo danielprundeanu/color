@@ -1,0 +1,95 @@
+{
+  "aux-timer": {
+    "font-size": {
+      "head": {
+        "$type": "fontSizes",
+        "$value": "{font-size.60}"
+      },
+      "body": {
+        "$type": "fontSizes",
+        "$value": "{font-size.90}"
+      },
+      "label": {
+        "$type": "fontSizes",
+        "$value": "{font-size.50}"
+      }
+    },
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "body": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "font-weight": {
+      "head": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      },
+      "body": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.800}"
+      },
+      "label": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      }
+    },
+    "line-height": {
+      "head": {
+        "$type": "lineHeights",
+        "$value": "{timer.line-height}"
+      },
+      "body": {
+        "$type": "lineHeights",
+        "$value": "{timer.line-height}"
+      },
+      "label": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      }
+    }
+  },
+  "timer": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-timer.font-family.head}",
+          "fontWeight": "{aux-timer.font-weight.head}",
+          "lineHeight": "{aux-timer.line-height.head}",
+          "fontSize": "{aux-timer.font-size.head}"
+        },
+        "$description": "Timer typo."
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-timer.font-family.body}",
+          "fontWeight": "{aux-timer.font-weight.body}",
+          "lineHeight": "{aux-timer.line-height.body}",
+          "fontSize": "{aux-timer.font-size.body}"
+        },
+        "$description": "Timer typo."
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-timer.font-family.label}",
+          "fontWeight": "{aux-timer.font-weight.label}",
+          "lineHeight": "{aux-timer.line-height.label} * 100%",
+          "fontSize": "{aux-timer.font-size.label}",
+          "letterSpacing": "-1px"
+        },
+        "$description": "Timer typo."
+      }
+    }
+  }
+}

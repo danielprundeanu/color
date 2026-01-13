@@ -1,0 +1,918 @@
+{
+  "hero-card": {
+    "y": {
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Vertical -> border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Vertical -> border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Vertical -> border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Vertical -> border left width."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Vertical -> layout padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Vertical -> layout padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Vertical -> layout padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Vertical -> layout padding left."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Hero Card Vertical -> layout -> border radius"
+      },
+      "img": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Hero Card Vertical -> layout -> image border radius."
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "200px",
+          "$description": "Hero Card Vertical -> layout image height."
+        },
+        "min-width": {
+          "$type": "sizing",
+          "$value": "600px",
+          "$description": "Hero Card Vertical -> layout image min-width."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> image border top width."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> image border right width."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> image border bottom width."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> image border left width."
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card Vertical -> Content (body & footer)  padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.200}",
+            "$description": "Hero Card Vertical -> Content (body & footer)  padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card Vertical -> Content (body & footer)  padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.200}",
+            "$description": "Hero Card Vertical -> Content (body & footer)  padding left."
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Hero Card Vertical -> Hidden-> content surface."
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.50}",
+          "$description": "Hero Card Vertical -> content gap."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Hero Card -> Label typography."
+        }
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.heading.sm}",
+          "$description": "Hero Card -> title typography."
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Hero Card -> gap between supertitle and title."
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.md}",
+          "$description": "Hero Card -> body / description typography."
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Hero Card -> body gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> body padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Hero Card Vertical -> body border radius."
+        }
+      },
+      "tiny": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.sm}",
+          "$description": "Hero Card -> disclaimer / description typography."
+        }
+      },
+      "overlay": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Hero Card -> overlay items gap."
+        }
+      },
+      "footer": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Hero Card -> footer gap (between buttons)."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card -> overlay padding left."
+          }
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> footer border top width."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> footer border right width."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> footer border bottom width."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card -> footer border left width."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Hero Card Vertical -> footer border radius."
+        }
+      },
+      "visible": {
+        "content": {
+          "surface": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, rgba(249, 250, 251, 0) -23.17%, rgba(0, 0, 0, 0.6) 100%)",
+            "$description": "Hero Card Vertical -> Visible -> content surface."
+          }
+        }
+      },
+      "full": {
+        "content": {
+          "surface": {
+            "$type": "color",
+            "$value": "transparent",
+            "$description": "Hero Card Vertical -> Full -> content surface."
+          }
+        }
+      },
+      "lg": {
+        "title": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontWeight": "{font-weight.600}",
+              "fontSize": "{font-size.400}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": "Hero Card - tittle typo for vertical desktop."
+          }
+        },
+        "body": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.body.lg}",
+            "$description": "Hero Card - body typo for vertical desktop."
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Hero Card - label typo for vertical desktop."
+          }
+        },
+        "tiny": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Hero Card - disclaimer typo for vertical desktop."
+          }
+        }
+      }
+    },
+    "x": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Horizontal -> Content padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Horizontal -> Content padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Horizontal -> Content padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{size.0}",
+          "$description": "Hero Card Horizontal -> Content padding left."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.xl}",
+        "$description": "Hero Card Horizontal -> border radius"
+      },
+      "img": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Hero Card Horizontal -> image border radius."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> image border top width."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> image border right width."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> image border bottom width."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> image border left width."
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.200}",
+            "$description": "Hero Card Horizontal -> Content (body & footer)  padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> Content (body & footer)  padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.200}",
+            "$description": "Hero Card Horizontal -> Content (body & footer)  padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.200}",
+            "$description": "Hero Card Horizontal -> Content (body & footer)  padding left."
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Hero Card Horizontal -> content surface."
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.50}",
+          "$description": "Hero Card Horizontal -> content gap."
+        }
+      },
+      "title": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Hero Card Horizontal -> gap between supertitle and title."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontSize": "{font-size.200}",
+            "fontWeight": "{font-weight.700}",
+            "lineHeight": "{line-height.md} * 100%"
+          },
+          "$description": "Hero Card Horizontal -> title typography."
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Hero Card Horizontal -> body gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> body padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> overlay padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> overlay padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> overlay padding left."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.60}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.lg} * 100%"
+          },
+          "$description": "Hero Card Horizontal -> body / description typography."
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Hero Card Horizontal -> body border radius."
+        }
+      },
+      "footer": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Hero Card Horizontal -> footer horizontal gap (between buttons)."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card Horizontal -> overlay padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> overlay padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> overlay padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.0}",
+            "$description": "Hero Card Horizontal -> overlay padding left."
+          }
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> footer border top width."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> footer border right width."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> footer border bottom width."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Hero Card Horizontal -> footer border left width."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Hero Card Horizontal -> footer border radius."
+        }
+      },
+      "overlay": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card Horizontal -> overlay padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card Horizontal -> overlay padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card Horizontal -> overlay padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Hero Card Horizontal -> overlay padding left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Hero Card Horizontal -> overlay items gap."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.60}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Hero Card Horizontal -> Label typography."
+        }
+      },
+      "tiny": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.lg}",
+          "$description": "Hero Card Horizontal -> Disclaimer typography."
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Horizontal -> border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Horizontal -> border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Horizontal -> border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Hero Card Horizontal -> border left width."
+        }
+      },
+      "visible": {
+        "left": {
+          "content": {
+            "surface": {
+              "$type": "color",
+              "$value": "linear-gradient(270deg, rgba(249, 250, 251, 0) -23.17%, rgba(0, 0, 0, 0.6) 100%)",
+              "$description": "Hero Card Horizontal -> Visible Left -> content surface."
+            }
+          }
+        },
+        "right": {
+          "content": {
+            "surface": {
+              "$type": "color",
+              "$value": "linear-gradient(270deg, rgba(249, 250, 251, 0) -23.17%, rgba(0, 0, 0, 0.6) 100%)",
+              "$description": "Hero Card Horizontal -> Visible Right -> content surface."
+            }
+          }
+        }
+      },
+      "full": {
+        "left": {
+          "content": {
+            "surface": {
+              "$type": "color",
+              "$value": "transparent",
+              "$description": "Hero Card Horizontal -> Full Left -> content surface."
+            }
+          }
+        },
+        "right": {
+          "content": {
+            "surface": {
+              "$type": "color",
+              "$value": "linear-gradient(270deg, rgba(247, 13, 26, 0) 0%, rgba(0, 0, 0, 0.8) 100%)",
+              "$description": "Hero Card Horizontal -> Full Right -> content surface."
+            }
+          }
+        }
+      },
+      "lg": {
+        "title": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.100}",
+              "fontSize": "{font-size.500}",
+              "fontWeight": "{font-weight.600}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": "Hero Card - title typo for desktop version."
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Hero Card Horizontal -> gap between supertitle and title."
+          }
+        },
+        "body": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.body.lg}",
+            "$description": "Hero Card - body typo for desktop version."
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Hero Card Horizontal -> body gap."
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> body padding top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> overlay padding right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> overlay padding bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> overlay padding left."
+            }
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Hero Card - label typo for desktop version."
+          }
+        },
+        "tiny": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Hero Card - disclaimer typo for desktop version."
+          }
+        },
+        "content": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{size.200}",
+              "$description": "Hero Card Horizontal -> Content (body & footer)  padding top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> Content (body & footer)  padding right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{size.200}",
+              "$description": "Hero Card Horizontal -> Content (body & footer)  padding bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{size.400}",
+              "$description": "Hero Card Horizontal -> Content (body & footer)  padding left."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{size.400}",
+            "$description": "Hero Card Horizontal -> content gap."
+          }
+        },
+        "footer": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Hero Card Horizontal -> footer horizontal gap (between buttons)."
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{size.100}",
+              "$description": "Hero Card Horizontal -> overlay padding top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> overlay padding right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> overlay padding bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{size.0}",
+              "$description": "Hero Card Horizontal -> overlay padding left."
+            }
+          }
+        },
+        "overlay": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{size.100}",
+              "$description": "Hero Card Horizontal -> overlay padding top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{size.100}",
+              "$description": "Hero Card Horizontal -> overlay padding right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{size.100}",
+              "$description": "Hero Card Horizontal -> overlay padding bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{size.100}",
+              "$description": "Hero Card Horizontal -> overlay padding left."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Hero Card Horizontal -> overlay items gap."
+          }
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "420px",
+          "$description": "Desktop hero-card height."
+        }
+      }
+    },
+    "gradient": {
+      "top": {
+        "height": {
+          "$type": "sizing",
+          "$value": "50px",
+          "$description": "Hero Card -> top gradient height."
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
+          "$description": "Hero Card -> image top gradient overlay."
+        }
+      },
+      "bottom": {
+        "height": {
+          "$type": "sizing",
+          "$value": "50px",
+          "$description": "Hero Card -> bottom gradient height."
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%)",
+          "$description": "Hero Card -> bottom gradient fill."
+        }
+      },
+      "left": {
+        "width": {
+          "$type": "sizing",
+          "$value": "50px",
+          "$description": "Hero Card -> top gradient width."
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(90deg, #000000 14.5%, rgba(0, 0, 0, 0) 100%)",
+          "$description": "Hero Card -> image left gradient overlay."
+        }
+      },
+      "right": {
+        "width": {
+          "$type": "sizing",
+          "$value": "50px",
+          "$description": "Hero Card -> right gradient width."
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(270deg, color-mix(in srgb, {surface.strong} 1%, transparent) 0%, {surface.strong} 100%);",
+          "$description": "Hero Card -> image left gradient overlay."
+        }
+      }
+    },
+    "body": {
+      "surface": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Hero Card -> body surface color."
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Hero Card -> title color."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Hero Card -> supertitle color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Hero Card -> description color."
+          },
+          "info": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Hero Banner body on surface info color."
+          }
+        }
+      }
+    },
+    "img": {
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Hero Card -> image border."
+      }
+    },
+    "content": {
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Hero Card -> title color."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Hero Card -> supertitle color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Hero Card -> description color."
+          }
+        }
+      }
+    }
+  }
+}

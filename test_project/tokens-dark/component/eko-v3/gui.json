@@ -1,0 +1,436 @@
+{
+  "gui": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{icon.size.sm}",
+        "$description": "In Game UI -> icon size."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "In Game UI -> Icon wrapper radius."
+      },
+      "fill": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.1",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "In Game UI -> icon wrapper fill."
+      },
+      "on": {
+        "fill": {
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "In Game UI -> icon wrapper on fill."
+        }
+      }
+    },
+    "btn": {
+      "primary": {
+        "fill": {
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "In Game UI -> deposit button fill color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "In Game UI -> deposit button border color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "In Game UI -> deposit button color on fill."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "20",
+            "spread": "8",
+            "color": "rgba(0,0,0,0.25)",
+            "type": "dropShadow"
+          },
+          "$description": "In Game UI -> primary button shadow."
+        }
+      },
+      "secondary": {
+        "fill": {
+          "$type": "color",
+          "$value": "{secondary.fill.default}",
+          "$description": "In Game UI -> Join button fill color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{secondary.fill.default}",
+          "$description": "In Game UI -> Join border fill color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "In Game UI -> Join button color on fill."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "20",
+            "spread": "8",
+            "color": "rgba(0,0,0,0.25)",
+            "type": "dropShadow"
+          },
+          "$description": "In Game UI -> primary button shadow."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "In Game UI -> button radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "In Game UI -> boredr top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "In Game UI -> boredr right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "In Game UI -> boredr bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "In Game UI -> boredr left width."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "In Game UI -> button padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "In Game UI -> button padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "In Game UI -> button padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "In Game UI -> button padding left."
+        }
+      }
+    },
+    "title": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.60}",
+          "lineHeight": "{line-height.sm} * 100%"
+        },
+        "$description": "In Game UI -> title typography."
+      }
+    },
+    "progress": {
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "#001530",
+          "$description": "In Game UI -> progress circle background color."
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{grey.fill.default}",
+          "$description": "In Game UI -> circular progress fill color."
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{success.fill.default}",
+          "$description": "In Game UI -> circular progress success fill color."
+        },
+        "progress": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.25",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{success.fill.default}",
+          "$description": "In Game UI -> circular progress fill color on progress state."
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{warning.fill.default}",
+          "$description": "In Game UI -> circular progress warning fill color."
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{error.fill.default}",
+          "$description": "In Game UI -> circular progress error fill color."
+        }
+      },
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.700}",
+        "$description": "In Game UI -> progress circle size."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.md}",
+          "$description": "In Game UI -> progress circle border width."
+        }
+      },
+      "space": {
+        "$type": "spacing",
+        "$value": "{space.75}",
+        "$description": "In Game UI -> progress circle inner padding."
+      }
+    },
+    "side": {
+      "left": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "In Game UI -> left side top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "In Game UI -> left side right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "In Game UI -> left side bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "In Game UI -> left side left padding."
+          }
+        }
+      },
+      "right": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "In Game UI -> left side top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "In Game UI -> left side right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "In Game UI -> left side bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "In Game UI -> left side left padding."
+          }
+        }
+      }
+    },
+    "thumb": {
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.80}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "In Game UI -> Thumb title typography."
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "In Game UI -> Gap between Title and prize."
+        }
+      },
+      "prize": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.50}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "In Game UI -> Thumb title typography."
+        }
+      },
+      "currency": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.50}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "In Game UI -> Thumb title typography."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.40}",
+            "fontWeight": "{font-weight.400}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "In Game UI -> Thumb title typography."
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.150}",
+          "$description": "In Game UI -> Thumb component icon size."
+        }
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "In Game UI -> Gap between Title and prize."
+        }
+      },
+      "max-width": {
+        "$type": "sizing",
+        "$value": "150px",
+        "$description": "In Game UI -> thumb min width."
+      },
+      "min-width": {
+        "$type": "sizing",
+        "$value": "130px",
+        "$description": "In Game UI -> thumb min width."
+      },
+      "height": {
+        "$type": "sizing",
+        "$value": "72px",
+        "$description": "In Game UI -> thumb max height."
+      }
+    },
+    "surface": {
+      "default": {
+        "$type": "color",
+        "$value": "radial-gradient(83.55% 142.22% at 50.13% 19.44%, rgba(18, 42, 143, 0.8) 0%, rgba(8, 19, 66, 0.371248) 48.76%, rgba(0, 0, 0, 0) 100%), #121E33;",
+        "$description": "In game UI -> background color."
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "In Game UI -> on surface  head."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "In Game UI -> on surface  body."
+        },
+        "label": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": ".5",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "In Game UI -> on surface  label."
+        }
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.150}",
+      "$description": "In Game UI -> gap."
+    },
+    "space": {
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "In Game UI -> left padding."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "In Game UI -> right padding."
+      }
+    },
+    "under": {
+      "fill": {
+        "$type": "color",
+        "$value": "#0E1A3F",
+        "$description": "In Game UI -> underlayer color."
+      },
+      "right": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(270deg, rgba(14, 27, 74, 0) 0%, #0D1B49 40%, #0E1B4B 100%)",
+          "$description": "In Game UI -> underlayer left gradient."
+        }
+      }
+    },
+    "timer": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "lineHeight": "{line-height.sm} * 100%",
+          "fontSize": "{font-size.60}"
+        },
+        "$description": "In Game UI -> timer typography."
+      }
+    }
+  }
+}

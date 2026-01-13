@@ -1,0 +1,106 @@
+{
+  "aux-footer": {
+    "font-size": {
+      "head": {
+        "$type": "fontSizes",
+        "$value": "{font-size.100}",
+        "$description": "Footer Heading font size."
+      },
+      "body": {
+        "$type": "fontSizes",
+        "$value": "{font-size.80}",
+        "$description": "Footer body font size."
+      },
+      "label": {
+        "$type": "fontSizes",
+        "$value": "{font-size.60}",
+        "$description": "Footer small text size."
+      }
+    },
+    "line-height": {
+      "head": {
+        "$type": "lineHeights",
+        "$value": "{line-height.lg}",
+        "$description": "Footer heading line height."
+      },
+      "body": {
+        "$type": "lineHeights",
+        "$value": "{line-height.md}",
+        "$description": "Footer body line height."
+      },
+      "label": {
+        "$type": "lineHeights",
+        "$value": "{line-height.lg}",
+        "$description": "Footer small text line height."
+      }
+    },
+    "font-weight": {
+      "head": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.700}",
+        "$description": "Footer heading font weight."
+      },
+      "body": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}",
+        "$description": "Footer body font weight."
+      },
+      "label": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.600}",
+        "$description": "Footer small text font weight."
+      }
+    },
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.100}",
+        "$description": "Footer heading font family."
+      },
+      "body": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}",
+        "$description": "Footer body font family."
+      },
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}",
+        "$description": "Footer small text font family."
+      }
+    }
+  },
+  "footer": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-footer.font-family.head}",
+          "fontWeight": "{aux-footer.font-weight.head}",
+          "fontSize": "{aux-footer.font-size.head}",
+          "lineHeight": "{aux-footer.line-height.head} * 100%"
+        },
+        "$description": "Footer heading typo."
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-footer.font-family.body}",
+          "fontWeight": "{aux-footer.font-weight.body}",
+          "fontSize": "{aux-footer.font-size.body}",
+          "lineHeight": "{aux-footer.line-height.body} * 100%"
+        },
+        "$description": "Footer body typo."
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-footer.font-family.label}",
+          "fontWeight": "{aux-footer.font-weight.label}",
+          "fontSize": "{aux-footer.font-size.label}",
+          "lineHeight": "{aux-footer.line-height.label} * 100%"
+        },
+        "$description": "Footer small text typo."
+      }
+    }
+  }
+}

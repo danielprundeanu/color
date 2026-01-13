@@ -1,0 +1,82 @@
+{
+  "aux-btn": {
+    "radius": {
+      "xs": {
+        "$type": "borderRadius",
+        "$value": "{btn.radius.base} / {btn.radius.ratio} / {btn.radius.ratio}"
+      },
+      "sm": {
+        "$type": "borderRadius",
+        "$value": "{btn.radius.base} / {btn.radius.ratio}"
+      },
+      "md": {
+        "$type": "borderRadius",
+        "$value": "{btn.radius.base}"
+      },
+      "lg": {
+        "$type": "borderRadius",
+        "$value": "{btn.radius.base} * {btn.radius.ratio}"
+      },
+      "outline": {
+        "xs": {
+          "$type": "borderRadius",
+          "$value": "{btn.radius.base} / {btn.radius.ratio} / {btn.radius.ratio} + 2px"
+        },
+        "sm": {
+          "$type": "borderRadius",
+          "$value": "{btn.radius.base} / {btn.radius.ratio} + 2px"
+        },
+        "md": {
+          "$type": "borderRadius",
+          "$value": "{btn.radius.base} + 2px"
+        },
+        "lg": {
+          "$type": "borderRadius",
+          "$value": "{btn.radius.base} * {btn.radius.ratio} + 2px"
+        }
+      }
+    },
+    "space": {
+      "x": {
+        "xxs": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.x} / ({btn.space.ratio} * {btn.space.ratio} * {btn.space.ratio} )"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.x} / ({btn.space.ratio} * {btn.space.ratio})"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.x} / {btn.space.ratio}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.x}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.x} * {btn.space.ratio}"
+        }
+      },
+      "y": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.y} / ({btn.space.ratio} * {btn.space.ratio})"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.y} / {btn.space.ratio}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.y}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{btn.space.base.y} * {btn.space.ratio}"
+        }
+      }
+    }
+  }
+}

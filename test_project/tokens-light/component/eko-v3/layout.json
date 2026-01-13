@@ -1,0 +1,170 @@
+{
+  "body": {
+    "md": {
+      "inner": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner top padding for mobile resolution."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner right padding for mobile resolution."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner bottom padding for mobile resolution."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner left padding for mobile resolution."
+          }
+        },
+        "gap": {
+          "xs": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "XSmall gap between components from body inner. [for mobile]"
+          },
+          "sm": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Small gap between components from body inner. [for mobile]"
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Medium gap between components from body inner. [for mobile]"
+          },
+          "lg": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Medium gap between components from body inner. [for mobile]"
+          }
+        }
+      }
+    },
+    "bg": {
+      "default": {
+        "$type": "color",
+        "$value": "{bg.default}",
+        "$description": "Default background for body container."
+      },
+      "level-01": {
+        "$type": "color",
+        "$value": "{bg.level-01}",
+        "$description": "Strong background for body container."
+      },
+      "level-02": {
+        "$type": "color",
+        "$value": "{bg.level-02}",
+        "$description": "Stronger background for body container."
+      }
+    },
+    "lg": {
+      "inner": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner top padding for mobile resolution."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner right padding for mobile resolution."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner bottom padding for mobile resolution."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Body inner left padding for mobile resolution."
+          }
+        },
+        "gap": {
+          "xs": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "XSmall gap between components from body inner. [for desktop]"
+          },
+          "sm": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Small gap between components from body inner. [for desktop]"
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Medium gap between components from body inner. [for desktop]"
+          },
+          "lg": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Medium gap between components from body inner. [for desktop]"
+          }
+        }
+      }
+    }
+  },
+  "section": {
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.100}",
+      "$description": "Gap between section title and content section"
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Section top padding"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Section right padding"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Section bottom padding"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Section left padding"
+      }
+    }
+  },
+  "card": {
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Body inner card top padding."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Body inner card right padding."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Body inner card bottom padding."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Body inner card left padding."
+      }
+    }
+  }
+}

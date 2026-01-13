@@ -1,0 +1,27 @@
+{
+  "icon": {
+    "info": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.primary}"
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        }
+      }
+    }
+  }
+}

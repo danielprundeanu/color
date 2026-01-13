@@ -1,0 +1,35 @@
+{
+  "section-title": {
+    "fill": {
+      "$type": "color",
+      "$value": "{transparent}",
+      "$description": "Section Title fill color."
+    },
+    "on": {
+      "fill": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.primary.head}",
+          "$description": "Section title - head (title) color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Section title - body (subtitle) color."
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{on.surface.primary.head}",
+          "$description": "Section title - icon fill color."
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Section title - border color."
+      }
+    }
+  }
+}

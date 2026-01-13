@@ -1,0 +1,42 @@
+{
+  "tag": {
+    "typo": {
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-tag.font-family.label}",
+          "fontSize": "{aux-tag.font-size.label}",
+          "fontWeight": "{aux-tag.font-weight.label}",
+          "lineHeight": "{aux-tag.line-height.label}"
+        },
+        "$description": "Tag typo lowecarse."
+      }
+    }
+  },
+  "aux-tag": {
+    "font-family": {
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "font-weight": {
+      "label": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      }
+    },
+    "line-height": {
+      "label": {
+        "$type": "lineHeights",
+        "$value": "{icon.size.sm}"
+      }
+    },
+    "font-size": {
+      "label": {
+        "$type": "fontSizes",
+        "$value": "{font-size.40}"
+      }
+    }
+  }
+}

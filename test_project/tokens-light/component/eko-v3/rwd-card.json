@@ -1,0 +1,93 @@
+{
+  "rwd-card": {
+    "height": {
+      "$type": "sizing",
+      "$value": "175px",
+      "$description": "Rewards Card -> Height."
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Rewards Card -> padding top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Rewards Card -> padding right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Rewards Card -> padding bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Rewards Card -> padding left."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.0}",
+      "$description": "Rewards Card -> gap."
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Rewards Card -> top border width."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Rewards Card -> right border width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Rewards Card -> bottom border width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Rewards Card -> left border width."
+      }
+    },
+    "head": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.md}",
+        "$description": "Rewards Card -> Title typography."
+      }
+    },
+    "label": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.50}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.md} * 100%"
+        },
+        "$description": "Rewards Card -> Label typography."
+      }
+    },
+    "footer": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Reward Card -> Footer Gap."
+      }
+    }
+  },
+  "rwd": {
+    "card": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Rewards Card -> Radius."
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "search": {
+    "input": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.strong}",
+          "$description": "Search input fill color."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Search input fill color (active state)."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Text color for default state."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Text color for active state."
+          },
+          "icon": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.label}",
+              "$description": "Icon color for default state."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.label}",
+              "$description": "Icon color for active state."
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}",
+          "$description": "Search input border color."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{border.default}",
+          "$description": "Search input border color (active state)."
+        }
+      },
+      "shadow": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{black.10}",
+            "$description": "Search input fill color."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{black.10}",
+            "$description": "Search input fill color (active state)."
+          }
+        }
+      }
+    },
+    "modal": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.strong}"
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "head": {
+                "$type": "color",
+                "$value": "{on.surface.head}"
+              },
+              "body": {
+                "$type": "color",
+                "$value": "{on.surface.body}"
+              },
+              "label": {
+                "$type": "color",
+                "$value": "{on.surface.label}"
+              }
+            },
+            "active": {
+              "head": {
+                "$type": "color",
+                "$value": "{on.surface.head}"
+              },
+              "body": {
+                "$type": "color",
+                "$value": "{on.surface.body}"
+              },
+              "label": {
+                "$type": "color",
+                "$value": "{on.surface.label}"
+              }
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.strong}"
+        }
+      }
+    }
+  },
+  "aux-search": {
+    "input": {
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "{shadow.base.sm.x}",
+            "y": "{shadow.base.sm.y}",
+            "blur": "{shadow.base.sm.blur}",
+            "spread": "{shadow.base.sm.spread}",
+            "color": "{search.input.shadow.fill.default}",
+            "type": "dropShadow"
+          }
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "{shadow.base.sm.x}",
+            "y": "{shadow.base.sm.y}",
+            "blur": "{shadow.base.sm.blur}",
+            "spread": "{shadow.base.sm.spread}",
+            "color": "{search.input.shadow.fill.active}",
+            "type": "dropShadow"
+          }
+        }
+      }
+    }
+  }
+}

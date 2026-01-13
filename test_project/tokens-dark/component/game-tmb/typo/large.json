@@ -1,0 +1,194 @@
+{
+  "game-tmb": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-game-tmb.font-family.head}",
+          "fontSize": "{aux-game-tmb.font-size.head}",
+          "fontWeight": "{aux-game-tmb.font-weight.head}",
+          "lineHeight": "{aux-game-tmb.line-height.head} * 100%"
+        }
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-game-tmb.font-family.body}",
+          "fontSize": "{aux-game-tmb.font-size.body}",
+          "fontWeight": "{aux-game-tmb.font-weight.body}",
+          "lineHeight": "{aux-game-tmb.line-height.body} * 100%"
+        }
+      }
+    },
+    "jackpot": {
+      "typo": {
+        "head": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-game-tmb.jackpot.font-family.head}",
+            "fontSize": "{aux-game-tmb.jackpot.font-size.head}",
+            "fontWeight": "{aux-game-tmb.jackpot.font-weight.head}",
+            "lineHeight": "{aux-game-tmb.jackpot.line-height.head} * 100%"
+          }
+        },
+        "label": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-game-tmb.jackpot.font-family.label}",
+            "fontSize": "{aux-game-tmb.jackpot.font-size.label}",
+            "fontWeight": "{aux-game-tmb.jackpot.font-weight.label}",
+            "lineHeight": "{aux-game-tmb.jackpot.line-height.label} * 100%"
+          }
+        }
+      }
+    },
+    "stats": {
+      "typo": {
+        "default": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-game-tmb.stats.font-family.default}",
+            "fontSize": "{aux-game-tmb.stats.font-size.default}",
+            "fontWeight": "{aux-game-tmb.stats.font-weight.default}",
+            "lineHeight": "{aux-game-tmb.stats.line-height.default} * 100%"
+          }
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-game-tmb.stats.font-family.strong}",
+            "fontSize": "{aux-game-tmb.stats.font-size.strong}",
+            "fontWeight": "{aux-game-tmb.stats.font-weight.strong}",
+            "lineHeight": "{aux-game-tmb.stats.line-height.strong} * 100%"
+          }
+        }
+      }
+    }
+  },
+  "aux-game-tmb": {
+    "font-size": {
+      "head": {
+        "$type": "fontSizes",
+        "$value": "{font-size.300}"
+      },
+      "body": {
+        "$type": "fontSizes",
+        "$value": "{font-size.100}"
+      }
+    },
+    "line-height": {
+      "head": {
+        "$type": "lineHeights",
+        "$value": "{line-height.lg}"
+      },
+      "body": {
+        "$type": "lineHeights",
+        "$value": "{line-height.lg}"
+      }
+    },
+    "font-weight": {
+      "head": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.600}"
+      },
+      "body": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.400}"
+      }
+    },
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "body": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "jackpot": {
+      "font-size": {
+        "head": {
+          "$type": "fontSizes",
+          "$value": "{font-size.300}"
+        },
+        "label": {
+          "$type": "fontSizes",
+          "$value": "{font-size.90}"
+        }
+      },
+      "line-height": {
+        "head": {
+          "$type": "lineHeights",
+          "$value": "{line-height.lg}"
+        },
+        "label": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        }
+      },
+      "font-weight": {
+        "head": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.600}"
+        },
+        "label": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.600}"
+        }
+      },
+      "font-family": {
+        "head": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.200}"
+        },
+        "label": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.200}"
+        }
+      }
+    },
+    "stats": {
+      "font-size": {
+        "default": {
+          "$type": "fontSizes",
+          "$value": "{font-size.70}"
+        },
+        "strong": {
+          "$type": "fontSizes",
+          "$value": "{font-size.70}"
+        }
+      },
+      "font-family": {
+        "default": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.200}"
+        },
+        "strong": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.200}"
+        }
+      },
+      "font-weight": {
+        "default": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.500}"
+        },
+        "strong": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.600}"
+        }
+      },
+      "line-height": {
+        "default": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        },
+        "strong": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        }
+      }
+    }
+  }
+}

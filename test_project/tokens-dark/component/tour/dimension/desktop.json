@@ -1,0 +1,105 @@
+{
+  "tour": {
+    "gap": {
+      "x": {
+        "md": {
+          "$type": "spacing",
+          "$value": "{space.inline.lg}"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{space.inline.xs}"
+        }
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{space.stack.lg}"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{space.stack.md}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{size.150}"
+        }
+      }
+    },
+    "body": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.200}"
+        }
+      }
+    },
+    "prize": {
+      "space": {
+        "all": {
+          "$type": "spacing",
+          "$value": "{space.inline.lg}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}"
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        }
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.lg}"
+        }
+      }
+    },
+    "rank": {
+      "space": {
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.300}"
+        },
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.800}"
+        }
+      },
+      "gap": {
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.stack.md}"
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{icon.size.lg}"
+      }
+    },
+    "table": {
+      "space": {
+        "all": {
+          "$type": "spacing",
+          "$value": "{space.inline.xs}"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.stack.xs}"
+      }
+    },
+    "image": {
+      "size": {
+        "$type": "sizing",
+        "$value": "240px",
+        "$description": "Image height (tournament layout_03)"
+      }
+    }
+  }
+}

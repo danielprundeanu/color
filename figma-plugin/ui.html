@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 12px;
+      background: var(--figma-color-bg);
+      color: var(--figma-color-text);
+      padding: 16px;
+    }
+    
+    h2 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--figma-color-text);
+    }
+    
+    .section {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--figma-color-border);
+    }
+    
+    .section:last-child {
+      border-bottom: none;
+    }
+    
+    button {
+      width: 100%;
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 8px;
+      background: var(--figma-color-bg-brand);
+      color: var(--figma-color-text-onbrand);
+    }
+    
+    button:hover {
+      opacity: 0.9;
+    }
+    
+    button:active {
+      transform: scale(0.98);
+    }
+    
+    button.secondary {
+      background: var(--figma-color-bg-secondary);
+      color: var(--figma-color-text);
+    }
+    
+    button.danger {
+      background: #f24822;
+      color: white;
+    }
+    
+    .input-group {
+      margin-bottom: 12px;
+    }
+    
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: var(--figma-color-text-secondary);
+    }
+    
+    input, textarea, select {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 12px;
+      border: 1px solid var(--figma-color-border);
+      border-radius: 4px;
+      background: var(--figma-color-bg);
+      color: var(--figma-color-text);
+    }
+    
+    textarea {
+      min-height: 100px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      resize: vertical;
+    }
+    
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+      width: auto;
+    }
+    
+    .status {
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      margin-top: 12px;
+      display: none;
+    }
+    
+    .status.success {
+      background: #e6f4ea;
+      color: #137333;
+      display: block;
+    }
+    
+    .status.error {
+      background: #fce8e6;
+      color: #c5221f;
+      display: block;
+    }
+    
+    .status.info {
+      background: #e8f0fe;
+      color: #1967d2;
+      display: block;
+    }
+    
+    .progress {
+      width: 100%;
+      height: 4px;
+      background: var(--figma-color-border);
+      border-radius: 2px;
+      overflow: hidden;
+      margin-top: 12px;
+      display: none;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      background: var(--figma-color-bg-brand);
+      transition: width 0.3s;
+      width: 0%;
+    }
+    
+    .token-list {
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid var(--figma-color-border);
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 11px;
+      font-family: 'Monaco', 'Courier New', monospace;
+      background: var(--figma-color-bg-secondary);
+    }
+    
+    .token-item {
+      padding: 4px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--figma-color-border);
+    }
+    
+    .token-item:last-child {
+      border-bottom: none;
+    }
+    
+    .token-name {
+      color: var(--figma-color-text);
+      font-weight: 500;
+    }
+    
+    .token-value {
+      color: var(--figma-color-text-secondary);
+    }
+    
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--figma-color-border);
+    }
+    
+    .tab {
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: var(--figma-color-text-secondary);
+      border-bottom: 2px solid transparent;
+      width: auto;
+      margin-bottom: 0;
+    }
+    
+    .tab.active {
+      color: var(--figma-color-text);
+      border-bottom-color: var(--figma-color-bg-brand);
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    
+    .stat {
+      padding: 12px;
+      background: var(--figma-color-bg-secondary);
+      border-radius: 6px;
+      text-align: center;
+    }
+    
+    .stat-value {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--figma-color-text);
+    }
+    
+    .stat-label {
+      font-size: 10px;
+      color: var(--figma-color-text-secondary);
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" data-tab="import">Import</button>
+    <button class="tab" data-tab="export">Export</button>
+    <button class="tab" data-tab="analyze">Analyze</button>
+    <button class="tab" data-tab="settings">Settings</button>
+  </div>
+
+  <!-- IMPORT TAB -->
+  <div class="tab-content active" data-content="import">
+    <div class="section">
+      <h2>🟩 Import Tokens (tokens.json → Figma)</h2>
+      
+      <div class="input-group">
+        <label>Upload tokens.json from test_project</label>
+        <input type="file" id="tokenFile" accept=".json">
+        <div style="margin-top: 4px; font-size: 10px; color: var(--figma-color-text-secondary);">
+          📁 Selectează: <code>test_project/tokens-light/tokens.json</code> sau creează-l
+        </div>
+      </div>
+      
+      <div class="status" id="loadStatus"></div>
+      
+      <div class="status" id="loadStatusInfo" style="margin-top: 8px; padding: 8px; background: var(--figma-color-bg-secondary); border-radius: 4px; font-size: 11px; display: block;">
+        💡 <strong>Cum să creezi tokens.json:</strong><br>
+        1. Deschide app-ul principal și exportă tokenii<br>
+        2. Extrage ZIP-ul în <code>test_project/tokens-light/</code><br>
+        3. Upload <code>tokens.json</code> aici
+      </div>
+      
+      <!-- Collections & Modes Selection -->
+      <div id="collectionsPanel" style="display: none; margin-top: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <h3 style="margin: 0;">Select Collections & Modes to Import:</h3>
+          <div style="display: flex; gap: 8px;">
+            <button class="secondary" id="selectAllBtn" style="padding: 4px 8px; font-size: 11px;">Select All</button>
+            <button class="secondary" id="deselectAllBtn" style="padding: 4px 8px; font-size: 11px;">Deselect All</button>
+          </div>
+        </div>
+        <div id="collectionsList" style="max-height: 400px; overflow-y: auto; border: 1px solid var(--figma-color-border); border-radius: 4px; padding: 12px; margin: 12px 0;">
+          <!-- Will be populated dynamically -->
+        </div>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="updateStyles">
+          <label for="updateStyles">Update Color/Text/Effect Styles</label>
+        </div>
+        
+        <button id="createVariablesBtn">Create Variables in Figma</button>
+      </div>
+      
+      <div class="progress" id="importProgress">
+        <div class="progress-bar" id="importProgressBar"></div>
+      </div>
+      
+      <div class="status" id="importStatus"></div>
+      
+      <div class="stats" id="importStats" style="display: none;">
+        <div class="stat">
+          <div class="stat-value" id="varsCreated">0</div>
+          <div class="stat-label">Variables Created</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="collectionsCreated">0</div>
+          <div class="stat-label">Collections Created</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPORT TAB -->
+  <div class="tab-content" data-content="export">
+    <div class="section">
+      <h2>🟥 Export Tokens (Figma → Git)</h2>
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="exportPrimitives" checked>
+        <label for="exportPrimitives">Export Primitives</label>
+      </div>
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="exportSemantic" checked>
+        <label for="exportSemantic">Export Semantic</label>
+      </div>
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="exportComponents" checked>
+        <label for="exportComponents">Export Components</label>
+      </div>
+      
+      <div class="input-group">
+        <label>Export Format</label>
+        <select id="exportFormat">
+          <option value="token-studio">Token Studio</option>
+          <option value="style-dictionary">Style Dictionary</option>
+          <option value="figma-tokens">Figma Tokens</option>
+        </select>
+      </div>
+      
+      <button id="exportAllBtn">Export All Tokens</button>
+      <button class="secondary" id="exportSelectionBtn">Export Selection Only</button>
+      <button class="secondary" id="updateComponentBtn">Update Component Tokens (Figma → Git)</button>
+      <button class="secondary" id="downloadBtn">Download JSON</button>
+      
+      <div class="status" id="exportStatus"></div>
+      
+      <div class="input-group" style="margin-top: 16px;">
+        <label>Exported JSON:</label>
+        <textarea id="exportedJson" readonly></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANALYZE TAB -->
+  <div class="tab-content" data-content="analyze">
+    <div class="section">
+      <h2>📌 Analyze Selection</h2>
+      <p style="color: var(--figma-color-text-secondary); margin-bottom: 12px; font-size: 11px;">
+        Select a component to see all tokens used
+      </p>
+      
+      <button id="analyzeBtn">Analyze Selection</button>
+      
+      <div class="status" id="analyzeStatus"></div>
+      
+      <div id="tokenUsage" style="margin-top: 16px;"></div>
+    </div>
+    
+    <div class="section">
+      <h2>🔍 Compare Tokens</h2>
+      <p style="color: var(--figma-color-text-secondary); margin-bottom: 12px; font-size: 11px;">
+        Find differences between Figma and Git
+      </p>
+      
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value" id="missingCount">0</div>
+          <div class="stat-label">Missing in Figma</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="differentCount">0</div>
+          <div class="stat-label">Different Values</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SETTINGS TAB -->
+  <div class="tab-content" data-content="settings">
+    <div class="section">
+      <h2>⚙️ Settings</h2>
+      
+      <div class="input-group">
+        <label>GitHub Token (for API access)</label>
+        <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxx">
+      </div>
+      
+      <div class="input-group">
+        <label>Default Branch</label>
+        <input type="text" id="defaultBranch" value="stake">
+      </div>
+      
+      <div class="checkbox-group">
+        <input type="checkbox" id="autoSync">
+        <label for="autoSync">Auto-sync on changes</label>
+      </div>
+      
+      <button class="secondary" id="saveSettingsBtn">Save Settings</button>
+    </div>
+    
+    <div class="section">
+      <h2>🎨 Brand Generator</h2>
+      
+      <div class="input-group">
+        <label>Primary Color</label>
+        <input type="color" id="brandPrimary" value="#0066FF">
+      </div>
+      
+      <div class="input-group">
+        <label>Accent Color</label>
+        <input type="color" id="brandAccent" value="#FF6B00">
+      </div>
+      
+      <div class="input-group">
+        <label>Neutral Base</label>
+        <input type="color" id="brandNeutral" value="#202124">
+      </div>
+      
+      <button id="generateBrandBtn">Generate Brand Tokens</button>
+    </div>
+  </div>
+
+  <script>
+    // Store loaded tokens globally
+    let loadedTokens = null;
+    
+    // Request saved settings on startup
+    window.addEventListener('load', () => {
+      parent.postMessage({ 
+        pluginMessage: { type: 'load-settings' } 
+      }, '*');
+    });
+
+    // Save settings when changed
+    // All Git and tokenSource settings removed - using direct file upload
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabName = tab.dataset.tab;
+        
+        // Update tabs
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // Update content
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        document.querySelector(`[data-content="${tabName}"]`).classList.add('active');
+      });
+    });
+
+    // Load tokens from file
+    document.getElementById('tokenFile').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      showStatus('loadStatus', 'info', 'Loading tokens...');
+      
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          loadedTokens = JSON.parse(event.target.result);
+          
+          // Validate that tokens have $themes
+          if (!loadedTokens.$themes || !Array.isArray(loadedTokens.$themes)) {
+            showStatus('loadStatus', 'error', 'Invalid tokens.json: Missing $themes array. Make sure you exported from the app.');
+            return;
+          }
+          
+          displayCollectionsAndModes(loadedTokens);
+          document.getElementById('collectionsPanel').style.display = 'block';
+          showStatus('loadStatus', 'success', `Loaded ${loadedTokens.$themes.length} themes successfully!`);
+        } catch (e) {
+          showStatus('loadStatus', 'error', `Invalid JSON: ${e.message}`);
+        }
+      };
+      reader.readAsText(file);
+    });
+
+    // Create variables button
+    document.getElementById('createVariablesBtn').addEventListener('click', () => {
+      if (!loadedTokens) {
+        showStatus('importStatus', 'error', 'No tokens loaded. Please load tokens first.');
+        return;
+      }
+      
+      const selectedCollections = [];
+      
+      // Gather all selected collections and modes
+      document.querySelectorAll('.collection-checkbox:checked').forEach(checkbox => {
+        const collectionName = checkbox.dataset.collection;
+        const modeName = checkbox.dataset.mode;
+        
+        selectedCollections.push({
+          collection: collectionName,
+          mode: modeName
+        });
+      });
+      
+      if (selectedCollections.length === 0) {
+        showStatus('importStatus', 'error', 'Please select at least one collection/mode');
+        return;
+      }
+      
+      const updateStyles = document.getElementById('updateStyles').checked;
+      
+      showProgress('importProgress', 0);
+      
+      parent.postMessage({ 
+        pluginMessage: { 
+          type: 'create-variables',
+          tokens: loadedTokens,
+          selectedCollections,
+          updateStyles
+        } 
+      }, '*');
+    });
+
+    // Select/Deselect all buttons
+    document.getElementById('selectAllBtn').addEventListener('click', () => {
+      document.querySelectorAll('.collection-checkbox').forEach(checkbox => {
+        checkbox.checked = true;
+      });
+    });
+    
+    document.getElementById('deselectAllBtn').addEventListener('click', () => {
+      document.querySelectorAll('.collection-checkbox').forEach(checkbox => {
+        checkbox.checked = false;
+      });
+    });
+
+    // Function to display collections and modes
+    function displayCollectionsAndModes(tokens) {
+      const collectionsList = document.getElementById('collectionsList');
+      collectionsList.innerHTML = '';
+      
+      const themes = tokens.$themes || [];
+      
+      if (themes.length === 0) {
+        collectionsList.innerHTML = '<p style="color: var(--figma-color-text-secondary);">No $themes found in tokens.json</p>';
+        return;
+      }
+      
+      // Group themes by collection (group property)
+      const collectionGroups = new Map();
+      
+      for (const theme of themes) {
+        const group = theme.group || 'default';
+        if (!collectionGroups.has(group)) {
+          collectionGroups.set(group, []);
+        }
+        collectionGroups.get(group).push(theme);
+      }
+      
+      // Display each collection with its modes
+      for (const [collectionName, modes] of collectionGroups) {
+        const collectionDiv = document.createElement('div');
+        collectionDiv.style.marginBottom = '16px';
+        collectionDiv.style.padding = '12px';
+        collectionDiv.style.border = '1px solid var(--figma-color-border)';
+        collectionDiv.style.borderRadius = '4px';
+        
+        const collectionHeader = document.createElement('div');
+        collectionHeader.style.fontWeight = '600';
+        collectionHeader.style.marginBottom = '8px';
+        collectionHeader.style.color = 'var(--figma-color-text)';
+        collectionHeader.textContent = `📦 ${collectionName}`;
+        collectionDiv.appendChild(collectionHeader);
+        
+        // Display modes
+        for (const mode of modes) {
+          const modeCheckbox = document.createElement('div');
+          modeCheckbox.style.display = 'flex';
+          modeCheckbox.style.alignItems = 'center';
+          modeCheckbox.style.gap = '8px';
+          modeCheckbox.style.padding = '4px 8px';
+          
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.className = 'collection-checkbox';
+          checkbox.dataset.collection = collectionName;
+          checkbox.dataset.mode = mode.name;
+          checkbox.id = `mode-${collectionName}-${mode.name}`;
+          checkbox.checked = false; // Default deselected to avoid loading 154 modes
+          
+          const label = document.createElement('label');
+          label.htmlFor = checkbox.id;
+          label.textContent = `${mode.name}`;
+          label.style.cursor = 'pointer';
+          label.style.flex = '1';
+          
+          const tokenCount = Object.keys(mode.selectedTokenSets || {}).length;
+          const tokenSets = document.createElement('span');
+          tokenSets.style.fontSize = '10px';
+          tokenSets.style.color = 'var(--figma-color-text-secondary)';
+          tokenSets.textContent = `${tokenCount} token sets`;
+          
+          modeCheckbox.appendChild(checkbox);
+          modeCheckbox.appendChild(label);
+          modeCheckbox.appendChild(tokenSets);
+          collectionDiv.appendChild(modeCheckbox);
+        }
+        
+        collectionsList.appendChild(collectionDiv);
+      }
+    }
+
+    // Export all tokens
+    document.getElementById('exportAllBtn').addEventListener('click', () => {
+      parent.postMessage({ 
+        pluginMessage: { 
+          type: 'export-tokens',
+          options: {
+            exportPrimitives: document.getElementById('exportPrimitives').checked,
+            exportSemantic: document.getElementById('exportSemantic').checked,
+            exportComponents: document.getElementById('exportComponents').checked,
+            format: document.getElementById('exportFormat').value
+          }
+        } 
+      }, '*');
+    });
+
+    // Export selection
+    document.getElementById('exportSelectionBtn').addEventListener('click', () => {
+      parent.postMessage({ 
+        pluginMessage: { type: 'export-selection' } 
+      }, '*');
+    });
+
+    // Update component tokens (Figma → Git reverse sync)
+    document.getElementById('updateComponentBtn').addEventListener('click', () => {
+      parent.postMessage({ 
+        pluginMessage: { type: 'update-component-tokens' } 
+      }, '*');
+    });
+
+    // Analyze selection
+    document.getElementById('analyzeBtn').addEventListener('click', () => {
+      parent.postMessage({ 
+        pluginMessage: { type: 'analyze-selection' } 
+      }, '*');
+    });
+
+    // Compare tokens
+    document.getElementById('compareBtn').addEventListener('click', () => {
+      const tokensJson = document.getElementById('tokensJson').value;
+      let tokens;
+      try {
+        tokens = JSON.parse(tokensJson);
+      } catch (e) {
+        showStatus('importStatus', 'error', 'Invalid JSON for comparison');
+        return;
+      }
+      
+      parent.postMessage({ 
+        pluginMessage: { 
+          type: 'compare-tokens',
+          gitTokens: tokens
+        } 
+      }, '*');
+    });
+
+    // Generate brand
+    document.getElementById('generateBrandBtn').addEventListener('click', () => {
+      const brandConfig = {
+        primary: document.getElementById('brandPrimary').value,
+        accent: document.getElementById('brandAccent').value,
+        neutral: document.getElementById('brandNeutral').value
+      };
+      
+      parent.postMessage({ 
+        pluginMessage: { 
+          type: 'generate-brand',
+          brandConfig
+        } 
+      }, '*');
+    });
+
+    // Download JSON
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+      const json = document.getElementById('exportedJson').value;
+      if (!json) return;
+      
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'tokens.json';
+      a.click();
+    });
+
+    // Handle messages from plugin
+    window.onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+      
+      switch (msg.type) {
+        case 'settings-loaded':
+          // All settings removed - using direct file upload
+          break;
+        
+        case 'import-started':
+          showStatus('importStatus', 'info', 'Importing tokens...');
+          showProgress('importProgress', 0);
+          break;
+        
+        case 'import-progress':
+          const progress = msg.progress;
+          showProgress('importProgress', progress);
+          showStatus('importStatus', 'info', `Importing ${msg.step}... ${progress}%`);
+          break;
+        
+        case 'import-complete':
+          showProgress('importProgress', 100);
+          showStatus('importStatus', 'success', 'Tokens imported successfully!');
+          document.getElementById('varsCreated').textContent = msg.stats.variablesCreated;
+          document.getElementById('collectionsCreated').textContent = msg.stats.collectionsCreated;
+          document.getElementById('importStats').style.display = 'grid';
+          break;
+        
+        case 'import-error':
+          showStatus('importStatus', 'error', `Error: ${msg.error}`);
+          hideProgress('importProgress');
+          break;
+        
+        case 'tokens-loaded':
+          loadedTokens = msg.tokens;
+          displayCollectionsAndModes(loadedTokens);
+          document.getElementById('collectionsPanel').style.display = 'block';
+          showStatus('loadStatus', 'success', 'Tokens loaded from Git! Select collections below.');
+          hideProgress('importProgress');
+          break;
+        
+        case 'export-complete':
+          const json = JSON.stringify(msg.data, null, 2);
+          document.getElementById('exportedJson').value = json;
+          showStatus('exportStatus', 'success', 'Tokens exported successfully!');
+          break;
+        
+        case 'export-selection-complete':
+          displayTokenUsage(msg.data);
+          break;
+        
+        case 'update-complete':
+          const updatedJson = JSON.stringify(msg.data, null, 2);
+          document.getElementById('exportedJson').value = updatedJson;
+          showStatus('exportStatus', 'success', 'Component tokens updated! Copy JSON to update Git.');
+          break;
+        
+        case 'update-error':
+          showStatus('exportStatus', 'error', `Error: ${msg.error}`);
+          break;
+        
+        case 'analyze-complete':
+          displayTokenUsage(msg.data);
+          showStatus('analyzeStatus', 'success', 'Analysis complete!');
+          break;
+        
+        case 'compare-complete':
+          displayComparison(msg.data);
+          break;
+        
+        case 'brand-generated':
+          showStatus('importStatus', 'success', 'Brand tokens generated!');
+          break;
+      }
+    };
+
+    // Helper functions
+    function showStatus(elementId, type, message) {
+      const status = document.getElementById(elementId);
+      status.className = `status ${type}`;
+      status.textContent = message;
+    }
+
+    function showProgress(elementId, percent) {
+      const progress = document.getElementById(elementId);
+      const bar = progress.querySelector('.progress-bar');
+      progress.style.display = 'block';
+      bar.style.width = `${percent}%`;
+    }
+
+    function hideProgress(elementId) {
+      document.getElementById(elementId).style.display = 'none';
+    }
+
+    function displayTokenUsage(data) {
+      const container = document.getElementById('tokenUsage');
+      container.innerHTML = '';
+      
+      data.forEach(component => {
+        const div = document.createElement('div');
+        div.innerHTML = `
+          <h3 style="font-size: 13px; margin-bottom: 8px;">${component.componentName}</h3>
+          <div class="token-list">
+            ${Object.entries(component.tokens).map(([prop, token]) => `
+              <div class="token-item">
+                <span class="token-name">{${token.tokenPath}}</span>
+                <span class="token-value">${prop}</span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function displayComparison(data) {
+      document.getElementById('missingCount').textContent = data.missing.length;
+      document.getElementById('differentCount').textContent = data.different.length;
+    }
+  </script>
+</body>
+</html>

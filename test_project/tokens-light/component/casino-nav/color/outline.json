@@ -1,0 +1,90 @@
+{
+  "casino-nav": {
+    "item": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      },
+      "on": {
+        "surface": {
+          "label": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.primary.head}"
+            }
+          },
+          "icon": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.label}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.primary.head}"
+            }
+          }
+        },
+        "fill": {
+          "icon": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.fill.default}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{primary.fill.default}"
+            }
+          },
+          "label": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.body}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.default}"
+        }
+      }
+    },
+    "list": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.default}"
+        }
+      },
+      "separator": {
+        "$type": "color",
+        "$value": "{border.separator}"
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "footer": {
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{inverted.border.weak}"
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{size.200}"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{size.200}"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{size.200}"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{size.200}"
+      }
+    },
+    "x": {
+      "md": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.150}"
+        }
+      },
+      "lg": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.300}"
+        }
+      }
+    },
+    "label": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.sm}"
+      }
+    },
+    "max-width": {
+      "$type": "sizing",
+      "$value": "1920px"
+    },
+    "md": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Medium height for images"
+      }
+    },
+    "lg": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.500}",
+        "$description": "Large height for images"
+      }
+    },
+    "y": {
+      "sm": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.100}"
+        }
+      },
+      "md": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.150}"
+        }
+      },
+      "lg": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{size.300}"
+        }
+      }
+    },
+    "body": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.sm}"
+      }
+    },
+    "head": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.lg}"
+      }
+    },
+    "social": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.200}",
+          "$description": "Footer social media icon size."
+        }
+      },
+      "item": {
+        "space": {
+          "all": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Footer social media item space all."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Footer social media item radius."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Footer social media iterm border top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Footer social media iterm border right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Footer social media iterm border bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Footer social media iterm border left."
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Footer social media item border color."
+          }
+        },
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.5",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{secondary.on.fill.default}",
+          "$description": "Footer social media item fill."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "Footer social media icon on fill color."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Footer social media item shadow."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Footer social media gap between items."
+      }
+    }
+  }
+}

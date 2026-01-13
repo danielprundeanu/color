@@ -1,0 +1,140 @@
+{
+  "modal": {
+    "min-width": {
+      "$type": "sizing",
+      "$value": "340px",
+      "$description": "Modal min-width for mobile."
+    },
+    "max-height": {
+      "$type": "sizing",
+      "$value": "500px",
+      "$description": "Modal max-height for mobile."
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Modal border top width."
+      }
+    },
+    "img": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Modal image border radius."
+      }
+    },
+    "head": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Modal border bottom width."
+        }
+      }
+    },
+    "footer": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Modal border top width."
+        }
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.xl}",
+      "$description": "Modal border radius."
+    },
+    "extra": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.sm}",
+        "$description": "Modal extra section border radius."
+      },
+      "max-height": {
+        "$type": "sizing",
+        "$value": "300px"
+      }
+    },
+    "in-page": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Modal in page radius."
+      }
+    }
+  },
+  "aux-modal": {
+    "space": {
+      "x": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.x}*1.5"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.x}*2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.x}*3"
+        }
+      },
+      "y": {
+        "xxs": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.y}*2"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.y}*3"
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.y}*4"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.y}*5"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{modal.space.base.y}*6"
+        }
+      }
+    },
+    "gap": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{modal.gap.base.y} *2/3",
+          "$description": "Modal body gap."
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{modal.gap.base.y}",
+          "$description": "Modal body gap."
+        }
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{modal.gap.base.y} *2/3",
+          "$description": "Modal body gap."
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{modal.gap.base.y}",
+          "$description": "Modal body gap."
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{modal.gap.base.y}*2",
+          "$description": "Modal body gap."
+        }
+      }
+    }
+  }
+}

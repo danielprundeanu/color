@@ -1,0 +1,254 @@
+{
+  "game-tmb": {
+    "surface": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Game thumbnail card surface."
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{border.default}00",
+        "$description": "Game thumbnail card border."
+      }
+    },
+    "img": {
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.border.default}00",
+          "$description": "Game thumbnail image border."
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.130}",
+          "$description": "Game thumbnail image shadow."
+        }
+      }
+    },
+    "body": {
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Game thumbnail title color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Game thumbnail provider color."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Game thumbnail label color."
+          },
+          "stats": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Game thumnail stats on surface."
+          }
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.default}00",
+        "$description": "Game thumbnail body surface."
+      }
+    },
+    "jackpot": {
+      "fill": {
+        "$type": "color",
+        "$value": "{secondary.fill.default}00",
+        "$description": "Game thumbnail jackpot fill."
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{sbrand-02.on.fill.default}",
+            "$description": "Game thumbnail jackpot amount color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": ".5",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{sbrand-02.on.fill.default}",
+            "$description": "Game thumb jackpot label color."
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.border.default}00",
+          "$description": "Game thumbnail jackpot border."
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0",
+                "space": "lch"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{sub-brand-02.130}",
+          "$description": "Game thumbnail jackpot shadow."
+        }
+      }
+    },
+    "stats": {
+      "on": {
+        "surface": {
+          "hot": {
+            "$type": "color",
+            "$value": "#DC2626",
+            "$description": "Game thumbnail hot stats icon on surface."
+          },
+          "cold": {
+            "$type": "color",
+            "$value": "#076DC2",
+            "$description": "Game thumbnail cold stats icon on surface."
+          },
+          "players": {
+            "$type": "color",
+            "$value": "#16A34A",
+            "$description": "Game thumbnail players online stats icon on surface."
+          }
+        },
+        "fill": {
+          "stats": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Game thumbnail stats text on fill."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.label}",
+            "$description": "Game thumbnail stats text label on fill."
+          },
+          "hot": {
+            "$type": "color",
+            "$value": "#FA684E",
+            "$description": "Game thumbnail hot stats icon on fill."
+          },
+          "cold": {
+            "$type": "color",
+            "$value": "#569DF2",
+            "$description": "Game thumbnail cold stats icon on fill."
+          },
+          "players": {
+            "$type": "color",
+            "$value": "#61AA1C",
+            "$description": "Game thumbnail players online stats icon on fill."
+          }
+        }
+      },
+      "fill": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "lighten",
+              "value": "0.5",
+              "space": "lch"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{grey.fill.default}",
+        "$description": "Game thumbnail stats fill."
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{black.20}",
+        "$description": "Game thumbnail card shadow."
+      }
+    },
+    "gradient": {
+      "start": {
+        "$type": "color",
+        "$value": "{black.100}"
+      },
+      "end": {
+        "$type": "color",
+        "$value": "{transparent}"
+      }
+    }
+  },
+  "aux-game-tmb": {
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.md.x}",
+        "y": "{shadow.base.md.x}",
+        "blur": "{shadow.base.md.blur}",
+        "spread": "{shadow.base.md.spread}",
+        "color": "{game-tmb.shadow.fill}",
+        "type": "dropShadow"
+      },
+      "$description": "Game thumbnail shadow fill."
+    },
+    "img": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.md.x}",
+          "y": "{shadow.base.md.x}",
+          "blur": "{shadow.base.md.blur}",
+          "spread": "{shadow.base.md.spread}",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Game thumbnail image shadow fill."
+      }
+    },
+    "jackpot": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.md.x}",
+          "y": "{shadow.base.md.x}",
+          "blur": "{shadow.base.md.blur}",
+          "spread": "{shadow.base.md.spread}",
+          "color": "{game-tmb.shadow.fill}",
+          "type": "dropShadow"
+        },
+        "$description": "Game thumbnail jackpot shadow fill."
+      }
+    },
+    "gradient": {
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(0deg, {game-tmb.gradient.start} 0%, {game-tmb.gradient.end} 100%)"
+      }
+    }
+  }
+}

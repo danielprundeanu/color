@@ -1,0 +1,127 @@
+{
+  "lay-onb": {
+    "width": {
+      "$type": "sizing",
+      "$value": "480px",
+      "$description": "Onboarding Layout max-width on desktop."
+    },
+    "side": {
+      "width": {
+        "$type": "sizing",
+        "$value": "640px",
+        "$description": "Profile Layout sidebar width on desktop."
+      },
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.surface.strong}",
+          "$description": "Onboarding layout sidebar surface."
+        }
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Onboarding layout sidebar heading color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "Onboarding layout sidebar on surface body color."
+          }
+        }
+      },
+      "logo": {
+        "height": {
+          "$type": "sizing",
+          "$value": "80px"
+        }
+      },
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "120px",
+          "$description": "Onboarding Layout sidebar left padding"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "120px",
+          "$description": "Onboarding Layout sidebar right padding."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.800}"
+      },
+      "body": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        }
+      }
+    },
+    "title": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.display.lg}"
+      }
+    },
+    "body": {
+      "inner": {
+        "md": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner top padding [mobile]."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner right padding [mobile]."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner bottom padding [mobile]."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner left padding [mobile]."
+            }
+          }
+        },
+        "lg": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner top padding [desktop]."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner right padding [desktop]."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner bottom padding [desktop]."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Onboarding Layout  - Body inner left padding [desktop]."
+            }
+          }
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.lg}"
+      }
+    }
+  }
+}

@@ -1,0 +1,1014 @@
+{
+  "clg": {
+    "card": {
+      "img": {
+        "sm": {
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.400}",
+            "$description": "Challenges image small height."
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Challenges image small radius."
+          }
+        },
+        "md": {
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.500}",
+            "$description": "Challenges image medium height."
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.sm}",
+            "$description": "Challenges image medium radius."
+          }
+        },
+        "lg": {
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.600}",
+            "$description": "Challenges image large height."
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.none}",
+            "$description": "Challenges image large radius."
+          }
+        }
+      },
+      "header": {
+        "reward": {
+          "lg": {
+            "height": {
+              "$type": "sizing",
+              "$value": "{size.900}",
+              "$description": "Challenges reward component height."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Challenges header reward gap between img & body."
+          },
+          "body": {
+            "y": {
+              "gap": {
+                "$type": "spacing",
+                "$value": "{space.25}",
+                "$description": "Challenges reward body gap on vertical."
+              }
+            },
+            "x": {
+              "gap": {
+                "$type": "spacing",
+                "$value": "{space.50}",
+                "$description": "Challenges rewards body gap on horizontal."
+              }
+            }
+          },
+          "space": {
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Challenges header reward space on right."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Challenges header reward space on left."
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.lg}",
+            "$description": "Challenges header reward radius."
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges header reward border on top."
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges header reward border on right."
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges header reward border on bottom."
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges header reward border on left."
+            },
+            "default": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.16",
+                    "space": "srgb"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Challenges header reward border color."
+            }
+          },
+          "head": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.200}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.lg} * 100%"
+              },
+              "$description": "Challenges header reward head typo."
+            }
+          },
+          "label": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.sm}",
+              "$description": "Challenges header reward label typo."
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(90.61deg, #171047 0%, #AD1661 100%)",
+            "$description": "Challenges header reward fill color."
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{inverted.on.surface.head}",
+                "$description": "Challanged header reward on fill head color."
+              },
+              "success": {
+                "$type": "color",
+                "$value": "{positive.30}",
+                "$description": "Challanged header reward on fill success color."
+              },
+              "label": {
+                "$type": "color",
+                "$value": "{inverted.on.surface.body}",
+                "$description": "Challanged header reward on fill label color."
+              }
+            }
+          },
+          "amount": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.300}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Challenges reward ammount typo."
+            }
+          },
+          "md": {
+            "height": {
+              "$type": "sizing",
+              "$value": "{size.800}",
+              "$description": "Challenges reward componentmedium height."
+            }
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges header space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges header space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges header space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges header space on left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Challenges header radius."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges header border on top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges header border on right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges header border on bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges header border on left."
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Challenges header border color."
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Challenges header fill color."
+        }
+      },
+      "body": {
+        "item": {
+          "icon": {
+            "size": {
+              "$type": "sizing",
+              "$value": "{size.300}",
+              "$description": "Challenges progress status icons & text size."
+            }
+          },
+          "y": {
+            "gap": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Challenges body item gap on vertical."
+            }
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Challenges body item space on top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Challenges body item space on right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.50}",
+              "$description": "Challenges body item space on bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Challenges body item space on left."
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.none}",
+            "$description": "Challenges body item radius."
+          },
+          "body": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.sm}",
+              "$description": "Challenges body item body typo."
+            }
+          },
+          "label": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.xs}",
+              "$description": "Challenges body item label typo."
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Challenges body item fill color."
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Challenges body item border."
+            }
+          },
+          "on": {
+            "fill": {
+              "head": {
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Challenges body item on fill head color."
+              },
+              "label": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "lighten",
+                      "value": "0.7",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Challenges body item on fill label."
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{white.100}",
+                "$description": "Challenges body item on fill progress active."
+              },
+              "disabled": {
+                "$extensions": {
+                  "studio.tokens": {
+                    "modify": {
+                      "type": "lighten",
+                      "value": "0.4",
+                      "space": "srgb"
+                    }
+                  }
+                },
+                "$type": "color",
+                "$value": "{on.surface.label}",
+                "$description": "Challenges body item on progress disabled."
+              },
+              "icon": {
+                "$type": "color",
+                "$value": "{success.fill.default}",
+                "$description": "Challenges body item on icon color."
+              }
+            }
+          },
+          "x": {
+            "sm": {
+              "gap": {
+                "$type": "spacing",
+                "$value": "{space.50}",
+                "$description": "Challenges body item small gap on horizontal."
+              }
+            },
+            "md": {
+              "gap": {
+                "$type": "spacing",
+                "$value": "{space.200}",
+                "$description": "Challenges body item medium gap on horizontal."
+              }
+            }
+          },
+          "head": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.80}",
+                "fontWeight": "{font-weight.500}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Challenges body item body typo."
+            }
+          }
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges body space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges body space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges body space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges body space on left."
+          }
+        },
+        "list": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Challenges body gap list."
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Challenges body list space on top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Challenges body list space on right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Challenges body list space on bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Challenges body list space on left."
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.none}",
+            "$description": "Challenges body list radius."
+          },
+          "border": {
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges body list border on top."
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges body list border on right."
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges body list border on bottom."
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Challenges body list border on left."
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{transparent}",
+              "$description": "Challenges body list border color."
+            }
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Challenges body list fill color."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Challenges body radius."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges body border on top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges body border on right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges body border on bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges body border on left."
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Challenges bordy border color."
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Challenges body fill color."
+        },
+        "reward": {
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "{transparent}",
+              "type": "dropShadow"
+            },
+            "$description": "Challenges body reward shadow."
+          }
+        },
+        "inner": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Challenges body space on top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Challenges body space on right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Challenges body space on bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.100}",
+              "$description": "Challenges body space on left."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "In Game UI Modal -> Body inner gap."
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "#0F1E50",
+            "$description": "In Game UI Modal -> Body inner fill."
+          }
+        }
+      },
+      "y": {
+        "sm": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Challenges card gap between title and components."
+          }
+        },
+        "md": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Challenges card gap between groups."
+          }
+        }
+      },
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Challenges card gap on horizontal."
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Challenges card space on top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Challenges card space on right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Challenges card space on bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Challenges card space on left."
+        }
+      },
+      "footer": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Challenges footer gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Challenges footer space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges footer space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges footer space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Challenges footer space on left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Challenges footer radius."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges footer border on top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges footer border on right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges footer border on bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Challenges footer border on left."
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Challenges footer border color."
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Challenges footer fill color."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Challenges card radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Challenges card border on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Challenges card border on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Challenges card border on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Challenges card border on left."
+        },
+        "default": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.16",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Challenges card border."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.60}",
+          "fontWeight": "{font-weight.600}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Challenges section typo."
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(202.5% 149.85% at 55.74% 11.82%, rgba(18, 42, 143, 0.8) 0%, rgba(8, 19, 66, 0.371248) 48.76%, rgba(0, 0, 0, 0) 100%), #121E33",
+        "$description": "Challenges card surface."
+      },
+      "on": {
+        "surface": {
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "Challenges color on surface - title."
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "dropShadow"
+        },
+        "$description": "Challenges card shadow."
+      }
+    },
+    "modal": {
+      "img": {
+        "md": {
+          "height": {
+            "$type": "sizing",
+            "$value": "{size.400}",
+            "$description": "In Game UI Modal -> Challenges image medium height."
+          }
+        }
+      },
+      "body": {
+        "item": {
+          "head": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.70}",
+                "fontWeight": "{font-weight.500}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "In game UI -> Challenges body item body typo."
+            }
+          }
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(202.5% 149.85% at 55.74% 11.82%, rgba(18, 42, 143, 0.8) 0%, rgba(8, 19, 66, 0.371248) 48.76%, rgba(0, 0, 0, 0) 100%), #121E33",
+        "$description": "Gamif Modal -> surface color."
+      },
+      "head": {
+        "surface": {
+          "$type": "color",
+          "$value": "linear-gradient(90deg, rgba(16, 32, 88, 0) 0%, rgba(23, 47, 133, 0.49) 100%)",
+          "$description": "Gamif Modal -> header surface color."
+        }
+      },
+      "border": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.1",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "Gamif Modal -> border color."
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Gamif Modal -> on surface head color."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.8",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Gamif Modal -> on surface body color."
+          }
+        }
+      },
+      "card": {
+        "surface": {
+          "$type": "color",
+          "$value": "#11267459",
+          "$description": "Challenges modal card -> surface color"
+        }
+      }
+    },
+    "mini-card": {
+      "x": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%)",
+          "$description": "Horizontal mini-card challenges fill gradient."
+        },
+        "border": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.16",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "Horizontal mini-card challenges border color."
+        }
+      },
+      "y": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)",
+          "$description": "Vertical mini-card challenges fill gradient."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Vertical mini-card challenges border color."
+        }
+      }
+    },
+    "gui": {
+      "progress": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.600}",
+          "$description": "Challenges GUI -> Progress circle size."
+        },
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Challenges GUI -> Progress circle inner padding."
+        },
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.md}",
+            "$description": "Challenges GUI -> progress circle border width."
+          }
+        }
+      },
+      "thumb": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Challenges GUI -> Thumb gap."
+        },
+        "body": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Challenges GUI -> gap."
+          },
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.md}",
+            "$description": "Challenges GUI -> Thumbs body typography."
+          }
+        },
+        "head": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.heading.sm}",
+            "$description": "Challenges GUI -> Thumbs heading typography."
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.40}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{line-height.md} * 100%"
+            },
+            "$description": "Challenges GUI -> Thumbs label typography."
+          }
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(83.55% 142.22% at 50.13% 19.44%, rgba(18, 42, 143, 0.8) 0%, rgba(8, 19, 66, 0.371248) 48.76%, rgba(0, 0, 0, 0) 100%), #121E33",
+        "$description": "Challenges GUI -> background color."
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Challenges GUI -> on surface color."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.8",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Challenges GUI -> on surface body color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Challenges GUI -> on surface label color."
+          }
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Challenges GUI -> gap between objectives."
+      },
+      "under": {
+        "fill": {
+          "$type": "color",
+          "$value": "#0E1A3F",
+          "$description": "Challenges GUI -> underlayer color."
+        },
+        "right": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, #0E1B4B 0%, #0D1B49 48%, rgba(14, 27, 74, 0) 100%)",
+            "$description": "Challenges GUI -> underlayer right color."
+          }
+        },
+        "left": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, rgba(13, 25, 62, 0) 0%, #0E1A3F 40%, #0E1A3F 100%)",
+            "$description": "Challenges GUI -> underlayer right color."
+          }
+        }
+      }
+    },
+    "rwd-card": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "innerShadow"
+        },
+        "$description": "Challenges -> Reward card shadow."
+      }
+    }
+  }
+}

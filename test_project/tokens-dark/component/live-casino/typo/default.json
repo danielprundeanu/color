@@ -1,0 +1,91 @@
+{
+  "aux-live-casino": {
+    "font-size": {
+      "head": {
+        "$type": "fontSizes",
+        "$value": "{font-size.200}"
+      },
+      "body": {
+        "$type": "fontSizes",
+        "$value": "{font-size.60}"
+      },
+      "label": {
+        "$type": "fontSizes",
+        "$value": "{font-size.60}"
+      }
+    },
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "body": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "font-weight": {
+      "head": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.400}"
+      },
+      "body": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      },
+      "label": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      }
+    },
+    "line-height": {
+      "head": {
+        "$type": "lineHeights",
+        "$value": "{line-height.md}"
+      },
+      "body": {
+        "$type": "lineHeights",
+        "$value": "{line-height.md}"
+      },
+      "label": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      }
+    }
+  },
+  "live-casino": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-live-casino.font-family.head}",
+          "fontSize": "{aux-live-casino.font-size.head}",
+          "fontWeight": "{aux-live-casino.font-weight.head}",
+          "lineHeight": "{aux-live-casino.line-height.head} * 100%"
+        }
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-live-casino.font-family.body}",
+          "fontSize": "{aux-live-casino.font-size.body}",
+          "fontWeight": "{aux-live-casino.font-weight.body}",
+          "lineHeight": "{aux-live-casino.line-height.body} * 100%"
+        }
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-live-casino.font-family.label}",
+          "fontSize": "{aux-live-casino.font-size.label}",
+          "fontWeight": "{aux-live-casino.font-weight.label}",
+          "lineHeight": "{aux-live-casino.line-height.label} * 100%"
+        }
+      }
+    }
+  }
+}

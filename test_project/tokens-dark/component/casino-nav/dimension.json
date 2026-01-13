@@ -1,0 +1,131 @@
+{
+  "aux-casino-nav": {
+    "item": {
+      "radius": {
+        "default": {
+          "$type": "borderRadius",
+          "$value": "{casino-nav.item.radius.base}"
+        }
+      },
+      "space": {
+        "x": {
+          "sm": {
+            "$type": "spacing",
+            "$value": "{casino-nav.item.space.base.x} /4"
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{casino-nav.item.space.base.x} /3"
+          }
+        },
+        "y": {
+          "sm": {
+            "$type": "spacing",
+            "$value": "{casino-nav.item.space.base.y}/4"
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{casino-nav.item.space.base.y}/3"
+          }
+        }
+      },
+      "gap": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{casino-nav.item.gap.base}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{casino-nav.item.gap.base}"
+        }
+      }
+    },
+    "list": {
+      "radius": {
+        "default": {
+          "$type": "borderRadius",
+          "$value": "{casino-nav.list.radius.base}"
+        }
+      },
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{casino-nav.list.space.base.x}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{casino-nav.list.space.base.y}"
+        }
+      },
+      "gap": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{casino-nav.list.gap.base}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{casino-nav.list.gap.base}"
+        }
+      }
+    },
+    "image": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{casino-nav.image.radius.base}"
+      }
+    }
+  },
+  "casino-nav": {
+    "item": {
+      "x": {
+        "width": {
+          "$type": "sizing",
+          "$value": "110px"
+        }
+      },
+      "y": {
+        "width": {
+          "$type": "sizing",
+          "$value": "80px"
+        }
+      },
+      "height": {
+        "label": {
+          "$type": "sizing",
+          "$value": "40px"
+        }
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Used for underline option."
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{icon.size.lg}"
+      }
+    },
+    "list": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        }
+      }
+    },
+    "image": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.500}"
+      }
+    }
+  }
+}

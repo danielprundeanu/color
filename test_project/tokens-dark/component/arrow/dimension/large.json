@@ -1,0 +1,27 @@
+{
+  "arrow": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.300}",
+        "$description": "Arrows medium size"
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      }
+    },
+    "space": {
+      "all": {
+        "$type": "spacing",
+        "$value": "{space.50}"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.round}"
+    }
+  }
+}

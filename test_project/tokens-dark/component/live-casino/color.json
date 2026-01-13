@@ -1,0 +1,177 @@
+{
+  "aux-live-casino": {
+    "gradient": {
+      "start": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Card gradient start color."
+      },
+      "end": {
+        "$type": "color",
+        "$value": "{black.90}",
+        "$description": "Card gradient end color."
+      },
+      "footer": {
+        "start": {
+          "$type": "color",
+          "$value": "{grey.110}",
+          "$description": "Footer gradient start color."
+        },
+        "end": {
+          "$type": "color",
+          "$value": "{grey.110}",
+          "$description": "Footer gradient end color."
+        }
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.md.x}",
+        "y": "{shadow.base.md.y}",
+        "blur": "{shadow.base.md.blur}",
+        "spread": "{shadow.base.md.spread}",
+        "color": "{live-casino.shadow.fill}",
+        "type": "dropShadow"
+      },
+      "$description": "Live Casino thumb shadow."
+    }
+  },
+  "live-casino": {
+    "surface": {
+      "$type": "color",
+      "$value": "{transparent}"
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}"
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Game title color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Game provider color."
+        }
+      }
+    },
+    "footer": {
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(224deg, {aux-live-casino.gradient.footer.start} 0%, {aux-live-casino.gradient.footer.end} 80%)"
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Jackpot amount color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}",
+            "$description": "Info label color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{primary.fill.default}",
+            "$description": "Info icon color."
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Footer top border color"
+        }
+      }
+    },
+    "gradient": {
+      "fill": {
+        "$type": "color",
+        "$value": "linear-gradient(180deg, {aux-live-casino.gradient.start} 0%, {aux-live-casino.gradient.end} 90%)",
+        "$description": "Card gradient fill color."
+      }
+    },
+    "result": {
+      "red": {
+        "fill": {
+          "$type": "color",
+          "$value": "{negative.70}",
+          "$description": "Result number fill color."
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{white.100}"
+            }
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}"
+          }
+        }
+      },
+      "black": {
+        "fill": {
+          "$type": "color",
+          "$value": "{black.100}",
+          "$description": "Result number fill color."
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{white.100}"
+            }
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}"
+          }
+        }
+      },
+      "green": {
+        "fill": {
+          "$type": "color",
+          "$value": "{positive.60}",
+          "$description": "Result number fill color."
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{white.100}"
+            }
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}"
+          }
+        }
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Live casino thumbnail shadow color."
+      }
+    }
+  }
+}

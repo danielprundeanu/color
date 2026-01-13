@@ -1,0 +1,64 @@
+{
+  "casino-nav": {
+    "item": {
+      "space": {
+        "base": {
+          "x": {
+            "$type": "spacing",
+            "$value": "{size.300}"
+          },
+          "y": {
+            "$type": "spacing",
+            "$value": "{size.100}"
+          }
+        }
+      },
+      "radius": {
+        "base": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}"
+        }
+      },
+      "gap": {
+        "base": {
+          "$type": "spacing",
+          "$value": "4px"
+        }
+      }
+    },
+    "list": {
+      "radius": {
+        "base": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}"
+        }
+      },
+      "space": {
+        "base": {
+          "x": {
+            "$type": "spacing",
+            "$value": "{size.0}"
+          },
+          "y": {
+            "$type": "spacing",
+            "$value": "{size.0}"
+          }
+        }
+      },
+      "gap": {
+        "base": {
+          "$type": "spacing",
+          "$value": "{size.0}"
+        }
+      }
+    },
+    "image": {
+      "radius": {
+        "base": {
+          "$type": "borderRadius",
+          "$value": "6px"
+        }
+      }
+    }
+  }
+}

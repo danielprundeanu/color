@@ -1,0 +1,112 @@
+{
+  "cookies": {
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Border radius for cookies container"
+    },
+    "max-width": {
+      "$type": "sizing",
+      "$value": "{size.25}*482",
+      "$description": "Max-width for content to be applied only for large size (desktop resolution)"
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.500}",
+        "$description": "Size for top icon"
+      }
+    },
+    "footer": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Header gap"
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Surface color for cookies"
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "#000000",
+        "type": "dropShadow"
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.200}",
+      "$description": "Cookies gap between header, body & footer."
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Cookies space on top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Cookies space on right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Cookies space on bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Cookies space on left."
+      }
+    },
+    "logo": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Cookies logo height."
+      }
+    },
+    "body": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Cookies gap on body."
+      }
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Cookie border on top."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Cookie border on right."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Cookie border on bottom."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Cookie border on left."
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{border.default}",
+        "$description": "Cookie border default."
+      }
+    }
+  }
+}

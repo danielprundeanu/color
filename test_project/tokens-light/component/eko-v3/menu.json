@@ -1,0 +1,1451 @@
+{
+  "primary-menu": {
+    "item": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}",
+          "$description": "Primary Menu Item and Submenu icon size."
+        }
+      },
+      "x": {
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{size.10}",
+            "$description": "Primary Menu Item border top width."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{size.10}",
+            "$description": "Primary Menu Item border right width."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{size.10}",
+            "$description": "Primary Menu Item border bottom width."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{size.10}",
+            "$description": "Primary Menu Item border left width."
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Primary Menu Item & Submenu wrapper border radius.\n"
+      }
+    },
+    "md": {
+      "item": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Primary Menu Item gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Primary Menu Item padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Primary Menu Item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Primary Menu Item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Primary Menu Item padding left."
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Medium Primary Menu Item and Submenu typography."
+          }
+        },
+        "special": {
+          "label": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.100}",
+                "fontWeight": "{font-weight.600-italic}",
+                "lineHeight": "{icon.size.md}"
+              },
+              "$description": "Medium Primary Menu -> Special Menu Item typography."
+            }
+          }
+        }
+      },
+      "child": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Medium Submenu Item gap. (for Horizontal orientation)."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Medium Primary Submenu item padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Medium Primary Submenu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Medium Primary Submenu item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.500} + {space.50}",
+            "$description": "Medium Primary Submenu item padding left."
+          }
+        },
+        "wrp": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Gap between Submenu items inside Submenu Wrapper."
+          },
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Horizontal Medium Submenu item padding top."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Horizontal Medium Submenu item padding right."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Horizontal Medium Submenu item padding bottom."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.150}",
+              "$description": "Horizontal Medium Submenu item padding left."
+            }
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.90}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{icon.size.md}"
+            }
+          }
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Gap between menu parent and Submenu Wrapper."
+      }
+    },
+    "group-label": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.50}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.md} * 100%"
+        },
+        "$description": "Primary Menu Group Label typography."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu separator padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Primary Menu separator padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Primary Menu separator padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Primary Menu separator padding left."
+        }
+      }
+    },
+    "lg": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Primary Menu -> Gap between menu parent and Submenu Wrapper."
+      },
+      "item": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Lareg Primary Menu Item Inline gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding left."
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": "{typo.label.lg}",
+            "$description": "Large Primary Menu Item and Submenu typography."
+          }
+        },
+        "special": {
+          "label": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.100}",
+                "fontWeight": "{font-weight.600-italic}",
+                "lineHeight": "{icon.size.md}"
+              },
+              "$description": "Large Primary Menu -> Special Menu Item typography."
+            }
+          }
+        }
+      },
+      "child": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Large Submenu Item gap. (for Horizontal orientation)."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Horizontal Large Submenu item padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Horizontal Large Submenu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.75}",
+            "$description": "Horizontal Large Submenu item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Horizontal Large Submenu item padding left."
+          }
+        },
+        "label": {
+          "typo": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{font-family.200}",
+              "fontSize": "{font-size.90}",
+              "fontWeight": "{font-weight.500}",
+              "lineHeight": "{icon.size.md}"
+            }
+          }
+        }
+      }
+    },
+    "child": {
+      "wrp": {
+        "border": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.3",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{grey.surface.default}",
+          "$description": "Submenu Wrapper border color."
+        },
+        "surface": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.5",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{grey.surface.default}",
+          "$description": "Submenu Wrapper surface color."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Primary Menu -> Submenu Item border radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu -> Submenu border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu -> Submenu border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu -> Submenu border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu -> Submenu border left width."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        }
+      }
+    },
+    "counter": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu -> Notification chip padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Primary Menu -> Notification chip padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu -> Notification chip padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Primary Menu -> Notification chip padding left."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Primary Menu counter border radius."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{neutral.fill.weak}",
+          "$description": "Primary Menu -> Counter default border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.surface.default}",
+          "$description": "Primary Menu -> Counter hover border color."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}",
+          "$description": "Primary Menu -> Counter active border color."
+        },
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Primary Menu -> Counter border width."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.50}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.base}"
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.strongest}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.surface.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}"
+          }
+        }
+      }
+    },
+    "list": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.25}",
+        "$description": "Primary Menu List gap."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu List padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu List padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu List padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu List padding left."
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Menu List border color."
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Menu List surface color."
+      },
+      "on": {
+        "fill": {
+          "$type": "color",
+          "$value": "{on.surface.primary.label}",
+          "$description": "Primary Menu -> On.fill color used for Group Label."
+        }
+      }
+    },
+    "separator": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Primary Menu separator padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu separator padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Primary Menu separator padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu separator padding left."
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{border.separator}",
+        "$description": "Separator border color."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.none}",
+      "$description": "Primary Menu List border radius."
+    },
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Menu Parent / Submenu fill color."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.surface.default}",
+        "$description": "Menu Parent fill on hover."
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{surface.default}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Menu Parent border color."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.surface.default}",
+        "$description": "Menu Parent border on hover."
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{surface.default}"
+      }
+    },
+    "on": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Menu Label default color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{on.surface.primary.body}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{on.surface.primary.head}"
+        }
+      }
+    },
+    "highlight": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "Menu Parent / Submenu fill color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.fill.active}",
+          "$description": "Menu Parent fill on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "Menu Parent border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.fill.active}",
+          "$description": "Menu Parent border on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Menu Label default color."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}"
+          }
+        }
+      }
+    },
+    "special": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Menu Parent / Submenu fill color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Menu Parent fill on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Menu Parent border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Menu Parent border on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Menu Label default color."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{btn.secondary.on.fill.active}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{btn.secondary.on.fill.active}"
+          }
+        }
+      }
+    }
+  },
+  "secondary-menu": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{icon.size.xs}",
+        "$description": "Secondary Menu Item and Submenu icon size."
+      }
+    },
+    "list": {
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Menu List border color."
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Menu List surface color."
+      },
+      "on": {
+        "fill": {
+          "$type": "color",
+          "$value": "{neutral.on.surface.default}",
+          "$description": "Primary Menu -> On.fill color used for Group Label."
+        }
+      }
+    },
+    "item": {
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Primary Menu Item border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Primary Menu Item border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.sm}",
+          "$description": "Primary Menu Item border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Primary Menu Item border left width."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent border on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent / Submenu fill color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent fill on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Menu Label default color."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}"
+          }
+        }
+      }
+    },
+    "inner": {
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu Item border top width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu Item border right width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu Item border bottom width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Primary Menu Item border left width."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent border on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent / Submenu fill color."
+        },
+        "hover": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.2",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "Menu Parent fill on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      },
+      "hasdrop": {
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": ".2",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.fill.default}",
+          "$description": "Menu Parent / Submenu fill color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Menu Parent border color."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Menu Label default color."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.fill.active}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}"
+          }
+        }
+      }
+    },
+    "md": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}"
+      },
+      "list": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Large Primary menu item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Primary Menu Item & Submenu wrapper border radius.\n"
+        }
+      },
+      "item": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Primary Menu Item & Submenu wrapper border radius.\n"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Large Primary menu item padding left."
+          }
+        }
+      },
+      "inner": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Primary Menu Item & Submenu wrapper border radius.\n"
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Primary Menu Item gap."
+        },
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Primary Menu Item padding left."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Primary Menu Item padding right."
+          }
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Medium Primary Menu Item and Submenu typography."
+        },
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Primary Menu Item padding left."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Primary Menu Item padding right."
+          }
+        }
+      }
+    },
+    "lg": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.600}"
+      },
+      "list": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Large Primary menu item padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Large Primary menu item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Primary Menu Item & Submenu wrapper border radius.\n"
+        }
+      },
+      "item": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Large Primary menu item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Large Primary menu item padding left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Primary Menu Item & Submenu wrapper border radius.\n"
+        }
+      },
+      "inner": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Lareg Primary Menu Item Inline gap."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Large Primary menu item padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Large Primary menu item padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Large Primary menu item padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Large Primary menu item padding left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.md}",
+          "$description": "Primary Menu Item & Submenu wrapper border radius.\n"
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{icon.size.md}"
+          },
+          "$description": "Large Primary Menu Item and Submenu typography."
+        },
+        "space": {
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Primary Menu Item padding left."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Primary Menu Item padding right."
+          }
+        }
+      }
+    },
+    "counter": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu -> Notification chip padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Primary Menu -> Notification chip padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu -> Notification chip padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.75}",
+          "$description": "Primary Menu -> Notification chip padding left."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Primary Menu counter border radius."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{neutral.fill.weak}",
+          "$description": "Secondary Menu -> Counter default border color."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.surface.default}",
+          "$description": "Secondary Menu -> Counter hover border color."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}",
+          "$description": "Secondary Menu -> Counter active border color."
+        },
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{size.10}",
+          "$description": "Secondary Menu -> Counter border width."
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.50}",
+          "fontWeight": "{font-weight.500}",
+          "lineHeight": "{line-height.base}",
+          "letterSpacing": "{typo.lspace.sm}"
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{neutral.fill.weak}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.surface.default}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{on.surface.primary.active}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}"
+          }
+        }
+      }
+    },
+    "separator": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Primary Menu separator padding top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu separator padding right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Primary Menu separator padding bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Primary Menu separator padding left."
+        }
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{border.separator}",
+        "$description": "Separator border color."
+      }
+    }
+  },
+  "bottom-nav": {
+    "item": {
+      "icon": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Bottom Navigation Menu Item fill color on default state."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Bottom Navigation Menu Item fill color on hover state."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Bottom Navigation Menu Item fill color on active state."
+          }
+        }
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Bottom Navigation Menu Item padding right."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Bottom Navigation Menu Item padding left."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.50}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Bottom Navigation Item (Menu Item Vertical) typography."
+        }
+      },
+      "fill": {
+        "hover": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Bottom Navigation Menu Item fill color on hover state."
+        }
+      },
+      "border": {
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bottom Navigation Menu Item border right width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Bottom Navigation Menu Item border left width."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Bottom Navigation Menu Item border color on hover state."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Bottom Navigation Menu Item on.fill color on default state."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Bottom Navigation Menu Item on.fill color on hover state."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Bottom Navigation Menu Item on.fill color on active state."
+          }
+        }
+      },
+      "separator": {
+        "border": {
+          "$type": "color",
+          "$value": "{border.separator}",
+          "$description": "Separator border color."
+        }
+      },
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.700}"
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.0}",
+      "$description": "Bottom Navigation gap between menu items."
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Horizontal Medium List padding top."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Horizontal Medium List padding right."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Horizontal Medium List padding bottom."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Horizontal Medium List padding left."
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{surface.default}",
+      "$description": "Menu List surface color."
+    },
+    "border": {
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Bottom Navigation Menu border right width."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Bottom Navigation Menu border bottom width."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{size.10}",
+        "$description": "Bottom Navigation Menu border left width."
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Menu List border color."
+      }
+    }
+  },
+  "arrow": {
+    "sm": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.xs}"
+        }
+      }
+    },
+    "lg": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{icon.size.md}"
+        }
+      }
+    },
+    "fill": {
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.surface.default}"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{primary.fill.default}"
+      }
+    },
+    "on": {
+      "fill": {
+        "default-expand": {
+          "$type": "color",
+          "$value": "{grey.fill.active}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.fill.default}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primary.on.fill.default}"
+        }
+      }
+    }
+  }
+}

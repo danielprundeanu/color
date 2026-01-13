@@ -1,0 +1,42 @@
+{
+  "btn": {
+    "typo": {
+      "xs": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.70}",
+          "lineHeight": "{icon.size.xs}"
+        }
+      },
+      "sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.80}",
+          "lineHeight": "{icon.size.sm}"
+        }
+      },
+      "md": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.90}",
+          "lineHeight": "{icon.size.md}"
+        }
+      },
+      "lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.100}",
+          "lineHeight": "{icon.size.lg}"
+        }
+      }
+    }
+  }
+}

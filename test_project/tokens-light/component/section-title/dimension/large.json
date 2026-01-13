@@ -1,0 +1,49 @@
+{
+  "section-title": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Section title - icon size."
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Horizontal padding."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Section title - vertical padding."
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Section title border widtht (applied only on the left side)."
+      }
+    },
+    "gap": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Section title - horizontal gap ( between title & image; arrows, link & button).\n"
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Vertical gap applied between title & image and subtitle."
+      }
+    },
+    "image": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Section title image height."
+      }
+    }
+  }
+}

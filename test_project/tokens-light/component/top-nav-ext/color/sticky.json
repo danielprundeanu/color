@@ -1,0 +1,42 @@
+{
+  "top-nav-ext": {
+    "surface": {
+      "$type": "color",
+      "$value": "{black.100}",
+      "$description": "Top nav - inverted extension surface color."
+    },
+    "on": {
+      "surface": {
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "On top nav - inverted extension surface color."
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{primary.surface.default}",
+        "$description": "Top nav - inverted extention border color."
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{primary.surface.strong}2D"
+      }
+    }
+  },
+  "aux-top-nav-ext": {
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.xs.x}",
+        "y": "{shadow.base.xs.y}",
+        "blur": "{shadow.base.xs.blur}",
+        "spread": "{shadow.base.xs.spread}",
+        "color": "{top-nav-ext.shadow.fill}",
+        "type": "dropShadow"
+      }
+    }
+  }
+}

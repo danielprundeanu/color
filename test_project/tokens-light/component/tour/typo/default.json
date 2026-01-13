@@ -1,0 +1,169 @@
+{
+  "aux-tour": {
+    "font-size": {
+      "head": {
+        "$type": "fontSizes",
+        "$value": "{font-size.100}"
+      }
+    },
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.100}"
+      }
+    },
+    "font-weight": {
+      "head": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.600}"
+      }
+    },
+    "line-height": {
+      "head": {
+        "$type": "lineHeights",
+        "$value": "{line-height.md}"
+      }
+    },
+    "prize": {
+      "font-size": {
+        "label": {
+          "$type": "fontSizes",
+          "$value": "{font-size.60}"
+        },
+        "body": {
+          "$type": "fontSizes",
+          "$value": "{font-size.100}"
+        }
+      },
+      "font-family": {
+        "label": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.200}"
+        },
+        "body": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.200}"
+        }
+      },
+      "font-weight": {
+        "label": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.600}"
+        },
+        "body": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.500}"
+        }
+      },
+      "line-height": {
+        "label": {
+          "$type": "lineHeights",
+          "$value": "{line-height.md}"
+        },
+        "body": {
+          "$type": "lineHeights",
+          "$value": "{line-height.sm}"
+        }
+      }
+    },
+    "rank": {
+      "font-size": {
+        "head": {
+          "$type": "fontSizes",
+          "$value": "{font-size.500}"
+        },
+        "label": {
+          "$type": "fontSizes",
+          "$value": "{font-size.70}"
+        }
+      },
+      "font-family": {
+        "head": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.100}"
+        },
+        "label": {
+          "$type": "fontFamilies",
+          "$value": "{font-family.200}"
+        }
+      },
+      "font-weight": {
+        "head": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.700}"
+        },
+        "label": {
+          "$type": "fontWeights",
+          "$value": "{font-weight.600}"
+        }
+      },
+      "line-height": {
+        "head": {
+          "$type": "lineHeights",
+          "$value": "{line-height.md}"
+        },
+        "label": {
+          "$type": "lineHeights",
+          "$value": "{line-height.md}"
+        }
+      }
+    }
+  },
+  "tour": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-tour.font-family.head}",
+          "fontSize": "{aux-tour.font-size.head}",
+          "fontWeight": "{aux-tour.font-weight.head}",
+          "lineHeight": "{aux-tour.line-height.head} * 100%"
+        }
+      }
+    },
+    "prize": {
+      "typo": {
+        "label": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-tour.prize.font-family.label}",
+            "fontSize": "{aux-tour.prize.font-size.label}",
+            "fontWeight": "{aux-tour.prize.font-weight.label}",
+            "lineHeight": "{aux-tour.prize.line-height.label} * 100%"
+          }
+        },
+        "body": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-tour.prize.font-family.body}",
+            "fontSize": "{aux-tour.prize.font-size.body}",
+            "fontWeight": "{aux-tour.prize.font-weight.body}",
+            "lineHeight": "{aux-tour.prize.line-height.body} * 100%"
+          }
+        }
+      }
+    },
+    "rank": {
+      "typo": {
+        "head": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-tour.rank.font-family.head}",
+            "fontSize": "{aux-tour.rank.font-size.head}",
+            "fontWeight": "{aux-tour.rank.font-weight.head}",
+            "lineHeight": "{aux-tour.rank.line-height.head} * 100%"
+          }
+        },
+        "label": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{aux-tour.rank.font-family.label}",
+            "fontSize": "{aux-tour.rank.font-size.label}",
+            "fontWeight": "{aux-tour.rank.font-weight.label}",
+            "lineHeight": "{aux-tour.rank.line-height.label} * 100%"
+          }
+        }
+      }
+    }
+  }
+}

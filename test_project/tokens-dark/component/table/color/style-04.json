@@ -1,0 +1,32 @@
+{
+  "table": {
+    "row": {
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      }
+    },
+    "on": {
+      "fill": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}"
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}"
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}"
+        }
+      }
+    }
+  }
+}

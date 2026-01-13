@@ -1,0 +1,42 @@
+{
+  "table": {
+    "row": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.500}"
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Border top right left for the table row."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Border bottom for the table row."
+        }
+      },
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.lg}"
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.inline.md}"
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.sm}"
+      },
+      "no": {
+        "width": {
+          "$type": "sizing",
+          "$value": "{size.500}"
+        }
+      }
+    }
+  }
+}

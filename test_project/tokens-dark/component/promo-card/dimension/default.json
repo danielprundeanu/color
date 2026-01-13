@@ -1,0 +1,110 @@
+{
+  "promo-card": {
+    "wrp": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.0}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.0}"
+        }
+      }
+    },
+    "space": {
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.200}"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.200}"
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.200}"
+      }
+    },
+    "tc": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.0}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.0}"
+        }
+      }
+    },
+    "footer": {
+      "space": {
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        }
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.lg}"
+    },
+    "content": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}"
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.stack.xl}"
+      }
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "400px"
+    },
+    "img": {
+      "height": {
+        "$type": "sizing",
+        "$value": "200px"
+      }
+    }
+  },
+  "aux-promo-card": {
+    "gap": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{promo-card.gap.base.x}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{promo-card.gap.base.x}"
+        }
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{promo-card.gap.base.y}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{promo-card.gap.base.y}"
+        }
+      }
+    }
+  }
+}

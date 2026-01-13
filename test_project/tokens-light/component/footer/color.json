@@ -1,0 +1,68 @@
+{
+  "footer": {
+    "surface": {
+      "$type": "color",
+      "$value": "{bg.level-01}",
+      "$description": "Footer surface."
+    },
+    "border": {
+      "separator": {
+        "$type": "color",
+        "$value": "{border.separator}",
+        "$description": "Footer border separator."
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Footer on surface head for heading."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Footer on surface body."
+        },
+        "label": {
+          "$type": "color",
+          "$value": "{on.surface.label}",
+          "$description": "Footer on surface label."
+        },
+        "weak": {
+          "$type": "color",
+          "$value": "{on.surface.label}99",
+          "$description": "Footer on surface label."
+        }
+      }
+    },
+    "wrp": {
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strong}00",
+        "$description": "Footer content wrapper fill."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.default}00",
+          "$description": "Footer content wrapper border."
+        }
+      }
+    },
+    "icon": {
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strong}",
+        "$description": "Footer icon fill."
+      },
+      "on": {
+        "fill": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Footer color on fill icon."
+        }
+      }
+    }
+  }
+}

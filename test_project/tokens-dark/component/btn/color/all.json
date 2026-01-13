@@ -1,0 +1,10 @@
+{
+  "btn": {
+    "border": {
+      "focus": {
+        "$type": "color",
+        "$value": "{grey.fill.default}"
+      }
+    }
+  }
+}

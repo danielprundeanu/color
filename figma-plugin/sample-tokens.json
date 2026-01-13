@@ -1,0 +1,172 @@
+{
+  "tokens-light": {
+    "primitives": {
+      "color": {
+        "primary": {
+          "10": {
+            "$type": "color",
+            "$value": "#e6f0ff"
+          },
+          "20": {
+            "$type": "color",
+            "$value": "#cce0ff"
+          },
+          "50": {
+            "$type": "color",
+            "$value": "#3d85ff"
+          },
+          "100": {
+            "$type": "color",
+            "$value": "#0066ff"
+          },
+          "130": {
+            "$type": "color",
+            "$value": "#0047b3"
+          }
+        },
+        "white": {
+          "100": {
+            "$type": "color",
+            "$value": "#ffffff"
+          }
+        },
+        "black": {
+          "100": {
+            "$type": "color",
+            "$value": "#000000"
+          }
+        }
+      },
+      "dimension": {
+        "space": {
+          "0": {
+            "$type": "dimension",
+            "$value": "0px"
+          },
+          "50": {
+            "$type": "dimension",
+            "$value": "4px"
+          },
+          "100": {
+            "$type": "dimension",
+            "$value": "8px"
+          },
+          "150": {
+            "$type": "dimension",
+            "$value": "12px"
+          },
+          "200": {
+            "$type": "dimension",
+            "$value": "16px"
+          }
+        },
+        "size": {
+          "100": {
+            "$type": "dimension",
+            "$value": "24px"
+          },
+          "200": {
+            "$type": "dimension",
+            "$value": "32px"
+          }
+        }
+      }
+    },
+    "semantic": {
+      "color": {
+        "surface": {
+          "default": {
+            "$type": "color",
+            "$value": "{white.100}"
+          },
+          "strong": {
+            "$type": "color",
+            "$value": "{primary.10}"
+          }
+        },
+        "on": {
+          "surface": {
+            "head": {
+              "$type": "color",
+              "$value": "{black.100}"
+            },
+            "body": {
+              "$type": "color",
+              "$value": "{black.100}"
+            }
+          }
+        },
+        "primary": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.100}"
+            }
+          },
+          "on": {
+            "fill": {
+              "default": {
+                "$type": "color",
+                "$value": "{white.100}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "component": {
+      "button": {
+        "primary": {
+          "bg": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.fill.default}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{primary.130}"
+            }
+          },
+          "text": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}"
+            }
+          },
+          "padding": {
+            "x": {
+              "$type": "dimension",
+              "$value": "{space.200}"
+            },
+            "y": {
+              "$type": "dimension",
+              "$value": "{space.100}"
+            }
+          },
+          "border": {
+            "radius": {
+              "$type": "dimension",
+              "$value": "8px"
+            }
+          }
+        }
+      },
+      "card": {
+        "default": {
+          "bg": {
+            "$type": "color",
+            "$value": "{surface.default}"
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{primary.20}"
+          },
+          "padding": {
+            "$type": "dimension",
+            "$value": "{space.200}"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1264 @@
+{
+  "deposit": {
+    "input": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.700}",
+        "$description": "Deposit widget input height."
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.75}",
+        "$description": "Deposit input gap."
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Deposit input padding right."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Deposit input padding left."
+        }
+      },
+      "labels": {
+        "space": {
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Label padding right."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Label padding left."
+          }
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Space within Tax (between tax value, tax currency and tax info) and Amount (between info, final amount and amount currency)"
+        }
+      },
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Space gap for input (between icons and amount) and label (between tax and amount)"
+        }
+      },
+      "opacity": {
+        "$type": "opacity",
+        "$value": ".4"
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{error.surface.default}"
+        },
+        "disabled": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "lighten",
+                "value": "0.4",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{grey.fill.disabled}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}"
+        },
+        "hover": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.3",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.90}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primary.90}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{error.fill.default}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.fill.disabled}"
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Amount Input top border width."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Amount Input right border width."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Amount Input top border width."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Amount Input left border width."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}"
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        },
+        "error": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          }
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.md}"
+        }
+      },
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.title.md}"
+        }
+      },
+      "temp": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "Lexend",
+            "fontSize": "{font-size.200}",
+            "fontWeight": "400",
+            "lineHeight": "{line-height.lg} * 100%"
+          }
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}"
+        }
+      },
+      "info": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.80}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.lg} * 100%"
+          }
+        }
+      },
+      "icon": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{grey.fill.default}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{grey.fill.default}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{grey.fill.default}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{grey.fill.default}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{grey.on.fill.disabled}"
+          }
+        }
+      },
+      "on": {
+        "fill": {
+          "label": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.label}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{on.surface.label}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{on.surface.label}"
+            },
+            "error": {
+              "$type": "color",
+              "$value": "{on.surface.label}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{grey.on.fill.disabled}"
+            }
+          },
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}"
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          },
+          "info": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{on.surface.disabled}"
+          }
+        }
+      },
+      "offset": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Amount Input - Top offset that pushes the amount to make room for label"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "28px",
+          "$description": "Amount Input - right offset that pushes the amount to align center the group (amount + currency). The value should be = currency width + gap/2."
+        }
+      },
+      "pos": {
+        "y": {
+          "$type": "dimension",
+          "$value": "12px",
+          "$description": "Amount Input - Css Top value for label."
+        }
+      }
+    },
+    "select": {
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.400}",
+        "$description": "Deposit select chips height."
+      },
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.0}",
+        "$description": "Deposit select chips width."
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Deposit select chips space top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Deposit select chips space right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Deposit select chips space bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Deposit select chips space left."
+        },
+        "chips": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{size.100}",
+            "$description": "Deposit select chips gap between assist chips."
+          }
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Deposit select chips gap."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "transparent",
+          "$description": "Deposit select chips border default."
+        },
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Deposit Select Chips on border width top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Deposit Select Chips on border width right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Deposit Select Chips on border width bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Deposit Select Chips on border width left."
+        }
+      },
+      "surface": {
+        "default": {
+          "$type": "color",
+          "$value": "transparent",
+          "$description": "Deposit Select Chips surface default."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Deposit Select Chips border radius."
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Deposit Select Chips on shadow default."
+      }
+    },
+    "widget": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Desposit Widget space top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Desposit Widget space right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Desposit Widget space bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Desposit Widget space left."
+        },
+        "outer": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        }
+      },
+      "gap": {
+        "xs": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Deposit widget gap."
+        },
+        "sm": {
+          "$type": "spacing",
+          "$value": "{space.50}"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        },
+        "lg": {
+          "$type": "spacing",
+          "$value": "{space.200}"
+        }
+      },
+      "head": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget head top space."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget head right space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget head bottom space ."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget head left space."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Horizontal gap for widget header."
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{transparent}",
+            "$description": "Deposit Widget head border."
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widger top border ."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widger right border."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widger bottom border."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widger left border."
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Deposit Widget head surface."
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.700}"
+        }
+      },
+      "body": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit Widget body top space."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget body right space."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Deposit Widget body bottom space ."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget body left space."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.250}",
+          "$description": "Deposit Widget body gap."
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Deposit Widget radius body."
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Deposit Widget body surface."
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{border.weak}",
+            "$description": "Deposit Widget body border."
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Deposit Widger top border ."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widger right border."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widger bottom border."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widger left border ."
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Deposit Widget shadow body."
+        },
+        "inner": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Widget inner body top padding."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Widget inner body right padding."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Widget inner body bottom padding."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Widget inner body left padding."
+            }
+          },
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.250}",
+            "$description": "Vertical Space for inner body"
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.none}",
+            "$description": "Deposit Widget radius body."
+          },
+          "fill": {
+            "$type": "color",
+            "$value": "{transparent}"
+          },
+          "border": {
+            "default": {
+              "$type": "color",
+              "$value": "transparent",
+              "$description": "Deposit Widget body border."
+            },
+            "top": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Deposit Widger top border ."
+            },
+            "right": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Deposit Widger right border."
+            },
+            "bottom": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Deposit Widger bottom border."
+            },
+            "left": {
+              "$type": "borderWidth",
+              "$value": "{border.none}",
+              "$description": "Deposit Widger left border ."
+            }
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.md}",
+          "$description": "Deposit Widget title"
+        }
+      },
+      "footer": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Deposit Widget footer space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget footer space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget footer space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Deposit Widget footer space on left."
+          }
+        },
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Deposit Widget footer on gap."
+        },
+        "surface": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Deposit Widget footer surface."
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "{border.separator}",
+            "$description": "Deposit Widget footer border color."
+          },
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widget border on top."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widget border on bottom."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widget border on right."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Widget border on left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.lg}",
+        "$description": "Deposit Widget radius."
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Deposit Widget shadow."
+      },
+      "title": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.500}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Deposit Widget title"
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{fill.weak}",
+        "$description": "Deposit Widget fill."
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Deposit Widget surface"
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.head}",
+            "$description": "Deposit Widget on surface."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}",
+            "$description": "Deposit Widget on surface."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Deposit Widget on surface."
+          }
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "{fill.weak}",
+          "$description": "Deposit Widget on fill."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.md}",
+          "$description": "Deposit Widget title"
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Deposit Select Chips on border width top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Deposit Select Chips on border width right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Deposit Select Chips on border width bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Deposit Select Chips on border width left."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{border.weak}"
+        }
+      },
+      "icon": {
+        "$type": "sizing",
+        "$value": "{size.250}",
+        "$description": "Size for icon in the header"
+      },
+      "header": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.lg}"
+        }
+      },
+      "logo": {
+        "offset": {
+          "$type": "dimension",
+          "$value": "-15px"
+        }
+      },
+      "list": {
+        "gop": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Deposit widget - gap between deposit accordions."
+        }
+      },
+      "temp": {
+        "typo-path": {
+          "$type": "text",
+          "$value": "https://fonts.googleapis.com/css?family=Lexend:wght@400",
+          "$description": "Bridger Font path"
+        }
+      }
+    },
+    "card": {
+      "md": {
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Deposit Card - default & hover state - drop shadow."
+        },
+        "width": {
+          "$type": "sizing",
+          "$value": "108px",
+          "$description": "Deposit Card - default and hover width."
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "72px",
+          "$description": "Deposit Card - default and hover height."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Deposit Card - default & hover state - top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Deposit Card - default & hover state - right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Deposit Card - default & hover state - bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Deposit Card - default & hover state - left padding."
+          }
+        },
+        "inner": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Card - default & hover state - inner top padding."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Card - default & hover state - inner right padding."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Card - default & hover state - inner bottom padding."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Card - default & hover state - inner left padding."
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "{radius.md}",
+            "$description": "Deposit Card - default & hover state - inner border radius."
+          },
+          "child": {
+            "radius": {
+              "$type": "borderRadius",
+              "$value": "4px",
+              "$description": "Deposit Card - default & hover state - inner border radius."
+            }
+          }
+        },
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Card - default & hover state - border width."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.body.sm}",
+          "$description": "Deposit Card - default state - typography."
+        },
+        "new": {
+          "border": {
+            "style": {
+              "$type": "border",
+              "$value": {
+                "color": "{border.strong}",
+                "width": "1px",
+                "style": "dashed"
+              },
+              "$description": "Deposit Card - default & hover state - new payment method border style."
+            }
+          }
+        }
+      },
+      "lg": {
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          },
+          "$description": "Deposit Card - active state - drop shadow."
+        },
+        "width": {
+          "$type": "sizing",
+          "$value": "120px",
+          "$description": "Deposit Card - active state - width."
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "80px",
+          "$description": "Deposit Card - active state - height."
+        },
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "3px",
+            "$description": "Deposit Card - active state - top padding."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "3px",
+            "$description": "Deposit Card - active state - right padding."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "3px",
+            "$description": "Deposit Card - active state - bottom padding."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "3px",
+            "$description": "Deposit Card - active state - left padding."
+          }
+        },
+        "inner": {
+          "space": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Card - active state - inner top padding."
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Card - active state - inner right padding."
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{space.25}",
+              "$description": "Deposit Card - active state - inner bottom padding."
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{space.0}",
+              "$description": "Deposit Card - active state - inner left padding."
+            }
+          },
+          "radius": {
+            "$type": "borderRadius",
+            "$value": "5px",
+            "$description": "Deposit Card - active state - inner border radius."
+          },
+          "child": {
+            "radius": {
+              "$type": "borderRadius",
+              "$value": "4px",
+              "$description": "Deposit Card - active state - inner child border radius."
+            }
+          }
+        },
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Deposit Card - active state - border width."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}",
+          "$description": "Deposit Card - hover & active state - typography."
+        },
+        "new": {
+          "border": {
+            "style": {
+              "$type": "border",
+              "$value": {
+                "color": "{border.strong}",
+                "width": "1px",
+                "style": "dashed"
+              },
+              "$description": "Deposit Card - default & hover state - new payment method border style."
+            }
+          }
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Deposit Card - border radius."
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.surface.default}",
+          "$description": "Deposit Card - default state - card fill."
+        },
+        "active": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "darken",
+                "value": "0.2",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{primary.surface.default}",
+          "$description": "Deposit Card - hover & active state - card fill."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Deposit Card - default state - card border."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{border.strong}",
+          "$description": "Deposit Card - hover & active state - card border."
+        }
+      },
+      "on": {
+        "fill": {
+          "label": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.body}",
+              "$description": "Deposit Card - default & hover state - label color.."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.head}",
+              "$description": "Deposit Card - active state - label color.."
+            }
+          },
+          "success": {
+            "$type": "color",
+            "$value": "{success.fill.default}",
+            "$description": "Deposit Card - verified icon color."
+          }
+        }
+      },
+      "logo": {
+        "height": {
+          "$type": "sizing",
+          "$value": "24px",
+          "$description": "Deposit Card - payment provider logo height."
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{icon.size.md}",
+        "$description": "Deposit input icon size."
+      }
+    },
+    "balance": {
+      "md": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.sm}",
+          "$description": "Deposit balance -> border radius."
+        }
+      },
+      "lg": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.150}",
+            "$description": "Deposit balance -> padding left."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.sm}",
+          "$description": "Deposit balance -> border radius."
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strong}"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{grey.border.default}",
+        "$description": "Deposit balance -> border color."
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}",
+            "$description": "Deposit balance -> Balance text color."
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Deposit balance -> label text color."
+          }
+        }
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.label.lg}"
+      }
+    },
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Deposit balance -> border width top."
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Deposit balance -> border width right."
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Deposit balance -> border width bottom."
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Deposit balance -> border width left."
+      }
+    }
+  }
+}

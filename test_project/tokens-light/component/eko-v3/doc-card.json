@@ -1,0 +1,343 @@
+{
+  "doc-card": {
+    "border": {
+      "top": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Document card border top"
+      },
+      "right": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Document card border right"
+      },
+      "bottom": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Document card border bottom"
+      },
+      "left": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Document card border left"
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Border color for default card."
+      },
+      "warning": {
+        "inner": {
+          "value": "{warning.surface.default}",
+          "type": "color",
+          "description": "Border color for card (pending status)."
+        },
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Border color for card (pending status)."
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Border color for card (error status)."
+      },
+      "inner": {
+        "error": {
+          "$type": "color",
+          "$value": "{negative.30}",
+          "$description": "Border color for inner components/dividers"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{notice.30}",
+          "$description": "Border color for inner components/dividers"
+        }
+      }
+    },
+    "footer": {
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Document card footer top border"
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Top padding for footer\n"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Right padding for footer"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Bottom padding for footer"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Left padding for footer"
+        }
+      }
+    },
+    "space": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Document Card top padding"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{size.200}",
+        "$description": "Document Card right padding"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{size.200}",
+        "$description": "Document Card bottom padding"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{size.200}",
+        "$description": "Document Card left padding"
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.150}",
+      "$description": "Horizontal Gap bewteen elements of the document card\n"
+    },
+    "header": {
+      "x": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.200}",
+          "$description": "Gap bewteen icon and right side of the details (title & description & status label)"
+        }
+      },
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Top padding for header\n"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Right padding for header"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Bottom padding for header"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Left padding for header"
+        }
+      },
+      "y": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Gap bewteen rown in the header (title & description)"
+        }
+      },
+      "border": {
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Document card header bottom border"
+        }
+      }
+    },
+    "icon": {
+      "space": {
+        "all": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Padding for document icon\n\n"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Document card - icon wrapper border radius"
+      },
+      "size": {
+        "$type": "spacing",
+        "$value": "{size.300}",
+        "$description": "Size Icon"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Document card border radius\n"
+    },
+    "title": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.title.sm}"
+      }
+    },
+    "description": {
+      "typo": {
+        "$type": "typography",
+        "$value": "{typo.body.sm}"
+      }
+    },
+    "body": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Top padding for body\n"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Right padding for body"
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Bottom padding for body"
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Left padding for body"
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.60}",
+          "fontWeight": "{font-weight.400-italic}",
+          "lineHeight": "{line-height.lg} * 100%"
+        }
+      }
+    },
+    "surface": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Surface color for card (default/verified status)"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Surface color for card (pending status)"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Surface color for card (error status)"
+      }
+    },
+    "on": {
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{on.surface.head}",
+          "$description": "Title color"
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{on.surface.body}",
+          "$description": "Body text color"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{on.surface.error.head}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{on.surface.warning.head}"
+        }
+      },
+      "fill": {
+        "icon": {
+          "default": {
+            "$type": "color",
+            "$value": "{on.surface.label}",
+            "$description": "Icon color for document card verified state"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{on.surface.error.head}",
+            "$description": "Icon color for error state"
+          },
+          "warning": {
+            "$type": "color",
+            "$value": "{on.surface.warning.head}",
+            "$description": "Icin color for document card pending status\n"
+          }
+        }
+      }
+    },
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{fill.weak}",
+        "$description": "Fill color for icon wrapper (default/verified status)"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{warning.surface.default}",
+        "$description": "Fill color for icon wrapper (pending status)"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{error.surface.default}",
+        "$description": "Fill color for icon wrapper (error status)"
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "#000000",
+        "type": "dropShadow"
+      },
+      "$description": "Shadow for document card"
+    },
+    "warning": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Document Card warning shadow."
+      }
+    },
+    "error": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "#000000",
+          "type": "dropShadow"
+        },
+        "$description": "Document Card error shadow."
+      }
+    }
+  }
+}

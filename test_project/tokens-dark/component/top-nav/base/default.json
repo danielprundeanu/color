@@ -1,0 +1,10 @@
+{
+  "top-nav": {
+    "gap": {
+      "base": {
+        "$type": "spacing",
+        "$value": "{space.inline.md}"
+      }
+    }
+  }
+}

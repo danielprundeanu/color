@@ -1,0 +1,14 @@
+{
+  "caption": {
+    "space": {
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.150}"
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.50}"
+    }
+  }
+}

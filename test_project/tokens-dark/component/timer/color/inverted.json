@@ -1,0 +1,287 @@
+{
+  "timer": {
+    "fill": {
+      "$type": "color",
+      "$value": "{white.10}",
+      "$description": "Timer fill color."
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{white.10}",
+        "$description": "Timer border color."
+      }
+    },
+    "on": {
+      "fill": {
+        "head": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}",
+          "$description": "Timer title color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}",
+          "$description": "Timer - item text color."
+        },
+        "label": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.8",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{inverted.on.surface.label}",
+          "$description": "TImer - unit text color."
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.label}"
+        }
+      },
+      "surface": {
+        "head": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}",
+          "$description": "Timer title color."
+        },
+        "body": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}",
+          "$description": "Timer - item text color."
+        },
+        "label": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.8",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{inverted.on.surface.label}",
+          "$description": "TImer - unit text color."
+        },
+        "icon": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.label}"
+        }
+      }
+    },
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{black.20}"
+      }
+    },
+    "warning": {
+      "fill": {
+        "$type": "color",
+        "$value": "{warning.fill.default}",
+        "$description": "Timer fill color."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{warning.border.default}66",
+          "$description": "Timer border color."
+        }
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{warning.on.fill.default}",
+            "$description": "Timer title color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{warning.on.fill.default}",
+            "$description": "Timer - item text color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{warning.on.fill.default}",
+            "$description": "TImer - unit text color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{warning.on.fill.default}"
+          }
+        },
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.warning.head}",
+            "$description": "Timer title color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.warning.label}",
+            "$description": "Timer - item text color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{inverted.on.surface.warning.label}",
+            "$description": "TImer - unit text color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{warning.fill.active}"
+          }
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$type": "color",
+          "$value": "{notice.70}33"
+        }
+      }
+    },
+    "error": {
+      "fill": {
+        "$type": "color",
+        "$value": "{error.fill.default}",
+        "$description": "Timer fill color."
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{error.border.default}66",
+          "$description": "Timer border color."
+        }
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{error.on.fill.default}",
+            "$description": "Timer title color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{error.on.fill.default}",
+            "$description": "Timer - item text color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{error.on.fill.default}",
+            "$description": "TImer - unit text color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{error.on.fill.default}"
+          }
+        },
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.error.head}",
+            "$description": "Timer title color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.error.body}",
+            "$description": "Timer - item text color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{inverted.on.surface.error.body}",
+            "$description": "TImer - unit text color."
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.error.label}"
+          }
+        }
+      },
+      "shadow": {
+        "fill": {
+          "$type": "color",
+          "$value": "{negative.90}33"
+        }
+      }
+    }
+  },
+  "aux-timer": {
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.md.x}",
+        "y": "{shadow.base.md.y}",
+        "blur": "{shadow.base.md.blur}",
+        "spread": "{shadow.base.md.spread}",
+        "color": "{timer.shadow.fill}",
+        "type": "dropShadow"
+      }
+    },
+    "warning": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.md.x}",
+          "y": "{shadow.base.md.y}",
+          "blur": "{shadow.base.md.blur}",
+          "spread": "{shadow.base.md.spread}",
+          "color": "{timer.warning.shadow.fill}",
+          "type": "dropShadow"
+        }
+      }
+    },
+    "error": {
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "{shadow.base.md.x}",
+          "y": "{shadow.base.md.y}",
+          "blur": "{shadow.base.md.blur}",
+          "spread": "{shadow.base.md.spread}",
+          "color": "{timer.error.shadow.fill}",
+          "type": "dropShadow"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,967 @@
+{
+  "hh": {
+    "img": {
+      "md": {
+        "height": {
+          "$type": "sizing",
+          "$value": "144px",
+          "$description": "Happy Hour mobile image height."
+        }
+      },
+      "lg": {
+        "height": {
+          "$type": "sizing",
+          "$value": "192px",
+          "$description": "Happy Hour desktop image height."
+        }
+      }
+    },
+    "md": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Happy Hour mobile space on top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Happy Hour mobile space on right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Happy Hour mobile space on bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Happy Hour mobile space on left."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.200}",
+        "$description": "Happy Hour mobile gap."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.xl}",
+        "$description": "Happy Hour mobile radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour mobile border on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour mobile border on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour mobile border on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour mobile border on left."
+        }
+      }
+    },
+    "lg": {
+      "space": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Happy Hour desktop space on top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Happy Hour desktop space on right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.0}",
+          "$description": "Happy Hour desktop space on bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.300}",
+          "$description": "Happy Hour desktop space on left."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.0}",
+        "$description": "Happy Hour desktop gap."
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.xl}",
+        "$description": "Happy Hour desktop radius."
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour desktop border on top."
+        },
+        "right": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour desktop border on right."
+        },
+        "bottom": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour desktop border on bottom."
+        },
+        "left": {
+          "$type": "borderWidth",
+          "$value": "{border.none}",
+          "$description": "Happy Hour desktop border on left."
+        }
+      }
+    },
+    "header": {
+      "md": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile header space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile header space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile header space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile header space on left."
+          }
+        },
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.100}",
+            "$description": "Happy Hour mobile header gap on horizontal."
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile header gap on vertical."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Happy Hourmobile header radius."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour mobile header border on top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour mobile header border on right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour mobile header border on bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour mobile header border on left."
+          }
+        }
+      },
+      "lg": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Happy Hour deskop header space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Happy Hour deskop header space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Happy Hour deskop header space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.200}",
+            "$description": "Happy Hour deskop header space on left."
+          }
+        },
+        "sm": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.50}",
+            "$description": "Happy Hour desktop header small gap."
+          }
+        },
+        "md": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.300}",
+            "$description": "Happy Hour desktop header gap."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.none}",
+          "$description": "Happy Hour desktop header radius."
+        },
+        "border": {
+          "top": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour desktop header border on top."
+          },
+          "right": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour desktop header border on right."
+          },
+          "bottom": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour desktop header border on bottom."
+          },
+          "left": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Happy Hour desktop header border on left."
+          }
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "innerShadow"
+        },
+        "$description": "Happy Hour shadow on header."
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Happy Hour header on surface head color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}",
+            "$description": "Happy Hour header on surface body color."
+          }
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Happy Hour header fill color."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Happy Hour header border color."
+      }
+    },
+    "body": {
+      "md": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.400}",
+          "$description": "Happy Hour mobile body gap."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.60}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.lg} * 100%"
+          },
+          "$description": "Happy Hour mobile header body typo."
+        }
+      },
+      "lg": {
+        "gap": {
+          "$type": "spacing",
+          "$value": "{space.800}",
+          "$description": "Happy Hour desktop body gap."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.lg} * 100%"
+          },
+          "$description": "Happy Hour desktop header body typo."
+        }
+      }
+    },
+    "prize": {
+      "md": {
+        "label": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile prize label gap."
+          }
+        },
+        "title": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile prize title gap."
+          }
+        }
+      },
+      "lg": {
+        "label": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour desktop prize label gap."
+          }
+        },
+        "title": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour desktop prize title gap."
+          }
+        }
+      },
+      "current": {
+        "md": {
+          "title": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.100}",
+                "fontSize": "{font-size.400}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour mobile current prize title typo."
+            }
+          },
+          "body": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.60}",
+                "fontWeight": "{font-weight.600}",
+                "lineHeight": "{line-height.lg} * 100%"
+              },
+              "$description": "Happy Hour mobile current prize body typo."
+            }
+          },
+          "label": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.40}",
+                "fontWeight": "{font-weight.400}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour mobile current prize label typo."
+            }
+          }
+        },
+        "lg": {
+          "title": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.100}",
+                "fontSize": "{font-size.600}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour desktop current prize title typo."
+            }
+          },
+          "body": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.100}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour desktop current prize body typo."
+            }
+          },
+          "label": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.80}",
+                "fontWeight": "{font-weight.400}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour desktop current prize label typo."
+            }
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "2",
+            "blur": "8",
+            "spread": "0",
+            "color": "rgba(255, 255, 255, 0.5)",
+            "type": "dropShadow"
+          },
+          "$description": "Happy Hour current prize shadow."
+        }
+      },
+      "previous": {
+        "md": {
+          "title": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.100}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.lg} * 100%"
+              },
+              "$description": "Happy Hour mobile previous prize title typo."
+            }
+          },
+          "body": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.sm}",
+              "$description": "Happy Hour mobile previous prize body typo."
+            }
+          }
+        },
+        "lg": {
+          "title": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.300}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.lg} * 100%"
+              },
+              "$description": "Happy Hour mobile previous prize title typo."
+            }
+          },
+          "body": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.100}",
+                "fontWeight": "{font-weight.500}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour dektop previous prize body typo."
+            }
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "dropShadow"
+          },
+          "$description": "Happy Hour previous prize shadow."
+        }
+      },
+      "next": {
+        "md": {
+          "title": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.200}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.lg} * 100%"
+              },
+              "$description": "Happy Hour mobile next prize title typo."
+            }
+          },
+          "body": {
+            "typo": {
+              "$type": "typography",
+              "$value": "{typo.label.sm}",
+              "$description": "Happy Hour mobile next prize title typo."
+            }
+          }
+        },
+        "lg": {
+          "title": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.400}",
+                "fontWeight": "{font-weight.700}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour desktop next prize title typo."
+            }
+          },
+          "body": {
+            "typo": {
+              "$type": "typography",
+              "$value": {
+                "fontFamily": "{font-family.200}",
+                "fontSize": "{font-size.100}",
+                "fontWeight": "{font-weight.500}",
+                "lineHeight": "{line-height.md} * 100%"
+              },
+              "$description": "Happy Hour desktop next prize body typo."
+            }
+          }
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "2",
+            "blur": "8",
+            "spread": "0",
+            "color": "rgba(255, 255, 255, 0.5)",
+            "type": "dropShadow"
+          },
+          "$description": "Happy Hour next prize shadow."
+        }
+      }
+    },
+    "footer": {
+      "md": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile footer space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile footer space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile footer space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour mobile footer space on left."
+          }
+        }
+      },
+      "lg": {
+        "space": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour desktop footer space on top."
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour desktop footer space on right."
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour desktop footer space on bottom."
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{space.0}",
+            "$description": "Happy Hour desktop footer space on left."
+          }
+        }
+      },
+      "fill": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Happy Hour footer fill color."
+      }
+    },
+    "title": {
+      "md": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontSize": "{font-size.100}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "{line-height.md} * 100%"
+          },
+          "$description": "Happy Hour mobile header title typo."
+        }
+      },
+      "lg": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.heading.lg}",
+          "$description": "Happy Hour desktop header title typo."
+        }
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "0",
+        "y": "0",
+        "blur": "0",
+        "spread": "0",
+        "color": "{transparent}",
+        "type": "innerShadow"
+      },
+      "$description": "Happy Hour shadow on card."
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "radial-gradient(36.56% 50% at 50.11% 50%, #122A8F 0%, #0F1A38 100%)",
+      "$description": "Happy Hour surface color."
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{transparent}",
+      "$description": "Happy Hour border color."
+    },
+    "current": {
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Happy Hour current prize head color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}",
+            "$description": "Happy Hour current prize body color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{inverted.on.surface.label}",
+            "$description": "Happy Hour current prize label color."
+          }
+        }
+      }
+    },
+    "previous": {
+      "on": {
+        "surface": {
+          "head": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.5",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Happy Hour previous prize head color."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.3",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}",
+            "$description": "Happy Hour previous prize body color."
+          }
+        }
+      }
+    },
+    "next": {
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{inverted.on.surface.head}",
+            "$description": "Happy Hour next prize head color."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "lch"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{inverted.on.surface.body}",
+            "$description": "Happy Hour next prize body color."
+          }
+        }
+      }
+    },
+    "mini-card": {
+      "x": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%)",
+          "$description": "Happy Hour mini-card horizontal gradient fill. "
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Happy Hour mini-card horizontal border. "
+        }
+      },
+      "y": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)",
+          "$description": "Happy Hour mini-card vertical gradient fill. "
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Happy Hour mini-card vertical border. "
+        }
+      }
+    },
+    "gui": {
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(33.78% 50% at 50.13% 50%, #182D86 0%, #0E1930 100%)",
+        "$description": "Happy Hour GUI -> surface color."
+      },
+      "on": {
+        "surface": {
+          "primary": {
+            "$type": "color",
+            "$value": "{primary-inverted.20}",
+            "$description": "Happy Hour GUI -> primary color."
+          },
+          "head": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Happy Hour GUI -> head color."
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Happy Hour GUI -> body color."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Happy Hour GUI -> label color."
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Happy Hour GUI -> error color."
+          },
+          "disabled": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.4",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Happy Hour GUI -> disabled color."
+          }
+        }
+      },
+      "under": {
+        "fill": {
+          "$type": "color",
+          "$value": "#161F2E",
+          "$description": "Happy Hour GUI -> under fill color."
+        },
+        "right": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, #0F1A30 0%, rgba(15, 26, 48, 0) 100%)",
+            "$description": "Happy Hour GUI -> under right fill color."
+          }
+        },
+        "left": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, rgba(15, 26, 48, 0) 0%, #0F1A30 40%, #0F1A30 100%)",
+            "$description": "Happy Hour GUI -> under left fill color."
+          }
+        }
+      },
+      "amount": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontSize": "{font-size.400}",
+            "fontWeight": "{font-weight.700}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Happy Hour GUI -> Amount typography."
+        }
+      },
+      "head": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontSize": "{font-size.90}",
+            "fontWeight": "{font-weight.700}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Happy Hour GUI -> head typography."
+        }
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.700}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Happy Hour GUI -> body typography."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontSize": "{font-size.60}",
+            "fontWeight": "{font-weight.500}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Happy Hour GUI -> label typography."
+        }
+      }
+    },
+    "modal": {
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(202.5% 149.85% at 55.74% 11.82%, rgba(18, 42, 143, 0.8) 0%, rgba(8, 19, 66, 0.371248) 48.76%, rgba(0, 0, 0, 0) 100%), #121E33",
+        "$description": "Happy Hour -> modal surface."
+      },
+      "border": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.1",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "Happy Hour -> border color."
+      },
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Happy Hour -> head color."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.8",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Happy Hour -> body color."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "turbo": {
+    "gui": {
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(58.03% 111.67% at 50.13% 50%, #541782 0%, rgba(8, 19, 66, 0.46406) 48.76%, rgba(0, 0, 0, 0) 100%), #2C054C;",
+        "$description": "Turbo Cash GUI -> background color."
+      },
+      "on": {
+        "surface": {
+          "default": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Turbo Cash GUI -> on surface color (timer text color)."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{on.surface.disabled}",
+            "$description": "Turbo Cash GUI -> on surface color (timer text color)."
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{error.fill.default}",
+            "$description": "Turbo Cash GUI -> on surface color (timer text color)."
+          }
+        }
+      },
+      "under": {
+        "fill": {
+          "$type": "color",
+          "$value": "#240843",
+          "$description": "Turbo Cash GUI -> underlayer fill."
+        },
+        "right": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, #1E0A45 0%, #1E0A45 48%, rgba(30, 10, 68, 0) 100%)",
+            "$description": "Turbo Cash GUI -> underlayer right fill."
+          }
+        },
+        "left": {
+          "fill": {
+            "$type": "color",
+            "$value": "linear-gradient(270deg, rgba(30, 10, 68, 0) 0%, #1E0A45 40%, #1E0A45 100%)",
+            "$description": "Turbo Cash GUI -> underlayer left fill."
+          }
+        }
+      },
+      "prize": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(0deg, rgba(31, 5, 51, 0) 0%, #041132 100%);",
+          "$description": "Turbo Cash UI -> Prize background color."
+        },
+        "on": {
+          "fill": {
+            "default": {
+              "$type": "color",
+              "$value": "{white.100}",
+              "$description": "Turbo Cash UI -> Prize on fill color."
+            },
+            "warning": {
+              "$type": "color",
+              "$value": "{warning.fill.default}",
+              "$description": "Turbo Cash UI -> Prize on fill warning color."
+            }
+          }
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "#1E0A44",
+            "$description": "Turbo Cash UI -> Prize border."
+          },
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Turbo Cash GUI -> Prizes border width."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Turbo Cash GUI -> Prizes border radius."
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "{transparent}",
+            "type": "innerShadow"
+          },
+          "$description": "Turbo Cash GUI -> Prizes shadow."
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "90%",
+            "fontSize": "26px",
+            "letterSpacing": "2%"
+          }
+        },
+        "amount": {
+          "shadow": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "0",
+              "y": "3.5",
+              "blur": "10",
+              "spread": "0",
+              "color": "rgba(255,255,255,0.2)",
+              "type": "innerShadow"
+            },
+            "$description": "Turbo Cash GUI -> amount shadow."
+          }
+        }
+      },
+      "currency": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.600}",
+            "lineHeight": "90%",
+            "fontSize": "22px",
+            "letterSpacing": "2%"
+          },
+          "$description": "Turbo Cash GUI -> Currency typography."
+        }
+      },
+      "overlay": {
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(0deg, #061134 0%, rgba(46, 18, 90, 0) 128.95%)",
+          "$description": "Turbo Cash GUI -> Overlay fill."
+        }
+      },
+      "label": {
+        "typo": {
+          "$type": "typography",
+          "$value": "{typo.label.sm}"
+        }
+      },
+      "progress": {
+        "surface": {
+          "$type": "color",
+          "$value": "#2C024D",
+          "$description": "Turbo Cash GUI -> progress bar background."
+        },
+        "border": {
+          "default": {
+            "$type": "color",
+            "$value": "#6916A8",
+            "$description": "Turbo Cash GUI -> progress bar border."
+          },
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Turbo Cash GUI -> Progressbar border width."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Turbo Cash GUI -> progress bar border radius."
+        },
+        "shadow": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "4",
+            "blur": "4.3",
+            "spread": "0",
+            "color": "rgba(0,0,0,0.5)",
+            "type": "innerShadow"
+          },
+          "$description": "Turbo Cash GUI -> Progress bar shadow."
+        },
+        "space": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Turbo Cash GUI -> Progress inner padding."
+        },
+        "height": {
+          "$type": "sizing",
+          "$value": "{size.150}",
+          "$description": "Turbo Cash GUI -> Progress bar height."
+        },
+        "fill": {
+          "$type": "color",
+          "$value": "linear-gradient(197.56deg, #FFCC3F 27.22%, #FD692A 93.1%)",
+          "$description": "Turbo Cash GUI -> progress bar fill color."
+        }
+      }
+    },
+    "modal": {
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(154.09% 94.21% at 50.13% 50%, #6E1EAB 0%, rgba(8, 19, 66, 0.46406) 48.76%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #2C054C 67.07%, rgba(44, 5, 76, 0.63) 100%)",
+        "$description": "Turbo Modal -> surface color."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Turbo Modal -> border color."
+      },
+      "separator": {
+        "$extensions": {
+          "studio.tokens": {
+            "modify": {
+              "type": "alpha",
+              "value": "0.15",
+              "space": "srgb"
+            }
+          }
+        },
+        "$type": "color",
+        "$value": "{white.100}",
+        "$description": "Turbo Modal -> separator color."
+      },
+      "head": {
+        "surface": {
+          "$type": "color",
+          "$value": "{transparent}",
+          "$description": "Turbo Modal -> surface color."
+        }
+      },
+      "on": {
+        "surface": {
+          "display": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Turbo Modal -> on surface color for display (temporar token)."
+          },
+          "display-2": {
+            "$type": "color",
+            "$value": "#FFBF1A",
+            "$description": "Turbo Modal -> on surface color for display-2 (temporar token)."
+          },
+          "head": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Turbo Modal -> on surface color for head."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.8",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Turbo Modal -> on surface color for body."
+          },
+          "label": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.7",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Turbo Modal -> on surface color for label"
+          }
+        }
+      },
+      "close": {
+        "fill": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.15",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{white.100}",
+          "$description": "Turbo Modal -> close button fill."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Turbo Modal -> close button on fill."
+          }
+        },
+        "border": {
+          "default": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.15",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{white.100}",
+            "$description": "Turbo Modal -> close button border."
+          },
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Turbo Modal -> close button border width."
+          }
+        },
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{radius.round}",
+          "$description": "Turbo Modal -> close button border radius."
+        }
+      }
+    },
+    "guide": {
+      "display": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.700}",
+          "fontSize": "{font-size.800}",
+          "lineHeight": "{line-height.sm} * 100%"
+        },
+        "$description": "Turbo Modal -> Display typography."
+      },
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.100}",
+          "lineHeight": "{line-height.sm} * 100%"
+        },
+        "$description": "Turbo Modal -> heading typography."
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontWeight": "{font-weight.400}",
+          "fontSize": "{font-size.80}",
+          "lineHeight": "{line-height.md} * 100%"
+        },
+        "$description": "Turbo Modal -> body typography."
+      },
+      "display-2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.100}",
+          "fontWeight": "{font-weight.800}",
+          "fontSize": "{font-size.400}",
+          "lineHeight": "{line-height.sm} * 100%",
+          "textCase": "{typo.case.uppercase}"
+        },
+        "$description": "Turbo Modal -> Display 2  typography (temporar token)."
+      }
+    },
+    "rwd-card": {
+      "surface": {
+        "$type": "color",
+        "$value": "radial-gradient(50.13% 50% at 50.13% 50%, #52247B 0%, #341263 48.76%, #1C0C48 100%)",
+        "$description": "Turbo -> Rewards card surface color."
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{transparent}",
+        "$description": "Turbo -> Rewards card border color."
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "{transparent}",
+          "type": "innerShadow"
+        },
+        "$description": "Turbo -> Reward Card shadow."
+      }
+    }
+  }
+}

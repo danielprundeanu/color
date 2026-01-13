@@ -1,0 +1,159 @@
+{
+  "sboost": {
+    "head": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "SuperBoost header fill color."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "SuperBoost header border color."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "SuperBoost header on fill color."
+          }
+        }
+      }
+    },
+    "body": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "SuperBoost body fill color."
+        }
+      },
+      "on": {
+        "fill": {
+          "head": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "SuperBoost body - heading on fill color."
+          },
+          "body": {
+            "$extensions": {
+              "studio.tokens": {
+                "modify": {
+                  "type": "alpha",
+                  "value": "0.8",
+                  "space": "srgb"
+                }
+              }
+            },
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "SuperBoost body - body on fill color."
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "SuperBoost body fill color."
+        },
+        "separator": {
+          "$extensions": {
+            "studio.tokens": {
+              "modify": {
+                "type": "alpha",
+                "value": "0.7",
+                "space": "srgb"
+              }
+            }
+          },
+          "$type": "color",
+          "$value": "{secondary.on.fill.default}",
+          "$description": "SuperBoost body fill color."
+        }
+      }
+    },
+    "footer": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "SuperBoost footer fill color."
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "SuperBoost footer border color."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "SuperBoost header on fill color."
+          }
+        }
+      }
+    },
+    "odd": {
+      "chip": {
+        "fill": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "Super Boost Odd chip fill color."
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "Super Boost Odd chip border color."
+        },
+        "on": {
+          "fill": {
+            "$type": "color",
+            "$value": "{secondary.on.fill.default}",
+            "$description": "Super Boost Odd chip on fill color."
+          }
+        },
+        "min-width": {
+          "$type": "sizing",
+          "$value": "40px"
+        }
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Super boost radius."
+    },
+    "player": {
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.50}",
+          "fontWeight": "{font-weight.400}",
+          "lineHeight": "{line-height.lg} * 100%"
+        }
+      },
+      "win": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontSize": "{font-size.70}",
+            "fontWeight": "{font-weight.700}",
+            "lineHeight": "{line-height.lg} * 100%"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "index": {
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Index space from center of the component."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Index space from center of the component."
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "1px"
+      }
+    }
+  }
+}

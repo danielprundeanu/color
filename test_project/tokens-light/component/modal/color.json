@@ -1,0 +1,81 @@
+{
+  "modal": {
+    "overlay": {
+      "surface": {
+        "$type": "color",
+        "$value": "{black.40}",
+        "$description": "Modal overlay surface color."
+      }
+    },
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.xl.x}",
+        "y": "{shadow.base.xl.y}",
+        "blur": "{shadow.base.xl.blur}",
+        "spread": "{shadow.base.xl.spread}",
+        "color": "{black.40}",
+        "type": "dropShadow"
+      },
+      "$description": "Modal drop shadow."
+    },
+    "extra": {
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strongest}"
+      },
+      "on": {
+        "fill": {
+          "primary": {
+            "$type": "color",
+            "$value": "{success.fill.default}"
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{black.90}"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{black.70}"
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          }
+        }
+      }
+    },
+    "content": {
+      "surface": {
+        "$type": "color",
+        "$value": "linear-gradient(0deg, {aux-modal.content.gradient.start} 0%, {aux-modal.content.gradient.end} 100%)"
+      },
+      "on": {
+        "surface": {
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          }
+        }
+      }
+    }
+  },
+  "aux-modal": {
+    "content": {
+      "gradient": {
+        "start": {
+          "$type": "color",
+          "$value": "{white.100}"
+        },
+        "end": {
+          "$type": "color",
+          "$value": "{transparent}"
+        }
+      }
+    }
+  }
+}

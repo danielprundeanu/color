@@ -1,0 +1,149 @@
+{
+  "hero-card": {
+    "y": {
+      "height": {
+        "$type": "sizing",
+        "$value": "700px"
+      },
+      "inner": {
+        "height": {
+          "$type": "sizing",
+          "$value": "400px",
+          "$description": "Height for body and footer (inner container)."
+        }
+      },
+      "tc": {
+        "height": {
+          "$type": "sizing",
+          "$value": "56px",
+          "$description": "Height for terms and condition container."
+        }
+      }
+    },
+    "x": {
+      "height": {
+        "$type": "sizing",
+        "$value": "600px"
+      },
+      "max-width": {
+        "$type": "sizing",
+        "$value": "1000px"
+      },
+      "inner": {
+        "height": {
+          "$type": "sizing",
+          "$value": "240px",
+          "$description": "Height for body and footer (inner container)."
+        }
+      },
+      "tc": {
+        "height": {
+          "$type": "sizing",
+          "$value": "56px",
+          "$description": "Height for terms and condition container."
+        }
+      },
+      "img": {
+        "width": {
+          "$type": "sizing",
+          "$value": "300px",
+          "$description": "Hero Card Horizontal - Image Full False - width fixed."
+        }
+      }
+    },
+    "wrp": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.0}"
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.0}"
+        }
+      }
+    },
+    "space": {
+      "left": {
+        "$type": "spacing",
+        "$value": "{space.200}"
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{space.200}"
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.200}"
+      }
+    },
+    "tc": {
+      "space": {
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.100}"
+        }
+      }
+    },
+    "footer": {
+      "space": {
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.150}"
+        }
+      },
+      "border": {
+        "top": {
+          "$type": "borderWidth",
+          "$value": "{border.none}"
+        }
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}"
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.lg}"
+    },
+    "content": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}"
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}"
+      }
+    }
+  },
+  "aux-hero-card": {
+    "gap": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{hero-card.gap.base.x}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{hero-card.gap.base.x}"
+        }
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{hero-card.gap.base.y}/2"
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{hero-card.gap.base.y}"
+        }
+      }
+    }
+  }
+}

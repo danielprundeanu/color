@@ -1,0 +1,10 @@
+{
+  "icon": {
+    "info": {
+      "size": {
+        "$type": "sizing",
+        "$value": "32px"
+      }
+    }
+  }
+}

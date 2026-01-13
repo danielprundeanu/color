@@ -1,0 +1,18 @@
+{
+  "input": {
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.inline.md}",
+        "$description": "Input left & right padding."
+      },
+      "gap": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.inline.xs}",
+          "$description": "Input horizontal gap."
+        }
+      }
+    }
+  }
+}

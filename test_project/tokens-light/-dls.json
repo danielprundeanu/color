@@ -1,0 +1,352 @@
+{
+  "-dls": {
+    "font-family": {
+      "100": {
+        "$type": "fontFamilies",
+        "$value": "Montserrat",
+        "$description": "Primary font family."
+      },
+      "200": {
+        "$type": "fontFamilies",
+        "$value": "Inter",
+        "$description": "Secondary font family."
+      }
+    },
+    "table": {
+      "line": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.100}",
+          "fontWeight": "{font-weight.500}",
+          "fontSize": "{font-size.80}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS "
+      },
+      "header": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.100}",
+          "fontWeight": "{font-weight.700}",
+          "fontSize": "{font-size.80}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      }
+    },
+    "type": {
+      "display-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "200",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      },
+      "display": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.200}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.800}",
+          "lineHeight": "{line-height.md} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      },
+      "heading": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.200}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.600}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      },
+      "title": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.200}",
+          "fontWeight": "{font-weight.500}",
+          "fontSize": "{font-size.500}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      },
+      "title-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.300}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.200}",
+          "fontWeight": "{font-weight.400}",
+          "fontSize": "{font-size.300}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.100}",
+          "fontWeight": "{font-weight.600}",
+          "fontSize": "{font-size.100}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      },
+      "label-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{-dls.font-family.100}",
+          "fontWeight": "{font-weight.400}",
+          "fontSize": "{size.200}",
+          "lineHeight": "{line-height.lg} * 100%"
+        },
+        "$description": "Utility token in DLS"
+      }
+    }
+  },
+  "-section": {
+    "lvl-01": {
+      "$type": "color",
+      "$value": "#FFF"
+    },
+    "lvl-02": {
+      "$type": "color",
+      "$value": "#e3e3e3"
+    },
+    "lvl-03": {
+      "$type": "color",
+      "$value": "#CBCBCB"
+    },
+    "lvl-04": {
+      "$type": "color",
+      "$value": "{black.70}"
+    }
+  },
+  "-typo": {
+    "preview": {
+      "ff-100": {
+        "100": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.100}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "200": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.100}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "300": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.300}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "400": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.400}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "500": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.500}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "600": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.600}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "700": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.700}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "800": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "Black",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "900": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.100}",
+            "fontWeight": "{font-weight.900}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        }
+      },
+      "ff-200": {
+        "100": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.100}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "200": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.100}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "300": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.300}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "400": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.400}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "500": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.500}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "600": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.600}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "700": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.700}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "800": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "Black",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        },
+        "900": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.900}",
+            "fontSize": "{font-size.100}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        }
+      }
+    }
+  },
+  "-currency": {
+    "primary": {
+      "$type": "text",
+      "$value": "Lei"
+    }
+  },
+  "-body": {
+    "-offset": {
+      "offset-01": {
+        "$type": "spacing",
+        "$value": "{top-nav.height} + 94px",
+        "$description": "Top padding equal with the sum of status bar and top navigation and top nav tabs."
+      },
+      "offset-02": {
+        "$type": "spacing",
+        "$value": "{top-nav.height} + 54px",
+        "$description": "Top padding equal with the sum of status bar and top navigation."
+      },
+      "offset-03": {
+        "$type": "spacing",
+        "$value": "198px",
+        "$description": "Top padding for sport pages."
+      }
+    }
+  },
+  "-metadata": {
+    "id": {
+      "$type": "other",
+      "$value": "eko"
+    },
+    "default-theme": {
+      "$type": "other",
+      "$value": "light"
+    },
+    "themes": {
+      "$type": "other",
+      "$value": "light,dark"
+    },
+    "type": {
+      "$type": "other",
+      "$value": "full",
+      "$description": "full, colors, spacing, border, border-radius, shadow, fonts"
+    }
+  }
+}

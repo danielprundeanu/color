@@ -1,0 +1,83 @@
+{
+  "tour": {
+    "prize": {
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strong}"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.strong}"
+        }
+      },
+      "on": {
+        "fill": {
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          },
+          "icon": {
+            "$type": "color",
+            "$value": "{on.surface.primary.head}"
+          }
+        }
+      },
+      "shadow": {
+        "$type": "boxShadow",
+        "$value": [
+          {
+            "x": "{shadow.base.sm.x}",
+            "y": "{shadow.base.sm.y}",
+            "blur": "{shadow.base.sm.blur}",
+            "spread": "{shadow.base.sm.spread}",
+            "color": "{aux-tour.shadow.fill}",
+            "type": "dropShadow"
+          }
+        ]
+      }
+    },
+    "rank": {
+      "on": {
+        "surface": {
+          "head": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{on.surface.body}"
+          },
+          "label": {
+            "$type": "color",
+            "$value": "{on.surface.label}"
+          }
+        }
+      }
+    },
+    "table": {
+      "fill": {
+        "$type": "color",
+        "$value": "{surface.strong}"
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.strong}"
+        }
+      }
+    }
+  },
+  "aux-tour": {
+    "shadow": {
+      "fill": {
+        "$type": "color",
+        "$value": "{black.20}"
+      }
+    }
+  }
+}

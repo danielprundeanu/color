@@ -1,0 +1,91 @@
+{
+  "aux-table": {
+    "font-size": {
+      "head": {
+        "$type": "fontSizes",
+        "$value": "{font-size.200}"
+      },
+      "body": {
+        "$type": "fontSizes",
+        "$value": "{font-size.100}"
+      },
+      "label": {
+        "$type": "fontSizes",
+        "$value": "{font-size.90}"
+      }
+    },
+    "font-family": {
+      "head": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "body": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      },
+      "label": {
+        "$type": "fontFamilies",
+        "$value": "{font-family.200}"
+      }
+    },
+    "font-weight": {
+      "head": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.600}"
+      },
+      "body": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      },
+      "label": {
+        "$type": "fontWeights",
+        "$value": "{font-weight.500}"
+      }
+    },
+    "line-height": {
+      "head": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      },
+      "body": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      },
+      "label": {
+        "$type": "lineHeights",
+        "$value": "{line-height.sm}"
+      }
+    }
+  },
+  "table": {
+    "typo": {
+      "head": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-table.font-family.head}",
+          "fontSize": "{aux-table.font-size.head}",
+          "fontWeight": "{aux-table.font-weight.head}",
+          "lineHeight": "{aux-table.line-height.head} * 100%"
+        }
+      },
+      "body": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-table.font-family.body}",
+          "fontSize": "{aux-table.font-size.body}",
+          "fontWeight": "{aux-table.font-weight.body}",
+          "lineHeight": "{aux-table.line-height.body} * 100%"
+        }
+      },
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{aux-table.font-family.label}",
+          "fontSize": "{aux-table.font-size.label}",
+          "fontWeight": "{aux-table.font-weight.label}",
+          "lineHeight": "{aux-table.line-height.label} * 100%"
+        }
+      }
+    }
+  }
+}

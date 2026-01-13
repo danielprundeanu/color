@@ -1,0 +1,58 @@
+{
+  "arrow": {
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{inverted.surface.default}"
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{inverted.surface.strong}"
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{inverted.surface.default}"
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{inverted.surface.strong}"
+      }
+    },
+    "on": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{inverted.on.surface.head}"
+        }
+      }
+    },
+    "default": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "-3",
+        "y": "2.25",
+        "blur": "4.88",
+        "spread": "0",
+        "color": "transparent",
+        "type": "dropShadow"
+      }
+    },
+    "active": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "-3",
+        "y": "2.25",
+        "blur": "4.88",
+        "spread": "0",
+        "color": "transparent",
+        "type": "dropShadow"
+      }
+    }
+  }
+}

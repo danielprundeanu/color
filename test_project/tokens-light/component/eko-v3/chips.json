@@ -1,0 +1,661 @@
+{
+  "chips": {
+    "fill": {
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Chips default fill."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.surface.default}",
+        "$description": "Chips hover fill."
+      },
+      "active": {
+        "$type": "color",
+        "$value": "radial-gradient(82.73% 1024.47% at 90% 0%, #D80039 0.82%, #6220A0 61.5%, #2D64F4 100%)",
+        "$description": "Chips active fill."
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{primary.fill.active}",
+        "$description": "Chips focus fill."
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{neutral.fill.disabled}",
+        "$description": "Chips disabled fill."
+      }
+    },
+    "border": {
+      "top": {
+        "$type": "spacing",
+        "$value": "{border.xs}",
+        "$description": "Top Border width for category tag Medium."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{border.xs}",
+        "$description": "Right Border width for category tag Medium."
+      },
+      "bottom": {
+        "$type": "spacing",
+        "$value": "{border.xs}",
+        "$description": "Bottom Border width for category tag Medium."
+      },
+      "left": {
+        "$type": "spacing",
+        "$value": "{border.xs}",
+        "$description": "Left Border width for category tag Medium."
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Chips default border."
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primary.border.default}",
+        "$description": "Chips hover border."
+      },
+      "active": {
+        "$type": "color",
+        "$value": "{primary.fill.default}",
+        "$description": "Chips active border."
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{neutral.fill.disabled}",
+        "$description": "Chips disabled border."
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{surface.default}",
+        "$description": "Chips focus border."
+      }
+    },
+    "on": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{on.surface.primary.head}",
+          "$description": "Chips default on fill."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{on.surface.primary.head}",
+          "$description": "Chips hover on fill."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.on.fill.default}",
+          "$description": "Chips active on fill."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{primary.on.fill.default}",
+          "$description": "Chips focus on fill."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{neutral.on.fill.disabled}",
+          "$description": "Chips disabled on fill."
+        }
+      }
+    },
+    "shadow": {
+      "default": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Chips shadow on default state."
+      },
+      "hover": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Chips shadow on hover state."
+      },
+      "active": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "0",
+          "color": "transparent",
+          "type": "dropShadow"
+        },
+        "$description": "Chips shadow on active state."
+      },
+      "focus": {
+        "$type": "boxShadow",
+        "$value": {
+          "x": "0",
+          "y": "0",
+          "blur": "0",
+          "spread": "2",
+          "color": "{primary.fill.active}",
+          "type": "dropShadow"
+        },
+        "$description": "Chips border on focus state."
+      }
+    },
+    "space": {
+      "left": {
+        "$type": "spacing",
+        "$value": "{size.100}",
+        "$description": "Left padding for category tag Medium."
+      },
+      "right": {
+        "$type": "spacing",
+        "$value": "{size.100}",
+        "$description": "Right padding for category tag Medium."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{size.25}",
+      "$description": "Gap between icons and label."
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.round}",
+      "$description": "Default Chips border radius."
+    },
+    "radius-inner": {
+      "$type": "borderRadius",
+      "$value": "{radius.round}",
+      "$description": "Chips inner border radius (can be calculated from scss)."
+    },
+    "typo": {
+      "$type": "typography",
+      "$value": "{typo.label.lg}",
+      "$description": "Chips label typography."
+    },
+    "label": {
+      "space": {
+        "left": {
+          "$type": "spacing",
+          "$value": "{size.50}",
+          "$description": "Tag category label padding left. (to mentain a good distance when we have only one icon)"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{size.50}",
+          "$description": "Tag category label padding right. (to mentain a good distance when we have only one icon)"
+        }
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.200}",
+        "$description": "Icon size for md tag category"
+      }
+    },
+    "height": {
+      "$type": "sizing",
+      "$value": "{size.400}",
+      "$description": "Chips height."
+    },
+    "min-width": {
+      "$type": "sizing",
+      "$value": "100px",
+      "$description": "Chips min-width."
+    },
+    "select": {
+      "border": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.10}",
+          "$description": "Select chips border top."
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.10}",
+          "$description": "Select chips border right."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.10}",
+          "$description": "Select chips border bottom."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.10}",
+          "$description": "Select chips border left."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.surface.default}",
+          "$description": "Select chips border default."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{secondary.20}",
+          "$description": "Select chips border on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "Select chips border on active."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Select chips border on focus."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.fill.disabled}",
+          "$description": "Select chips border on disabled."
+        }
+      },
+      "gap": {
+        "$type": "spacing",
+        "$value": "{space.75}",
+        "$description": "Select chips gap for Label & Icons."
+      },
+      "space": {
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Select chips space right."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Select chips space right."
+        }
+      },
+      "label": {
+        "x": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.25}",
+            "$description": "Select chips gap for Ammount & Currency."
+          }
+        },
+        "y": {
+          "gap": {
+            "$type": "spacing",
+            "$value": "{space.10}",
+            "$description": "Select Chips gap between Body (Primary label group) & Label (Info)."
+          }
+        },
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.600}",
+            "fontSize": "{font-size.90}",
+            "lineHeight": "{line-height.sm} * 100%"
+          }
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{secondary.surface.default}",
+          "$description": "Select chips fill on default."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{secondary.20}",
+          "$description": "Select chips fill on hover."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "Select chips fill on active."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{secondary.fill.active}",
+          "$description": "Select chips fill on focus."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{grey.fill.disabled}",
+          "$description": "Select chips fill on disabled."
+        }
+      },
+      "on": {
+        "fill": {
+          "body": {
+            "default": {
+              "$type": "color",
+              "$value": "{secondary.on.surface.default}",
+              "$description": "Select chips on fill body (Ammount & Currency) default."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{secondary.on.surface.default}",
+              "$description": "Select chips on fill body (Ammount & Currency) hover."
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{secondary.on.fill.default}",
+              "$description": "Select chips on fill body (Ammount & Currency) active."
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{secondary.on.fill.default}",
+              "$description": "Select chips on fill body (Ammount & Currency) focus."
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{grey.on.fill.disabled}",
+              "$description": "Select chips on fill body (Ammount & Currency) disabled."
+            }
+          },
+          "label": {
+            "default": {
+              "$type": "color",
+              "$value": "{secondary.on.surface.default}",
+              "$description": "Select chips on fill label (info) default."
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{secondary.on.surface.default}",
+              "$description": "Select chips on fill label (info) hover."
+            },
+            "active": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "alpha",
+                    "value": "0.8",
+                    "space": "lch"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{secondary.on.fill.default}",
+              "$description": "Select chips on fill label (info) active."
+            },
+            "focus": {
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.8",
+                    "space": "lch"
+                  }
+                }
+              },
+              "$type": "color",
+              "$value": "{secondary.on.fill.default}",
+              "$description": "Select chips on fill label (info) focus."
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{grey.on.fill.disabled}",
+              "$description": "Select chips on fill label (info) disabled."
+            }
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Select Chips shadow on default state."
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Select Chips shadow on hover state."
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Select Chips shadow on active state."
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "2",
+            "color": "{secondary.fill.default}",
+            "type": "dropShadow"
+          },
+          "$description": "Select Chips border on focus state."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Select Chips border radius."
+      },
+      "radius-inner": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Select Chips inner border radius (can be calculated from scss)."
+      },
+      "body": {
+        "typo": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{font-family.200}",
+            "fontWeight": "{font-weight.300}",
+            "fontSize": "{font-size.40}",
+            "lineHeight": "{line-height.sm} * 100%"
+          },
+          "$description": "Select Chips on Body (Label - Ammount & Currency)."
+        }
+      }
+    },
+    "special": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Special Chips border radius."
+      },
+      "radius-inner": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Special Chips inner border radius (can be calculated from scss)."
+      },
+      "typo": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font-family.200}",
+          "fontSize": "{font-size.90}",
+          "fontWeight": "{font-weight.600-italic}",
+          "lineHeight": "{line-height.sm} * 100%"
+        },
+        "$description": "Chips label typography."
+      },
+      "border": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Top Border width for category tag Medium. "
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Right Border width for category tag Medium."
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Bottom Border width for category tag Medium."
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{space.25}",
+          "$description": "Left Border width for category tag Medium."
+        },
+        "default": {
+          "$type": "color",
+          "$value": "radial-gradient(75% 982% at 16% 90%, #1840DE 0%, #FF7298 100%)",
+          "$description": "Special Chips default border."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "radial-gradient(72.73% 914.83% at 16.36% 90.63%, #0F30B6 0%, #BBBFFF 100%)",
+          "$description": "Special Chips hover border."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "radial-gradient(75.45% 982.04% at 16.36% 90.63%, #1840DE 0%, #FF9B9B 100%)",
+          "$description": "Special Chips active border."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Special Chips focus border."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{neutral.40}",
+          "$description": "Special Chips disabled border."
+        }
+      },
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}",
+          "$description": "Special Chips default fill."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{primary.surface.default}",
+          "$description": "Special Chips hover fill."
+        },
+        "active": {
+          "$type": "color",
+          "$value": "radial-gradient(82.73% 1024.47% at 90% 0%, #D80039 0.82%, #6220A0 61.5%, #2D64F4 100%)",
+          "$description": "Special Chips active fill."
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "radial-gradient(82.73% 1024.47% at 90% 0%, #D80039 0.82%, #6220A0 61.5%, #2D64F4 100%)",
+          "$description": "Special Chips focus fill."
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{neutral.fill.disabled}",
+          "$description": "Special Chips disabled fill."
+        }
+      },
+      "on": {
+        "fill": {
+          "default": {
+            "$type": "color",
+            "$value": "{primary.on.surface.default}",
+            "$description": "Special Chips default on fill."
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{primary.on.surface.default}",
+            "$description": "Special Chips hover on fill."
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Special Chips active on fill."
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{primary.on.fill.default}",
+            "$description": "Special Chips focus on fill."
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{neutral.on.fill.disabled}",
+            "$description": "Special Chips disabled on fill."
+          }
+        }
+      },
+      "shadow": {
+        "default": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Special Chips shadow on default state."
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Special Chips shadow on hover state."
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "transparent",
+            "type": "dropShadow"
+          },
+          "$description": "Special Chips shadow on active state."
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "2",
+            "color": "{sbrand-01.fill.active}",
+            "type": "dropShadow"
+          },
+          "$description": "Special Chips border on focus state."
+        }
+      }
+    }
+  }
+}

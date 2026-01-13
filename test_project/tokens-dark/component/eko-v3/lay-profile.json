@@ -1,0 +1,16 @@
+{
+  "lay-profile": {
+    "width": {
+      "$type": "sizing",
+      "$value": "1000px",
+      "$description": "Profile Layout max-width on desktop."
+    },
+    "side": {
+      "width": {
+        "$type": "sizing",
+        "$value": "250px",
+        "$description": "Profile Layout sidebar width on desktop."
+      }
+    }
+  }
+}

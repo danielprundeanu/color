@@ -1,0 +1,102 @@
+{
+  "live-casino": {
+    "results": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.250}",
+        "$description": "Size (height & width) for result component number."
+      }
+    },
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.150}",
+        "$description": "Small Icon size"
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Horizontal padding applied on top label wrapper, results wrapper, and footer."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.100}",
+        "$description": "Vertical padding applied on label wrapper, results wrapper, and footer."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Live Casino thumbnail radius."
+    },
+    "card": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.md}",
+        "$description": "Live Casino thumbnail card radius."
+      },
+      "footer": {
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.xs}",
+            "$description": "Footer top border width."
+          }
+        }
+      },
+      "result": {
+        "border": {
+          "all": {
+            "$type": "borderWidth",
+            "$value": "{border.none}",
+            "$description": "Result number border width."
+          }
+        }
+      }
+    },
+    "result": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.sm}",
+        "$description": "Result number radius. "
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Live casino thumb. border width."
+      }
+    }
+  },
+  "aux-live-casino": {
+    "gap": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{live-casino.gap.x} / 2",
+          "$description": "Small horizontal gap - used between result numbers and labels (within footer)."
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{live-casino.gap.x}",
+          "$description": "Medium horizontal gap - used within Info component (between icon & label)."
+        }
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{live-casino.gap.y} / 2",
+          "$description": "Small vertical gap - used within title wrapper."
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{live-casino.gap.y}",
+          "$description": "Medium vertical gap - used within footer (between jackpot & info row)."
+        }
+      }
+    }
+  }
+}

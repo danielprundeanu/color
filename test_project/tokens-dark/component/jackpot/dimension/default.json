@@ -1,0 +1,149 @@
+{
+  "jackpot": {
+    "logo": {
+      "height": {
+        "$type": "dimension",
+        "$value": "{size.1000}",
+        "$description": "Jackpot logo image height."
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Jackpot card horizontal padding."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Jackpot card vertical padding."
+      }
+    },
+    "gap": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Jackpot horizontal gap (space between tiers)."
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.300}",
+        "$description": "Jackpot vertical gap (space between tiers)."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.md}",
+      "$description": "Jackpot card radius."
+    },
+    "label": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Jackpot tier top label radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "jackpot tier label border width."
+        }
+      }
+    },
+    "tier": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Jackpot tier radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Jackpot tier border width."
+        }
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Jackpot card border width."
+      }
+    },
+    "body": {
+      "gap": {
+        "$type": "spacing",
+        "$value": "-6px",
+        "$description": "Jackpot body (label & amount) gap."
+      }
+    },
+    "offset": {
+      "$type": "spacing",
+      "$value": "{jackpot.logo.height}/2"
+    },
+    "image": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{size.700}",
+        "$description": "Jackpot tier image height."
+      }
+    }
+  },
+  "aux-jackpot": {
+    "major": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{jackpot.space.base.x}",
+          "$description": "Jackpot major tier (amount) horizontal padding."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{jackpot.space.base.y}",
+          "$description": "Jackpot major tier (amount) vertical padding."
+        }
+      },
+      "gap": {
+        "y": {
+        "$type": "spacing",
+        "$value": "{jackpot.gap.base}",
+          "$description": "Jackpot major tier vertical gap."
+        },
+        "x": {
+          "$type": "spacing",
+          "$value": "{jackpot.gap.base}",
+          "$description": "Jackpot major tier horizontal gap."
+        }
+      }
+    },
+    "minor": {
+      "gap": {
+        "y": {
+        "$type": "spacing",
+        "$value": "{jackpot.gap.base}/2",
+        "$description": "Jackpot minor tier vertical gap."
+        },
+        "x": {
+          "$type": "spacing",
+          "$value": "{jackpot.gap.base}",
+          "$description": "Jackpot minor tier horizontal gap."
+        }
+      }
+    },
+    "label": {
+      "space": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{jackpot.space.base.x}/2",
+          "$description": "Tier top label horizontal padding."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{jackpot.space.base.y}/2",
+          "$description": "Tier top label vertical padding."
+        }
+      }
+    }
+  }
+}

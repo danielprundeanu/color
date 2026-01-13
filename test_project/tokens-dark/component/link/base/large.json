@@ -1,0 +1,10 @@
+{
+  "link": {
+    "icon": {
+      "size": {
+        "$type": "dimension",
+        "$value": "{icon.size.md}"
+      }
+    }
+  }
+}

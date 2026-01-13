@@ -1,0 +1,107 @@
+{
+  "bottom-nav": {
+    "item": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        }
+      },
+      "on": {
+        "surface": {
+          "label": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.primary.head}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            }
+          },
+          "icon": {
+            "default": {
+              "$type": "color",
+              "$value": "{on.surface.primary.head}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            }
+          }
+        },
+        "fill": {
+          "icon": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            }
+          },
+          "label": {
+            "default": {
+              "$type": "color",
+              "$value": "{primary.on.fill.default}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{on.surface.head}"
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{primary.fill.active}"
+        }
+      }
+    },
+    "list": {
+      "fill": {
+        "default": {
+          "$type": "color",
+          "$value": "{surface.default}"
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": "{border.default}"
+        }
+      },
+      "separator": {
+        "$type": "color",
+        "$value": "{border.separator}"
+      }
+    },
+    "shadow": {
+      "$type": "color",
+      "$value": "{black.10}"
+    }
+  },
+  "aux-bottom-nav": {
+    "shadow": {
+      "$type": "boxShadow",
+      "$value": {
+        "x": "{shadow.base.sm.x}",
+        "y": "{shadow.base.sm.y}",
+        "blur": "{shadow.base.sm.blur}",
+        "spread": "{shadow.base.sm.spread}",
+        "color": "{bottom-nav.shadow}",
+        "type": "dropShadow"
+      }
+    }
+  }
+}

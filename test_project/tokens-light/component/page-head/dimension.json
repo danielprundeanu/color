@@ -1,0 +1,146 @@
+{
+  "page-head": {
+    "y": {
+      "height": {
+        "$type": "sizing",
+        "$value": "120px",
+        "$description": "Page head component height."
+      }
+    },
+    "title": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.200}",
+          "$description": "Page head icon next to page title."
+        }
+      },
+      "gap": {
+        "x": {
+          "$type": "spacing",
+          "$value": "{space.50}",
+          "$description": "Page Head horizontal Title gap between icon and typo."
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Page Head vertical Title gap between title and paragraph."
+        }
+      }
+    },
+    "item": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.200}",
+          "$description": "Page head icon inside item size."
+        }
+      },
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.round}",
+        "$description": "Page Head breadcrumb item radius."
+      },
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Page Head item border all."
+        }
+      }
+    },
+    "div": {
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.200}",
+          "$description": "Page head breadcrumbs divider icon size."
+        }
+      }
+    },
+    "space": {
+      "x": {
+        "$type": "spacing",
+        "$value": "{space.150}",
+        "$description": "Page head horizontal space on Page Title and Breadcrumb section."
+      },
+      "y": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Page Head vertical space on Breadcrumbs."
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Page Head vertical space on Page Title."
+        }
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.none}",
+      "$description": "Page Head component radius."
+    },
+    "breadcrumb": {
+      "radius": {
+        "$type": "borderRadius",
+        "$value": "{radius.none}",
+        "$description": "Page Head breadcrumbs radius."
+      }
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.none}",
+        "$description": "Page Head component border all."
+      }
+    },
+    "separator": {
+      "border": {
+        "all": {
+          "$type": "borderWidth",
+          "$value": "{border.xs}",
+          "$description": "Page Head border separator between Title and back navigation icon."
+        }
+      }
+    }
+  },
+  "aux-page-head": {
+    "item": {
+      "space": {
+        "x": {
+          "sm": {
+            "$type": "spacing",
+            "$value": "{page-head.item.space.base.x} /3",
+            "$description": "Page Head item space small used for icon side."
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{page-head.item.space.base.x} /2",
+            "$description": "Page Head item space medium used for text side."
+          }
+        },
+        "y": {
+          "$type": "spacing",
+          "$value": "{page-head.item.space.base.y}",
+          "$description": "Page Head item vertical space."
+        }
+      },
+      "gap": {
+        "x": {
+          "sm": {
+            "$type": "spacing",
+            "$value": "{page-head.item.gap.base}/2",
+            "$description": "Page head item gap between left icon and typo."
+          },
+          "md": {
+            "$type": "spacing",
+            "$value": "{page-head.item.gap.base}",
+            "$description": "Page head item gap between typo and dropdown icon."
+          }
+        }
+      }
+    }
+  }
+}

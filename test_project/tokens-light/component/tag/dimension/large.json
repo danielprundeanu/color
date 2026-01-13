@@ -1,0 +1,90 @@
+{
+  "tag": {
+    "icon": {
+      "size": {
+        "$type": "sizing",
+        "$value": "{icon.size.sm}",
+        "$description": "Tag icon size."
+      }
+    },
+    "max-width": {
+      "$type": "sizing",
+      "$value": "{size.800}",
+      "$description": "Tag maximum width for special instance."
+    },
+    "appx": {
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.75}",
+        "$description": "Tag width for apendix shape."
+      },
+      "height": {
+        "$type": "sizing",
+        "$value": "{size.100}",
+        "$description": "Tag width for apendix shape."
+      },
+      "icon": {
+        "size": {
+          "$type": "sizing",
+          "$value": "{size.400}",
+          "$description": "Tag apendix icon size."
+        }
+      }
+    },
+    "space": {
+      "x": {
+        "sm": {
+          "$type": "spacing",
+          "$value": "{space.100}",
+          "$description": "Tag horizontal space small."
+        },
+        "md": {
+          "$type": "spacing",
+          "$value": "{space.150}",
+          "$description": "Tag horizontal space medium."
+        }
+      },
+      "y": {
+        "$type": "spacing",
+        "$value": "{space.50}",
+        "$description": "Tag vertical space for apendix."
+      }
+    },
+    "gap": {
+      "$type": "spacing",
+      "$value": "{space.25}",
+      "$description": "Tag gap between icons and text."
+    },
+    "offset": {
+      "x": {
+        "$type": "dimension",
+        "$value": "-4px",
+        "$description": "Tag horizontal offset."
+      },
+      "y": {
+        "$type": "dimension",
+        "$value": "-4px",
+        "$description": "Tag vertical offset."
+      }
+    },
+    "radius": {
+      "$type": "borderRadius",
+      "$value": "{radius.sm}",
+      "$description": "Tag radius."
+    },
+    "border": {
+      "all": {
+        "$type": "borderWidth",
+        "$value": "{border.xs}",
+        "$description": "Tag border."
+      }
+    },
+    "tail": {
+      "width": {
+        "$type": "sizing",
+        "$value": "{size.100}",
+        "$description": "Tag tail width"
+      }
+    }
+  }
+}
