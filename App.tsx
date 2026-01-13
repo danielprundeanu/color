@@ -1,16 +1,17 @@
 import React from 'react';
-import { Palette, Moon, Sun, Upload, Save, FilePlus } from 'lucide-react';
+import { Palette, Moon, Sun, Upload, Save, FilePlus, GitCompare } from 'lucide-react';
 import { toast } from 'sonner';
 import { Toaster } from './components/ui/sonner';
 import { ColorGenerator } from './components/ColorGenerator';
 import { BaseTokensView } from './components/BaseTokensView';
 import { SemanticTokensView } from './components/SemanticTokensView';
+import { ChangesView } from './components/ChangesView';
 import { ColorSidebar } from './components/ColorSidebar';
 import { SemanticTokensSidebar } from './components/SemanticTokensSidebar';
 import { ColorProvider, useColors } from './contexts/ColorContext';
 
 function AppContent() {
-  const [view, setView] = React.useState<'base' | 'semantic' | 'generator'>('generator');
+  const [view, setView] = React.useState<'base' | 'semantic' | 'generator' | 'changes'>('generator');
   const [selectedPalette, setSelectedPalette] = React.useState(0);
   const { 
     getAllGeneratedColors, 
@@ -268,6 +269,17 @@ function AppContent() {
               >
                 Semantic Tokens
               </button>
+              <button
+                onClick={() => setView('changes')}
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
+                  view === 'changes' 
+                    ? 'bg-gray-900 text-white' 
+                    : 'bg-white text-gray-700 border border-gray-300'
+                }`}
+              >
+                <GitCompare className="w-4 h-4" />
+                Changes
+              </button>
             </div>
           </div>
 
@@ -275,8 +287,10 @@ function AppContent() {
             <ColorGenerator selectedPalette={selectedPalette} />
           ) : view === 'base' ? (
             <BaseTokensView />
-          ) : (
+          ) : view === 'semantic' ? (
             <SemanticTokensView />
+          ) : (
+            <ChangesView />
           )}
         </div>
       </div>
