@@ -1,26 +1,20 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { useColors } from '../contexts/ColorContext';
-import { defaultProject } from '../data/defaultProject';
-import { semanticColors } from '../semanticColors';
 
 export function ChangesView() {
-  const { theme, importedTokens, getAllGeneratedColors, semanticTokens, originalSemanticTokens, hasImportedProject } = useColors();
+  const { theme, importedTokens, getAllGeneratedColors, semanticTokens, originalSemanticTokens } = useColors();
 
   // Get current generated colors for primitives
   const currentPrimitives = getAllGeneratedColors();
   
-  // Get baseline primitives - if project was imported, use imported tokens, otherwise use default project
-  const baselinePrimitives = hasImportedProject 
-    ? (importedTokens[theme] || {})
-    : (defaultProject.primitives[theme] || {});
+  // Get baseline primitives - use imported tokens (what was loaded from template/import)
+  const baselinePrimitives = importedTokens[theme] || {};
   
   // Get current semantic tokens for current theme
   const currentSemanticTokens = semanticTokens[theme] || {};
   
-  // Get baseline semantic tokens - if project was imported, use original tokens, otherwise use default
-  const baselineSemanticTokens = hasImportedProject
-    ? (originalSemanticTokens[theme] || {})
-    : semanticColors;
+  // Get baseline semantic tokens - use original semantic tokens (what was loaded from template/import)
+  const baselineSemanticTokens = originalSemanticTokens[theme] || {};
 
   // Format JSON with proper indentation
   const formatJSON = (obj: any): string => {
@@ -52,33 +46,7 @@ export function ChangesView() {
     return content.split('\n');
   };
 
-  // Simple diff logic - mark lines as added, removed, or unchanged
-  const getDiff = (originalLines: string[], currentLines: string[]): Array<{ type: 'unchanged' | 'removed' | 'added', line: string, lineNum?: number }> => {
-    const result: Array<{ type: 'unchanged' | 'removed' | 'added', line: string, lineNum?: number }> = [];
-    const maxLen = Math.max(originalLines.length, currentLines.length);
 
-    for (let i = 0; i < maxLen; i++) {
-      const origLine = originalLines[i];
-      const currLine = currentLines[i];
-
-      if (origLine === currLine) {
-        result.push({ type: 'unchanged', line: origLine || '', lineNum: i + 1 });
-      } else {
-        if (origLine !== undefined && currLine !== undefined) {
-          // Both exist but different - show as removed and added
-          result.push({ type: 'unchanged', line: origLine, lineNum: i + 1 });
-        } else if (origLine === undefined) {
-          // Line only in current (added)
-          result.push({ type: 'unchanged', line: currLine, lineNum: i + 1 });
-        } else {
-          // Line only in original (removed)
-          result.push({ type: 'unchanged', line: origLine, lineNum: i + 1 });
-        }
-      }
-    }
-
-    return result;
-  };
 
   // Better diff algorithm
   const getLineDiff = (originalContent: string, currentContent: string) => {
@@ -142,11 +110,92 @@ export function ChangesView() {
   const primitivesDiff = getLineDiff(formattedBaselinePrimitives, formattedCurrentPrimitives);
   const semanticDiff = getLineDiff(formattedBaselineSemantic, formattedCurrentSemantic);
 
+  // Check if there are actual changes
+  const hasPrimitivesChanges = formattedBaselinePrimitives !== formattedCurrentPrimitives;
+  const hasSemanticChanges = formattedBaselineSemantic !== formattedCurrentSemantic;
+
+  // JSON Viewer component (when no changes)
+  const JSONViewer = ({ title, content }: { title: string; content: string }) => {
+    const scrollRef = useRef<HTMLDivElement>(null);
+    const minimapRef = useRef<HTMLCanvasElement>(null);
+    const lines = getLines(content);
+
+    // Draw minimap
+    useEffect(() => {
+      const canvas = minimapRef.current;
+      if (!canvas) return;
+
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      const height = canvas.height;
+      const lineHeight = height / lines.length;
+
+      ctx.clearRect(0, 0, canvas.width, height);
+
+      lines.forEach((_, idx) => {
+        const y = idx * lineHeight;
+        ctx.fillStyle = '#374151'; // gray for all lines
+        ctx.fillRect(0, y, canvas.width, Math.max(1, lineHeight));
+      });
+    }, [lines]);
+
+    return (
+      <div className="mb-6">
+        <div className="bg-[#1e1e1e] border border-[#3e3e42] rounded-lg overflow-hidden">
+          {/* Header with filename */}
+          <div className="bg-[#252526] border-b border-[#3e3e42] px-4 py-2 flex items-center justify-between">
+            <span className="text-[#cccccc] font-mono text-sm">{title}</span>
+            <span className="text-xs text-[#858585]">Readonly</span>
+          </div>
+
+          {/* JSON content with minimap */}
+          <div className="flex">
+            {/* Main JSON area */}
+            <div 
+              ref={scrollRef}
+              className="flex-1 font-mono text-[13px] max-h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-[#424242] scrollbar-track-[#1e1e1e]"
+            >
+              {lines.map((line, idx) => (
+                <div key={idx} className="flex">
+                  <span className="inline-block w-12 text-[#858585] select-none text-right pr-3 py-[2px] border-r border-[#3e3e42] bg-[#1e1e1e] flex-shrink-0">
+                    {idx + 1}
+                  </span>
+                  <span className="flex-1 px-3 py-[2px] whitespace-pre text-[#cccccc]">
+                    {line}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Minimap */}
+            <div className="w-16 bg-[#1e1e1e] border-l border-[#3e3e42] flex-shrink-0">
+              <canvas 
+                ref={minimapRef}
+                width={64}
+                height={600}
+                className="w-full h-[600px] cursor-pointer"
+                onClick={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const y = e.clientY - rect.top;
+                  const percentage = y / rect.height;
+                  
+                  if (scrollRef.current) {
+                    const scrollHeight = scrollRef.current.scrollHeight - scrollRef.current.clientHeight;
+                    scrollRef.current.scrollTop = scrollHeight * percentage;
+                  }
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   const DiffViewer = ({ 
     title, 
-    diff,
-    leftContent,
-    rightContent
+    diff
   }: { 
     title: string;
     diff: Array<{
@@ -156,8 +205,6 @@ export function ChangesView() {
       rightLineNum: number | null;
       status: 'unchanged' | 'changed' | 'added' | 'removed';
     }>;
-    leftContent: string;
-    rightContent: string;
   }) => {
     const leftScrollRef = useRef<HTMLDivElement>(null);
     const rightScrollRef = useRef<HTMLDivElement>(null);
@@ -306,43 +353,46 @@ export function ChangesView() {
     );
   };
 
-  const hasChanges = formattedBaselinePrimitives !== formattedCurrentPrimitives || 
-                     formattedBaselineSemantic !== formattedCurrentSemantic;
-
   return (
     <div className="p-6 bg-[#1e1e1e] min-h-screen">
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-[#cccccc] mb-2">Changes</h2>
         <p className="text-[#858585]">
-          {hasImportedProject 
-            ? `Compare imported tokens with your modifications (${theme} theme)`
-            : `Compare default project with your modifications (${theme} theme)`
-          }
+          Viewing {theme} theme - {hasPrimitivesChanges || hasSemanticChanges ? 'Changes detected' : 'No changes'}
         </p>
       </div>
 
-      {!hasChanges && (
-        <div className="bg-[#252526] border border-[#3e3e42] rounded-lg p-4 text-[#4ec9b0]">
-          ✓ No changes detected. All tokens match the baseline.
+      {/* Show message when no changes */}
+      {!hasPrimitivesChanges && !hasSemanticChanges && (
+        <div className="bg-[#252526] border border-[#3e3e42] rounded-lg p-4 mb-6 text-[#4ec9b0]">
+          ✓ No changes detected. Viewing baseline tokens from template.
         </div>
       )}
 
-      {hasChanges && (
-        <>
-          <DiffViewer 
-            title="primitives/color.json"
-            diff={primitivesDiff}
-            leftContent={formattedBaselinePrimitives}
-            rightContent={formattedCurrentPrimitives}
-          />
+      {/* Primitives - show diff if changes, otherwise show JSON viewer */}
+      {hasPrimitivesChanges ? (
+        <DiffViewer 
+          title="primitives/color.json"
+          diff={primitivesDiff}
+        />
+      ) : (
+        <JSONViewer 
+          title="primitives/color.json"
+          content={formattedCurrentPrimitives}
+        />
+      )}
 
-          <DiffViewer 
-            title="semantic/color.json"
-            diff={semanticDiff}
-            leftContent={formattedBaselineSemantic}
-            rightContent={formattedCurrentSemantic}
-          />
-        </>
+      {/* Semantic - show diff if changes, otherwise show JSON viewer */}
+      {hasSemanticChanges ? (
+        <DiffViewer 
+          title="semantic/color.json"
+          diff={semanticDiff}
+        />
+      ) : (
+        <JSONViewer 
+          title="semantic/color.json"
+          content={formattedCurrentSemantic}
+        />
       )}
     </div>
   );

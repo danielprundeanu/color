@@ -259,6 +259,19 @@ export function ColorProvider({ children }: { children: ReactNode }) {
           dark?: any;
         } = {};
 
+        let colorConfig: any = null;
+
+        // Try to load color-config.json from template
+        try {
+          const configResponse = await fetch(`/template/color-config.json`);
+          if (configResponse.ok) {
+            colorConfig = await configResponse.json();
+            console.log('Loaded color-config.json from template:', colorConfig);
+          }
+        } catch (error) {
+          console.warn('No color-config.json found in template:', error);
+        }
+
         // Load primitive tokens for both themes
         for (const theme of ['light', 'dark']) {
           try {
@@ -283,20 +296,54 @@ export function ColorProvider({ children }: { children: ReactNode }) {
           }
         }
 
-        return { tokens, semantic };
+        return { tokens, semantic, colorConfig };
       };
 
-      const { tokens, semantic } = await loadTemplateTokens();
+      const { tokens, semantic, colorConfig } = await loadTemplateTokens();
+
+      // Apply color-config.json settings if available
+      if (colorConfig) {
+        // Apply lightness curve
+        if (colorConfig.lightnessCurve) {
+          if (colorConfig.lightnessCurve.type) {
+            setLightnessCurveType(colorConfig.lightnessCurve.type);
+          }
+          if (colorConfig.lightnessCurve.steps && Array.isArray(colorConfig.lightnessCurve.steps)) {
+            setLightnessSteps(colorConfig.lightnessCurve.steps);
+          }
+        }
+
+        // Apply color space
+        if (colorConfig.colorSpace) {
+          setColorSpace(colorConfig.colorSpace);
+        }
+      } else {
+        // Default settings if no config
+        setLightnessCurveType('linear');
+      }
 
       // Set the imported tokens
       setImportedTokens(tokens);
       setSemanticTokens(semantic);
       setOriginalSemanticTokens(JSON.parse(JSON.stringify(semantic)));
-      setHasImportedProject(false); // New project is NOT an import
-      setLightnessCurveType('linear');
+      setHasImportedProject(true); // Lock palettes initially (like an import)
 
-      // Load palettes from light theme tokens
-      if (tokens.light && Object.keys(tokens.light).length > 0) {
+      // Load palettes from light theme tokens or from color-config.json
+      if (colorConfig?.palettes && Array.isArray(colorConfig.palettes) && colorConfig.palettes.length > 0) {
+        // Load palettes from config with all their settings
+        setPalettes(colorConfig.palettes.map((p: any) => ({
+          name: p.name,
+          key: p.key,
+          hue: p.hue,
+          chroma: p.chroma,
+          baseColor: p.baseColor,
+          includeBaseInPalette: p.includeBaseInPalette ?? true,
+          hueShift: p.hueShift || { enabled: false, darkHue: p.hue, lightHue: p.hue }
+        })));
+        toast.success('Proiect nou creat!', {
+          description: `${colorConfig.palettes.length} palete încărcate din template cu configurație.`,
+        });
+      } else if (tokens.light && Object.keys(tokens.light).length > 0) {
         loadPalettesFromTokens(tokens.light, false); // false = new project, not import
         toast.success('Proiect nou creat!', {
           description: `${Object.keys(tokens.light).length} palete încărcate din template.`,
@@ -305,7 +352,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
         // Fallback to initial palettes if no template found
         setPalettes(initialPalettes);
         setLightnessSteps(defaultLightnessSteps);
-        setHasImportedProject(false);
+        setHasImportedProject(true);
         setImportedLightnessSteps(null);
         toast.success('Proiect nou creat!', {
           description: 'Folosesc paletele implicite (template-ul nu a fost găsit).',
@@ -320,7 +367,7 @@ export function ColorProvider({ children }: { children: ReactNode }) {
       setLightnessSteps(defaultLightnessSteps);
       setLightnessCurveType('linear');
       setTheme('light');
-      setHasImportedProject(false);
+      setHasImportedProject(true);
       setImportedLightnessSteps(null);
       setImportedTokens({});
       setSemanticTokens({});
@@ -367,6 +414,12 @@ export function ColorProvider({ children }: { children: ReactNode }) {
   };
 
   const getAllGeneratedColors = (): { [key: string]: { [key: string]: string } } => {
+    // If project is locked (imported or new), return the imported tokens without regeneration
+    if (hasImportedProject && importedTokens[theme]) {
+      return importedTokens[theme];
+    }
+
+    // Otherwise, generate colors from palettes (unlocked state)
     const allColors: { [key: string]: { [key: string]: string } } = {};
     
     palettes.forEach(palette => {
@@ -441,14 +494,21 @@ export function ColorProvider({ children }: { children: ReactNode }) {
           light?: any;
           dark?: any;
         } = {};
+
+        let colorConfig: any = null;
         
         // Process all files
         for (let i = 0; i < files.length; i++) {
           const file = files[i];
           const path = file.webkitRelativePath || file.name;
           
+          // Look for color-config.json
+          if (path.includes('color-config.json')) {
+            const text = await file.text();
+            colorConfig = JSON.parse(text);
+          }
           // Look for color.json files in primitives folder
-          if (path.includes('tokens-light/primitives/color.json')) {
+          else if (path.includes('tokens-light/primitives/color.json')) {
             const text = await file.text();
             const data = JSON.parse(text);
             tokens.light = parseColorTokens(data);
@@ -466,33 +526,90 @@ export function ColorProvider({ children }: { children: ReactNode }) {
             semantic.dark = JSON.parse(text);
           }
         }
+
+        // Apply color config if found
+        if (colorConfig) {
+          // Apply lightness curve settings
+          if (colorConfig.lightnessCurve) {
+            if (colorConfig.lightnessCurve.type) {
+              setLightnessCurveType(colorConfig.lightnessCurve.type);
+            }
+            if (colorConfig.lightnessCurve.steps && Array.isArray(colorConfig.lightnessCurve.steps)) {
+              setLightnessSteps(colorConfig.lightnessCurve.steps);
+              setImportedLightnessSteps(colorConfig.lightnessCurve.steps);
+            }
+          }
+          
+          // Apply color space
+          if (colorConfig.colorSpace) {
+            setColorSpace(colorConfig.colorSpace);
+          }
+
+          // Apply palette configurations
+          if (colorConfig.palettes && Array.isArray(colorConfig.palettes)) {
+            const configuredPalettes: ColorPalette[] = colorConfig.palettes.map((paletteConfig: any) => {
+              const palette: ColorPalette = {
+                name: paletteConfig.name || paletteConfig.key,
+                key: paletteConfig.key,
+                hue: paletteConfig.hue || 0,
+                chroma: paletteConfig.chroma || 0.1,
+                baseColor: paletteConfig.baseColor || '#000000',
+                includeBaseInPalette: paletteConfig.includeBaseInPalette ?? true,
+              };
+
+              if (paletteConfig.hueShift) {
+                palette.hueShift = {
+                  enabled: paletteConfig.hueShift.enabled ?? false,
+                  darkHue: paletteConfig.hueShift.darkHue || paletteConfig.hue,
+                  lightHue: paletteConfig.hueShift.lightHue || paletteConfig.hue,
+                };
+              }
+
+              // Add custom colors from imported tokens
+              const themeTokens = tokens[theme];
+              if (themeTokens && themeTokens[paletteConfig.key]) {
+                palette.customColors = themeTokens[paletteConfig.key];
+              }
+
+              return palette;
+            });
+
+            setPalettes(configuredPalettes);
+          }
+        }
         
         setImportedTokens(tokens);
         setSemanticTokens(semantic);
-        setOriginalSemanticTokens(semantic);
+        setOriginalSemanticTokens(JSON.parse(JSON.stringify(semantic)));
         setHasImportedProject(true);
         
-        // Load palettes from current theme
-        const currentTokens = tokens[theme];
-        if (!currentTokens || Object.keys(currentTokens).length === 0) {
-          throw new Error(`Nu s-au găsit tokeni pentru tema ${theme}.`);
+        // Load palettes from current theme if no config was provided
+        if (!colorConfig) {
+          const currentTokens = tokens[theme];
+          if (!currentTokens || Object.keys(currentTokens).length === 0) {
+            throw new Error(`Nu s-au găsit tokeni pentru tema ${theme}.`);
+          }
+          
+          loadPalettesFromTokens(currentTokens, true); // true = this is an import
         }
         
-        loadPalettesFromTokens(currentTokens, true); // true = this is an import
-        
         // Return success data for toast
+        const currentTokens = tokens[theme] || {};
         const paletteCount = Object.keys(currentTokens).length;
         const semanticCount = semantic[theme] ? Object.keys(semantic[theme]).length : 0;
         
         return {
           paletteCount,
           semanticCount,
-          theme
+          theme,
+          hasConfig: !!colorConfig
         };
       })(),
       {
         loading: 'Se încarcă proiectul...',
-        success: (data) => `${data.paletteCount} palete și ${data.semanticCount} tokeni semantici încărcați`,
+        success: (data) => data.hasConfig 
+          ? `Proiect încărcat: ${data.paletteCount} palete, ${data.semanticCount} tokeni semantici și configurație`
+          : `${data.paletteCount} palete și ${data.semanticCount} tokeni semantici încărcați`,
         error: (err) => err.message || 'Eroare la importul proiectului. Verifică structura folderului.',
       }
     );
@@ -607,22 +724,16 @@ export function ColorProvider({ children }: { children: ReactNode }) {
   };
 
   const saveProject = async () => {
-    if (!hasImportedProject) {
-      toast.error('Nu există un proiect importat', {
-        description: 'Importă mai întâi un proiect pentru a salva modificările.',
-      });
-      return;
-    }
-
     try {
       // Dynamic import JSZip
       const JSZip = (await import('jszip')).default;
       const zip = new JSZip();
 
-      // Generate color tokens for current palettes
-      const generateTokensForPalettes = () => {
+      // Generate color tokens for all themes
+      const generateTokensForTheme = (themeName: 'light' | 'dark') => {
         const tokens: any = {};
         
+        // Get tokens for this theme - use current generated colors
         palettes.forEach(palette => {
           const colors = getGeneratedColors(palette.key);
           tokens[palette.key] = {};
@@ -638,9 +749,50 @@ export function ColorProvider({ children }: { children: ReactNode }) {
         return tokens;
       };
 
-      const currentTokens = generateTokensForPalettes();
+      // Create color-config.json with all settings
+      const colorConfig = {
+        version: "1.0",
+        lightnessCurve: {
+          type: lightnessCurveType,
+          steps: lightnessSteps
+        },
+        colorSpace: colorSpace,
+        palettes: palettes.map(palette => ({
+          name: palette.name,
+          key: palette.key,
+          hue: palette.hue,
+          chroma: palette.chroma,
+          baseColor: palette.baseColor,
+          includeBaseInPalette: palette.includeBaseInPalette,
+          hueShift: palette.hueShift ? {
+            enabled: palette.hueShift.enabled,
+            darkHue: palette.hueShift.darkHue,
+            lightHue: palette.hueShift.lightHue
+          } : undefined
+        }))
+      };
 
-      // Create Token Studio format structure for Figma plugin
+      // Add color-config.json to root
+      zip.file("color-config.json", JSON.stringify(colorConfig, null, 2));
+
+      // Add color-config.json to root
+      zip.file("color-config.json", JSON.stringify(colorConfig, null, 2));
+
+      // Save for both themes
+      for (const themeName of ['light', 'dark'] as const) {
+        // Generate primitives
+        const primitiveTokens = generateTokensForTheme(themeName);
+        zip.file(`tokens-${themeName}/primitives/color.json`, JSON.stringify(primitiveTokens, null, 2));
+        
+        // Save semantic tokens if they exist
+        const currentSemanticTokens = semanticTokens[themeName];
+        if (currentSemanticTokens && Object.keys(currentSemanticTokens).length > 0) {
+          zip.file(`tokens-${themeName}/semantic/color.json`, JSON.stringify(currentSemanticTokens, null, 2));
+        }
+      }
+
+      // Create Token Studio format structure for Figma plugin compatibility
+      const currentTokens = generateTokensForTheme('light'); // Use light theme for token studio format
       const tokenStudioFormat: any = {
         "$themes": [
           {
@@ -665,36 +817,6 @@ export function ColorProvider({ children }: { children: ReactNode }) {
       // Add Token Studio format file at root for Figma plugin import
       zip.file("tokens.json", JSON.stringify(tokenStudioFormat, null, 2));
 
-      // Save for both themes (standard structure)
-      for (const themeName of ['light', 'dark']) {
-        // Get existing tokens for this theme or use empty object
-        const existingTokens = importedTokens[themeName as 'light' | 'dark'] || {};
-        
-        // Convert existing tokens to proper format
-        const existingFormatted: any = {};
-        Object.entries(existingTokens).forEach(([key, steps]) => {
-          existingFormatted[key] = {};
-          Object.entries(steps).forEach(([step, color]) => {
-            existingFormatted[key][step] = {
-              "$type": "color",
-              "$value": color
-            };
-          });
-        });
-        
-        // Merge: preserve existing tokens, update only edited palettes
-        const mergedTokens = { ...existingFormatted };
-        
-        // Update only the palettes we have
-        Object.entries(currentTokens).forEach(([paletteKey, paletteData]) => {
-          mergedTokens[paletteKey] = paletteData;
-        });
-        
-        // Add to ZIP
-        const jsonContent = JSON.stringify(mergedTokens, null, 2);
-        zip.file(`tokens-${themeName}/primitives/color.json`, jsonContent);
-      }
-
       // Generate ZIP file
       const blob = await zip.generateAsync({ type: 'blob' });
       
@@ -702,12 +824,12 @@ export function ColorProvider({ children }: { children: ReactNode }) {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'tokens-export.zip';
+      a.download = 'color-tokens-project.zip';
       a.click();
       URL.revokeObjectURL(url);
 
-      toast.success('Proiect exportat cu succes!', {
-        description: 'Fișierul ZIP conține structura de foldere tokens-light/ și tokens-dark/.',
+      toast.success('Proiect salvat cu succes!', {
+        description: 'Fișierul ZIP conține primitives, semantic și configurația pentru ambele teme.',
       });
     } catch (error: any) {
       console.error('Save error:', error);

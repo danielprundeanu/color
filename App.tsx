@@ -195,16 +195,14 @@ function AppContent() {
                   Import Project
                 </button>
                 
-                {/* Save Button */}
-                {hasImportedProject && (
-                  <button
-                    onClick={saveProject}
-                    className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
-                  >
-                    <Save className="w-4 h-4" />
-                    Save Project
-                  </button>
-                )}
+                {/* Save Button - Always visible */}
+                <button
+                  onClick={saveProject}
+                  className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
+                >
+                  <Save className="w-4 h-4" />
+                  Save Project
+                </button>
                 
                 {/* Theme Toggle - Always visible */}
                 <div className="flex items-center gap-1 bg-white border border-gray-300 rounded-lg p-1">

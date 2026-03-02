@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "lightnessCurve": {
+    "type": "linear",
+    "steps": [
+      88.55,
+      86.6,
+      84,
+      79.28,
+      73.47,
+      65.73,
+      58.19,
+      50.25,
+      42.04,
+      35.21,
+      26.78,
+      23.33,
+      19.77
+    ]
+  },
+  "colorSpace": "oklch",
+  "palettes": [
+    {
+      "name": "Primary",
+      "key": "primary",
+      "hue": 294.212842363036,
+      "chroma": 0.17180085363489891,
+      "baseColor": "#a786fe",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Primary Inverted",
+      "key": "primary-inverted",
+      "hue": 94.75223042760578,
+      "chroma": 0.14414739842020846,
+      "baseColor": "#bc9d01",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Secondary",
+      "key": "secondary",
+      "hue": 21.954408458124316,
+      "chroma": 0.1725600649403459,
+      "baseColor": "#FF7273",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Sub Brand 01",
+      "key": "sub-brand-01",
+      "hue": 301.0795548730335,
+      "chroma": 0.18126774974057366,
+      "baseColor": "#b480fd",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Sub Brand 02",
+      "key": "sub-brand-02",
+      "hue": 47.58041776850968,
+      "chroma": 0.1859352394611146,
+      "baseColor": "#f46f0e",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Grey",
+      "key": "grey",
+      "hue": 286.32248180160764,
+      "chroma": 0.002898006823798098,
+      "baseColor": "#98989a",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Neutral",
+      "key": "neutral",
+      "hue": 276.6176033485491,
+      "chroma": 0.03964825027244873,
+      "baseColor": "#7F849E",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Positive",
+      "key": "positive",
+      "hue": 134.11261832234896,
+      "chroma": 0.18099964419550377,
+      "baseColor": "#61aa1c",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Notice",
+      "key": "notice",
+      "hue": 67.93336517819256,
+      "chroma": 0.13717454471939947,
+      "baseColor": "#cd8422",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Negative",
+      "key": "negative",
+      "hue": 32.11862745396852,
+      "chroma": 0.18406031304625492,
+      "baseColor": "#fa684e",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Informative",
+      "key": "informative",
+      "hue": 254.19356324717276,
+      "chroma": 0.14506049349441374,
+      "baseColor": "#569df2",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "White",
+      "key": "white",
+      "hue": 0,
+      "chroma": 0,
+      "baseColor": "rgba(255,255,255,0.6)",
+      "includeBaseInPalette": true
+    },
+    {
+      "name": "Black",
+      "key": "black",
+      "hue": 0,
+      "chroma": 0,
+      "baseColor": "rgba(0,0,0,0.6)",
+      "includeBaseInPalette": true
+    }
+  ]
+}
